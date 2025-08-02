@@ -1,0 +1,19 @@
+{
+  "name": "fertig",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adilzainulsyed/Fertig.git"
+  },
+  "author": "Adil Zainul Syed, Korou Kshetrimayum, Abhishek Bhattacharya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adilzainulsyed/Fertig/issues"
+  },
+  "homepage": "https://github.com/adilzainulsyed/Fertig#readme"
+}
