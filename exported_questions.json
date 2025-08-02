@@ -1,0 +1,418 @@
+[
+  {
+    "_id": {
+      "$oid": "688dec87b216290d2b1803e1"
+    },
+    "question_text": "Given input list (26, 5, 77, 1, 61, 11, 59, 15, 48, 19). Show the working of merge sort by showing the contents of the array after each pass.",
+    "source_year": "DECEMBER 2018",
+    "difficulty": "medium",
+    "section": "C",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T10:46:31.480Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688dec87b216290d2b1803e0"
+    },
+    "question_text": "Define B-tree of order m and also mention its properties. What do you mean by 2-3-4 tree, explain with an example?",
+    "source_year": "DECEMBER 2018",
+    "difficulty": "medium",
+    "section": "C",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T10:46:31.453Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688dec87b216290d2b1803df"
+    },
+    "question_text": "Derive an expression for finding the total cost of a BST (including both successful and unsuccessful searches) for a set of elements. What is the relation of this expression with optimal BST? Assume the root is at level 1.",
+    "source_year": "DECEMBER 2018",
+    "difficulty": "hard",
+    "section": "C",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T10:46:31.427Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688dec87b216290d2b1803de"
+    },
+    "question_text": "Construct a binary search tree for the given set of numbers {100, 80, 90, 88, 200, 150, 179, 300, 400} in the order they are read from left to right (100 as root). Display the postorder traversal sequence of the constructed tree.",
+    "source_year": "DECEMBER 2018",
+    "difficulty": "medium",
+    "section": "B",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T10:46:31.402Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688dec87b216290d2b1803dd"
+    },
+    "question_text": "Write a function to construct an expression tree for the given postfix expression. Using the same, draw expression tree for the postorder: ABC*+DE/- by considering each letter as a single operand.",
+    "source_year": "DECEMBER 2018",
+    "difficulty": "medium",
+    "section": "B",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T10:46:31.377Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688dec87b216290d2b1803dc"
+    },
+    "question_text": "Write a complete C program to do the following, i) Create a binary tree ii) Convert the created binary tree into binary search tree without changing structure of the tree. iii) Traverse the tree in preorder",
+    "source_year": "DECEMBER 2018",
+    "difficulty": "hard",
+    "section": "B",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T10:46:31.354Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688dec87b216290d2b1803db"
+    },
+    "question_text": "Write a C function to invert a singly linked list. The function should accept a pointer to the given list and return a pointer to the inverted list.",
+    "source_year": "DECEMBER 2018",
+    "difficulty": "easy",
+    "section": "B",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T10:46:31.328Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688dec87b216290d2b1803da"
+    },
+    "question_text": "Given a singly linked list, write a complete C program to find and display the middle element of the linked list. If there are even number nodes, display the second middle element.",
+    "source_year": "DECEMBER 2018",
+    "difficulty": "hard",
+    "section": "B",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T10:46:31.304Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688dec87b216290d2b1803d9"
+    },
+    "question_text": "Write a function to add two polynomials, polynomial A, and polynomial B, represented as singly linked lists. The function should accept pointers to linked lists representing two polynomials and return a pointer to the linked list representing the sum.",
+    "source_year": "DECEMBER 2018",
+    "difficulty": "hard",
+    "section": "B",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T10:46:31.279Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688dec87b216290d2b1803d8"
+    },
+    "question_text": "Write an algorithm to convert an infix expression to postfix expression. Trace the algorithm for the infix expression: ((A+B)*D)*((E-F)-G) by filling the table given below: Current symbol scanned Action Taken(push/pop etc) Content of the stack Intermediate result",
+    "source_year": "DECEMBER 2018",
+    "difficulty": "medium",
+    "section": "A",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T10:46:31.254Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688dec87b216290d2b1803d7"
+    },
+    "question_text": "Write a complete C program to implement push, pop and display operations of a stack using dynamic array to hold 5 integers. If the stack is full when the push operation is called, it must increase the size of the stack by 5 more integers.  Instructions to Candidates: \uf076Answer ALL questions. \uf076Missing data may be suitably assumed.  CSE 2103  Page 2 of 2",
+    "source_year": "DECEMBER 2018",
+    "difficulty": "medium",
+    "section": "A",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T10:46:31.229Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688dec87b216290d2b1803d6"
+    },
+    "question_text": "Write a complete C program to perform the following operations on a queue of integers using only standard queue operations, i) Insertq(x): Add an item x to queue. ii) Deleteq() : Remove an item from queue. iii) Display(): Displaying queue elements iv) Reverse() : Contents of queue are reversed using only standard queue operations.",
+    "source_year": "DECEMBER 2018",
+    "difficulty": "hard",
+    "section": "A",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T10:46:31.203Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688dec87b216290d2b1803d5"
+    },
+    "question_text": "Explain the functionality of the following recursive function.   int foo(int x, int y) { if(x == 0)   return y; else return foo(x \u2013 1,x +y); }",
+    "source_year": "DECEMBER 2018",
+    "difficulty": "easy",
+    "section": "A",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T10:46:31.178Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688dec87b216290d2b1803d4"
+    },
+    "question_text": "Write a complete C program to illustrate passing and returning structures to and from functions through pointers by to defining a structure FRACTION with numerator and denominator (integers) as its data members. Write the functions with following prototypes. Use type defined structure. void getFr(FRACTION * ); void printFr( FRACTION *) ; FRACTION * multiFr( FRACTION *, FRACTION *);.",
+    "source_year": "DECEMBER 2018",
+    "difficulty": "hard",
+    "section": "A",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T10:46:31.152Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688dec87b216290d2b1803d3"
+    },
+    "question_text": "Explain different dynamic memory allocation and de-allocation functions with prototype and example to each.",
+    "source_year": "DECEMBER 2018",
+    "difficulty": "hard",
+    "section": "A",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T10:46:31.125Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688de7a754d84e1ba06cbf8d"
+    },
+    "question_text": "Explain different dynamic memory allocation and de-allocation functions with  prototype and example to each.  (4)  1B. Write a complete C program to illustrate passing and returning structures to and from  functions through pointers by to defining a structure FRACTION with numerator and  denominator (integers) as its data members. Write the functions with following  prototypes. Use type defined structure.        void getFr(FRACTION * );       void printFr( FRACTION *) ;       FRACTION * multiFr( FRACTION *, FRACTION *);.      (4)  1C. Explain the functionality of the following recursive function.       int foo(int x, int y)    {     if(x == 0)   return y;      else          return foo(x \u2013 1,x +y);    }                                                                                                         (2)  2A. Write a complete C program to perform the following operations on a queue of integers  using only standard queue operations,    i) Insertq(x): Add an item x to queue.  ii) Deleteq() : Remove an item from queue.  iii) Display(): Displaying queue elements  iv) Reverse() : Contents of queue are reversed using only standard queue operations.  (4)  2B. Write a complete C program to implement push, pop and display operations of a stack  using dynamic array to hold 5 integers. If the stack is full when the push operation is  called, it must increase the size of the stack by 5 more integers.  (3)  Instructions to Candidates:  \uf076Answer ALL questions.  \uf076Missing data may be suitably assumed.   CSE 2103               Page 2 of",
+    "source_year": "Unknown",
+    "difficulty": "easy",
+    "section": "A",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T10:25:43.305Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688de76a81f09c78cde3fee5"
+    },
+    "question_text": "Explain different dynamic memory allocation and de-allocation functions with  prototype and example to each.  (4)  1B. Write a complete C program to illustrate passing and returning structures to and from  functions through pointers by to defining a structure FRACTION with numerator and  denominator (integers) as its data members. Write the functions with following  prototypes. Use type defined structure.        void getFr(FRACTION * );       void printFr( FRACTION *) ;       FRACTION * multiFr( FRACTION *, FRACTION *);.      (4)  1C. Explain the functionality of the following recursive function.       int foo(int x, int y)    {     if(x == 0)   return y;      else          return foo(x \u2013 1,x +y);    }                                                                                                         (2)  2A. Write a complete C program to perform the following operations on a queue of integers  using only standard queue operations,    i) Insertq(x): Add an item x to queue.  ii) Deleteq() : Remove an item from queue.  iii) Display(): Displaying queue elements  iv) Reverse() : Contents of queue are reversed using only standard queue operations.  (4)  2B. Write a complete C program to implement push, pop and display operations of a stack  using dynamic array to hold 5 integers. If the stack is full when the push operation is  called, it must increase the size of the stack by 5 more integers.  (3)  Instructions to Candidates:  \uf076Answer ALL questions.  \uf076Missing data may be suitably assumed.   CSE 2103               Page 2 of",
+    "source_year": "Unknown",
+    "difficulty": "easy",
+    "section": "A",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T10:24:42.805Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688ddb55c9763e7fda1926ca"
+    },
+    "question_text": "Create a structure as shown: struct DISTANCE {int feet; float inch;};  In main(), create pointers to the above struct and allocate memory using dynamic  memory allocation. Read in and store values of distances d1and d2. Find the sum of  the two distance values using function:  void addDist (struct DISTANCE *d1, struct DISTANCE *d2, struct DISTANCE  *result); Display the value of result in main().",
+    "source_year": "JAN 2021",
+    "difficulty": "hard",
+    "section": "A",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T09:33:09.704Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688ddb55c9763e7fda1926d8"
+    },
+    "question_text": "Convert the given infix expression, A + B - C * D / (E \u2013 F + G) *H  to prefix, by showing the Scanned Symbol, Action Taken, Stack Contents and  Current Prefix in the form of a table, as shown below:  Scanned symbol  Action Taken  Stack Contents  Current Prefix",
+    "source_year": "JAN 2021",
+    "difficulty": "easy",
+    "section": "C",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T09:33:09.704Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688ddb55c9763e7fda1926d7"
+    },
+    "question_text": "Write function \u201cstruct node* findunion (struct node *LLOne, struct node  *LLTwo)\u201d which returns the union of two lists represented using singly linked list.",
+    "source_year": "JAN 2021",
+    "difficulty": "hard",
+    "section": "C",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T09:33:09.704Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688ddb55c9763e7fda1926d6"
+    },
+    "question_text": "Write an iterative function in C to traverse a binary tree in post-order traversal  showing the node structure of the stack.",
+    "source_year": "JAN 2021",
+    "difficulty": "hard",
+    "section": "C",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T09:33:09.704Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688ddb55c9763e7fda1926d5"
+    },
+    "question_text": "Discuss with an example for each, the storage representations of binary trees using  arrays and linked representations.",
+    "source_year": "JAN 2021",
+    "difficulty": "easy",
+    "section": "B",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T09:33:09.704Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688ddb55c9763e7fda1926d4"
+    },
+    "question_text": "Given a prefix expression, write a function in C to create an expression tree.",
+    "source_year": "JAN 2021",
+    "difficulty": "medium",
+    "section": "B",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T09:33:09.704Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688ddb55c9763e7fda1926d3"
+    },
+    "question_text": "Consider all five possible binary search trees for the key set (a1, a2, a3) = (Creta,  City, Punto). Find the optimal binary search tree   (i) with equal probabilities, pi = qi = 1/7 for all i and j  (ii) with p1=0.05, p2=0.5, p3=0.1, q0=0.05, q1=0.1, q2=0.15, q3=0.05",
+    "source_year": "JAN 2021",
+    "difficulty": "hard",
+    "section": "B",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T09:33:09.704Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688ddb55c9763e7fda1926d2"
+    },
+    "question_text": "Write code to implement stack operations (push and pop) using singly linked list.",
+    "source_year": "JAN 2021",
+    "difficulty": "easy",
+    "section": "B",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T09:33:09.704Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688ddb55c9763e7fda1926d1"
+    },
+    "question_text": "Give any six differences between Array and Linked List.",
+    "source_year": "JAN 2021",
+    "difficulty": "medium",
+    "section": "B",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T09:33:09.704Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688ddb55c9763e7fda1926d0"
+    },
+    "question_text": "Write a function \u201cpoly_add (poly_pointer, poly_pointer )\u201d to add two polynomials  represented by two singly linked lists, A and B and return the new polynomial, C.",
+    "source_year": "JAN 2021",
+    "difficulty": "hard",
+    "section": "B",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T09:33:09.704Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688ddb55c9763e7fda1926cf"
+    },
+    "question_text": "Write C functions for the following operations on ordinary queue using array with  proper validation:       a) insert      b) Delete",
+    "source_year": "JAN 2021",
+    "difficulty": "easy",
+    "section": "A",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T09:33:09.704Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688ddb55c9763e7fda1926ce"
+    },
+    "question_text": "Write a program to convert the given prefix expression to postfix equivalent  3  Instructions to Candidates:  \uf076 Answer ALL FIVE questions.  \uf076 Missing data may be suitably assumed.  A Constituent unit of MAHE, Manipal  CSE 2152      Page 2 of",
+    "source_year": "JAN 2021",
+    "difficulty": "easy",
+    "section": "A",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T09:33:09.704Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688ddb55c9763e7fda1926cd"
+    },
+    "question_text": "Write a C program(Menu driven) to implement \u2018n\u2019 stacks using a single 1-D array  containing \u2018m\u2019 locations with following prototypes,     i) push(int i, int item, STACK *S); //pushing an item on ith stack     ii) pop(int i, STACK *S);//poping an item from ith stack     iii) display(S) // displaying all \u2018n\u2019 stack contents  For the STACK structure, the members boundary[i] and top[i] represents boundary  and top respectively for the ith stack along with element represented by other  member. While pushing if the particular stack is full, and if there is space available  elsewhere in the array of \u2018m\u2019 locations, it should shift the stacks so that space is  allocated to the full stack.",
+    "source_year": "JAN 2021",
+    "difficulty": "hard",
+    "section": "A",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T09:33:09.704Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688ddb55c9763e7fda1926cc"
+    },
+    "question_text": "Write the output of the following program:  #include<stdio.h>  void main() {    int num[5] = {3, 4, 6, 2, 1};    int *p = num;    int* q = num+2;    int* r = &num[1];    printf(\"\\n%d %d\", num[2], *(num+2));    printf(\"\\n%d %d\", *p, *(p+1));    printf(\"\\n%d %d\", *q, *(q+1));    printf(\"\\n%d %d\", *r, *(r+1));  }",
+    "source_year": "JAN 2021",
+    "difficulty": "easy",
+    "section": "A",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T09:33:09.704Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688ddb55c9763e7fda1926cb"
+    },
+    "question_text": "Write a complete program to check whether the given string is a palindrome using  recursion.",
+    "source_year": "JAN 2021",
+    "difficulty": "medium",
+    "section": "A",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T09:33:09.704Z"
+    }
+  }
+]
