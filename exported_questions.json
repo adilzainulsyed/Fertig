@@ -414,5 +414,395 @@
     "date_added": {
       "$date": "2025-08-02T09:33:09.704Z"
     }
+  },
+  {
+    "_id": {
+      "$oid": "688e2f1e9749c6166047325d"
+    },
+    "question_text": "Create a structure as shown: struct DISTANCE {int feet; float inch;}; In main(), create pointers to the above struct and allocate memory using dynamic memory allocation. Read in and store values of distances d1and d2. Find the sum of the two distance values using function: void addDist (struct DISTANCE *d1, struct DISTANCE *d2, struct DISTANCE *result); Display the value of result in main(). 5",
+    "source_year": "JAN 2021",
+    "difficulty": "unknown",
+    "section": "A",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T15:30:38.754Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e2f1e9749c6166047325e"
+    },
+    "question_text": "Write a complete program to check whether the given string is a palindrome using recursion. 3",
+    "source_year": "JAN 2021",
+    "difficulty": "unknown",
+    "section": "A",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T15:30:38.754Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e2f1e9749c6166047325f"
+    },
+    "question_text": "Write the output of the following program: #include<stdio.h> void main() {  int num[5] = {3, 4, 6, 2, 1};  int *p = num;  int* q = num+2;  int* r = &num[1];  printf(\"\\n%d %d\", num[2], *(num+2));  printf(\"\\n%d %d\", *p, *(p+1));  printf(\"\\n%d %d\", *q, *(q+1));  printf(\"\\n%d %d\", *r, *(r+1)); } 2",
+    "source_year": "JAN 2021",
+    "difficulty": "unknown",
+    "section": "A",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T15:30:38.756Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e2f1e9749c61660473260"
+    },
+    "question_text": "Write a C program(Menu driven) to implement \u2018n\u2019 stacks using a single 1-D array containing \u2018m\u2019 locations with following prototypes, i) push(int i, int item, STACK *S); //pushing an item on ith stack ii) pop(int i, STACK *S);//poping an item from ith stack iii) display(S) // displaying all \u2018n\u2019 stack contents For the STACK structure, the members boundary[i] and top[i] represents boundary and top respectively for the ith stack along with element represented by other member. While pushing if the particular stack is full, and if there is space available elsewhere in the array of \u2018m\u2019 locations, it should shift the stacks so that space is allocated to the full stack. 5",
+    "source_year": "JAN 2021",
+    "difficulty": "unknown",
+    "section": "A",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T15:30:38.756Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e2f1e9749c61660473261"
+    },
+    "question_text": "Write a program to convert the given prefix expression to postfix equivalent 3 Instructions to Candidates: \uf076 Answer ALL FIVE questions. \uf076 Missing data may be suitably assumed. A Constituent unit of MAHE, Manipal  CSE 2152   Page 2 of 2",
+    "source_year": "JAN 2021",
+    "difficulty": "unknown",
+    "section": "A",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T15:30:38.757Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e2f1e9749c61660473262"
+    },
+    "question_text": "Write C functions for the following operations on ordinary queue using array with proper validation:       a) insert      b) Delete 2",
+    "source_year": "JAN 2021",
+    "difficulty": "unknown",
+    "section": "A",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T15:30:38.757Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e2f1e9749c61660473263"
+    },
+    "question_text": "Write a function \u201cpoly_add (poly_pointer, poly_pointer )\u201d to add two polynomials represented by two singly linked lists, A and B and return the new polynomial, C. 5",
+    "source_year": "JAN 2021",
+    "difficulty": "unknown",
+    "section": "B",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T15:30:38.757Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e2f1e9749c61660473264"
+    },
+    "question_text": "Give any six differences between Array and Linked List. 3",
+    "source_year": "JAN 2021",
+    "difficulty": "unknown",
+    "section": "B",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T15:30:38.758Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e2f1e9749c61660473265"
+    },
+    "question_text": "Write code to implement stack operations (push and pop) using singly linked list. 2",
+    "source_year": "JAN 2021",
+    "difficulty": "unknown",
+    "section": "B",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T15:30:38.758Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e2f1e9749c61660473266"
+    },
+    "question_text": "Consider all five possible binary search trees for the key set (a1, a2, a3) = (Creta, City, Punto). Find the optimal binary search tree (i) with equal probabilities, pi = qi = 1/7 for all i and j (ii) with p1=0.05, p2=0.5, p3=0.1, q0=0.05, q1=0.1, q2=0.15, q3=0.05 5",
+    "source_year": "JAN 2021",
+    "difficulty": "unknown",
+    "section": "B",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T15:30:38.758Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e2f1e9749c61660473267"
+    },
+    "question_text": "Given a prefix expression, write a function in C to create an expression tree. 3",
+    "source_year": "JAN 2021",
+    "difficulty": "unknown",
+    "section": "B",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T15:30:38.758Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e2f1e9749c61660473268"
+    },
+    "question_text": "Discuss with an example for each, the storage representations of binary trees using arrays and linked representations. 2",
+    "source_year": "JAN 2021",
+    "difficulty": "unknown",
+    "section": "B",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T15:30:38.759Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e2f1e9749c61660473269"
+    },
+    "question_text": "Write an iterative function in C to traverse a binary tree in post-order traversal showing the node structure of the stack. 4",
+    "source_year": "JAN 2021",
+    "difficulty": "unknown",
+    "section": "C",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T15:30:38.759Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e2f1e9749c6166047326a"
+    },
+    "question_text": "Write function \u201cstruct node* findunion (struct node *LLOne, struct node *LLTwo)\u201d which returns the union of two lists represented using singly linked list. 4",
+    "source_year": "JAN 2021",
+    "difficulty": "unknown",
+    "section": "C",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T15:30:38.759Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e2f1e9749c6166047326b"
+    },
+    "question_text": "Convert the given infix expression, A + B - C * D / (E \u2013 F + G) *H to prefix, by showing the Scanned Symbol, Action Taken, Stack Contents and Current Prefix in the form of a table, as shown below: Scanned symbol Action Taken Stack Contents Current Prefix 2",
+    "source_year": "JAN 2021",
+    "difficulty": "unknown",
+    "section": "C",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T15:30:38.760Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e2f1e9749c6166047325d"
+    },
+    "question_text": "Create a structure as shown: struct DISTANCE {int feet; float inch;}; In main(), create pointers to the above struct and allocate memory using dynamic memory allocation. Read in and store values of distances d1and d2. Find the sum of the two distance values using function: void addDist (struct DISTANCE *d1, struct DISTANCE *d2, struct DISTANCE *result); Display the value of result in main(). 5",
+    "source_year": "JAN 2021",
+    "difficulty": "unknown",
+    "section": "A",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T15:30:38.754Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e2f1e9749c6166047325e"
+    },
+    "question_text": "Write a complete program to check whether the given string is a palindrome using recursion. 3",
+    "source_year": "JAN 2021",
+    "difficulty": "unknown",
+    "section": "A",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T15:30:38.754Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e2f1e9749c6166047325f"
+    },
+    "question_text": "Write the output of the following program: #include<stdio.h> void main() {  int num[5] = {3, 4, 6, 2, 1};  int *p = num;  int* q = num+2;  int* r = &num[1];  printf(\"\\n%d %d\", num[2], *(num+2));  printf(\"\\n%d %d\", *p, *(p+1));  printf(\"\\n%d %d\", *q, *(q+1));  printf(\"\\n%d %d\", *r, *(r+1)); } 2",
+    "source_year": "JAN 2021",
+    "difficulty": "unknown",
+    "section": "A",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T15:30:38.756Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e2f1e9749c61660473260"
+    },
+    "question_text": "Write a C program(Menu driven) to implement \u2018n\u2019 stacks using a single 1-D array containing \u2018m\u2019 locations with following prototypes, i) push(int i, int item, STACK *S); //pushing an item on ith stack ii) pop(int i, STACK *S);//poping an item from ith stack iii) display(S) // displaying all \u2018n\u2019 stack contents For the STACK structure, the members boundary[i] and top[i] represents boundary and top respectively for the ith stack along with element represented by other member. While pushing if the particular stack is full, and if there is space available elsewhere in the array of \u2018m\u2019 locations, it should shift the stacks so that space is allocated to the full stack. 5",
+    "source_year": "JAN 2021",
+    "difficulty": "unknown",
+    "section": "A",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T15:30:38.756Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e2f1e9749c61660473261"
+    },
+    "question_text": "Write a program to convert the given prefix expression to postfix equivalent 3 Instructions to Candidates: \uf076 Answer ALL FIVE questions. \uf076 Missing data may be suitably assumed. A Constituent unit of MAHE, Manipal  CSE 2152   Page 2 of 2",
+    "source_year": "JAN 2021",
+    "difficulty": "unknown",
+    "section": "A",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T15:30:38.757Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e2f1e9749c61660473262"
+    },
+    "question_text": "Write C functions for the following operations on ordinary queue using array with proper validation:       a) insert      b) Delete 2",
+    "source_year": "JAN 2021",
+    "difficulty": "unknown",
+    "section": "A",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T15:30:38.757Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e2f1e9749c61660473263"
+    },
+    "question_text": "Write a function \u201cpoly_add (poly_pointer, poly_pointer )\u201d to add two polynomials represented by two singly linked lists, A and B and return the new polynomial, C. 5",
+    "source_year": "JAN 2021",
+    "difficulty": "unknown",
+    "section": "B",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T15:30:38.757Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e2f1e9749c61660473264"
+    },
+    "question_text": "Give any six differences between Array and Linked List. 3",
+    "source_year": "JAN 2021",
+    "difficulty": "unknown",
+    "section": "B",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T15:30:38.758Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e2f1e9749c61660473265"
+    },
+    "question_text": "Write code to implement stack operations (push and pop) using singly linked list. 2",
+    "source_year": "JAN 2021",
+    "difficulty": "unknown",
+    "section": "B",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T15:30:38.758Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e2f1e9749c61660473266"
+    },
+    "question_text": "Consider all five possible binary search trees for the key set (a1, a2, a3) = (Creta, City, Punto). Find the optimal binary search tree (i) with equal probabilities, pi = qi = 1/7 for all i and j (ii) with p1=0.05, p2=0.5, p3=0.1, q0=0.05, q1=0.1, q2=0.15, q3=0.05 5",
+    "source_year": "JAN 2021",
+    "difficulty": "unknown",
+    "section": "B",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T15:30:38.758Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e2f1e9749c61660473267"
+    },
+    "question_text": "Given a prefix expression, write a function in C to create an expression tree. 3",
+    "source_year": "JAN 2021",
+    "difficulty": "unknown",
+    "section": "B",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T15:30:38.758Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e2f1e9749c61660473268"
+    },
+    "question_text": "Discuss with an example for each, the storage representations of binary trees using arrays and linked representations. 2",
+    "source_year": "JAN 2021",
+    "difficulty": "unknown",
+    "section": "B",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T15:30:38.759Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e2f1e9749c61660473269"
+    },
+    "question_text": "Write an iterative function in C to traverse a binary tree in post-order traversal showing the node structure of the stack. 4",
+    "source_year": "JAN 2021",
+    "difficulty": "unknown",
+    "section": "C",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T15:30:38.759Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e2f1e9749c6166047326a"
+    },
+    "question_text": "Write function \u201cstruct node* findunion (struct node *LLOne, struct node *LLTwo)\u201d which returns the union of two lists represented using singly linked list. 4",
+    "source_year": "JAN 2021",
+    "difficulty": "unknown",
+    "section": "C",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T15:30:38.759Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "688e2f1e9749c6166047326b"
+    },
+    "question_text": "Convert the given infix expression, A + B - C * D / (E \u2013 F + G) *H to prefix, by showing the Scanned Symbol, Action Taken, Stack Contents and Current Prefix in the form of a table, as shown below: Scanned symbol Action Taken Stack Contents Current Prefix 2",
+    "source_year": "JAN 2021",
+    "difficulty": "unknown",
+    "section": "C",
+    "tags": [],
+    "date_added": {
+      "$date": "2025-08-02T15:30:38.760Z"
+    }
   }
 ]

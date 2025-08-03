@@ -1,109 +1,87 @@
-from pymongo import MongoClient
-from datetime import datetime
 import fitz  # PyMuPDF
 import re
+import json
+from datetime import datetime
 
-# === MongoDB Connection ===
-client = MongoClient("mongodb+srv://nameisadil02:PUQKGR8RadHdzQVE@fertig.0pdwrik.mongodb.net/")
-db = client["fertig"]
-collection = db["quebank"]
+def extract_questions_from_pdf(pdf_path):
+    doc = fitz.open(pdf_path)
+    text = ""
+    for page in doc:
+        text += page.get_text()
 
-# === Load and extract text from PDF ===
-pdf_path = "data/raw papers/Data Structures & Applications (CSE_2152).pdf"
-doc = fitz.open(pdf_path)
-text = "\n".join(page.get_text() for page in doc)
+    metadata = {}
 
-# === Extract source year from header ===
-year_match = re.search(r'END SEMESTER.*?(\w+\s+\d{4})', text)
-source_year = year_match.group(1).strip() if year_match else "Unknown"
+    # Department
+    metadata["department"] = "B.Tech"
 
-# === Difficulty mapping ===
-def infer_difficulty(marks):
-    if marks == 1:
-        return "very easy"
-    elif marks == 2:
-        return "easy"
-    elif marks == 3:
-        return "medium"
-    elif marks in [4, 5]:
-        return "hard"
-    else:
-        return "unknown"
+    # Subject
+    subject_match = re.search(r"SUBJECT:\s*(.*?)(\[|\()", text, re.IGNORECASE)
+    metadata["subject"] = subject_match.group(1).strip().title() if subject_match else "Unknown"
 
-def get_section(label):
-    if label.startswith("1") or label.startswith("2"):
-        return "A"
-    elif label.startswith("3") or label.startswith("4"):
-        return "B"
-    else:
-        return "C"
+    # Semester & Academic Year
+    sem_match = re.search(r"III SEMESTER", text, re.IGNORECASE)
+    metadata["acad_year"] = 2 if sem_match else "Unknown"
 
-# === Custom robust question extraction ===
-lines = text.splitlines()
-questions = []
-current_q = None
+    # Exam Type
+    metadata["exam_type"] = "end" if "END SEMESTER" in text.upper() else "mid"
 
-for i, line in enumerate(lines):
-    # Match question start: 1A. or 2B. etc.
-    qstart = re.match(r'^(\d+[A-C]?)\.\s*(.*)', line.strip())
-    if qstart:
-        if current_q:  # Save the previous question before starting new
-            questions.append(current_q)
-        qnum = qstart.group(1)
-        qtext = qstart.group(2).strip()
-        current_q = {
-            "qnum": qnum,
-            "question_lines": [qtext]
+    # Source Year
+    year_match = re.search(r"(JAN|DECEMBER)\s+(\d{4})", text, re.IGNORECASE)
+    metadata["source_year"] = int(year_match.group(2)) if year_match else "Unknown"
+
+    # Date Added
+    metadata["date_added"] = datetime.now().strftime("%Y-%m-%d")
+
+    # Extract questions (e.g., 1A., 1B., etc.)
+    pattern = re.compile(r"(\d+[A-Z]?\.\s+)(.*?)(?=(\d+[A-Z]?\.\s+)|$)", re.DOTALL)
+    matches = pattern.findall(text)
+
+    questions = []
+    for match in matches:
+        qtext = match[1].strip()
+        # Extract marks if mentioned
+        marks_match = re.search(r"\((\d+)\)", qtext)
+        marks = int(marks_match.group(1)) if marks_match else None
+
+        # Classify difficulty
+        if marks == 1:
+            difficulty = "very easy"
+        elif marks == 2:
+            difficulty = "easy"
+        elif marks == 3:
+            difficulty = "medium"
+        elif marks in [4, 5]:
+            difficulty = "hard"
+        else:
+            difficulty = "unknown"
+
+        question_entry = {
+            "department": metadata["department"],
+            "acad_year": metadata["acad_year"],
+            "exam_type": metadata["exam_type"],
+            "subject": metadata["subject"],
+            "question_text": qtext,
+            "source_year": metadata["source_year"],
+            "difficulty": difficulty,
+            "date_added": metadata["date_added"]
         }
-    elif current_q:
-        current_q["question_lines"].append(line.strip())
+        questions.append(question_entry)
 
-# Append last question
-if current_q:
-    questions.append(current_q)
+    return questions
 
-# === Extract final fields: question_text, marks, etc. ===
-final_questions = []
 
-for q in questions:
-    full_text = " ".join(q["question_lines"]).strip()
+# Process both uploaded PDFs
+pdf_files = [
+    "data/raw papers/Data Structures & Applications (CSE_2152).pdf"
+]
 
-    # Try to extract marks from (x)
-    mark_match = re.search(r'\((\d+)\)', full_text)
-    marks = int(mark_match.group(1)) if mark_match else 0
+all_questions = []
+for pdf_file in pdf_files:
+    all_questions.extend(extract_questions_from_pdf(pdf_file))
 
-    # Remove marks from question text
-    clean_text = re.sub(r'\(\d+\)', '', full_text).strip()
+# Dump to JSON
+output_file = "data/proccessed papers/exported_questions.json"
+with open(output_file, "w", encoding="utf-8") as f:
+    json.dump(all_questions, f, indent=4)
 
-    # Check for duplicates
-    if collection.find_one({"question_text": clean_text}):
-        continue  # Skip if already exists
-
-    question_data = {
-        "question_text": clean_text,
-        "source_year": source_year,
-        "difficulty": infer_difficulty(marks),
-        "section": get_section(q["qnum"]),
-        "tags": [],
-        "date_added": datetime.utcnow()
-    }
-
-    final_questions.append(question_data)
-
-# === Insert non-duplicates ===
-if final_questions:
-    result = collection.insert_many(final_questions)
-    print(f"✅ Inserted {len(result.inserted_ids)} new questions.")
-else:
-    print("⚠️ No new questions to insert.")
-
-# === Sample fetch ===
-def get_mock_questions(section="A", limit=3):
-    return list(collection.aggregate([
-        {"$match": {"section": section}},
-        {"$sample": {"size": limit}}
-    ]))
-
-mock = get_mock_questions("A")
-for q in mock:
-    print("📌", q["question_text"])
+print(f"Extracted {len(all_questions)} questions and saved to {output_file}")
