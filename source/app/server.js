@@ -1,14 +1,31 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
 const path = require('path');
 const PORT = process.env.PORT ||5000;
-//making a base path
+
+//cross origin resource sharing
+const whitelist = ['https://127.0.0.1:5500','https://localhost:5000'];
+const corsoptions = {
+    origin: (origin,callback) => {
+        if (whitelist.indexOf(origin)!==-1 || !origin){
+            callback(null,true); 
+        }else{
+            callback(new Error('Not allowed by CORS'))
+        }
+    },
+    optionsSuccessStatus:200
+}
+app.use(cors(corsoptions));
+
+
 //built in middleware for handling encoded data
 app.use(express.urlencoded({extended:false}));
 
 //built in middleware for handling json files
 app.use(express.json());
 
+//making a base path
 const basePath = path.join(__dirname, '../..');
 console.log(basePath)
 //built in middle ware for handling static files
@@ -32,8 +49,12 @@ app.get(/^\/$|\/index(.html)?/,(req,res)=>{
     res.sendFile(path.join(basePath,'views','index.html'));
 });
 
-
+app.use(function(err,req,res,next){
+    console.error(err.stack)
+    res.status(500).send(err.message)
+})
 
 
 app.listen(PORT,()=>console.log(`Server is running on port ${PORT}`));
-//comment
+
+
