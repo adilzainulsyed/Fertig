@@ -1,83 +1,87 @@
-from pymongo import MongoClient
-from datetime import datetime
 import fitz  # PyMuPDF
 import re
+import json
+from datetime import datetime
 
-# === MongoDB Connection ===
-client = MongoClient("mongodb+srv://nameisadil02:PUQKGR8RadHdzQVE@fertig.0pdwrik.mongodb.net/")
-db = client["fertig"]
-collection = db["quebank"]
+def extract_questions_from_pdf(pdf_path):
+    doc = fitz.open(pdf_path)
+    text = ""
+    for page in doc:
+        text += page.get_text()
 
-# === Load and extract text from PDF ===
-pdf_path = "data/raw papers/Data Structures & Applications (CSE_2152).pdf"
-doc = fitz.open(pdf_path)
-text = "\n".join(page.get_text() for page in doc)
+    metadata = {}
 
-# === Extract source year from header ===
-year_match = re.search(r'END SEMESTER EXAMINATIONS,\s*(\w+ \d{4})', text)
-source_year = year_match.group(1) if year_match else "Unknown"
+    # Department
+    metadata["department"] = "B.Tech"
 
-# === Map marks to difficulty ===
-def infer_difficulty(marks):
-    if marks == 1:
-        return "very easy"
-    elif marks == 2:
-        return "easy"
-    elif marks == 3:
-        return "medium"
-    elif marks in [4, 5]:
-        return "hard"
-    else:
-        return "unknown"
+    # Subject
+    subject_match = re.search(r"SUBJECT:\s*(.*?)(\[|\()", text, re.IGNORECASE)
+    metadata["subject"] = subject_match.group(1).strip().title() if subject_match else "Unknown"
 
-# === Guess section by question label (1A, 2B, etc.) ===
-def get_section(label):
-    if label.startswith("1") or label.startswith("2"):
-        return "A"
-    elif label.startswith("3") or label.startswith("4"):
-        return "B"
-    else:
-        return "C"
+    # Semester & Academic Year
+    sem_match = re.search(r"III SEMESTER", text, re.IGNORECASE)
+    metadata["acad_year"] = 2 if sem_match else "Unknown"
 
-# === Extract questions using regex ===
-pattern = re.compile(
-    r"(?P<qnum>\d+[A-C]?)\.\s+(?P<qtext>.*?)(?P<marks>\d{1,2})\s*(?=\n\d+[A-C]?\.\s|\Z)", 
-    re.DOTALL
-)
+    # Exam Type
+    metadata["exam_type"] = "end" if "END SEMESTER" in text.upper() else "mid"
 
-questions = []
+    # Source Year
+    year_match = re.search(r"(JAN|DECEMBER)\s+(\d{4})", text, re.IGNORECASE)
+    metadata["source_year"] = int(year_match.group(2)) if year_match else "Unknown"
 
-for match in pattern.finditer(text):
-    qnum = match.group("qnum").strip()
-    qtext = match.group("qtext").strip().replace('\n', ' ')
-    marks = int(match.group("marks").strip())
+    # Date Added
+    metadata["date_added"] = datetime.now().strftime("%Y-%m-%d")
 
-    question_data = {
-        "question_text": qtext,
-        "source_year": source_year,
-        "difficulty": infer_difficulty(marks),
-        "section": get_section(qnum),
-        "tags": [],
-        "date_added": datetime.utcnow()
-    }
+    # Extract questions (e.g., 1A., 1B., etc.)
+    pattern = re.compile(r"(\d+[A-Z]?\.\s+)(.*?)(?=(\d+[A-Z]?\.\s+)|$)", re.DOTALL)
+    matches = pattern.findall(text)
 
-    questions.append(question_data)
+    questions = []
+    for match in matches:
+        qtext = match[1].strip()
+        # Extract marks if mentioned
+        marks_match = re.search(r"\((\d+)\)", qtext)
+        marks = int(marks_match.group(1)) if marks_match else None
 
-# === Insert into MongoDB ===
-def insert_bulk(questions_list):
-    result = collection.insert_many(questions_list)
-    print("✅ Inserted", len(result.inserted_ids), "questions.")
+        # Classify difficulty
+        if marks == 1:
+            difficulty = "very easy"
+        elif marks == 2:
+            difficulty = "easy"
+        elif marks == 3:
+            difficulty = "medium"
+        elif marks in [4, 5]:
+            difficulty = "hard"
+        else:
+            difficulty = "unknown"
 
-def get_mock_questions(section="A", limit=5):
-    cursor = collection.aggregate([
-        {"$match": {"section": section}},
-        {"$sample": {"size": limit}}
-    ])
-    return list(cursor)
+        question_entry = {
+            "department": metadata["department"],
+            "acad_year": metadata["acad_year"],
+            "exam_type": metadata["exam_type"],
+            "subject": metadata["subject"],
+            "question_text": qtext,
+            "source_year": metadata["source_year"],
+            "difficulty": difficulty,
+            "date_added": metadata["date_added"]
+        }
+        questions.append(question_entry)
 
-# === Run insertion and sample retrieval ===
-insert_bulk(questions)
+    return questions
 
-mock = get_mock_questions("A", 3)
-for q in mock:
-    print("📌", q["question_text"])
+
+# Process both uploaded PDFs
+pdf_files = [
+    "data/raw papers/Data Structures & Applications (CSE_2152).pdf"
+]
+
+all_questions = []
+for pdf_file in pdf_files:
+    all_questions.extend(extract_questions_from_pdf(pdf_file))
+
+# Dump to JSON
+output_file = "data/proccessed papers/exported_questions.json"
+with open(output_file, "w", encoding="utf-8") as f:
+    json.dump(all_questions, f, indent=4)
+
+print(f"Extracted {len(all_questions)} questions and saved to {output_file}")
