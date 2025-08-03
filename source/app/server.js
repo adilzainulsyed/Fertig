@@ -22,6 +22,13 @@ app.get(/^\/$|\/index(.html)?/,(req,res)=>{
 app.get(/^\/$|\/login(.html)?/,(req,res)=>{
     res.sendFile(path.join(basePath,'views','login.html'));
 });
+app.get(/^\/$|\/ds(.html)?/,(req,res)=>{
+    res.sendFile(path.join(basePath,'views','ds.html'));
+});
+app.get(/^\/$|\/signup(.html)?/,(req,res)=>{
+    res.sendFile(path.join(basePath,'views','signup.html'));
+});
+
 
 
 app.listen(PORT,()=>console.log(`Server is running on port ${PORT}`));
