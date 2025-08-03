@@ -31,23 +31,11 @@ console.log(basePath)
 //built in middle ware for handling static files
 app.use(express.static(path.join(basePath,'/public')));
 
+app.use('/', require('../routes/root'));
+
+app.use('/subdir',require('../routes/subdir'));
 
 
-app.get(/^\/$|\/home(.html)?/,(req,res)=>{
-    res.sendFile(path.join(basePath,'views','home.html'));
-});
-app.get(/^\/$|\/login(.html)?/,(req,res)=>{
-    res.sendFile(path.join(basePath,'views','login.html'));
-});
-app.get(/^\/$|\/ds(.html)?/,(req,res)=>{
-    res.sendFile(path.join(basePath,'views','ds.html'));
-});
-app.get(/^\/$|\/signup(.html)?/,(req,res)=>{
-    res.sendFile(path.join(basePath,'views','signup.html'));
-});
-app.get(/^\/$|\/index(.html)?/,(req,res)=>{
-    res.sendFile(path.join(basePath,'views','index.html'));
-});
 
 app.use(function(err,req,res,next){
     console.error(err.stack)
