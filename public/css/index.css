@@ -1,0 +1,198 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  background: #f5f7fb;
+  color: #1e1e2f;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background: #003049;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 20px;
+  position: fixed;
+  height: 100%;
+}
+
+.sidebar .logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fcbf49;
+  margin-bottom: 40px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+}
+
+.sidebar ul li {
+  padding: 14px 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+.sidebar ul li.active,
+.sidebar ul li:hover {
+  background: #fcbf49;
+  color: #003049;
+  font-weight: bold;
+}
+
+.sidebar ul li span.coming-soon {
+  font-size: 12px;
+  background: #ffba08;
+  color: black;
+  padding: 2px 6px;
+  border-radius: 6px;
+  margin-left: 8px;
+}
+
+/* Main Content */
+.main {
+  margin-left: 260px;
+  flex: 1;
+  padding: 40px 50px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.welcome-text {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.year-indicator {
+  font-size: 16px;
+  color: #6c757d;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #14213d;
+  margin-bottom: 15px;
+}
+
+.sub-section-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  color: #003049;
+}
+
+/* Warning */
+.year-access-warning {
+  color: #b00020;
+  background-color: #ffdad4;
+  border-left: 4px solid #b00020;
+  padding: 10px 15px;
+  margin: 20px 0;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+/* Subjects */
+.subject-scroll {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.subject-card {
+  background: white;
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  flex: 1 1 200px;
+  max-width: 250px;
+}
+
+.subject-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  background: #e0f4ff;
+  color: #003049;
+}
+
+/* Year Switch Buttons */
+#other-year-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.year-switch-btn {
+  background-color: #003049;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.year-switch-btn:hover {
+  background-color: #f77f00;
+  color: black;
+}
+
+/* Logout */
+#logout {
+  margin-top: auto;
+  font-weight: 600;
+  color: #ff6b6b;
+  text-align: left;
+  padding-top: 20px;
+  cursor: pointer;
+}
+
+#logout:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .main {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .subject-card {
+    flex: 1 1 100%;
+  }
+
+  .section-title, .sub-section-title {
+    font-size: 20px;
+  }
+}

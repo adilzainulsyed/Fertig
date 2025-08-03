@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel ="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fertig | Subject Dashboard</title>
+  <link rel="stylesheet" href="css/index.css" />
 </head>
 <body>
-    <h1>Index for now</h1>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="logo">Fertig</div>
+    <ul>
+      <li class="active">Home</li>
+      <li>Tests <span class="coming-soon">Soon</span></li>
+      <li>Chatbot <span class="coming-soon">Soon</span></li>
+      <li id="logout" style="color: #ff4d4d; cursor: pointer;">Logout</li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main" id="main-content">
+    <div class="header">
+      <div class="welcome-text">Welcome 👋</div>
+      <div class="year-indicator" id="year-indicator"></div>
+    </div>
+
+    <div class="section-title" id="subject-year-title">Subjects</div>
+
+    <div class="subject-scroll" id="subject-list">
+      <!-- Populated by JS: subject cards -->
+    </div>
+
+    <div class="sub-section-title">Explore Other Year Subjects</div>
+    <div id="other-year-buttons" style="margin-top: 10px;">
+      <!-- Populated by JS: year buttons -->
+    </div>
+  </div>
+
+  <script src="js/index.js"></script>
 </body>
 </html>
