@@ -16,8 +16,8 @@ app.use(express.static(path.join(basePath,'/public')));
 
 
 
-app.get(/^\/$|\/index(.html)?/,(req,res)=>{
-    res.sendFile(path.join(basePath,'views','index.html'));
+app.get(/^\/$|\/home(.html)?/,(req,res)=>{
+    res.sendFile(path.join(basePath,'views','home.html'));
 });
 app.get(/^\/$|\/login(.html)?/,(req,res)=>{
     res.sendFile(path.join(basePath,'views','login.html'));
@@ -28,6 +28,10 @@ app.get(/^\/$|\/ds(.html)?/,(req,res)=>{
 app.get(/^\/$|\/signup(.html)?/,(req,res)=>{
     res.sendFile(path.join(basePath,'views','signup.html'));
 });
+app.get(/^\/$|\/index(.html)?/,(req,res)=>{
+    res.sendFile(path.join(basePath,'views','index.html'));
+});
+
 
 
 
