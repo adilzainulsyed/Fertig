@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Data Structures – PYQs</title>
+  <link rel="stylesheet" href="css/index.css" />
+  <style>
+    .difficulty-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+
+    .difficulty-buttons button {
+      padding: 0.6rem 1.2rem;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 8px;
+      border: none;
+      background-color: #006E90;
+      color: white;
+      transition: 0.3s;
+    }
+
+    .difficulty-buttons button:hover {
+      background-color: #004f66;
+    }
+
+    .question-card {
+      background: #f9f9f9;
+      padding: 1rem;
+      margin: 1rem auto;
+      max-width: 800px;
+      border-left: 4px solid #41BBD9;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <h1>📘 Data Structures – PYQs</h1>
+
+    <div class="difficulty-buttons">
+      <button onclick="filterQuestions('easy')">Easy</button>
+      <button onclick="filterQuestions('medium')">Medium</button>
+      <button onclick="filterQuestions('hard')">Hard</button>
+    </div>
+
+    <div id="question-list"></div>
+  </div>
+
+  <script src="js/ds.js"></script>
+</body>
+</html>
