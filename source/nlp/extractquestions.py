@@ -1,121 +1,142 @@
 import fitz  # PyMuPDF
 import re
-import json
-from datetime import datetime
 import os
+from datetime import datetime
+import json
+from bson import json_util
+import uuid
 
-def clean_text(text):
-    """Removes unwanted non-question content from raw PDF text."""
-    patterns_to_remove = [
-        r"Instructions to Candidates:.*?(?=\n\d+[A-Z]?\.|\Z)",
-        r"CSE \d{4}",
-        r"Page \d+ of \d+",
-        r"\uf076",
-        r"",
-        r"\n\s*\n",
-    ]
-    for pat in patterns_to_remove:
-        text = re.sub(pat, "", text, flags=re.DOTALL | re.IGNORECASE)
-    return text.strip()
+# === Settings ===
+pdf_path = "data/raw papers/Engineer Mathematics(MAT 2155).pdf"
+output_json_path = "data/processed papers/exported_questions.json"
+images_folder = "question_images"
+os.makedirs(images_folder, exist_ok=True)
 
-def extract_questions_from_pdf(pdf_path, existing_question_texts):
-    """Extracts structured questions from a given PDF file."""
-    doc = fitz.open(pdf_path)
-    text = "".join([page.get_text() for page in doc])
-    text = clean_text(text)
-
-    metadata = {
-        "department": "B.Tech",
-        "date_added": datetime.now().strftime("%Y-%m-%d")
-    }
-
-    subject_match = re.search(r"SUBJECT:\s*(.*?)(\[|\()", text, re.IGNORECASE)
-    metadata["subject"] = subject_match.group(1).strip().title() if subject_match else "Unknown"
-
-    sem_match = re.search(r"III SEMESTER", text, re.IGNORECASE)
-    metadata["acad_year"] = 2 if sem_match else "Unknown"
-
-    metadata["exam_type"] = "end" if "END SEMESTER" in text.upper() else "mid"
-
-    year_match = re.search(r"(JAN|DECEMBER)\s+(\d{4})", text, re.IGNORECASE)
-    metadata["source_year"] = int(year_match.group(2)) if year_match else "Unknown"
-
-    # Improved regex to match marks inside (), [], or standalone
-    pattern = re.compile(
-        r"(\d+[A-Z]?\.)\s+(.*?)(?:\(|\[)?(\d{1,2})(?:\)|\])\s*(?=\n\d+[A-Z]?\.|\n[A-Z]?\d+\.\s+|\Z)",
-        re.DOTALL
-    )
-
-    matches = pattern.findall(text)
-    questions = []
-
-    for match in matches:
-        qtext = match[1].strip()
-        norm_text = re.sub(r"\s+", " ", qtext.lower())
-
-        if norm_text in existing_question_texts:
-            continue  # Skip duplicate
-
-        try:
-            marks = int(match[2])
-        except ValueError:
-            marks = None
-
-        if marks == 1:
-            difficulty = "very easy"
-        elif marks == 2:
-            difficulty = "easy"
-        elif marks == 3:
-            difficulty = "medium"
-        elif marks in [4, 5]:
-            difficulty = "hard"
-        else:
-            difficulty = "unknown"
-
-        question_entry = {
-            "department": metadata["department"],
-            "acad_year": metadata["acad_year"],
-            "exam_type": metadata["exam_type"],
-            "subject": metadata["subject"],
-            "question_text": qtext,
-            "source_year": metadata["source_year"],
-            "difficulty": difficulty,
-            "date_added": metadata["date_added"]
-        }
-        questions.append(question_entry)
-        existing_question_texts.add(norm_text)
-
-    print(f"Extracted {len(questions)} new questions from: {os.path.basename(pdf_path)}")
-    return questions
-
-# === File Output ===
-output_file = "data/processed papers/exported_questions.json"
-os.makedirs(os.path.dirname(output_file), exist_ok=True)
-
-# Load previous data (append mode)
-if os.path.exists(output_file):
-    with open(output_file, "r", encoding="utf-8") as f:
-        existing_data = json.load(f)
-else:
+# === Load existing JSON ===
+try:
+    with open(output_json_path, "r", encoding="utf-8") as f:
+        existing_data = json_util.loads(f.read())
+except FileNotFoundError:
     existing_data = []
 
-# Prepare set for duplicate detection
-existing_question_texts = set(
-    re.sub(r"\s+", " ", q["question_text"].lower()) for q in existing_data
-)
+existing_qtexts = set(doc["question_text"] for doc in existing_data)
 
-# Process each PDF
-pdf_files = [
-    "data/raw papers/Data Structures (2103)RCS(Makeup).pdf",
-    "data/raw papers/Data Structures & Applications (CSE_2152).pdf"
-]
+# === Open PDF ===
+doc = fitz.open(pdf_path)
+full_text = "\n".join(page.get_text() for page in doc)
 
-for pdf in pdf_files:
-    new_questions = extract_questions_from_pdf(pdf, existing_question_texts)
-    existing_data.extend(new_questions)
+# === Extract metadata ===
+year_match = re.search(r'FINAL EXAMINATIONS.*?(\w+\s+\d{4})', full_text)
+source_year = year_match.group(1).strip() if year_match else None
 
-# Write updated data
-with open(output_file, "w", encoding="utf-8") as f:
-    json.dump(existing_data, f, indent=4, ensure_ascii=False)
+subject_match = re.search(r'SUBJECT:\s*([^\n]+)', full_text)
+subject = subject_match.group(1).strip() if subject_match else None
 
-print(f"\n✅ All questions saved. Total now: {len(existing_data)} → {output_file}")
+exam_type_match = re.search(r'FINAL EXAMINATIONS|MAKEUP EXAMINATIONS|END SEMESTER EXAMINATIONS', full_text)
+exam_type = exam_type_match.group(0).strip() if exam_type_match else None
+
+department_match = re.search(r'III SEMESTER\s*B\.TECH\.\s*\(([^)]+)\)', full_text)
+department = department_match.group(1).strip() if department_match else None
+
+# === Difficulty Mapping ===
+def infer_difficulty(marks):
+    if marks == 1:
+        return "very easy"
+    elif marks == 2:
+        return "easy"
+    elif marks == 3:
+        return "medium"
+    elif marks in [4, 5, 6, 7, 8, 9]:
+        return "hard"
+    else:
+        return "unknown"
+
+# === Section guessing ===
+def get_section(label):
+    if label.startswith("1") or label.startswith("2"):
+        return "A"
+    elif label.startswith("3") or label.startswith("4"):
+        return "B"
+    else:
+        return "C"
+
+# === Extract Questions ===
+lines = full_text.splitlines()
+questions = []
+current_q = None
+
+for line in lines:
+    qstart = re.match(r'^(\d+[A-C]?)\.\s*(.*)', line.strip())
+    if qstart:
+        if current_q:
+            questions.append(current_q)
+        qnum = qstart.group(1)
+        qtext = qstart.group(2).strip()
+        current_q = {"qnum": qnum, "question_lines": [qtext]}
+    elif current_q:
+        current_q["question_lines"].append(line.strip())
+
+if current_q:
+    questions.append(current_q)
+
+# === Process questions and extract images ===
+new_questions = []
+
+for page_num, page in enumerate(doc):
+    page_images = page.get_images(full=True)
+    for q in questions:
+        full_text_q = " ".join(q["question_lines"]).strip()
+
+        # Extract marks like (4), (4+3), (4+3+3)
+        mark_match = re.search(r'\((\d+(?:\+\d+)*)\)', full_text_q)
+        marks = 0
+        if mark_match:
+            try:
+                marks = sum(map(int, mark_match.group(1).split('+')))
+            except:
+                pass
+
+        clean_text = re.sub(r'\(\d+(?:\+\d+)*\)', '', full_text_q).strip()
+
+        if clean_text in existing_qtexts:
+            continue  # skip duplicates
+
+        # Check for images but skip logo-like images
+        image_paths = []
+        if page_images:
+            for img_index, img in enumerate(page_images, start=1):
+                xref = img[0]
+                pix = fitz.Pixmap(doc, xref)
+
+                # Skip images that are too small or look like the logo
+                if pix.width > 100 and pix.height > 50 and not (300 < pix.width < 900 and 50 < pix.height < 200):
+                    img_filename = f"{uuid.uuid4().hex}.png"
+                    img_path = os.path.join(images_folder, img_filename)
+                    if pix.n < 5:
+                        pix.save(img_path)
+                    else:
+                        pix = fitz.Pixmap(fitz.csRGB, pix)
+                        pix.save(img_path)
+                    image_paths.append(img_path)
+                pix = None
+
+        question_data = {
+            "department": department,
+            "acad_year": None,
+            "exam_type": exam_type,
+            "subject": subject,
+            "question_text": clean_text,
+            "source_year": source_year,
+            "difficulty": infer_difficulty(marks),
+            "date_added": datetime.utcnow(),
+            "images": image_paths
+        }
+
+        new_questions.append(question_data)
+
+# === Save to JSON ===
+combined_data = existing_data + new_questions
+with open(output_json_path, "w", encoding="utf-8") as f:
+    f.write(json_util.dumps(combined_data, indent=2))
+
+print(f"✅ Extracted {len(new_questions)} new questions and saved images to '{images_folder}'")
