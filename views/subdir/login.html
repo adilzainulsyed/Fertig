@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login | Fertig</title>
+  <link rel="stylesheet" href="assets/css/theme.css" />
+  <link rel="stylesheet" href="assets/css/auth.css" />
+</head>
+<body>
+  <main class="auth-hero">
+    <a class="brand-chip" href="home.html" aria-label="Fertig">
+      <span class="logo">F</span><span>Fertig</span>
+    </a>
+
+    <section class="card" aria-labelledby="title">
+      <h1 id="title">Welcome back</h1>
+      <p class="sub">Log in to access your subject dashboard.</p>
+      <p id="welcome-message" class="flash" aria-live="polite"></p>
+
+      <form id="loginForm" novalidate autocomplete="off" autocapitalize="off" spellcheck="false">
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" type="email" inputmode="email" placeholder="you@college.com" />
+          <small class="err" id="err-email"></small>
+        </div>
+
+        <div class="field">
+          <label for="password">Password</label>
+          <input id="password" type="password" placeholder="••••••••" />
+          <small class="err" id="err-password"></small>
+        </div>
+
+        <button class="cta" type="submit" id="login-btn">Log in</button>
+      </form>
+
+      <p class="switch">New here? <a href="signup.html">Create an account</a></p>
+    </section>
+  </main>
+
+  <script src="assets/js/utils.js"></script>
+  <script src="assets/js/login.js"></script>
+</body>
+</html>
