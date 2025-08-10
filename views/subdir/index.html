@@ -1,11 +1,93 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fertig | Subject Dashboard</title>
+
+  <!-- Shared palette/tokens -->
+  <link rel="stylesheet" href="assets/css/theme.css" />
+  <!-- Page styles -->
+  <link rel="stylesheet" href="assets/css/index.css" />
 </head>
 <body>
-    <h1>test</h1>
+  <!-- Top App Bar -->
+  <header class="appbar">
+    <div class="appbar-row">
+      <div class="appbar-center">
+        <div id="welcome-name" class="appbar-title">Hey, Student</div>
+      </div>
+
+      <div class="appbar-right">
+        <span id="meta-chip" class="meta-chip">Engineering • 2nd Year • CSE</span>
+
+        <div class="avatar" id="avatarMenu" aria-haspopup="true" aria-expanded="false">
+          <span id="avatarInit">U</span>
+          <div class="menu" id="userMenu" role="menu">
+            <a href="#profile" role="menuitem">Profile</a>
+            <a href="#help" role="menuitem">Help</a>
+            <button id="logout" role="menuitem">Logout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sidebar -->
+  <aside class="sidenav" id="sidenav">
+    <div class="side-head">
+      <a class="brand-mini" href="index.html" aria-label="Fertig">
+        <span class="brand-logo">F</span>
+        <span class="brand-name">Fertig</span>
+      </a>
+      <!-- Mobile-only toggle -->
+      <button class="side-toggle" id="sidebarToggle" aria-label="Close menu">✕</button>
+    </div>
+
+    <div class="side-section">
+      <div class="side-label">Main</div>
+      <nav class="sidenav-nav">
+        <a class="item active" href="index.html">Home</a>
+        <a class="item" href="#tests">Tests <span class="soon">Soon</span></a>
+        <a class="item" href="#chatbot">Chatbot <span class="soon">Soon</span></a>
+      </nav>
+    </div>
+
+    <div class="sidenav-foot">
+      <div class="tip muted">All subjects, one place.</div>
+    </div>
+  </aside>
+
+  <!-- Main -->
+  <main class="page" id="page">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="container">
+        <h1 class="hero-title">Your chapter‑wise PYQ hub</h1>
+        <p class="hero-sub">Browse subjects by year. Difficulty tags and solutions coming next.</p>
+      </div>
+    </section>
+
+    <!-- Year tabs + Back -->
+    <section class="container section">
+      <div class="year-switcher">
+        <div class="year-tabs" id="yearTabs" role="tablist" aria-label="Years"></div>
+        <button id="back-home-btn" class="link-btn hidden">← Back to current year</button>
+      </div>
+
+      <!-- Title -->
+      <div class="section-head">
+        <h2 class="section-title" id="subject-year-title">Subjects</h2>
+      </div>
+
+      <!-- Subject grid -->
+      <div class="subject-grid" id="subject-list" role="tabpanel" aria-labelledby="yearTabs"></div>
+    </section>
+  </main>
+
+  <!-- Scripts -->
+  <script src="assets/js/utils.js"></script>
+  <script src="assets/js/index.js"></script>
 </body>
 </html>

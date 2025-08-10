@@ -1,4 +1,4 @@
-const questions = [[
+[
     {
         "department": "B.Tech",
         "acad_year": 2,
@@ -279,43 +279,4 @@ const questions = [[
         "difficulty": "medium",
         "date_added": "2025-08-03"
     }
-]].flat(); // Use your updated JSON array here
-
-function escapeHTML(str) {
-  if (!str) return "";
-  return str.replace(/[&<>'"]/g, tag => (
-    { '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[tag]
-  ));
-}
-
-function filterQuestions(level) {
-  const container = document.getElementById('questions-container');
-  container.innerHTML = '';
-
-  const filtered = questions.filter(q => q.difficulty.toLowerCase() === level.toLowerCase());
-
-  if (filtered.length === 0) {
-    container.innerHTML = `<div class="question-card">No ${level} questions available.</div>`;
-    return;
-  }
-
-  filtered.forEach((q, idx) => {
-    const div = document.createElement('div');
-    div.className = 'question-card';
-    div.innerHTML = `
-      <div class="question-text">${escapeHTML(q.question_text)}</div>
-      <div class="source">Source Year: ${q.source_year}</div>
-      <button class="show-answer-btn" onclick="toggleAnswer(${idx})">Show Answer</button>
-      <div class="answer" id="answer-${idx}">${q.answer_text ? "Answer: " + escapeHTML(q.answer_text) : "<i>(Answer coming soon)</i>"}</div>
-    `;
-    container.appendChild(div);
-  });
-}
-
-function toggleAnswer(id) {
-  const ans = document.getElementById(`answer-${id}`);
-  if (!ans) return;
-  ans.style.display = ans.style.display === "block" ? "none" : "block";
-}
-
-window.onload = () => filterQuestions('easy');
+]

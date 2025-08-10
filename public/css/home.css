@@ -1,79 +1,29 @@
-/* home.css */
+/* Minimal landing, high contrast, centered */
+*{box-sizing:border-box}
+body{margin:0;background:#fff;color:#0b0c2a;font:16px/1.5 system-ui,Segoe UI,Roboto,Arial,sans-serif}
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f5f7fb;
-  color: #1c1c1c;
+.landing{min-height:100vh;display:grid;grid-template-rows:auto 1fr}
+.brand{
+  margin:22px auto 0; display:inline-flex; align-items:center; gap:10px; text-decoration:none;
+  color:#0b2230; font-weight:900;
 }
+.logo{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;
+      background:linear-gradient(135deg,var(--accent),var(--info));color:#0b2230}
+.name{letter-spacing:.2px}
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  text-align: center;
-  padding: 20px;
+.center{
+  display:grid; place-items:center; text-align:center; padding:24px 16px 56px;
 }
+.center h1{
+  margin:0 0 8px; max-width:22ch; font-weight:900; font-size:clamp(28px,4.6vw,44px);
+}
+.sub{margin:0 0 24px; color:#4b5563; font-weight:600}
 
-.hero {
-  max-width: 600px;
-  background-color: white;
-  padding: 40px 30px;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  border-left: 5px solid #006E90;
+.btn{
+  display:inline-block; padding:12px 18px; border-radius:12px; font-weight:900; text-decoration:none;
 }
+.btn.primary{ background:linear-gradient(90deg,var(--primary),var(--info)); color:#fff }
+.btn.primary:active{ transform:translateY(1px) }
 
-.hero h1 {
-  font-size: 2rem;
-  margin-bottom: 15px;
-  color: #0b0c2a;
-}
-
-.hero h1 span {
-  color: #006E90;
-}
-
-.hero p {
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 30px;
-  line-height: 1.6;
-}
-
-.buttons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.btn {
-  text-decoration: none;
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  border: 2px solid #006E90;
-  color: #006E90;
-  background-color: transparent;
-}
-
-.btn:hover {
-  background-color: #006E90;
-  color: white;
-}
-
-.btn.primary {
-  background-color: #F18F01;
-  border: none;
-  color: white;
-}
-
-.btn.primary:hover {
-  background-color: #d97800;
-}
+.alt{margin:14px 0 0; color:#4b5563; font-weight:600}
+.alt a{ color:var(--primary); font-weight:800; text-decoration:none }

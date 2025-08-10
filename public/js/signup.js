@@ -1,26 +1,33 @@
-document.getElementById("signup-btn").addEventListener("click", () => {
-  const name = document.getElementById("name").value.trim();
-  const email = document.getElementById("email").value.trim();
-  const password = document.getElementById("password").value;
-  const regno = document.getElementById("regno").value.trim();
+document.addEventListener("DOMContentLoaded", () => {
+  window.utils?.redirectIfLoggedIn();
 
-  if (!name || !email || !password || !regno) {
-    alert("Please fill in all fields.");
-    return;
-  }
+  const $ = id => document.getElementById(id);
+  const err = (id, msg="") => { const el=$(id); if(el) el.textContent = msg; };
 
-  const yearPrefix = regno.substring(0, 2);
-  const joinYear = parseInt("20" + yearPrefix);
-  const currentYear = new Date().getFullYear();
-  const studyYear = currentYear - joinYear + 1;
+  $("signupForm").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const name = $("name").value.trim();
+    const email = $("email").value.trim();
+    const password = $("password").value;
+    const regno = $("regno").value.trim();
 
-  const user = { name, email, password, regno, joinYear, studyYear };
+    ["err-name","err-email","err-password","err-regno"].forEach(i=>err(i,""));
 
-  localStorage.setItem("user", JSON.stringify(user));
+    let ok = true;
+    if (!name) err("err-name","Please enter your name"), ok=false;
+    if (!email || !/^\S+@\S+\.\S+$/.test(email)) err("err-email","Enter a valid email"), ok=false;
+    if (!password || password.length < 6) err("err-password","Use at least 6 characters"), ok=false;
+    if (!/^\d{2}\d+$/.test(regno)) err("err-regno","Enter a valid registration number"), ok=false;
+    if (!ok) return;
 
-  // Optional: temp message flag for login
-  localStorage.setItem("signupSuccess", "true");
+    const joinYear = parseInt("20" + regno.slice(0,2), 10);
+    const now = new Date();
+    const studyYear = (now.getMonth()+1 < 6)
+      ? (now.getFullYear() - joinYear)
+      : (now.getFullYear() - joinYear + 1);
 
-  // Redirect to login
-  window.location.href = "login.html";
+    window.utils.saveCurrentUser({ name, email, password, regno, joinYear, studyYear });
+    localStorage.setItem("signupSuccess","true");
+    location.href = "login.html";
+  });
 });

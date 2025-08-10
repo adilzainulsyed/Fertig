@@ -1,0 +1,58 @@
+/* Auth layout — centered, consistent, readable */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;background:var(--bg);color:#0b0c2a;
+  font:16px/1.5 system-ui,Segoe UI,Roboto,Arial,sans-serif;
+  display:grid;grid-template-rows:auto 1fr;
+}
+
+/* Top brand chip (subtle, not another CTA row) */
+.brand-chip{
+  display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:#0b2230;
+  font-weight:900;margin: clamp(12px, 4vw, 28px) auto 0;
+}
+.brand-chip .logo{
+  width:36px;height:36px;border-radius:12px;display:grid;place-items:center;
+  background:linear-gradient(135deg,var(--accent),var(--info));color:#0b2230;font-weight:900
+}
+
+/* Centered card */
+.auth-hero{
+  display:grid;place-items:center;padding:24px 16px 48px;
+}
+.card{
+  width:min(460px,92vw);
+  background:#fff;border:1px solid var(--border);border-radius:14px;
+  box-shadow:var(--shadow-md);padding:28px 24px;
+}
+.card h1{margin:0 0 6px;font-size:22px;font-weight:900}
+.card .sub{margin:0 0 18px;color:#6b7280;font-weight:600}
+
+/* Fields with consistent spacing */
+.field{margin-bottom:14px}
+.field label{display:block;font-weight:700;margin:0 0 6px}
+.field input{
+  width:100%;padding:12px;border:1px solid var(--border);border-radius:12px;
+  font-size:15px;background:#fff;color:#141414;transition:border-color .15s, box-shadow .15s;
+}
+.field input:focus{
+  outline:none;border-color:var(--primary);
+  box-shadow:0 0 0 3px rgba(0,110,144,.18);
+}
+.err{display:block;color:#b00020;font-weight:700;margin-top:6px;min-height:18px}
+
+/* Primary CTA + secondary link */
+.cta{
+  width:100%;padding:12px 14px;border:none;border-radius:12px;cursor:pointer;
+  background:linear-gradient(90deg,var(--primary),var(--info));color:#fff;
+  font-weight:900;letter-spacing:.2px;transition:filter .15s, transform .02s;margin-top:8px;
+}
+.cta:hover{filter:brightness(1.04)}
+.cta:active{transform:translateY(1px)}
+
+.flash{color:#2e7d32;font-weight:800;margin:6px 0 12px;min-height:20px}
+.switch{margin:14px 0 0;color:#6b7280;font-weight:600;text-align:center}
+.switch a{color:var(--primary);font-weight:800;text-decoration:none}
+
+/* Small screens keep everything centered already */
