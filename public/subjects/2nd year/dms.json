@@ -74,8 +74,7 @@
         "source_year": 2021,
         "difficulty": "hard",
         "date_added": "2025-09-08",
-        "images": [
-      "data/question_images/Screenshot 2025-08-09 125817.png"
+        "images": ["/question_images/Screenshot 2025-08-09 125817.png"
     ]
     },
     {
@@ -120,7 +119,7 @@
         "source_year": 2021,
         "difficulty": "medium",
         "date_added": "2025-09-08",
-        "images": ["data/question_images/Screenshot 2025-08-09 132808.png"]
+        "images": ["/question_images/Screenshot 2025-08-09 132808.png"]
     },
     {
         "department": "B.Tech",
@@ -131,7 +130,7 @@
         "source_year": 2021,
         "difficulty": "medium",
         "date_added": "2025-09-08",
-        "images": ["data/question_images/Screenshot 2025-08-09 133105.png"]
+        "images": ["/question_images/Screenshot 2025-08-09 133105.png"]
     },
     {
         "department": "B.Tech",
@@ -197,7 +196,7 @@
         "source_year": 2024,
         "difficulty": "hard",
         "date_added": "2025-09-08",
-        "images": ["data/question_images/Screenshot 2025-08-09 135558.png"]
+        "images": ["/question_images/Screenshot 2025-08-09 135558.png"]
     },
     {
         "department": "B.Tech",
@@ -208,7 +207,7 @@
         "source_year": 2024,
         "difficulty": "medium",
         "date_added": "2025-09-08",
-        "images": ["data/question_images/Screenshot 2025-08-09 140005.png"]
+        "images": ["/question_images/Screenshot 2025-08-09 140005.png"]
     },
     {
         "department": "B.Tech",

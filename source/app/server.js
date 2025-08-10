@@ -30,7 +30,7 @@ const basePath = path.join(__dirname, '../..');
 console.log(basePath)
 //built in middle ware for handling static files
 app.use(express.static(path.join(basePath,'/public')));
-
+app.use('/question_images', express.static(path.join(basePath, 'data/question_images')));
 app.use('/', require('../routes/root'));
 
 app.use('/subdir',require('../routes/subdir'));
