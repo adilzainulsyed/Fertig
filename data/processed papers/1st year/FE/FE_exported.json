@@ -1,0 +1,167 @@
+[
+    {
+        "department": "B.Tech",
+        "acad_year": 2,
+        "exam_type": "end",
+        "subject": "FE",
+        "question_text": "Obtain expressions for efficiency and ripple factors of full wave rectifier with ideal diodes. A sinusoidal voltage of 50Sin(2π50t) V is applied to a full wave rectifier. If the load resistance is 1000Ω, determine the average and RMS value of load currents ",
+        "source_year": 2024,
+        "difficulty": "hard",
+        "date_added": "2025-10-08",
+        "images": []
+    },
+    {
+        "department": "B.Tech",
+        "acad_year": 2,
+        "exam_type": "end",
+        "subject": "FE",
+        "question_text": "A Silicon diode carries a constant current of 1mA, when the operating temperature is 20ºC for a diode voltage of 700mV. If the temperature rises to 40ºC, what is the new value of diode voltage?",
+        "source_year": 2024,
+        "difficulty": "medium",
+        "date_added": "2025-10-08",
+        "images": []
+    },
+    {
+        "department": "B.Tech",
+        "acad_year": 2,
+        "exam_type": "end",
+        "subject": "FE",
+        "question_text": " ",
+        "source_year": 2024,
+        "difficulty": "medium",
+        "date_added": "2025-10-08",
+        "images": ["data/question_images/Screenshot 2025-08-10 224234.png"]
+    },
+    {
+        "department": "B.Tech",
+        "acad_year": 2,
+        "exam_type": "end",
+        "subject": "FE",
+        "question_text": " ",
+        "source_year": 2024,
+        "difficulty": "hard",
+        "date_added": "2025-10-08",
+        "images": ["data/question_images/Screenshot 2025-08-10 224342.png"]
+    },
+    {
+        "department": "B.Tech",
+        "acad_year": 2,
+        "exam_type": "end",
+        "subject": "FE",
+        "question_text": "From the fundamentals, obtain an expression for the drain current of the MOSFET in terms of VGS, VDS and the dimension of the device.",
+        "source_year": 2024,
+        "difficulty": "medium",
+        "date_added": "2025-10-08",
+        "images": []
+    },
+    {
+        "department": "B.Tech",
+        "acad_year": 2,
+        "exam_type": "end",
+        "subject": "FE",
+        "question_text": " ",
+        "source_year": 2024,
+        "difficulty": "medium",
+        "date_added": "2025-10-08",
+        "images": ["data/question_images/Screenshot 2025-08-10 224558.png"]
+    },
+    {
+        "department": "B.Tech",
+        "acad_year": 2,
+        "exam_type": "end",
+        "subject": "FE",
+        "question_text": " ",
+        "source_year": 2024,
+        "difficulty": "hard",
+        "date_added": "2025-10-08",
+        "images": ["data/question_images/Screenshot 2025-08-10 224841.png"]
+    },
+    {
+        "department": "B.Tech",
+        "acad_year": 2,
+        "exam_type": "end",
+        "subject": "FE",
+        "question_text": " ",
+        "source_year": 2024,
+        "difficulty": "medium",
+        "date_added": "2025-10-08",
+        "images": ["data/question_images/Screenshot 2025-08-10 224941.png"]
+    },
+    {
+        "department": "B.Tech",
+        "acad_year": 2,
+        "exam_type": "end",
+        "subject": "FE",
+        "question_text": "Encode the data 1001 using \n i) Gray Code. \n ii) (7, 4) even parity hamming code.",
+        "source_year": 2024,
+        "difficulty": "medium",
+        "date_added": "2025-10-08",
+        "images": []
+    },
+    {
+        "department": "B.Tech",
+        "acad_year": 2,
+        "exam_type": "end",
+        "subject": "FE",
+        "question_text": "Reduce the following Boolean expression using K-map and realize using AOI logic. f = AB + AB'C + A'BC' + BC'",
+        "source_year": 2024,
+        "difficulty": "hard",
+        "date_added": "2025-10-08",
+        "images": []
+    },
+    {
+        "department": "B.Tech",
+        "acad_year": 2,
+        "exam_type": "end",
+        "subject": "FE",
+        "question_text": "The logic system has 3 inputs and one output. The output is 1 if only one input is made high. Write the truth table. Write the expression for the output in SOP form.",
+        "source_year": 2024,
+        "difficulty": "medium",
+        "date_added": "2025-10-08",
+        "images": []
+    },
+    {
+        "department": "B.Tech",
+        "acad_year": 2,
+        "exam_type": "end",
+        "subject": "FE",
+        "question_text": "Design a 3 - bit ripple up counter using negative edge triggered JK Flip Flops.",
+        "source_year": 2024,
+        "difficulty": "medium",
+        "date_added": "2025-10-08",
+        "images": []
+    },
+    {
+        "department": "B.Tech",
+        "acad_year": 2,
+        "exam_type": "end",
+        "subject": "FE",
+        "question_text": "Design a SISO shift register using D flip-flops to store 4-bit data 0101. After how many cycles, MSB of data will be available at the output",
+        "source_year": 2024,
+        "difficulty": "hard",
+        "date_added": "2025-10-08",
+        "images": []
+    },
+    {
+        "department": "B.Tech",
+        "acad_year": 2,
+        "exam_type": "end",
+        "subject": "FE",
+        "question_text": "With a neat logic diagram using only NAND gates and truth table, explain the working of JK flip-flop. ",
+        "source_year": 2024,
+        "difficulty": "medium",
+        "date_added": "2025-10-08",
+        "images": []
+    },
+    {
+        "department": "B.Tech",
+        "acad_year": 2,
+        "exam_type": "end",
+        "subject": "FE",
+        "question_text": "Realize a 4-to-1 multiplexer using basic gates. ",
+        "source_year": 2024,
+        "difficulty": "medium",
+        "date_added": "2025-10-08",
+        "images": []
+    }    
+]   

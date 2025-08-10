@@ -1,0 +1,156 @@
+[
+    {
+        "department": "B.Tech",
+        "acad_year": 2,
+        "exam_type": "end",
+        "subject": "APE",
+        "question_text": "Derive the relation between the scattering angle and the Compton shift in wavelength of X-rays, when X-rays bombarded with target metal.",
+        "source_year": 2024,
+        "difficulty": "hard",
+        "date_added": "2025-10-08",
+        "images": []
+    },
+    {
+        "department": "B.Tech",
+        "acad_year": 2,
+        "exam_type": "end",
+        "subject": "APE",
+        "question_text": "Calculate the V- number for a fiber of core diameter 40 micro meter and refractive index of 1.55 and 1.50 respectively for its core and cladding when a light of wavelength 1400 nm is propagating.",
+        "source_year": 2024,
+        "difficulty": "medium",
+        "date_added": "2025-10-08",
+        "images": []
+    },
+    {
+        "department": "B.Tech",
+        "acad_year": 2,
+        "exam_type": "end",
+        "subject": "APE",
+        "question_text": "Is lasing action possible with only two levels (e.g. a two level system)? Justify your answer. ",
+        "source_year": 2024,
+        "difficulty": "easy",
+        "date_added": "2025-10-08",
+        "images": []
+    },
+    {
+        "department": "B.Tech",
+        "acad_year": 2,
+        "exam_type": "end",
+        "subject": "APE",
+        "question_text": "Obtain the general solution of the Schrodinger equation for a particle of mass m trapped in a potential well of infinite height. ",
+        "source_year": 2024,
+        "difficulty": "hard",
+        "date_added": "2025-10-08",
+        "images": []
+    },
+    {
+        "department": "B.Tech",
+        "acad_year": 2,
+        "exam_type": "end",
+        "subject": "APE",
+        "question_text": "What is the working principle of an optical fibre? Obtain an expression for numerical aperture",
+        "source_year": 2024,
+        "difficulty": "medium",
+        "date_added": "2025-10-08",
+        "images": []
+    },
+    {
+        "department": "B.Tech",
+        "acad_year": 2,
+        "exam_type": "end",
+        "subject": "APE",
+        "question_text": "The speed of an electron is measured to be 5.00 x 103 m/s to an accuracy of 0.0030%. Find the minimum uncertainty in determining the position of this electron.",
+        "source_year": 2024,
+        "difficulty": "easy",
+        "date_added": "2025-10-08",
+        "images": []
+    },
+    {
+        "department": "B.Tech",
+        "acad_year": 2,
+        "exam_type": "end",
+        "subject": "APE",
+        "question_text": "Apply the Hadamard gate to the qubit state a∣0⟩+b∣1⟩, where a and b are arbitrary complex amplitudes. Show the resulting state in terms of a and b",
+        "source_year": 2024,
+        "difficulty": "hard",
+        "date_added": "2025-10-08",
+        "images": []
+    },
+    {
+        "department": "B.Tech",
+        "acad_year": 2,
+        "exam_type": "end",
+        "subject": "APE",
+        "question_text": "Calculate the number of photons emitted for 10 seconds by a FM radio transmitter of frequency 99.7 MHz with output power of 150 kW.",
+        "source_year": 2024,
+        "difficulty": "medium",
+        "date_added": "2025-10-08",
+        "images": []
+    },
+    {
+        "department": "B.Tech",
+        "acad_year": 2,
+        "exam_type": "end",
+        "subject": "APE",
+        "question_text": " ",
+        "source_year": 2024,
+        "difficulty": "easy",
+        "date_added": "2025-10-08",
+        "images": ["data/question_images/Screenshot 2025-08-10 114829.png"]
+    },
+    {
+        "department": "B.Tech",
+        "acad_year": 2,
+        "exam_type": "end",
+        "subject": "APE",
+        "question_text": "Define Hermitain and Unitary operators. Prove that Pauli Y and Z matrices are both Hermitian and Unitary",
+        "source_year": 2024,
+        "difficulty": "hard",
+        "date_added": "2025-10-08",
+        "images": []
+    },
+    {
+        "department": "B.Tech",
+        "acad_year": 2,
+        "exam_type": "end",
+        "subject": "APE",
+        "question_text": " ",
+        "source_year": 2024,
+        "difficulty": "medium",
+        "date_added": "2025-10-08",
+        "images": ["data/question_images/Screenshot 2025-08-10 115042.png"]
+    },
+    {
+        "department": "B.Tech",
+        "acad_year": 2,
+        "exam_type": "end",
+        "subject": "APE",
+        "question_text": "Calculate the energy and momentum for photon of wavelength 700 nm",
+        "source_year": 2024,
+        "difficulty": "easy",
+        "date_added": "2025-10-08",
+        "images": []
+    },
+    {
+        "department": "B.Tech",
+        "acad_year": 2,
+        "exam_type": "end",
+        "subject": "APE",
+        "question_text": "i) A student creates a diffraction pattern by passing a laser beam through two different gratings with 600 lines/mm and 100 lines/mm. What changes can be expected in the diffraction pattern created using these two gratings? \n ii) What necessary precautions should be taken while handling a laser?",
+        "source_year": 2024,
+        "difficulty": "hard",
+        "date_added": "2025-10-08",
+        "images": []
+    },    
+    {
+        "department": "B.Tech",
+        "acad_year": 2,
+        "exam_type": "end",
+        "subject": "APE",
+        "question_text": "Obtain the eigenvalues of the Hadamard matrix",
+        "source_year": 2024,
+        "difficulty": "medium",
+        "date_added": "2025-10-08",
+        "images": ["data/question_images/Screenshot 2025-08-10 115754.png"]
+    }
+]   
