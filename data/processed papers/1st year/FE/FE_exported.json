@@ -163,5 +163,138 @@
         "difficulty": "medium",
         "date_added": "2025-10-08",
         "images": []
-    }    
+    },
+    {
+        "department": "B.Tech",
+        "acad_year": 2,
+        "exam_type": "end",
+        "subject": "FE",
+        "question_text": "A silicon diode has a reverse saturation current of 1pA at 300 K. If the forward voltage across the diode is 0.7 V, find the diode current. If the temperature is increased to 350K, Find the percentage of change in the diode current value. Explain the reason for the temperature dependence of the diode current.",
+        "source_year": 2024,
+        "difficulty": "hard",
+        "date_added": "2025-10-08",
+        "images": []
+    },
+    {
+        "department": "B.Tech",
+        "acad_year": 2,
+        "exam_type": "end",
+        "subject": "FE",
+        "question_text": "A center-tap full-wave rectifier is connected to a transformer with a turns ratio of 10:1. The input AC voltage to the primary winding of the transformer is 220 V (rms), and the load resistance is 1 kΩ. Assume the diodes are ideal. Find (i) Peak output voltage across the load. (ii) Calculate the average output voltage across the load. (iii)Determine the Peak Inverse Voltage (PIV) rating for each diode.",
+        "source_year": 2024,
+        "difficulty": "medium",
+        "date_added": "2025-11-08",
+        "images": []
+    },
+    {
+        "department": "B.Tech",
+        "acad_year": 2,
+        "exam_type": "end",
+        "subject": "FE",
+        "question_text": "Explain the construction and operating principle of an LED.",
+        "source_year": 2024,
+        "difficulty": "easy",
+        "date_added": "2025-11-08",
+        "images": []
+    },
+    {
+        "department": "B.Tech",
+        "acad_year": 2,
+        "exam_type": "end",
+        "subject": "FE",
+        "question_text": "A 5V Zener diode is employed to stabilize the voltage across a 500Ω load resistor when connected to an unregulated power supply fluctuating between 9 and 15 volts. Calculate the suitable range of series resistance values required to ensure the Zener diode operates within its specified current limits of 1 mA to 500 mA. Draw the circuit diagram of the Zener voltage regulator.",
+        "source_year": 2024,
+        "difficulty": "hard",
+        "date_added": "2025-11-08",
+        "images": []
+    },
+    {
+        "department": "B.Tech",
+        "acad_year": 2,
+        "exam_type": "end",
+        "subject": "FE",
+        "question_text": " Sketch and Explain the ID-VG and ID-VD characteristics for (a) different channel lengths and (b) Different oxide thicknesses.",
+        "source_year": 2024,
+        "difficulty": "medium",
+        "date_added": "2025-11-08",
+        "images": []
+    },
+    {
+        "department": "B.Tech",
+        "acad_year": 2,
+        "exam_type": "end",
+        "subject": "FE",
+        "question_text": " ",
+        "source_year": 2024,
+        "difficulty": "easy",
+        "date_added": "2025-11-08",
+        "images": ["data/question_images/Screenshot 2025-08-11 162523.png"]
+    },
+    {
+        "department": "B.Tech",
+        "acad_year": 2,
+        "exam_type": "end",
+        "subject": "FE",
+        "question_text": " ",
+        "source_year": 2024,
+        "difficulty": "hard",
+        "date_added": "2025-11-08",
+        "images": ["data/question_images/Screenshot 2025-08-11 162804.png"]
+    },
+    {
+        "department": "B.Tech",
+        "acad_year": 2,
+        "exam_type": "end",
+        "subject": "FE",
+        "question_text": " ",
+        "source_year": 2024,
+        "difficulty": "medium",
+        "date_added": "2025-11-08",
+        "images": ["data/question_images/Screenshot 2025-08-11 162913.png"]
+    },
+    {
+        "department": "B.Tech",
+        "acad_year": 2,
+        "exam_type": "end",
+        "subject": "FE",
+        "question_text": " ",
+        "source_year": 2024,
+        "difficulty": "easy",
+        "date_added": "2025-11-08",
+        "images": ["data/question_images/Screenshot 2025-08-11 162959.png"]
+    },
+    {
+        "department": "B.Tech",
+        "acad_year": 2,
+        "exam_type": "end",
+        "subject": "FE",
+        "question_text": " ",
+        "source_year": 2024,
+        "difficulty": "hard",
+        "date_added": "2025-11-08",
+        "images": ["data/question_images/Screenshot 2025-08-11 163045.png"]
+    },
+    {
+        "department": "B.Tech",
+        "acad_year": 2,
+        "exam_type": "end",
+        "subject": "FE",
+        "question_text": " ",
+        "source_year": 2024,
+        "difficulty": "medium",
+        "date_added": "2025-11-08",
+        "images": ["data/question_images/Screenshot 2025-08-11 163127.png"]
+    },
+    {
+        "department": "B.Tech",
+        "acad_year": 2,
+        "exam_type": "end",
+        "subject": "FE",
+        "question_text": "Design a 3 bit Ripple up counter using positive edge triggered flipflops. Also sketch the timing diagram for the same. ",
+        "source_year": 2024,
+        "difficulty": "medium",
+        "date_added": "2025-11-08",
+        "images": []
+    }
+
 ]   
