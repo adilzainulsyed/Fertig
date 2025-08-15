@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>APE | Fertig</title>
+
+  <link rel="stylesheet" href="../../assets/css/theme.css" />
+  <link rel="stylesheet" href="../subject.css" />
+</head>
+<body>
+  <header class="subbar">
+    <div class="container subbar-inner">
+      <a class="brand-mini" href="../../index.html" aria-label="Fertig">
+        <span class="logo">F</span><span>Fertig</span>
+      </a>
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="../../index.html">Dashboard</a>
+        <span aria-hidden="true">›</span>
+        <a id="crumb-year" href="../../index.html?year=1">1st year</a>
+        <span aria-hidden="true">›</span>
+        <strong id="crumb-subject">APE</strong>
+      </nav>
+      <button class="btn-outlined" id="logoutBtn" type="button">Logout</button>
+    </div>
+  </header>
+
+  <main class="container subject-wrap">
+    <h1 id="title">APE</h1>
+    <p id="subtitle" class="muted">Chapter-wise PYQs with difficulty & search.</p>
+
+    <section class="filters" aria-label="Filters">
+      <select id="yearFilter" aria-label="Year filter">
+        <option value="">All years</option>
+      </select>
+      <select id="difficultyFilter" aria-label="Difficulty">
+        <option value="">All difficulties</option>
+        <option value="Easy">Easy</option>
+        <option value="Medium">Medium</option>
+        <option value="Hard">Hard</option>
+      </select>
+      <button class="btn" id="clearFilters" type="button">Clear</button>
+    </section>
+
+    <section id="list" class="qa-list" aria-live="polite"></section>
+  </main>
+
+  <script src="../../assets/js/utils.js"></script>
+  <script src="../subject.js"></script>
+  <script>
+    if (!location.search.includes('key=')) {
+      location.search = '?key=1styear:ape';
+    }
+  </script>
+</body>
+</html>
