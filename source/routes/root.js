@@ -15,8 +15,8 @@ router.get(/^\/$|\/ds(.html)?/,(req,res)=>{
 router.get(/^\/$|\/dms(.html)?/,(req,res)=>{
     res.sendFile(path.join(__dirname,'..','..','views','II','dms.html'));
 });
-router.get(/^\/$|\/dsco(.html)?/,(req,res)=>{
-    res.sendFile(path.join(__dirname,'..','..','views','II','dsco.html'));
+router.get(/^\/$|\/dcso(.html)?/,(req,res)=>{
+    res.sendFile(path.join(__dirname,'..','..','views','II','dcso.html'));
 });
 router.get(/^\/$|\/signup(.html)?/,(req,res)=>{
     res.sendFile(path.join(__dirname,'..','..','views','signup.html'));

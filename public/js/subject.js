@@ -26,7 +26,7 @@ const yearFolder =
 
   // display names (acronyms)
   const NAMES = {
-    ds: "DS", dms: "DMS", dsco: "DS & CO", dccn: "DC & CN", da: "DA",
+    ds: "DS", dms: "DMS", dcso: "DS & CO", dccn: "DC & CN", da: "DA",
     ape: "APE", bmes: "BMES", fe: "FE", eng: "ENG",
     cm1: "CM - I", cm2: "CM - II", ace: "ACE", fee: "FEE", emsb: "EMSB", evs: "EVS"
   };
@@ -74,8 +74,9 @@ try {
     question: q.question || q.question_text || "",
     solution: q.solution || "",
     images: Array.isArray(q.images)
-      ? q.images.map(src => src && src.startsWith("data/") ? `../../${src}` : src)
-      : []
+  ? q.images.map(src => src.startsWith("data/") ? `/question_images/${src.split("/").pop()}` : src)
+  : []
+
   }));
 
   // ---------- filters: year + difficulty ----------
