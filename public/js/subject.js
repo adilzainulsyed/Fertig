@@ -8,15 +8,21 @@ document.addEventListener("DOMContentLoaded", async () => {
   const key = params.get("key");
   if (!key) { document.body.innerHTML = "<p style='padding:24px'>Invalid subject (missing key).</p>"; return; }
 
-  const normalizedKey = key.replace(/\s+/g, "").replace(/-/g, ""); // "2ndyear:ds"
-  const [yearFolderRaw, slug] = normalizedKey.split(":");
-  if (!yearFolderRaw || !slug) { document.body.innerHTML = "<p style='padding:24px'>Invalid subject key.</p>"; return; }
+  // keep colon intact
+const normalizedKey = key.replace(/\s+/g, "").replace(/-/g, ""); 
+// but don’t kill the ":" → we should split first
+const [yearFolderRaw, slug] = key.split(":");
+if (!yearFolderRaw || !slug) {
+  document.body.innerHTML = "<p style='padding:24px'>Invalid subject key.</p>";
+  return;
+}
 
-  const yearFolder =
-    yearFolderRaw.includes("1st") ? "1st year" :
-      yearFolderRaw.includes("2nd") ? "2nd year" :
-        yearFolderRaw.includes("3rd") ? "3rd year" :
-          yearFolderRaw.includes("4th") ? "4th year" : yearFolderRaw;
+const yearFolder =
+  yearFolderRaw.includes("1st") ? "1styear" :
+  yearFolderRaw.includes("2nd") ? "2ndyear" :
+  yearFolderRaw.includes("3rd") ? "3rdyear" :
+  yearFolderRaw.includes("4th") ? "4thyear" : yearFolderRaw;
+ 
 
   // display names (acronyms)
   const NAMES = {
@@ -52,14 +58,14 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
   const currentPath = decodeURIComponent(location.pathname);
   const inYearFolder = currentPath.includes(`/${yearFolder}/`);
-  const candidates = inYearFolder
-    ? [`./${slug}.json`, `../${yearFolder}/${slug}.json`, `${yearFolder}/${slug}.json`]
-    : [`${yearFolder}/${slug}.json`, `./${yearFolder}/${slug}.json`];
-
-  let raw = [];
-  for (const p of candidates) { try { raw = await fetchJSON(p); break; } catch { } }
-  if (!raw.length) { $("list").innerHTML = `<p class="muted">Could not load data for ${slug}.</p>`; return; }
-
+ let raw = [];
+try {
+  raw = await fetchJSON(`/subjects/${yearFolder}/${slug}.json`);
+} catch (err) {
+  console.error(err);
+  $("list").innerHTML = `<p class="muted">Could not load data for ${slug}.</p>`;
+  return;
+}
   // ---------- normalize ----------
   const rows = raw.map((q, i) => ({
     id: q.id || `q${i + 1}`,
