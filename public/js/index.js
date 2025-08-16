@@ -60,8 +60,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const YEAR2_SLUGS = {
     "ds": "ds",
     "dms": "dms",
-    "ds&co": "dsco",
-    "ds & co": "dsco",
+    "ds&co": "dcso",
+    "ds & co": "dcso",
     "dc&cn": "dccn",
     "dc & cn": "dccn",
     "ds&cn": "dccn",        // tolerate earlier typo
