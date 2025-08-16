@@ -79,8 +79,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (yr === 2) {
       const slug = YEAR2_SLUGS[key] || YEAR2_SLUGS[key.replace(/\s+/g, "")];
       if (slug) {
-        const folder = encodeURIComponent("2nd year"); // -> 2nd%20year
-        return `subjects/${folder}/${slug}.html`;
+        const folder = "II"; // -> 2nd%20year
+        return `../../views/${folder}/${slug}.html`;
       }
     }
 

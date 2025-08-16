@@ -10,7 +10,13 @@ router.get(/^\/$|\/login(.html)?/,(req,res)=>{
     res.sendFile(path.join(__dirname,'..','..','views','login.html'));
 });
 router.get(/^\/$|\/ds(.html)?/,(req,res)=>{
-    res.sendFile(path.join(__dirname,'..','..','views','ds.html'));
+    res.sendFile(path.join(__dirname,'..','..','views','II','ds.html'));
+});
+router.get(/^\/$|\/dms(.html)?/,(req,res)=>{
+    res.sendFile(path.join(__dirname,'..','..','views','II','dms.html'));
+});
+router.get(/^\/$|\/dsco(.html)?/,(req,res)=>{
+    res.sendFile(path.join(__dirname,'..','..','views','II','dsco.html'));
 });
 router.get(/^\/$|\/signup(.html)?/,(req,res)=>{
     res.sendFile(path.join(__dirname,'..','..','views','signup.html'));

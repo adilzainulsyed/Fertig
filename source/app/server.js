@@ -28,6 +28,8 @@ app.use(express.json());
 //making a base path
 const basePath = path.join(__dirname, '../..');
 console.log(basePath)
+app.use('/subjects', express.static(path.join(__dirname,'../../data/subjects')));
+console.log("Serving subjects from:", path.join(basePath,'/data/subjects'));
 //built in middle ware for handling static files
 app.use(express.static(path.join(basePath,'/public')));
 app.use('/question_images', express.static(path.join(basePath, 'data/question_images')));
