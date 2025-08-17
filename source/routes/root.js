@@ -18,6 +18,19 @@ router.get(/^\/$|\/dms(.html)?/,(req,res)=>{
 router.get(/^\/$|\/dcso(.html)?/,(req,res)=>{
     res.sendFile(path.join(__dirname,'..','..','views','II','dcso.html'));
 });
+router.get(/^\/$|\/ape(.html)?/,(req,res)=>{
+    res.sendFile(path.join(__dirname,'..','..','views','I','ape.html'));
+});
+router.get(/^\/$|\/cm1(.html)?/,(req,res)=>{
+    res.sendFile(path.join(__dirname,'..','..','views','I','cm1.html'));
+});
+router.get(/^\/$|\/fe(.html)?/,(req,res)=>{
+    res.sendFile(path.join(__dirname,'..','..','views','I','fe.html'));
+});
+router.get(/^\/$|\/pps(.html)?/,(req,res)=>{
+    res.sendFile(path.join(__dirname,'..','..','views','I','pps.html'));
+});
+
 router.get(/^\/$|\/signup(.html)?/,(req,res)=>{
     res.sendFile(path.join(__dirname,'..','..','views','signup.html'));
 });
