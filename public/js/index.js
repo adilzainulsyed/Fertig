@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
   localStorage.setItem("user", JSON.stringify(user));
 
   const subjectsByYear = {
-    1: ["APE","BMES","FE","ENG","CM - I","CM - II","ACE","FEE","EMSB","EVS"],
+    1: ["APE","BMES","FE","ENG","CM - I","CM - II","ACE","FEE","EMSB","EVS","PPS"],
     2: ["DS","DC & CN","DS & CO","DMS","DA"],
     3: ["OS", "DBMS", "CN", "TOC", "AI"],
     4: ["ML", "Blockchain", "Cloud", "DL", "Project"]
@@ -56,37 +56,67 @@ document.addEventListener("DOMContentLoaded", () => {
     metaChip.textContent = `Engineering • ${labelOf(yr)} Year • CSE${exploring ? " (exploring)" : ""}`;
   };
 
-  // ---- subject routing (2nd year) ----
-  const YEAR2_SLUGS = {
-    "ds": "ds",
-    "dms": "dms",
-    "ds&co": "dcso",
-    "ds & co": "dcso",
-    "dc&cn": "dccn",
-    "dc & cn": "dccn",
-    "ds&cn": "dccn",        // tolerate earlier typo
-    "ds & cn": "dccn",
-    "da": "da"
-  };
+  const YEAR1_SLUGS = {
+  "ape": "ape",
+  "bmes": "bmes",
+  "fe": "fe",
+  "eng": "eng",
 
-  const subjectHref = (subject, yr) => {
-    const key = (subject || "")
-      .toLowerCase()
-      .replace(/\./g, "")
-      .replace(/\s+/g, " ")
-      .trim();
+  // Chemistry/Math split
+  "cm - i": "cm1",
+  "cm i": "cm1",
+  "cmi": "cm1",
+  "cm- i": "cm1",
 
-    if (yr === 2) {
-      const slug = YEAR2_SLUGS[key] || YEAR2_SLUGS[key.replace(/\s+/g, "")];
-      if (slug) {
-        const folder = "II"; // -> 2nd%20year
-        return `../../views/${folder}/${slug}.html`;
-      }
+  "cm - ii": "cm2",
+  "cm ii": "cm2",
+  "cmii": "cm2",
+  "cm- ii": "cm2",
+
+  "ace": "ace",
+  "fee": "fee",
+  "emsb": "emsb",
+  "evs": "evs",
+  "pps" : "pps"
+};
+
+const YEAR2_SLUGS = {
+  "ds": "ds",
+  "dms": "dms",
+  "ds&co": "dcso",
+  "ds & co": "dcso",
+  "dc&cn": "dccn",
+  "dc & cn": "dccn",
+  "ds&cn": "dccn",
+  "ds & cn": "dccn",
+  "da": "da"
+};
+
+const subjectHref = (subject, yr) => {
+  const key = (subject || "")
+    .toLowerCase()
+    .replace(/\./g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+
+  if (yr === 1) {
+    const slug = YEAR1_SLUGS[key] || YEAR1_SLUGS[key.replace(/\s+/g, " ")];
+    if (slug) {
+      const folder = encodeURIComponent("1st year");
+      return `subjects/${folder}/${slug}.html`;
     }
+  }
 
-    // TODO: add maps for other years as you build them
-    return "#";
-  };
+  if (yr === 2) {
+    const slug = YEAR2_SLUGS[key] || YEAR2_SLUGS[key.replace(/\s+/g, "")];
+    if (slug) {
+      const folder = encodeURIComponent("2nd year");
+      return `subjects/${folder}/${slug}.html`;
+    }
+  }
+
+  return "#";
+};
 
   const renderCards = (yr) => {
     grid.innerHTML = "";
