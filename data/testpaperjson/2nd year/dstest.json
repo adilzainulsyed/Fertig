@@ -54,7 +54,7 @@
 	"source_year" : 2024,
 	"type" : "code",
 	"chapter" : ["Linked List"],
-	"text" : "A school maintains a linked list to keep track of students in the order they register for an event.\nImplement functions to manage this linked list.\ni) Write a function addStudent that takes a student's name and adds them to the end of the linked list.\nii) Write a function removeStudent that takes a student's name and removes the student from the list, updating the list order.\niii) Use your functions to perform the following:\n• Add students "Alice", "Bob", "Charlie", and "Diana" in order, showing the list after each addition.\nRemove "Bob" and "Charlie" from the list, showing the list order after each removal",
+	"text" : "A school maintains a linked list to keep track of students in the order they register for an event.\nImplement functions to manage this linked list.\ni) Write a function addStudent that takes a student's name and adds them to the end of the linked list.\nii) Write a function removeStudent that takes a student's name and removes the student from the list, updating the list order.\niii) Use your functions to perform the following:\n• Add students 'Alice', 'Bob', 'Charlie', and 'Diana' in order, showing the list after each addition.\nRemove 'Bob' and 'Charlie' from the list, showing the list order after each removal",
 	"marks" : 3, 
 	"timeinmin" : 9,
 	"images": []
@@ -148,8 +148,155 @@
     "marks" : 2, 
 	"timeinmin" : 6,
 	"images": ["/data/question_images/Screenshot 2025-09-06 123341.png"]
+},
+{
+	"subject" : "DS",
+	"source_year" : 2024,
+	"type" : "hybrid",
+	"chapter" : ["Pointer"],
+	"text" : "Explain dynamic memory allocation functions malloc ( ),alloc ( ), realloc ( ), free ( ) with the help of programming example.",
+	"marks" : 4, 
+	"timeinmin" : 12,
+	"images": []
+},
+{
+	"subject" : "DS",
+	"source_year" : 2024,
+	"type" : "code",
+	"chapter" : ["Array","Pointer"],
+	"text" : "Write a C program to reverse an array using pointers",
+	"marks" : 3, 
+	"timeinmin" : 9,
+	"images": []
+},
+{
+	"subject" : "DS",
+	"source_year" : 2024,
+	"type" : "text",
+	"chapter" : ["Linked List","Pointer"],
+	"text" : "Explain self-referential structure with an example. Give any one use of self-referential structure.",
+	"marks" : 3, 
+	"timeinmin" : 9,
+	"images": []
+},
+{
+	"subject" : "DS",
+	"source_year" : 2024,
+	"type" : "hybrid",
+	"chapter" : ["Queue"],
+	"text" : "What are the advantages of Circular Queue over Queue ? Write a menu drive program to implement simple arithmetic operation in Circular Queue",
+	"marks" : 4, 
+	"timeinmin" : 12,
+	"images": []
+},
+{
+	"subject" : "DS",
+	"source_year" : 2024,
+	"type" : "text",
+	"chapter" : ["infix-postfix"],
+	"text" : "Convert the following infix expression into its equivalent postfix expression. \n A + (B * C (D / E F) * G) * H",
+	"marks" : 3, 
+	"timeinmin" : 9,
+	"images": []
+},
+{
+	"subject" : "DS",
+	"source_year" : 2024,
+	"type" : "text",
+	"chapter" : ["Stack"],
+	"text" : "Define stacks. List and explain the various operations on stacks using arrays with stack overflow and stack underflow conditions.",
+	"marks" : 3, 
+	"timeinmin" : 9,
+	"images": []
+},
+{
+	"subject" : "DS",
+	"source_year" : 2024,
+	"type" : "code",
+	"chapter" : ["Linked List"],
+	"text" : "Write a C Program to do the following \n 1. Create a circular singly linked list with each node storing an Integer value. \n 2. Delete all those nodes of a circular singly linked list which contains prime numbers.",
+	"marks" : 4, 
+	"timeinmin" : 12,
+	"images": []
+},
+{
+	"subject" : "DS",
+	"source_year" : 2024,
+	"type" : "code",
+	"chapter" : ["Linked List"],
+	"text" : "Write a program to merge two sorted linked list (P & Q -assume that they are available) \n to get a single sorted list S.\n eg. P : 1 -> 2 ->45 ->56 \n Q : 3 -> 24 -> 56 -> 63 -> 66.",
+	"marks" : 3, 
+	"timeinmin" : 9,
+	"images": []
+},
+{
+	"subject" : "DS",
+	"source_year" : 2024,
+	"type" : "text",
+	"chapter" : ["Queue"],
+	"text" : "Define queue? What is the disadvantage of ordinary queue and how to overcome it?",
+	"marks" : 3, 
+	"timeinmin" : 9,
+	"images": []
+},
+{
+	"subject" : "DS",
+	"source_year" : 2024,
+	"type" : "text",
+	"chapter" : ["Tree"],
+	"text" : "Explain different cases for deletion of a node in binary search tree. Write function for each case .",
+	"marks" : 4, 
+	"timeinmin" : 12,
+	"images": []
+},
+{
+	"subject" : "DS",
+	"source_year" : 2024,
+	"type" : "text",
+	"chapter" : ["Graph"],
+	"text" : "Define Graph. For the given graph as shown in Fig (a), show the adjacency matrix and adjacency list representation of the graph.",
+	"marks" : 4, 
+	"timeinmin" : 12,
+	"images": ["data/question_images/Screenshot 2025-09-06 122503.png"]
+},
+{
+	"subject" : "DS",
+	"source_year" : 2024,
+	"type" : "text",
+	"chapter" : ["Tree"],
+	"text" : "Define the terms: Leaf, Siblings, Root, and Pathin context of a binary Tree",
+	"marks" : 2, 
+	"timeinmin" : 6,
+	"images": []
+},
+{
+	"subject" : "DS",
+	"source_year" : 2024,
+	"type" : "text",
+	"chapter" : ["Tree"],
+	"text" : "Find inorder, postorder and preorder traversal for the binary search tree and write down the function for the following operations with respect to BST. i) Find maximum element ii) Find minimum element",
+	"marks" : 4, 
+	"timeinmin" : 12,
+	"images": ["data/question_images/Screenshot 2025-09-06 123215.png"]
+},
+{
+	"subject" : "DS",
+	"source_year" : 2024,
+	"type" : "text",
+	"chapter" : ["Tree"],
+	"text" : "Consider the following Graph and perform the BFS and DFS Traversal",
+	"marks" : 3, 
+	"timeinmin" : 9,
+	"images": ["data/question_images/Screenshot 2025-09-06 123339.png"]
+},
+{
+	"subject" : "DS",
+	"source_year" : 2024,
+	"type" : "text",
+	"chapter" : ["Graph"],
+	"text" : "Construct a binary tree from a given preorder and inorder sequence: \n Preorder: A B D G C E H I F \n Inorder: D G B A H E I C F",
+	"marks" : 3, 
+	"timeinmin" : 9,
+	"images": []
 }
-
-
-
 ]
