@@ -1,0 +1,15 @@
+[{
+	"subject" : "DS",
+	"source_year" : 2024,
+	"type" : "text",
+	"chapter" : ["Tree"],
+	"text" : "Consider the following Graph and perform the BFS and DFS Traversal",
+	"marks" : 3, 
+	"timeinmin" : 9,
+	"images": ["data/question_images/Screenshot 2025-09-06 123339.png"]
+},
+
+
+
+
+]
