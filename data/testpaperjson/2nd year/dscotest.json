@@ -1,15 +1,152 @@
 [{
-	"subject" : "DS",
+	"subject" : "DSCO",
 	"source_year" : 2024,
 	"type" : "text",
-	"chapter" : ["Tree"],
-	"text" : "Consider the following Graph and perform the BFS and DFS Traversal",
+	"chapter" : ["Dsd"],
+	"text" : "Design a combinational circuit to convert 4-bit Binary to Gray code",
+	"marks" : 4, 
+	"timeinmin" : 12,
+	"images": []
+},
+{
+	"subject" : "DSCO",
+	"source_year" : 2024,
+	"type" : "text",
+	"chapter" : ["Mux"],
+	"text" : "Design the specified Boolean function using 8:1 multiplexer, where D is the input and A, B, C are utilized as the selection lines.\nF(A,B,C,D) = AB' + BD + B'CD'",
 	"marks" : 3, 
 	"timeinmin" : 9,
-	"images": ["data/question_images/Screenshot 2025-09-06 123339.png"]
+	"images": []
 },
-
-
-
+{
+	"subject" : "DSCO",
+	"source_year" : 2024,
+	"type" : "text",
+	"chapter" : ["Decoder"],
+	"text" : "Implement 4 to 16 decoder using 2 to 4 decoder using optimized number of decoders.",
+	"marks" : 3, 
+	"timeinmin" : 9,
+	"images": []
+},
+{
+	"subject" : "DSCO",
+	"source_year" : 2024,
+	"type" : "text",
+	"chapter" : ["Comparator"],
+	"text" : "Design a 2-bit magnitude comparator using basic logic gates",
+	"marks" : 4, 
+	"timeinmin" : 12,
+	"images": []
+},
+{
+	"subject" : "DSCO",
+	"source_year" : 2024,
+	"type" : "text",
+	"chapter" : ["Counter"],
+	"text" : "Design a mod-6 ripple up counter using negative edge triggered T Flipflops with active high clear.",
+	"marks" : 3, 
+	"timeinmin" : 9,
+	"images": []
+},
+{
+	"subject" : "DSCO",
+	"source_year" : 2024,
+	"type" : "text",
+	"chapter" : ["Counter"],
+	"text" : "Design a synchronous 3-bit Gray code counter using positive edge triggered T flipflops.",
+	"marks" : 3, 
+	"timeinmin" : 9,
+	"images": []
+},
+{
+	"subject" : "DSCO",
+	"source_year" : 2024,
+	"type" : "text",
+	"chapter" : ["FlipFLop"],
+	"text" : "Design sequence detector to detect the overlapping sequence 0101 using Mealy model with positive edge triggered D Flipflop.",
+	"marks" : 3, 
+	"timeinmin" : 9,
+	"images": []
+},
+{
+	"subject" : "DSCO",
+	"source_year" : 2024,
+	"type" : "text",
+	"chapter" : ["FlipFLop"],
+	"text" : "Convert D flipflop to JK flipflop. Write characteristic equations of JK flip flop.",
+	"marks" : 3, 
+	"timeinmin" : 9,
+	"images": []
+},
+{
+	"subject" : "DSCO",
+	"source_year" : 2024,
+	"type" : "text",
+	"chapter" : ["Verilog"],
+	"text" : "Write a structural Verilog for the circuit shown in Fig 3C.",
+	"marks" : 3, 
+	"timeinmin" : 9,
+	"images": ["data/question_images/Screenshot 2025-09-07 112329.png"]
+},
+{
+	"subject" : "DSCO",
+	"source_year" : 2024,
+	"type" : "text",
+	"chapter" : ["Verilog"],
+	"text" : "Write a behavioral Verilog code for 2 bit comparator using if else statement.",
+	"marks" : 4, 
+	"timeinmin" : 12,
+	"images": []
+},
+{
+	"subject" : "DSCO",
+	"source_year" : 2024,
+	"type" : "text",
+	"chapter" : ["Verilog"],
+	"text" : "Write a dataflow Verilog code for 2:4 decoder",
+	"marks" : 3, 
+	"timeinmin" : 9,
+	"images": []
+},
+{
+	"subject" : "DSCO",
+	"source_year" : 2024,
+	"type" : "text",
+	"chapter" : ["Verilog"],
+	"text" : "Write a Verilog code for a 3 input XOR gate using user defined primitive (UDP)",
+	"marks" : 3, 
+	"timeinmin" : 9,
+	"images": []
+},
+{
+	"subject" : "DSCO",
+	"source_year" : 2024,
+	"type" : "text",
+	"chapter" : ["Verilog"],
+	"text" : "Implement full adder using ACT 1 logic module",
+	"marks" : 4, 
+	"timeinmin" : 12,
+	"images": []
+},
+{
+	"subject" : "DSCO",
+	"source_year" : 2024,
+	"type" : "text",
+	"chapter" : ["Misc."],
+	"text" : "Explain ASIC design flow with neat diagram",
+	"marks" : 3, 
+	"timeinmin" : 9,
+	"images": []
+},
+{
+	"subject" : "DSCO",
+	"source_year" : 2024,
+	"type" : "text",
+	"chapter" : ["Misc."],
+	"text" : "What is TTL logic? Explain the working of 2 input NAND gate using TTL logic",
+	"marks" : 3, 
+	"timeinmin" : 9,
+	"images": []
+}
 
 ]
