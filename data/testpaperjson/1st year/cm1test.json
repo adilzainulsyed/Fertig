@@ -1,0 +1,272 @@
+[
+{
+	"subject" : "CM1",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Matrix"],
+	"text" : "Find all the eigenvalues and any two eigenvectors of the matrix",
+	"marks" : 4, 
+	"timeinmin" : 14,
+	"images": ["data/question_images/Screenshot 2025-09-20 103037.png"]
+},
+{
+	"subject" : "CM1",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Matrix"],
+	"text" : "Test the consistency and hence solve by Gauss elimination method",
+	"marks" : 3, 
+	"timeinmin" : 11,
+	"images": ["data/question_images/Screenshot 2025-09-20 103251.png"]
+},
+{
+	"subject" : "CM1",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Matrix"],
+	"text" : "Use Gauss-Jacobi's method to find an approximate solution for the system of linear equations",
+	"marks" : 3, 
+	"timeinmin" : 11,
+	"images": ["data/question_images/Screenshot 2025-09-20 103708.png"]
+},
+{
+	"subject" : "CM1",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Vector"],
+	"text" : "Use Gram-Schmidt orthogonalization process to construct an orthonormal basis of R3 from the given set of vectors {(1,2,1), (2,3,4), (3,1,0)}",
+	"marks" : 4, 
+	"timeinmin" : 14,
+	"images": []
+},
+{
+	"subject" : "CM1",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Numerical Method"],
+	"text" : "Let T: R^2 → R^2 be a mapping given by T(x, y) = (x + y,x4y). Show that T is an invertible linear operator. Also find T^-1(1,1).",
+	"marks" : 3, 
+	"timeinmin" : 11,
+	"images": ["data/question_images/Screenshot 2025-09-20 104032.png"]
+},
+{
+	"subject" : "CM1",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Differential Equations"],
+	"text" : "Solve the differential equation",
+	"marks" : 4, 
+	"timeinmin" : 14,
+	"images": ["data/question_images/Screenshot 2025-09-20 104532.png"]
+},
+{
+	"subject" : "CM1",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Differential Equations"],
+	"text" : "Use method of variation to solve",
+    "marks" : 3,    
+	"timeinmin" : 11,
+	"images": ["data/question_images/Screenshot 2025-09-20 104650.png"]
+},
+{
+	"subject" : "CM1",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Differential Equations"],
+	"text" : "Solve using the method of undetermined coefficients",  
+    "marks" : 3,  
+	"timeinmin" : 11,
+	"images": ["data/question_images/Screenshot 2025-09-20 104650.png"]
+},
+{
+	"subject" : "CM1",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Matrix"],
+	"text" : " ",  
+    "marks" : 4,  
+	"timeinmin" : 14,
+	"images": ["data/question_images/Screenshot 2025-09-20 104951.png"]
+},
+{
+	"subject" : "CM1",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Numerical Method"],
+	"text" : " ",  
+    "marks" : 3,  
+	"timeinmin" : 11,
+	"images": ["data/question_images/Screenshot 2025-09-20 105435.png"]
+},
+{
+	"subject" : "CM1",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Numerical Method"],
+	"text" : "The population of a town in the decennial census is given below. Use an appropriate interpolation formula to estimate the population for the year 1895.",  
+    "marks" : 4,  
+	"timeinmin" : 14,
+	"images": ["data/question_images/Screenshot 2025-09-20 105657.png"]
+},
+{
+	"subject" : "CM1",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Differential Equations"],
+	"text" : " ",  
+    "marks" : 3,  
+	"timeinmin" : 11,
+	"images": ["data/question_images/Screenshot 2025-09-20 105928.png"]
+},
+{
+	"subject" : "CM1",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Numerical Method"],
+	"text" : " ",  
+    "marks" : 3,  
+	"timeinmin" : 11,
+	"images": ["data/question_images/Screenshot 2025-09-20 110259.png"]
+},
+{
+	"subject" : "CM1",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Numerical Method"],
+	"text" : "Using Lagrange's interpolation formula, find a polynomial y= f(x) from the following data",  
+    "marks" : 4,  
+	"timeinmin" : 14,
+	"images": ["data/question_images/Screenshot 2025-09-20 111026.png"]
+},
+{
+	"subject" : "CM1",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Numerical Method"],
+	"text" : "Using Newton Raphson method, find the real root of the equation x^3=6x−1, by taking the initial approximate root as x0=0.5,carry out three iterations and correct up to 4 decimal places.",  
+    "marks" : 3,  
+	"timeinmin" : 11,
+	"images": []
+},
+{
+	"subject" : "CM1",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Differential Equations"],
+	"text" : "From the following table of values of x and y, find dy/dx at x = 0.8, correct to four decimal places",  
+    "marks" : 3,  
+	"timeinmin" : 11,
+	"images": ["data/question_images/Screenshot 2025-09-20 111432.png"]
+},
+{
+	"subject" : "CM1",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Numerical Method"],
+	"text" : "",  
+    "marks" : 4,  
+	"timeinmin" : 14,
+	"images": ["data/question_images/Screenshot 2025-09-20 111730.png"]
+},
+{
+	"subject" : "CM1",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Numerical Method"],
+	"text" : "",  
+    "marks" : 3,  
+	"timeinmin" : 11,
+	"images": ["data/question_images/Screenshot 2025-09-20 111826.png"]
+},
+{
+	"subject" : "CM1",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Vector"],
+	"text" : "Using Gram-Schmidt orthogonalization process find an orthonormal basis of R3 from the set of vectors {(1, −1,1), (1,0,1), (1,1,2)}.",  
+    "marks" : 4,  
+	"timeinmin" : 14,
+	"images": []
+},
+{
+	"subject" : "CM1",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Differential Equations"],
+	"text" : " ",  
+    "marks" : 3,  
+	"timeinmin" : 11,
+	"images": ["data/question_images/Screenshot 2025-09-20 112255.png"]
+},
+{
+	"subject" : "CM1",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Differential Equations"],
+	"text" : " ",  
+    "marks" : 3,  
+	"timeinmin" : 11,
+	"images": ["data/question_images/Screenshot 2025-09-20 112350.png"]
+},
+{
+	"subject" : "CM1",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Vector"],
+	"text" : "Show that the vectors S = {(1, 1, 1), (1, 2, 3), (2, -1, 1)} form a basis for R3. Express the vector (2, 5, 4) in terms of basis vectors.",  
+    "marks" : 3,  
+	"timeinmin" : 11,
+	"images": []
+},
+{
+	"subject" : "CM1",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Differential Equations"],
+	"text" : "Using method of variation of parameters, evaluate",  
+    "marks" : 3,  
+	"timeinmin" : 11,
+	"images": ["data/question_images/Screenshot 2025-09-20 112556.png"]
+},
+{
+	"subject" : "CM1",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Matrix"],
+	"text" : " Using Gauss elimination method, solve the system equations",  
+    "marks" : 3,  
+	"timeinmin" : 11,
+	"images": ["data/question_images/Screenshot 2025-09-20 112656.png"]
+},
+{
+	"subject" : "CM1",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Vector"],
+	"text" : " ",  
+    "marks" : 4,  
+	"timeinmin" : 14,
+	"images": ["data/question_images/Screenshot 2025-09-20 112754.png"]
+},
+{
+	"subject" : "CM1",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Differential Equations"],
+	"text" : " ",  
+    "marks" : 3,  
+	"timeinmin" : 11,
+	"images": ["data/question_images/Screenshot 2025-09-20 112844.png"]
+},
+{
+	"subject" : "CM1",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Matrix"],
+	"text" : "Using Gauss Seidel method solve the following system of equations.\n10x +2y+z = 9\n-2x+3y+10z = 22\nx+10y-z=-22\nPerform 3 iterations and correct the solution up to 4 decimals by taking the initial approximation as x=0, y= 0 , z= 0",  
+    "marks" : 3,  
+	"timeinmin" : 11,
+	"images": []
+}
+]
