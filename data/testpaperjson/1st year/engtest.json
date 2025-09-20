@@ -1,0 +1,354 @@
+[
+{
+	"subject" : "ENG",
+	"source_year" : 2025,
+	"type" : "mcq",
+	"chapter" : ["Grammar"],
+	"text" : "Identify the grammatically correct sentence in the following:",
+	"options": [
+        { "text": "Mr. John settled in India after he inherited a fortune" }, { "text": "Mr. John settled in India after he had inherited a fortune" }, { "text": "Mr. John has been settling in India after he has inherited a fortune" }, { "text": "Mr. John had settled in India after he inherited a fortune" }
+      ],
+    "marks" : 1, 
+	"timeinmin" : 3,
+	"images": []
+},
+{
+	"subject" : "ENG",
+	"source_year" : 2025,
+	"type" : "mcq",
+	"chapter" : ["Grammar"],
+	"text" : "Identify the grammatically correct sentence in the following:",
+	"options": [
+        { "text": "I would move to Australia for better prospects, although the distance from my family" }, { "text": "I would move to Australia for better prospects, despite the distance from my family" }, { "text": "I would move to Australia for better prospects, since the distance from my family" }, { "text": "I would move to Australia for better prospects, inspite the distance from my family" }
+      ],
+    "marks" : 1, 
+	"timeinmin" : 3,
+	"images": []
+},
+{
+	"subject" : "ENG",
+	"source_year" : 2025,
+	"type" : "mcq",
+	"chapter" : ["Grammar"],
+	"text" : "Identify the grammatically correct sentence in the following:",
+	"options": [
+        { "text": "None of the three questions is simple, and I cannot cope up with this" }, { "text": "None of the three questions are simple, and I cannot cope up with this" }, { "text": "None of the three questions are simple, and I cannot cope with this" }, { "text": "None of the three questions is simple, and I cannot cope with this" }
+      ],
+    "marks" : 1, 
+	"timeinmin" : 3,
+	"images": []
+},
+{
+	"subject" : "ENG",
+	"source_year" : 2025,
+	"type" : "mcq",
+	"chapter" : ["Grammar"],
+	"text" : "Identify the grammatically correct sentence in the following:",
+	"options": [
+        { "text": "I wrote a letter to the Principal yesterday, with a request for an honorary position" }, { "text": "I had written a letter to the Principal yesterday, with a request for a honorary position" }, { "text": "I have written a letter to the Principal yesterday, with a request for a honorary position" }, { "text": "I had been writing a letter to the Principal yesterday, with a request for an honorary position" }
+      ],
+    "marks" : 1, 
+	"timeinmin" : 3,
+	"images": []
+},
+{
+	"subject" : "ENG",
+	"source_year" : 2025,
+	"type" : "mcq",
+	"chapter" : ["Grammar"],
+	"text" : "Identify the grammatically correct sentence in the following:",
+	"options": [
+        { "text": "Sidharth wanting to become a football player but needs to practice more vigorously" }, { "text": "Sidharth wants to become a football player but needs to practice more vigorously" }, { "text": "Sidharth is wanting to become a football player but need to practice more vigorously" }, { "text": "Sidharth has wanted to become a football player but is needing to practice more vigorously" }
+      ],
+    "marks" : 1, 
+	"timeinmin" : 3,
+	"images": []
+},
+{
+	"subject" : "ENG",
+	"source_year" : 2025,
+	"type" : "mcq",
+	"chapter" : ["Grammar"],
+	"text" : "Choose the correct answer to fill in the blanks.\n The minister as well as the magistrate _____ choose between duty and reputation.",
+	"options": [
+        { "text": "have to" }, { "text": "has to" }, { "text": "have had to" }, { "text": "are having to" }
+      ],
+    "marks" : 1, 
+	"timeinmin" : 3,
+	"images": []
+},
+{
+	"subject" : "ENG",
+	"source_year" : 2025,
+	"type" : "mcq",
+	"chapter" : ["Grammar"],
+	"text" : "Choose the correct answer to fill in the blanks.\n She _____ Mandarin _____ the past two years.",
+	"options": [
+        { "text": "learnt;since" }, { "text": "has learnt;for" }, { "text": "has been learning;since" }, { "text": "has been learning;for" }
+      ],
+    "marks" : 1, 
+	"timeinmin" : 3,
+	"images": []
+},
+{
+	"subject" : "ENG",
+	"source_year" : 2025,
+	"type" : "mcq",
+	"chapter" : ["Grammar"],
+	"text" : "Choose the correct answer to fill in the blanks.\n Neither money nor power _____ needed to get selected for the Olympics",
+	"options": [
+        { "text": "were" }, { "text": "are" }, { "text": "is" }, { "text": "are being" }
+      ],
+    "marks" : 1, 
+	"timeinmin" : 3,
+	"images": []
+},
+{
+	"subject" : "ENG",
+	"source_year" : 2025,
+	"type" : "mcq",
+	"chapter" : ["Grammar"],
+	"text" : "Choose the correct answer to fill in the blanks.\n _____ undergraduate student is given _____ unique opportunity to earn while studying in our college.",
+	"options": [
+        { "text": "a;an" }, { "text": "an;an" }, { "text": "an;a" }, { "text": "The;an" }
+      ],
+    "marks" : 1, 
+	"timeinmin" : 3,
+	"images": []
+},
+{
+	"subject" : "ENG",
+	"source_year" : 2025,
+	"type" : "mcq",
+	"chapter" : ["Grammar"],
+	"text" : "Choose the correct answer to fill in the blanks.\n The research _____ since 2015 and now the team _____ unanimously decided to disclose the results.",
+	"options": [
+        { "text": "is going on;have" }, { "text": "was going on;have" }, { "text": "has been going on;has" }, { "text": "had been going on;had" }
+      ],
+    "marks" : 1, 
+	"timeinmin" : 3,
+	"images": []
+},
+{
+	"subject" : "ENG",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Why should all be feminists"],
+	"text" : "Chimamanda Adichie argues that our understanding of gender is limited and requires a collective, community-led effort to evolve. Do you agree with this view? Analyze her perspective within the text and discuss how it shapes your thinking on gender and societal change. Answer in about 350-400 words.",
+	"marks" : 10, 
+	"timeinmin" : 30,
+	"images": []
+},
+{
+	"subject" : "ENG",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["The Living Mountain"],
+	"text" : "Amitav Ghosh in his short story 'The Living Mountain' illustrates the idea that the pursuit of material wealth leads to both environmental degradation and societal discontent. What lessons can be drawn from this in the context of contemporary environmental issues?  Answer in about 350-400 words.",
+	"marks" : 10, 
+	"timeinmin" : 30,
+	"images": []
+},
+{
+	"subject" : "ENG",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Unseen Passage"],
+	"text" : "Read the following passage and provide a response to the question in about 300-350 words. Your response is required to show a critical understanding of the ideas presented in the passage. \n Question: The author states, ''Consider what would happen if a valid segment of information is corrupted by even a small piece of fake information or misinformation, which the AI programme fails to recognise and rectify.'' In your view, is the author's concern justified given current developments in AI, or is it an exaggerated caution? Justify your answer.",
+	"marks" : 10, 
+	"timeinmin" : 30,
+	"images": ["data/question_images/Screenshot 2025-09-20 111702.png","data/question_images/Screenshot 2025-09-20 111715.png"]
+},
+{
+	"subject" : "ENG",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Essay"],
+	"text" : "Write an essay on ''Social Media and the rise of Cancel Culture'' in about 600 words",
+	"marks" : 10, 
+	"timeinmin" : 30,
+	"images": []
+},
+{
+	"subject" : "ENG",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Essay"],
+	"text" : "Write an essay on ''Cultural Diversity in a contemporary world. '' in about 600 words",
+	"marks" : 10, 
+	"timeinmin" : 30,
+	"images": []
+},
+{
+	"subject" : "ENG",
+	"source_year" : 2025,
+	"type" : "mcq",
+	"chapter" : ["Grammar"],
+	"text" : "Identify the grammatically correct sentence in the following:",
+	"options": [
+        { "text": "My elder sister and her daughter helps me in my domestic work." }, { "text": "My elder sister and her daughter help me with my domestic work." }, { "text": "My elder sister and her daughter help me for my domestic work." }
+      ],
+    "marks" : 1, 
+	"timeinmin" : 3,
+	"images": []
+},
+{
+	"subject" : "ENG",
+	"source_year" : 2025,
+	"type" : "mcq",
+	"chapter" : ["Grammar"],
+	"text" : "Identify the grammatically correct sentence in the following:",
+	"options": [
+        { "text": "One of the student have been waiting since two hours" }, { "text": "One of the student has been waiting since two hours" }, { "text": "One of the students has been waiting for two hours" }
+      ],
+    "marks" : 1, 
+	"timeinmin" : 3,
+	"images": []
+},
+{
+	"subject" : "ENG",
+	"source_year" : 2025,
+	"type" : "mcq",
+	"chapter" : ["Grammar"],
+	"text" : "Identify the grammatically correct sentence in the following:",
+	"options": [
+        { "text": "Neither of the actors is ready to discuss about changes in roles" }, { "text": "Neither of the actors are ready to discuss changes in roles" }, { "text": "Neither of the actors is ready to discuss changes in roles" }
+      ],
+    "marks" : 1, 
+	"timeinmin" : 3,
+	"images": []
+},
+{
+	"subject" : "ENG",
+	"source_year" : 2025,
+	"type" : "mcq",
+	"chapter" : ["Grammar"],
+	"text" : "Identify the grammatically correct sentence in the following:",
+	"options": [
+        { "text": "A honest worker is always an asset to a company." }, { "text": "An honest worker is always an asset to a company." }, { "text": "An honest worker is always an asset to a company. " }
+      ],
+    "marks" : 1, 
+	"timeinmin" : 3,
+	"images": []
+},
+{
+	"subject" : "ENG",
+	"source_year" : 2025,
+	"type" : "mcq",
+	"chapter" : ["Grammar"],
+	"text" : "Identify the grammatically correct sentence in the following:",
+	"options": [
+        { "text": "Chris did not wanted to deal with the disciplinary issue" }, { "text": "Chris did not want to deal with the disciplinary issue." }, { "text": "Chris had not wanted to deal in the disciplinary issue." }
+      ],
+    "marks" : 1, 
+	"timeinmin" : 3,
+	"images": []
+},
+{
+	"subject" : "ENG",
+	"source_year" : 2025,
+	"type" : "mcq",
+	"chapter" : ["Grammar"],
+	"text" : "_____the bad weather, the outdoor party was rescheduled.",
+	"options": [
+        { "text": "Because of" }, { "text": "Inspite" }, { "text": "Despite of" }
+      ],
+    "marks" : 1, 
+	"timeinmin" : 3,
+	"images": []
+},
+{
+	"subject" : "ENG",
+	"source_year" : 2025,
+	"type" : "mcq",
+	"chapter" : ["Grammar"],
+	"text" : "The headmaster as well as the students _____delighted when the team showed _____mettle.",
+	"options": [
+        { "text": "were; their" }, { "text": "was;it's" }, { "text": "was;its" }
+      ],
+    "marks" : 1, 
+	"timeinmin" : 3,
+	"images": []
+},
+{
+	"subject" : "ENG",
+	"source_year" : 2025,
+	"type" : "mcq",
+	"chapter" : ["Grammar"],
+	"text" : "The director congratulated the winner _____ his achievement, and also acknowledged that every participant _____unique.",
+	"options": [
+        { "text": "for;was" }, { "text": "for;were" }, { "text": "on;was" }
+      ],
+    "marks" : 1, 
+	"timeinmin" : 3,
+	"images": []
+},
+{
+	"subject" : "ENG",
+	"source_year" : 2025,
+	"type" : "mcq",
+	"chapter" : ["Grammar"],
+	"text" : "Neither Jackson nor his friends _____been able to _____ with the situation",
+	"options": [
+        { "text": "Have; cope" }, { "text": "Has;cope up" }, { "text": "have, cope up" }
+      ],
+    "marks" : 1, 
+	"timeinmin" : 3,
+	"images": []
+},
+{
+	"subject" : "ENG",
+	"source_year" : 2025,
+	"type" : "mcq",
+	"chapter" : ["Grammar"],
+	"text" : "One of the _____for the disturbance in the city _____ the lack of security.",
+	"options": [
+        { "text": "reason;was" }, { "text": "reasons;were" }, { "text": "reasons;was" }
+      ],
+    "marks" : 1, 
+	"timeinmin" : 3,
+	"images": []
+},
+{
+	"subject" : "ENG",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Why should all be feminists"],
+	"text" : "Chimamanda Adichie states that 'we must raise our daughters differently. We must also raise our sons differently'. What are your views on the above claim? Explain with reference to the points made in the text",
+	"marks" : 10, 
+	"timeinmin" : 30,
+	"images": []
+},
+{
+	"subject" : "ENG",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Unseen Passage"],
+	"text" : "Read the following passage and provide a response to the question in about 300-350 words. Your response is required to show a critical understanding of the ideas presented in the passage. \n Question: Do you agree with view that engineering degree programmes must include arts and humanities courses? Elaborate.",
+	"marks" : 10, 
+	"timeinmin" : 30,
+	"images": ["data/question_images/Screenshot 2025-09-20 115828.png","data/question_images/Screenshot 2025-09-20 115843.png"]
+},
+{
+	"subject" : "ENG",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Essay"],
+	"text" : "Write an essay on ''Poverty anywhere is a threat to prosperity everywhere.'' in about 600 words",
+	"marks" : 10, 
+	"timeinmin" : 30,
+	"images": []
+},
+{
+	"subject" : "ENG",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Essay"],
+	"text" : "Write an essay on ''Does cinema shape our popular culture or merely reflect it.'' in about 600 words",
+	"marks" : 10, 
+	"timeinmin" : 30,
+	"images": []
+}
+
+
+]
