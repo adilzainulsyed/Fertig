@@ -1,0 +1,302 @@
+[
+{
+	"subject" : "BME",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Properties of Steam, Steam Boilers and Thermodynamics"],
+	"text" : "A steam boiler provides steam at the rate of 150kg/min at 2 bar and 200°C using feed water at 30°C. The fuel has a calorific value of 40MJ/kg. The fuel consumption is found to be at the rate of 15kg/min in the presence of economizer. The economizer preheats the feed water to a temperature of 80°C. What will be the boiler efficiency? In case, the feed water is at 20°C which is raised to 60°C after preheating in economizer, what will be the boiler efficiency assuming all other parameters remains the same as earlier? Assume the specific heat of water as 4.187 kJ/kgK and that of superheated steam as 2.25 kJ/kgK.",
+	"marks" : 4, 
+	"timeinmin" : 12,
+	"images": []
+},
+{
+	"subject" : "BME",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Properties of Steam, Steam Boilers and Thermodynamics"],
+	"text" : "Dry steam at 118.6°C is passed through a pipeline which is connected to a chamber where the steam loses 100kJ/kg of enthalpy. Consequently, the steam is passed through another chamber where the steam is heated by 500kJ/kg. What is the condition of steam and the related parameter at the exit of each chamber? Assume the specific heat of water as 4.187 kJ/kgK and that of superheated steam as 2.25 kJ/kgK.",
+	"marks" : 3, 
+	"timeinmin" : 9,
+	"images": []
+},
+{
+	"subject" : "BME",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Properties of Steam, Steam Boilers and Thermodynamics"],
+	"text" : "Explain in detail any three limitations of fire tube boiler. ",
+	"marks" : 3, 
+	"timeinmin" : 9,
+	"images": []
+},
+{
+	"subject" : "BME",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Power Transmission"],
+	"text" : "The belt drive has a centre distance of 1m and provides a velocity ratio of 2. If the coefficient of friction between the belt and pulley=0.3, diameter of driven pulley=0.1m, tight side tension=4000N, slack side tension=2000N, driver shaft speed=200rpm, find the type of belt drive used. Also find the driven pulley speed and belt length.",
+	"marks" : 4, 
+	"timeinmin" : 12,
+	"images": []
+},
+{
+	"subject" : "BME",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Power Transmission"],
+	"text" : "Gear A, B, C, D, E, F and G has 20, 30 ,40, 50, 60, 100 and 80 teeth respectively and are used in a gear train. The module of gear A, B, C are 4 while the rest of the gears have a module equal to 2. Determine the minimum possible velocity ratio that can be achieved using 3 shafts. What will be the minimum possible velocity ratio if maximum number of gears are to be used without the restriction on the number of shafts. Draw the gear arrangement for each case.",
+	"marks" : 3, 
+	"timeinmin" : 9,
+	"images": []
+},
+{
+	"subject" : "BME",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Power Transmission"],
+	"text" : "Explain any three limitations and advantages of gear train. ",
+	"marks" : 3, 
+	"timeinmin" : 9,
+	"images": []
+},
+{
+	"subject" : "BME",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["IC Engines"],
+	"text" : "An engine has a cam shaft speed of 1000 rpm and consumes 0.01kg/s of fuel. The brake load is 40kg and the brake drum diameter is 0.1m. The Mean effective pressure is 4 bar and has a compression ratio of 10. If the stroke length-to-bore ratio is 1.5 and indicated thermal efficiency is 30%, find the stroke length and bore. Also find the BP and clearance volume of the cylinder. The calorific value of fuel is 25MJ/kg ",
+	"marks" : 4, 
+	"timeinmin" : 12,
+	"images": []
+},
+{
+	"subject" : "BME",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["IC Engines"],
+	"text" : "Explain the operation of 4 stroke petrol engine with neat sketches. ",
+	"marks" : 3, 
+	"timeinmin" : 9,
+	"images": []
+},
+{
+	"subject" : "BME",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["IC Engines"],
+	"text" : "Explain any three advantages of 2 stroke engine.  ",
+	"marks" : 3, 
+	"timeinmin" : 9,
+	"images": []
+},
+{
+	"subject" : "BME",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Manufacturing Processes"],
+	"text" : "With neat sketches, explain how the internal threading operation and hole size enlargement operation is carried out using drilling machine.",
+	"marks" : 4, 
+	"timeinmin" : 12,
+	"images": []
+},
+{
+	"subject" : "BME",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Manufacturing Processes"],
+	"text" : "Explain in detail the usefulness of feed rod and lead screw in lathe machine.",
+	"marks" : 3, 
+	"timeinmin" : 9,
+	"images": []
+},
+{
+	"subject" : "BME",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Automation and Advanced Manufacturing"],
+	"text" : "Explain any three features of CNC machine which makes it better than NC machine",
+	"marks" : 3, 
+	"timeinmin" : 9,
+	"images": []
+},
+{
+	"subject" : "BME",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Misc."],
+	"text" : "Explain any four sand casting defects",
+	"marks" : 4, 
+	"timeinmin" : 12,
+	"images": []
+},
+{
+	"subject" : "BME",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Misc."],
+	"text" : "Make a comparison of gas welding and resistance spot welding. ",
+	"marks" : 3, 
+	"timeinmin" : 9,
+	"images": []
+},
+{
+	"subject" : "BME",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Automation and Advanced Manufacturing"],
+	"text" : "Explain three improvements needed for CNC machine",
+	"marks" : 3, 
+	"timeinmin" : 9,
+	"images": []
+},
+{
+	"subject" : "BME",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Properties of Steam, Steam Boilers and Thermodynamics"],
+	"text" : "A superheated steam at 14bar is taken out from a boiler and is passed through a supply pipeline to a nearby industry for its use. The industry strictly requires 23.5% wet steam. \n i) If the heat loss through the supply pipeline is 510kJ/kg, what is the temperature of superheated steam at the boiler exit? \n ii) If the heat loss in the supply pipeline is limited to 32.5% of latent heat of vaporization, what should be the condition of steam at boiler exit in order to ensure that the 23.5% wet steam supplied to the industry? \n iii) If the thermal insulation on the supply pipeline is such that the steam does not lose any heat as it passes through the supply pipeline, should the boiler still supply superheated steam? \n Elaborate your answer. Assume the specific heat of water as 4.18 kJ/KgK and that of superheated steam as 2.25 kJ/KgK.",
+	"marks" : 4, 
+	"timeinmin" : 12,
+	"images": []
+},
+{
+	"subject" : "BME",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Properties of Steam, Steam Boilers and Thermodynamics"],
+	"text" : "Three boilers supply steam into a common main. The pressure in the boilers and the main is 11.5 bar. Boiler-X which is equipped with a superheater produces 2500 grams of steam with a temperature of 320°C. Boiler-Y is also equipped with a superheater and produces 13 kg of steam with a temperature of 275°C. Boiler-Z does not have a superheater and it produces 3.5 kg of steam. The temperature of steam in the mains is 232°C. Determine the quality of steam produced by Boiler-Z.",
+	"marks" : 3, 
+	"timeinmin" : 9,
+	"images": []
+},
+{
+	"subject" : "BME",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Properties of Steam, Steam Boilers and Thermodynamics"],
+	"text" : "Explain the function of any three boiler accessories",
+	"marks" : 3, 
+	"timeinmin" : 9,
+	"images": []
+},
+{
+	"subject" : "BME",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Power Transmission"],
+	"text" : "An 84mm wide belt transmitting power between two pulleys rotating in counter-clockwise directions with a speed reduction ratio of 9 has permissible tension per metre of the width as 11kN. The speed and diameter of the larger pulley are 2.5rps and 1.6m respectively. Determine the power transmitted by the drive and the length of the belt if the centre distance is 4meters and the coefficient of friction between the belt and the pulley surface is 0.35. What would be the change in length of the belt, if driven pulley rotation is changed to clockwise direction.",
+	"marks" : 4, 
+	"timeinmin" : 12,
+	"images": []
+},
+{
+	"subject" : "BME",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Power Transmission"],
+	"text" : "The shaft from a DC motor is connected to gear A which rotates at 40rps in anti-clockwise direction. Gears B and C are compound gears as well as gears D and E. Gear A meshes with gear B and gear C drives gear D. Gear E meshes with gear F which is mounted on the driven shaft. The number of teeth on gears A, B, C, D, E and F are 27, 42, 55, 69, 75 & 88 respectively. Sketch the arrangement and determine the speed (rpm) and direction of gear F? Calculate the centre distance between the driver and driven shafts if the module of gears is 2π mm.",
+	"marks" : 3, 
+	"timeinmin" : 9,
+	"images": []
+},
+{
+	"subject" : "BME",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Power Transmission"],
+	"text" : "Explain the function of fast and loose pulley with a neat sketch. ",
+	"marks" : 3, 
+	"timeinmin" : 9,
+	"images": []
+},
+{
+	"subject" : "BME",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["IC Engines"],
+	"text" : "A twin cylinder two-stroke petrol engine with bore to stroke ratio of 0.83, develops 70kW inside the cylinder, that is running at 6500rpm. The mean effective pressure on the piston is 16 bar and mechanical efficiency is 75%. Determine the following: \n i) Diameter and stroke of each cylinder \n ii) Brake thermal efficiency \n iii) Indicated thermal efficiency \n The fuel consumption is 16kg/hr of gross calorific value of 44MJ/kg.",
+	"marks" : 4, 
+	"timeinmin" : 12,
+	"images": []
+},
+{
+	"subject" : "BME",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["IC Engines"],
+	"text" : "Explain the working of an engine fitted with a camshaft and operating on a thermodynamic cycle wherein the heat addition and heat rejection takes place at isochoric processes. Support your answer with neat sketches for each stage.",
+	"marks" : 3, 
+	"timeinmin" : 9,
+	"images": []
+},
+{
+	"subject" : "BME",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["IC Engines"],
+	"text" : "Justify the following comments: \n i) As compared with petrol engine, diesel engine is difficult to start in cold weather. \n ii) Thermal efficiency is less in two-stroke engines. \n iii) Number of working cycles per minute is equal to engine speed in two-stroke engines.",
+	"marks" : 3, 
+	"timeinmin" : 9,
+	"images": []
+},
+{
+	"subject" : "BME",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["RAC"],
+	"text" : "Ozone friendly R134a is used in a refrigeration plant of 12 tonne capacity with evaporator and condenser temperature of -10⁰C and 36⁰C respectively. Considering the condition of 6⁰C superheat of the refrigerant at exit of the compressor.\n i) Plot T-S and p-h for the cycle \n ii) Calculate the mass flow rate of the refrigerant. \n iii) Calculate the COP of the cycle.\n iv) Calculate the condition and enthalpy of the vapor at the entrance to the evaporator.",
+	"marks" : 4, 
+	"timeinmin" : 12,
+	"images": []
+},
+{
+	"subject" : "BME",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["RAC"],
+	"text" : "Discuss the functions of the following parts of a refrigeration system, \n i) Expansion valve \n ii) Evaporator \n iii) Condenser",
+	"marks" : 3, 
+	"timeinmin" : 9,
+	"images": []
+},
+{
+	"subject" : "BME",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["RAC"],
+	"text" : "Explain the following; \n i) In Vapor Compression Refrigeration Cycle (VCRS), why do the refrigerant is compressed before entering the condenser? \n ii) An ideal refrigerant should have higher specific heat in its vapor state, and lower specific heat in its liquid state. Why? \n iii) Does the latent heat of vaporization of the refrigerant effect the refrigerating effect produced?",
+	"marks" : 3, 
+	"timeinmin" : 9,
+	"images": []
+},
+{
+	"subject" : "BME",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Properties of Steam, Steam Boilers and Thermodynamics"],
+	"text" : "Explain the following; \n i) In Vapor Compression Refrigeration Cycle (VCRS), why do the refrigerant is compressed before entering the condenser? \n ii) An ideal refrigerant should have higher specific heat in its vapor state, and lower specific heat in its liquid state. Why? \n iii) Does the latent heat of vaporization of the refrigerant effect the refrigerating effect produced?",
+	"marks" : 3, 
+	"timeinmin" : 9,
+	"images": []
+},
+{
+	"subject" : "BME",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Automation and Advanced Manufacturing"],
+	"text" : "List out any six problems associated with NC machine. ",
+	"marks" : 3, 
+	"timeinmin" : 9,
+	"images": []
+},
+{
+	"subject" : "BME",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Automation and Advanced Manufacturing"],
+	"text" : "Discuss the different components that make up an automated system for production system? Sketch a block diagram of the same.",
+	"marks" : 3, 
+	"timeinmin" : 9,
+	"images": []
+}
+]
