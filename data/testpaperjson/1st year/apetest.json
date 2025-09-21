@@ -1,0 +1,302 @@
+[
+{
+	"subject" : "APE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Laser"],
+	"text" : "Explain (a) Stefan's law (b) Wien's displacement law (c) Rayleigh-Jeans law (d) Ultraviolet catastrophe (e) Planck's Law",
+	"marks" : 5, 
+	"timeinmin" : 18,
+	"images": []
+},
+{
+	"subject" : "APE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Laser"],
+	"text" : "A multimode fibre has a core refractive index of 1.480 and a core-cladding index difference of 2.0 per cent (Δ = 0.020). Find the (a) numerical aperture, (b) the acceptance angle, and (c) the critical angle.",
+	"marks" : 3, 
+	"timeinmin" : 11,
+	"images": []
+},
+{
+	"subject" : "APE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Laser"],
+	"text" : "Why is it difficult to obtain a LASER emitting visible and UV region (not considering the LASER diodes). ",
+	"marks" : 2, 
+	"timeinmin" : 7 ,
+	"images": []
+},
+{
+	"subject" : "APE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Quantum Mechanics"],
+	"text" : "Derive the expression for energy eigen value for an electron in an infinite potential well. Calculate the zero-point energy and first excited state energy in eV for an electron in a box of width 10 Å.",
+	"marks" : 5, 
+	"timeinmin" : 18 ,
+	"images": []
+},
+{
+	"subject" : "APE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Laser"],
+	"text" : "Prove that the probabilities of electromagnetic radiation participating in absorption and stimulated emission in an atom are equal in thermal equilibrium.",
+	"marks" : 3, 
+	"timeinmin" : 11 ,
+	"images": []
+},
+{
+	"subject" : "APE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Quantum Physics"],
+	"text" : "According to classical theory, what is the role of frequency of radiation in photoelectric effect? Comment on the experimental observations",
+	"marks" : 2, 
+	"timeinmin" : 7 ,
+	"images": []
+},
+{
+	"subject" : "APE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Quantum Computing"],
+	"text" : "Draw the circuit diagram of a CNOT gate . Using its matrix representation, show its application gate on each of the following input states: |00>,|01>,|10> and |11>",
+	"marks" : 5, 
+	"timeinmin" : 18 ,
+	"images": []
+},
+{
+	"subject" : "APE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Quantum Physics"],
+	"text" : "Electrons are ejected from a metallic surface with speeds up to 4.60 x 105 m/s when light with a wavelength of 625 nm is used.\na) What is the work function of the surface?\nb) What is the cut-off frequency for this surface?",
+	"marks" : 3, 
+	"timeinmin" : 11 ,
+	"images": []
+},
+{
+	"subject" : "APE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Quantum Computing"],
+	"text" : "Define a Hermitian operator. Prove that σy is a Hermitian operator.",
+	"marks" : 2, 
+	"timeinmin" : 7 ,
+	"images": []
+},
+{
+	"subject" : "APE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Quantum Computing"],
+	"text" : "Discuss the action of all single qubit gates on general superposition states.",
+	"marks" : 5, 
+	"timeinmin" : 18 ,
+	"images": []
+},
+{
+	"subject" : "APE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Quantum Computing"],
+	"text" : " ",
+	"marks" : 3, 
+	"timeinmin" : 11 ,
+	"images": ["data/question_images/Screenshot 2025-09-21 104547.png"]
+},
+{
+	"subject" : "APE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Quantum Physics"],
+	"text" : "Find the minimum kinetic energy of a proton confined within a nucleus having a diameter of 1.0 x 10-15 m. ",
+	"marks" : 2, 
+	"timeinmin" : 7 ,
+	"images": []
+},
+{
+	"subject" : "APE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Quantum Mechanics"],
+	"text" : "i) How can single-slit diffraction be explained using a quantum mechanical approach? Explain.\nii) A student conducted a photoelectric effect experiment by shining light of various wavelengths onto a metal surface. To stop the flow of photocurrent, the student applied a negative potential until the current dropped to zero. The following readings were recorded. Are these readings valid? Provide justification for your answer.",
+	"marks" : 5, 
+	"timeinmin" : 18 ,
+	"images": ["data/question_images/Screenshot 2025-09-21 104959.png"]
+},
+{
+	"subject" : "APE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Quantum Computing"],
+	"text" : "Show that the Hadamard gate H is unitary",
+	"marks" : 3, 
+	"timeinmin" : 11 ,
+	"images": []
+},
+{
+	"subject" : "APE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Quantum Computing"],
+	"text" : "The output of the following 2-qubit circuit is |01>. State whether the this statement is TRUE or FALSE and justify your reason",
+	"marks" : 2, 
+	"timeinmin" : 7 ,
+	"images": ["data/question_images/Screenshot 2025-09-21 105306.png"]
+},
+{
+	"subject" : "APE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Laser"],
+	"text" : "Derive the relation between the scattering angle and the Compton shift in wavelength of X-rays, when X-rays bombarded with target metal.",
+	"marks" : 5, 
+	"timeinmin" : 18 ,
+	"images": []
+},
+{
+	"subject" : "APE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Laser"],
+	"text" : "Calculate the V- number for a fiber of core diameter 40 micro meter and refractive index of 1.55 and 1.50 respectively for its core and cladding when a light of wavelength 1400 nm is propagating.",
+	"marks" : 3, 
+	"timeinmin" : 11 ,
+	"images": []
+},
+{
+	"subject" : "APE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Laser"],
+	"text" : "Is lasing action possible with only two levels (e.g. a two level system)? Justify your answer. ",
+	"marks" : 2, 
+	"timeinmin" : 7 ,
+	"images": []
+},  
+{
+	"subject" : "APE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Quantum Mechanics"],
+	"text" : "Obtain the general solution of the Schrodinger equation for a particle of mass m trapped in a potential well of infinite height.",
+	"marks" : 5, 
+	"timeinmin" : 18 ,
+	"images": []
+}, 
+{
+	"subject" : "APE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Laser"],
+	"text" : "What is the working principle of an optical fibre? Obtain an expression for numerical aperture. ",
+	"marks" : 3, 
+	"timeinmin" : 11 ,
+	"images": []
+}, 
+{
+	"subject" : "APE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Quantum Physics"],
+	"text" : "The speed of an electron is measured to be 5.00 x 103 m/s to an accuracy of 0.0030%. Find the minimum uncertainty in determining the position of this electron.",
+	"marks" : 2, 
+	"timeinmin" : 7 ,
+	"images": []
+},
+{
+	"subject" : "APE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Quantum Computing"],
+	"text" : "Apply the Hadamard gate to the qubit state a∣0⟩+b∣1⟩, where a and b are arbitrary complex amplitudes. Show theresulting state in terms of a and b",
+	"marks" : 5, 
+	"timeinmin" : 18 ,
+	"images": []
+},
+{
+	"subject" : "APE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Quantum Physics"],
+	"text" : "Calculate the number of photons emitted for 10 seconds by a FM radio transmitter of frequency 99.7 MHz with output power of 150 kW.",
+	"marks" : 3, 
+	"timeinmin" : 11 ,
+	"images": []
+},
+{
+	"subject" : "APE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Quantum Computing"],
+	"text" : " ",
+	"marks" : 2, 
+	"timeinmin" : 7 ,
+	"images": ["data/question_images/Screenshot 2025-09-21 110254.png"]
+}, 
+{
+	"subject" : "APE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Quantum Computing"],
+	"text" : "Define Hermitain and Unitary operators. Prove that Pauli Y and Z matrices are both Hermitian and Unitary",
+	"marks" : 5, 
+	"timeinmin" : 18     ,
+	"images": []
+},
+{
+	"subject" : "APE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Quantum Computing"],
+	"text" : "Construct a quantum circuit which maps two qubit states |00>,|01>, |10> and |11> to EPR states. Describe its operation.",
+	"marks" : 3, 
+	"timeinmin" : 11     ,
+	"images": []
+},
+{
+	"subject" : "APE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Quantum Physics"],
+	"text" : "Calculate the energy and momentum for photon of wavelength 700 nm",
+	"marks" : 2, 
+	"timeinmin" : 7     ,
+	"images": []
+}, 
+{
+	"subject" : "APE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Laser"],
+	"text" : "i) A student creates a diffraction pattern by passing a laser beam through two different gratings with 600 lines/mm and 100 lines/mm. What changes can be expected in the diffraction pattern created using these two gratings?\nii) What necessary precautions should be taken while handling a laser?",
+	"marks" : 5, 
+	"timeinmin" : 18     ,
+	"images": []
+},
+{
+	"subject" : "APE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Quantum Computing"],
+	"text" : "Obtain the eigenvalues of the Hadamard matrix ",
+	"marks" : 3, 
+	"timeinmin" : 11     ,
+	"images": []
+}, 
+{
+	"subject" : "APE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Quantum Computing"],
+	"text" : "Obtain the Bloch sphere representation for the following ket",
+	"marks" : 2, 
+	"timeinmin" : 7     ,
+	"images": ["data/question_images/Screenshot 2025-09-21 110850.png"]
+} 
+]  
