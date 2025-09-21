@@ -108,5 +108,125 @@
     "marks": 3,
     "timeinmin": 10,
     "images": []
+  },
+  {
+    "subject": "FEE",
+    "source_year": 2025,
+    "type": "numerical",
+    "chapter": ["Basic Electrical Concepts", "DC Circuits"],
+    "text": "Determine the voltage $V_{AB}$ between the points A and B of the network shown.",
+    "marks": 5,
+    "timeinmin": 18,
+    "images": ["data/question_images/Screenshot 2025-09-21 105755.png"]
+  },
+  {
+    "subject": "FEE",
+    "source_year": 2025,
+    "type": "numerical",
+    "chapter": ["Basic Electrical Concepts", "Network Theorems"],
+    "text": "Using superposition theorem, determine the current through the load resistance $R_{L}$ as shown in the given network.",
+    "marks": 5,
+    "timeinmin": 18,
+    "images": ["data/question_images/Screenshot 2025-09-21 105851.png"]
+  },
+  {
+    "subject": "FEE",
+    "source_year": 2025,
+    "type": "numerical",
+    "chapter": ["AC Circuits"],
+    "text": "In the given circuit, if the total current supplied by the source is 25 $\\angle30^{\\circ}$ A. Determine, (i) Branch currents (ii) Potential difference between points A and B (iii) Source voltage (iv) Real power consumed",
+    "marks": 5,
+    "timeinmin": 18,
+    "images": ["data/question_images/Screenshot 2025-09-21 105924.png"]
+  },
+  {
+    "subject": "FEE",
+    "source_year": 2025,
+    "type": "numerical",
+    "chapter": ["AC Circuits", "Power Factor Correction"],
+    "text": "A living room is equipped with the following electrical loads, all connected in parallel to a 230 V, 50 Hz, single-phase AC supply. \n- Ceiling fan: 80 W, 0.65 lagging \n- Fluorescent lamp: 40 W, 0.7 lagging \n- LED lamp: 30 W, 0.95 lagging \nDetermine the capacitance required to be connected in parallel to achieve unity power factor for the room.",
+    "marks": 5,
+    "timeinmin": 18,
+    "images": []
+  },
+  {
+    "subject": "FEE",
+    "source_year": 2025,
+    "type": "numerical",
+    "chapter": ["Three-Phase Systems"],
+    "text": "A 3-phase 4-wire, 415 V, ABC system has a star connected load with impedances $Z_{A}=6\\angle0^{\\circ}$ Ω, $Z_{B}=6\\angle30^{\\circ}$ and $Z_{c}=5\\angle45^{\\circ}$. Taking the voltage $V_{AB}$ as reference phasor, determine line and neutral currents. Also calculate the real power consumed by the load.",
+    "marks": 5,
+    "timeinmin": 18,
+    "images": []
+  },
+  {
+    "subject": "FEE",
+    "source_year": 2025,
+    "type": "numerical",
+    "chapter": ["Magnetic Circuits"],
+    "text": "A ring forming a magnetic circuit is made from two materials. One part is mild steel (relative permeability $=2000$) of mean length 25 cm and cross-sectional area 4 $cm^{2},$ and the remainder is cast iron (relative permeability $={1350})$ of mean length 20 cm and cross-sectional area $7.5~cm^{2}$. Determine the total reluctance of the circuit. Calculate the MMF required to create a flux density of 0.75 Tesla in the steel part of the magnetic circuit.",
+    "marks": 5,
+    "timeinmin": 18,
+    "images": []
+  },
+  {
+    "subject": "FEE",
+    "source_year": 2025,
+    "type": "short",
+    "chapter": ["Transformers"],
+    "text": "List any three transformer classifications? Elaborate.",
+    "marks": 4,
+    "timeinmin": 14,
+    "images": []
+  },
+  {
+    "subject": "FEE",
+    "source_year": 2025,
+    "type": "short",
+    "chapter": ["Electrical Safety", "Grounding"],
+    "text": "Discuss how the equipment and neutral grounding ensures electrical safety.",
+    "marks": 3,
+    "timeinmin": 11,
+    "images": []
+  },
+  {
+    "subject": "FEE",
+    "source_year": 2025,
+    "type": "short",
+    "chapter": ["Power Generation", "Renewable Energy"],
+    "text": "List any three renewable power generation sources outlining their salient features.",
+    "marks": 3,
+    "timeinmin": 11,
+    "images": []
+  },
+  {
+    "subject": "FEE",
+    "source_year": 2025,
+    "type": "short",
+    "chapter": ["Power Electronics", "Power Supplies"],
+    "text": "Compare a Linear Power Supply and a Switched Mode Power Supply (SMPS).",
+    "marks": 3,
+    "timeinmin": 11,
+    "images": []
+  },
+  {
+    "subject": "FEE",
+    "source_year": 2025,
+    "type": "short",
+    "chapter": ["Power Electronics", "Rectifiers"],
+    "text": "Explain the operation of single-phase half-wave and full-wave rectifiers with the help of circuit diagrams and waveforms.",
+    "marks": 3,
+    "timeinmin": 11,
+    "images": []
+  },
+  {
+    "subject": "FEE",
+    "source_year": 2025,
+    "type": "short",
+    "chapter": ["Electric Vehicles"],
+    "text": "Describe the general configuration of an Electric Vehicle (EV) system.",
+    "marks": 4,
+    "timeinmin": 14,
+    "images": []
   }
 ]
