@@ -1,0 +1,112 @@
+[
+  {
+    "subject": "FEE",
+    "source_year": 2025,
+    "type": "short",
+    "chapter": ["Basic Electrical Concepts"],
+    "text": "Using node voltage analysis, determine the node voltages: V1, V2, V3 and hence find the current",
+    "marks": 5,
+    "timeinmin": 15,
+    "images": ["data/question_images/Screenshot 2025-09-21 104052.png"]
+  },
+  {
+    "subject": "FEE",
+    "source_year": 2025,
+    "type": "short",
+    "chapter": ["Basic Electrical Concepts"],
+    "text": "For the circuit shown below, obtain the value of R so that maximum power is dissipated in it. Also, determine the maximum power. What will be the power dissipated in R if R is made 1.25 times the source (Thevenin's) resistance.",
+    "marks": 5,
+    "timeinmin": 15,
+    "images": ["data/question_images/Screenshot 2025-09-21 104314.png"]
+  },
+  {
+    "subject": "FEE",
+    "source_year": 2025,
+    "type": "numerical",
+    "chapter": ["Resonance Circuits"],
+    "text": "A series resonance network consisting of a resistor of 30 Ω, a capacitor of 2 µF and an inductor of 20 mH is connected across a sinusoidal supply voltage which has a constant output of 9 Volts at all frequencies. Calculate the resonant frequency, the current at resonance, the voltage across the inductor and capacitor at resonance, the quality factor and the bandwidth of the circuit.",
+    "marks": 5,
+    "timeinmin": 15,
+    "images": ["data/question_images/Screenshot 2025-09-21 104401.png"]
+  },
+  {
+    "subject": "FEE",
+    "source_year": 2025,
+    "type": "numerical",
+    "chapter": ["Three-Phase Systems"],
+    "text": "Three similar coils with a resistance of 7 Ω and an inductance of 0.03 H each are connected in delta configuration to a 400 V, 3-phase, 50 Hz supply system in RYB sequence. Using VRY as the reference voltage phasor, determine (a) the phase currents, (b) the line currents, and (c) the active, reactive and apparent powers.",
+    "marks": 5,
+    "timeinmin": 15,
+    "images": []
+  },
+  {
+    "subject": "FEE",
+    "source_year": 2025,
+    "type": "numerical",
+    "chapter": ["Magnetic Circuits"],
+    "text": "A ring forming a magnetic circuit is made from two materials. One part is mild steel (relative permeability = 2000) of mean length 25 cm and cross-sectional area 4 cm², and the remainder is cast iron (relative permeability = 1350) of mean length 20 cm and cross-sectional area 7.5 cm². Determine the total reluctance of the circuit. Calculate the MMF required to create a flux density of 0.75 Tesla in the steel part of the magnetic circuit.",
+    "marks": 5,
+    "timeinmin": 15,
+    "images": []
+  },
+  {
+    "subject": "FEE",
+    "source_year": 2025,
+    "type": "numerical",
+    "chapter": ["Electromagnetic Induction & Transformers"],
+    "text": "Explain the concept of electromagnetic induction using an example of a transformer. A 10 kVA, 415 / 11000 V, 50 Hz, single-phase transformer has 60 turns on the primary. Determine the maximum flux in the core.",
+    "marks": 4,
+    "timeinmin": 12,
+    "images": []
+  },
+  {
+    "subject": "FEE",
+    "source_year": 2025,
+    "type": "short",
+    "chapter": ["Energy Meters"],
+    "text": "Describe the major components in a digital energy meter. Mention any two advantages of digital energy meters over analog energy meters.",
+    "marks": 3,
+    "timeinmin": 10,
+    "images": []
+  },
+  {
+    "subject": "FEE",
+    "source_year": 2025,
+    "type": "short",
+    "chapter": ["Power Supply Systems"],
+    "text": "Explain the power connection setup required for critical loads and illustrate it with a block diagram.",
+    "marks": 3,
+    "timeinmin": 10,
+    "images": []
+  },
+  {
+    "subject": "FEE",
+    "source_year": 2025,
+    "type": "short",
+    "chapter": ["Rectifiers"],
+    "text": "Explain the function of a full wave rectifier and how it differs from a half wave rectifier in terms of output voltage.",
+    "marks": 4,
+    "timeinmin": 12,
+    "images": []
+  },
+  {
+    "subject": "FEE",
+    "source_year": 2025,
+    "type": "short",
+    "chapter": ["Protection Devices"],
+    "text": "Explain how an ELCB (Earth Leakage Circuit Breaker) functions to protect against leakage currents.",
+    "marks": 3,
+    "timeinmin": 10,
+    "images": []
+  },
+  {
+    "subject": "FEE",
+    "source_year": 2025,
+    "type": "short",
+    "chapter": ["Power Converters in EVs"],
+    "text": "Describe the different types of power converters used in Electric Vehicles (EVs) and their functions.",
+    "marks": 3,
+    "timeinmin": 10,
+    "images": []
+  }
+]
