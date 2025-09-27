@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Tests | Fertig</title>
+  <link rel="stylesheet" href="/css/theme.css"/>
+  <link rel="stylesheet" href="/css/tests.css"/>
+</head>
+<body>
+
+<!-- Slim dashboard-like app bar (brand + breadcrumb + logout) -->
+<header class="appbar appbar--slim">
+  <div class="appbar-row">
+    <div class="appbar-left">
+      <a class="brand" href="index.html" aria-label="Fertig">
+        <span class="logo">F</span><span>Fertig</span>
+      </a>
+      <nav class="crumbs" aria-label="Breadcrumb">
+        Dashboard › <span id="crumb-year">—</span> › <span id="crumb-subject">—</span>
+      </nav>
+    </div>
+    <div class="appbar-right">
+      <button id="logoutTop" class="btn ghost">Logout</button>
+    </div>
+  </div>
+</header>
+
+<main class="container test-wrap" id="app" aria-live="polite">
+  <!-- Setup -->
+  <section id="setup" class="card">
+    <h1>Start a Test</h1>
+    <p class="muted">Pick a paper JSON and preferences.</p>
+
+    <form id="setupForm">
+      <div class="grid-2">
+        <div class="field">
+          <label for="paperKey">Paper</label>
+          <input id="paperKey" placeholder="e.g., 1styear:ape" />
+          <small class="hint">Maps to <code>/tests/1st year/apetest.json</code></small>
+          <small class="err" id="err-paper"></small>
+        </div>
+        <div class="field">
+          <label for="duration">Duration (mins)</label>
+          <input id="duration" type="number" min="5" step="5" placeholder="Auto (sum of per-Q)" />
+          <small class="hint">Leave blank to auto from question times.</small>
+        </div>
+      </div>
+
+      <div class="field">
+        <label><input type="checkbox" id="shuffle"/> Shuffle questions</label>
+      </div>
+
+      <button class="btn" type="submit">Load Paper</button>
+    </form>
+  </section>
+
+  <!-- Exam -->
+  <section id="exam" class="hidden">
+    <div class="exam-head">
+      <div class="title">
+        <h2 id="paperTitle">SUBJECT TEST</h2>
+        <div class="meta muted" id="paperMeta"></div>
+      </div>
+      <div class="right-tools">
+        <span id="timer" class="meta-chip timer-chip">03:00:00</span>
+        <button id="submitBtn" class="btn primary">Submit</button>
+      </div>
+    </div>
+
+    <div class="exam-body">
+      <!-- Left palette (auto-filled) -->
+      <aside class="qnav" id="qnav" aria-label="Question navigation"></aside>
+
+      <!-- Question panel -->
+      <section class="qpanel">
+        <div class="qmeta">
+          <span id="qBadge" class="badge">Q1</span>
+          <span id="qMarks" class="badge">—</span>
+          <span id="qChapter" class="badge">—</span>
+        </div>
+
+        <article class="qtext" id="qText"></article>
+        <div id="attachments" class="attachments"></div>
+
+        <div class="ans">
+          <label for="answer" class="muted">Your answer</label>
+          <textarea id="answer" rows="8" placeholder="Type your answer here..."></textarea>
+        </div>
+
+        <div class="controls">
+          <button class="btn-outlined" id="prevBtn">← Prev</button>
+          <button class="btn-outlined" id="flagBtn">Flag</button>
+          <button class="btn-outlined" id="nextBtn">Next →</button>
+        </div>
+
+        <div class="muted tiny" id="proctorNote"></div>
+      </section>
+    </div>
+  </section>
+
+  <!-- Summary -->
+  <section id="summary" class="hidden card">
+    <h2>Test submitted</h2>
+    <p id="sumMeta" class="muted"></p>
+    <div class="grid-2">
+      <div class="stat"><div class="stat-num" id="sumAnswered">0</div><div class="stat-label">Answered</div></div>
+      <div class="stat"><div class="stat-num" id="sumFlagged">0</div><div class="stat-label">Flagged</div></div>
+      <div class="stat"><div class="stat-num" id="sumTime">0</div><div class="stat-label">Minutes used</div></div>
+      <div class="stat"><div class="stat-num" id="sumViol">0</div><div class="stat-label">Tab switches</div></div>
+    </div>
+    <div class="actions">
+      <button class="btn" id="downloadBtn">Download answers (.json)</button>
+      <a class="btn-outlined" href="index.html">Back to Dashboard</a>
+    </div>
+  </section>
+</main>
+
+<script src="/js/utils.js"></script>
+<script src="/js/tests.js"></script>
+</body>
+</html>

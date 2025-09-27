@@ -1,0 +1,97 @@
+/* base */
+.hidden{display:none!important}
+.container{max-width:1160px;margin:0 auto;padding:0 16px}
+.card{background:#fff;border-radius:16px;box-shadow:0 6px 24px rgba(0,0,0,.06);padding:20px}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.field small.err{color:#b42318}
+
+/* Slim appbar like dashboard */
+.appbar.appbar--slim{
+  position:sticky;top:0;z-index:100;
+  background:linear-gradient(90deg,#0b7285,#22a6c1);
+  color:#fff;box-shadow:0 6px 18px rgba(0,0,0,.15)
+}
+.appbar--slim .appbar-row{
+  height:64px;max-width:1200px;margin:0 auto;gap:16px;padding:0 20px;
+  display:flex;align-items:center;justify-content:space-between
+}
+.appbar--slim .brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:900}
+.appbar--slim .brand .logo{width:32px;height:32px;border-radius:10px;display:grid;place-items:center;background:#ffffff1a;border:1px solid #ffffff3d}
+.appbar--slim .crumbs{margin-left:12px;font-weight:800;opacity:.95}
+.appbar--slim .btn.ghost{background:#ffffff22;color:#fff;border:1px solid #ffffff55;border-radius:12px;padding:8px 12px;font-weight:800}
+.appbar--slim .btn.ghost:hover{background:#ffffff33}
+
+/* Exam header (timer + submit live here ONLY) */
+.exam-head{
+  position:sticky;top:72px;z-index:5;
+  display:flex;align-items:center;justify-content:space-between;gap:14px;
+  padding:10px 0;background:linear-gradient(#fff,#fff8);
+  backdrop-filter:saturate(160%) blur(4px);border-radius:12px
+}
+.exam-head .title h2{margin:0;font-size:1.35rem;font-weight:900;letter-spacing:.2px}
+.exam-head .meta{color:#486276}
+.exam-head .right-tools{display:flex;align-items:center;gap:10px}
+
+.meta-chip.timer-chip{
+  padding:6px 12px;border-radius:999px;background:#e9f6fb;border:1px solid #cfe9f4;
+  color:#0b4454;font-weight:900;min-width:94px;text-align:center
+}
+
+.btn,.btn-outlined,.btn.primary{padding:8px 14px;border-radius:12px;font-weight:800;cursor:pointer}
+.btn{background:#006E90;color:#fff;border:1px solid #005a77}
+.btn:hover{background:#055e7a}
+.btn-outlined{background:#fff;border:1px solid #d1d9e0;color:#0b3a4a}
+.btn.primary{
+  color:#fff;border:none;background:linear-gradient(90deg,#0b7285,#22a6c1);
+  box-shadow:0 8px 18px rgba(13,110,139,.18)
+}
+.btn.primary:hover{filter:brightness(1.06);transform:translateY(-1px)}
+
+/* Exam body layout */
+.exam-body{display:grid;gap:18px;grid-template-columns:280px minmax(0,1fr);align-items:start;margin-top:12px}
+@media (max-width: 960px){.exam-body{grid-template-columns:1fr}}
+
+/* Question palette (circles) */
+.qnav{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(44px,1fr));
+  gap:8px;padding:14px;background:#fff;border-radius:14px;
+  box-shadow:0 6px 20px rgba(15,23,42,.08);
+  max-height:70vh;overflow:auto
+}
+.qnav .qn{
+  height:44px;width:44px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-weight:700;font-size:.92rem;user-select:none;cursor:pointer;
+  border:1.5px solid #e6eef5;color:#173b4b;background:#f7fbfe;transition:all .12s ease
+}
+.qnav .qn:hover{background:#eef7fc}
+.qnav .qn.active{background:#dff3ff;border-color:#b6e0fe;box-shadow:0 0 0 3px #e7f5ff}
+.qnav .qn.answered{background:#eafaf1;border-color:#b7e7c1;color:#0f5132}
+.qnav .qn.flagged{position:relative}
+.qnav .qn.flagged::after{content:"";position:absolute;top:-3px;right:-3px;width:12px;height:12px;border-radius:50%;background:#F18F01;border:2px solid #fff}
+
+/* Question panel */
+.qpanel{background:#fff;border-radius:14px;box-shadow:0 6px 20px rgba(15,23,42,.08);padding:18px}
+.qmeta{display:flex;gap:8px;margin-bottom:10px}
+.badge{background:#f6f8fb;border:1px solid #e4eaf1;padding:4px 8px;border-radius:10px;font-size:12px}
+.qtext p{margin:10px 0}
+.qtext pre{background:#0f172a;color:#e6edf3;padding:12px;border-radius:10px;overflow:auto}
+.attachments{display:flex;gap:10px;flex-wrap:wrap;margin-top:.5rem}
+.attachments img{max-width:340px;border-radius:10px;border:1px solid #e9eef4}
+
+/* Answer & controls */
+.ans textarea{width:100%;border:1px solid #e5e7eb;border-radius:12px;padding:12px;min-height:160px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:10px}
+.controls .btn,#prevBtn,#nextBtn,#flagBtn{border-radius:12px;padding:8px 12px;font-weight:700;background:#f6fafe;border:1px solid #e5eef7;color:#0f3b50}
+.controls .btn:hover,#prevBtn:hover,#nextBtn:hover,#flagBtn:hover{background:#eef7ff}
+
+/* MCQ options */
+.mcq{display:grid;gap:10px;margin:10px 0 2px}
+.mcq .opt{display:flex;gap:10px;align-items:flex-start;padding:10px 12px;border:1px solid #e8eef4;border-radius:12px;cursor:pointer;background:#fff}
+.mcq .opt:hover{background:#f9fcff}
+.mcq input[type="radio"]{transform:translateY(2px)}
+
+/* Summary */
+.stat{background:#fff;padding:14px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.stat-num{font-size:22px;font-weight:800}
+.tiny{font-size:12px}

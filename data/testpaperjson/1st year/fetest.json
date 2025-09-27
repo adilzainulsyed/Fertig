@@ -1,6 +1,6 @@
 [
   {
-    "subject": "ECE_1072",
+    "subject": "FE",
     "source_year": 2025,
     "type": "text",
     "chapter": ["Analog Electronics"],
@@ -10,7 +10,7 @@
     "images": []
   },
   {
-    "subject": "ECE_1072",
+    "subject": "FE",
     "source_year": 2025,
     "type": "text",
     "chapter": ["Semiconductor Devices"],
@@ -20,7 +20,7 @@
     "images": []
   },
   {
-    "subject": "ECE_1072",
+    "subject": "FE",
     "source_year": 2025,
     "type": "text",
     "chapter": ["Analog Electronics"],
@@ -30,7 +30,7 @@
     "images": []
   },
   {
-    "subject": "ECE_1072",
+    "subject": "FE",
     "source_year": 2025,
     "type": "text",
     "chapter": ["Electronic Circuits"],
@@ -40,7 +40,7 @@
     "images": []
   },
   {
-    "subject": "ECE_1072",
+    "subject": "FE",
     "source_year": 2025,
     "type": "text",
     "chapter": ["Semiconductor Devices"],
@@ -50,7 +50,7 @@
     "images": []
   },
   {
-    "subject": "ECE_1072",
+    "subject": "FE",
     "source_year": 2025,
     "type": "text",
     "chapter": ["Semiconductor Devices"],
@@ -60,7 +60,7 @@
     "images": []
   },
   {
-    "subject": "ECE_1072",
+    "subject": "FE",
     "source_year": 2025,
     "type": "text",
     "chapter": ["Linear Integrated Circuits"],
@@ -70,7 +70,7 @@
     "images": []
   },
   {
-    "subject": "ECE_1072",
+    "subject": "FE",
     "source_year": 2025,
     "type": "text",
     "chapter": ["Number Systems"],
@@ -80,7 +80,7 @@
     "images": []
   },
   {
-    "subject": "ECE_1072",
+    "subject": "FE",
     "source_year": 2025,
     "type": "text",
     "chapter": ["Digital Electronics"],
@@ -90,7 +90,7 @@
     "images": []
   },
   {
-    "subject": "ECE_1072",
+    "subject": "FE",
     "source_year": 2025,
     "type": "text",
     "chapter": ["Boolean Algebra"],
@@ -100,7 +100,7 @@
     "images": []
   },
   {
-    "subject": "ECE_1072",
+    "subject": "FE",
     "source_year": 2025,
     "type": "text",
     "chapter": ["Boolean Algebra", "Combinational Circuits"],
@@ -110,7 +110,7 @@
     "images": []
   },
   {
-    "subject": "ECE_1072",
+    "subject": "FE",
     "source_year": 2025,
     "type": "text",
     "chapter": ["Sequential Circuits", "Registers"],
@@ -120,7 +120,7 @@
     "images": []
   },
   {
-    "subject": "ECE_1072",
+    "subject": "FE",
     "source_year": 2025,
     "type": "text",
     "chapter": ["Sequential Circuits", "Counters"],
@@ -130,7 +130,7 @@
     "images": []
   },
   {
-    "subject": "ECE_1072",
+    "subject": "FE",
     "source_year": 2025,
     "type": "text",
     "chapter": ["Sequential Circuits"],
@@ -140,7 +140,7 @@
     "images": []
   },
   {
-    "subject": "ECE_1072",
+    "subject": "FE",
     "source_year": 2025,
     "type": "text",
     "chapter": ["Combinational Circuits"],
