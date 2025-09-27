@@ -25,7 +25,10 @@ app.use(express.urlencoded({extended:false}));
 //built in middleware for handling json files
 app.use(express.json());
 
+
+
 //making a base path
+
 const basePath = path.join(__dirname, '../..');
 console.log(basePath)
 app.use('/subjects', express.static(path.join(__dirname,'../../data/subjects')));
@@ -33,11 +36,14 @@ console.log("Serving subjects from:", path.join(basePath,'/data/subjects'));
 //built in middle ware for handling static files
 app.use(express.static(path.join(basePath,'/public')));
 
+// serve test paper JSON files
+app.use('/tests', express.static(path.join(basePath, 'data', 'testpaperjson')));
+
+
 app.use('/question_images', express.static(path.join(basePath, 'data/question_images')));
 app.use('/', require('../routes/root'));
 
 app.use('/subdir',require('../routes/subdir'));
-
 
 
 app.use(function(err,req,res,next){

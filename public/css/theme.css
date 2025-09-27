@@ -30,3 +30,13 @@
 .center{text-align:center}
 .badge{padding:2px 8px;border-radius:999px;font-size:12px;font-weight:600}
 .container{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.link-btn {
+  font-weight: 700;
+  text-decoration: none;
+  color: #0b3a4a;
+  padding: 6px 10px;
+  border-radius: 10px;
+  background: #e6f4f1;
+  border: 1px solid #cfe9e4;
+}
+.link-btn:hover { background: #daf0eb; }

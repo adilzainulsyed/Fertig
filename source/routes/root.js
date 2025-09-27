@@ -38,4 +38,9 @@ router.get(/^\/$|\/index(.html)?/,(req,res)=>{
     res.sendFile(path.join(__dirname,'..','..','views','index.html'));
 });
 
+
+router.get(/\/tests_home(.html)?$/, (_,res)=>res.sendFile(path.join(__dirname,'..','..','views','tests_home.html')));
+router.get(/\/tests(.html)?$/,      (_,res)=>res.sendFile(path.join(__dirname,'..','..','views','tests.html'))); // runner
+
+
 module.exports = router;
