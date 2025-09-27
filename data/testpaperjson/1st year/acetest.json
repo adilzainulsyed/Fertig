@@ -1,0 +1,302 @@
+[
+{
+	"subject" : "ACE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Battery"],
+	"text" : "Explain the construction and working of methanol fuel cells with appropriate reactions with a diagram. Mention any two advantages of it.",
+	"marks" : 4, 
+	"timeinmin" : 14,
+	"images": []
+},
+{
+	"subject" : "ACE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Battery"],
+	"text" : "What are the special properties of lithium that make it advantageous to use as electrode material? Write the electrode reactions that occur in the Li-CoO2 cell. What is the significance of electrolyte additives in sodium-ion battery",
+	"marks" : 4, 
+	"timeinmin" : 14,
+	"images": []
+},
+{
+	"subject" : "ACE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Battery"],
+	"text" : "Write two advantages and two disadvantages of nickel metal hydride batteries. ",
+	"marks" : 2, 
+	"timeinmin" : 7,
+	"images": []
+},
+{
+	"subject" : "ACE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Material Chemistry"],
+	"text" : "i) Distinguish between PVD and CVD process (any two).\nii) Give reason: polyvinyl chloride (PVC) has higher tensile strength than Polyethylene.\niii) Calculate the number average and weight average molecular weight of a polymer sample in which 30% of molecules have a molecular mass of 4000, 40% have a molecular mass of 6000 and rest 30% have a molecular mass of 9000.",
+	"marks" : 4, 
+	"timeinmin" : 14,
+	"images": []
+},
+{
+	"subject" : "ACE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Material Chemistry"],
+	"text" : "i) Explain the mechanism of conductivity in extrinsic conducting polymers.\nii) Give a detailed synthetic route with structure for the preparation of polyamides.\niii) Describe any two differences between types of filtration membranes.",
+	"marks" : 4, 
+	"timeinmin" : 14,
+	"images": []
+},
+{
+	"subject" : "ACE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Electronic Material"],
+	"text" : "Explain the role of components present in MicroLED's.",
+	"marks" : 2, 
+	"timeinmin" : 7,
+	"images": []
+},
+{
+	"subject" : "ACE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Material Chemistry"],
+	"text" : "Differentiate between the following\ni) Diamagnetic vs Ferromagnetic material\nii) Intrinsic vs extrinsic semiconductors\niii) Electrical Conductors vs insulators\niv) Photo-conductivity vs luminescence",
+	"marks" : 4, 
+	"timeinmin" : 14,
+	"images": []
+},
+{
+	"subject" : "ACE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Electronic Material"],
+	"text" : "Write a note on the following\ni) Gas sensors\nii) Electrochemical sensor",
+	"marks" : 4, 
+	"timeinmin" : 14,
+	"images": []
+},
+{
+	"subject" : "ACE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Electronic Material"],
+	"text" : "Give an account of factors affecting the resistivity of metals",
+	"marks" : 2, 
+	"timeinmin" : 7,
+	"images": []
+},
+{
+	"subject" : "ACE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["E-waste"],
+	"text" : "i) Describe the environmental impact of improper e-waste disposal.\nii) What is the difference between linear economy and circular economy",
+	"marks" : 4, 
+	"timeinmin" : 14,
+	"images": []
+},
+{
+	"subject" : "ACE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["E-waste"],
+	"text" : "i) Explain the role of modular design and refurbishment of electronic devices in the context of the circular economy approach.\nii) Name two health impacts of dioxins and furans released from e-waste.",
+	"marks" : 4, 
+	"timeinmin" : 14,
+	"images": []
+},
+{
+	"subject" : "ACE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Battery"],
+	"text" : "Differentiate between the following:\ni) Primary and secondary batteries\nii) Fuel and galvanic cells",
+	"marks" : 2, 
+	"timeinmin" : 7,
+	"images": []
+},
+{
+	"subject" : "ACE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Material Chemistry"],
+	"text" : "Compare and contrast the plasticity and crystallinity of linear, branched, and cross-linked polymers.Calculate the intrinsic viscosity (dL/g) of a given polymer solution if its molecular weight is 100,000g/mol, K=0.004, and a= 0.5, at room temperature.",
+	"marks" : 4, 
+	"timeinmin" : 14,
+	"images": []
+},
+{
+	"subject" : "ACE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Material Chemistry"],
+	"text" : "i) What are epoxies, and how do their chemical structures contribute to their desirable properties?\nii) Write any four advantages of polylactic acid as a biodegradable polymer",
+	"marks" : 4, 
+	"timeinmin" : 14,
+	"images": []
+},
+{
+	"subject" : "ACE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Material Chemistry"],
+	"text" : "How is the pKa value of a weak acid determined graphically in the potentiometric titration of a weak acid with a strong base? Explain based on Henderson's equation.",
+	"marks" : 2, 
+	"timeinmin" : 7,
+	"images": []
+},
+{
+	"subject" : "ACE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Battery"],
+	"text" : "i) What are the similarities and differences between lithium and sodium for battery applications?\nii) Describe the chemical reactions that occur in a lead-acid battery during charging and overcharging.",
+	"marks" : 4, 
+	"timeinmin" : 14,
+	"images": []
+},
+{
+	"subject" : "ACE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Battery"],
+	"text" : "Explain the construction and working of the nickel metal hydride battery with the necessary diagram and chemical reactions. Give the advantages of nickel metal hydride battery.",
+	"marks" : 4, 
+	"timeinmin" : 14,
+	"images": []
+},
+{
+	"subject" : "ACE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Material Chemistry"],
+	"text" : "Write the advantages of solid polymeric electrolytes. ",
+	"marks" : 2, 
+	"timeinmin" : 7,
+	"images": []
+},
+{
+	"subject" : "ACE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Material Chemistry"],
+	"text" : "i) Discuss the mechanism of p-doping in conducting polymers by providing a specific example.\nii) Explain the relationship between polymer structure and its strength, and mention two factors that influence the glass transition temperature",
+	"marks" : 4, 
+	"timeinmin" : 14,
+	"images": []
+},
+{
+	"subject" : "ACE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Material Chemistry"],
+	"text" : "i) Name the process used to form polyamides and provide a general scheme for this formation.\nii) Describe the preparation method and key applications ofNylon 6,6 in detail.",
+	"marks" : 4, 
+	"timeinmin" : 14,
+	"images": []
+},
+{
+	"subject" : "ACE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Material Chemistry"],
+	"text" : "Define Intrinsic Viscosity and state Mark-Houwink's equation. Explain each term in the equation and sketch a suitable graph illustrating the relationship between intrinsic viscosity and molecular weight.",
+	"marks" : 2, 
+	"timeinmin" : 7,
+	"images": []
+},
+{
+	"subject" : "ACE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Electronic Material"],
+	"text" : "Give a reason for the following:\ni) Individual metal components have higher conductivity than the alloy.\nii) Resistivity of the metal decreases initially with increasing pressure.\niii) Metals appear opaque to electromagnetic radiation within the visible region of the spectrum\niv) Laser is a special application of luminescence",
+	"marks" : 4, 
+	"timeinmin" : 14,
+	"images": []
+},
+{
+	"subject" : "ACE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Electronic Material"],
+	"text" : "Write a note on the following:\ni) Biosensors\nii) Electrochemical sensor",
+	"marks" : 4, 
+	"timeinmin" : 14,
+	"images": []
+},
+{
+	"subject" : "ACE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Electronic Material"],
+	"text" : "Describe the optical phenomena exhibited by non-metals",
+	"marks" : 2, 
+	"timeinmin" : 7,
+	"images": []
+},
+{
+	"subject" : "ACE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["E-waste"],
+	"text" : "i) Differentiate between recycling economy and circular economy.\nii) Explain how repair and refurbishment can reduce electronic waste.\niii) List any two potential health effects of PFAS exposure.",
+	"marks" : 4, 
+	"timeinmin" : 14,
+	"images": []
+},
+{
+	"subject" : "ACE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["E-waste"],
+	"text" : "i) Elaborate on any two steps to be followed while rethinking product design for disassembly and repairability.\nii) Describe water pollution through improper e-waste disposal.",
+	"marks" : 4, 
+	"timeinmin" : 14,
+	"images": []
+},
+{
+	"subject" : "ACE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Battery"],
+	"text" : "What are fuel cells? How do they differ from conventional galvanic cells?",
+	"marks" : 2, 
+	"timeinmin" : 7,
+	"images": []
+},
+{
+	"subject" : "ACE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Material Chemistry"],
+	"text" : "i) Classify biodegradable polymers, mention any two advantages and applications.\nii) Discuss nanomaterials based on origin with examples.",
+	"marks" : 4, 
+	"timeinmin" : 14,
+	"images": []
+},
+{
+	"subject" : "ACE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Material Chemistry"],
+	"text" : "i) Explain in detail the preparation of nanomaterials by sol-gel method.\nii) Explain the role of organic layers in the basic structure of OLED's.",
+	"marks" : 4, 
+	"timeinmin" : 14,
+	"images": []
+},
+{
+	"subject" : "ACE",
+	"source_year" : 2025,
+	"type" : "text",
+	"chapter" : ["Material Chemistry"],
+	"text" : "Explain the principle of flame photometry.",
+	"marks" : 2, 
+	"timeinmin" : 7,
+	"images": []
+}
+]
