@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Tests | Fertig</title>
+  <link rel="stylesheet" href="/css/theme.css"/>
+  <link rel="stylesheet" href="/css/index.css"/><!-- reuse dashboard styles -->
+</head>
+<body>
+  <header class="appbar">
+    <div class="appbar-row">
+      <div class="appbar-center"><div class="appbar-title">Pick a Test</div></div>
+      <div class="appbar-right"><a class="link-btn" href="index.html">← Back to Dashboard</a></div>
+    </div>
+  </header>
+
+  <aside class="sidenav" id="sidenav">
+    <div class="side-head">
+      <a class="brand-mini" href="index.html" aria-label="Fertig">
+        <span class="brand-logo">F</span><span class="brand-name">Fertig</span>
+      </a>
+      <button class="side-toggle" id="sidebarToggle" aria-label="Close menu">✕</button>
+    </div>
+
+    <div class="side-section">
+      <div class="side-label">Main</div>
+      <nav class="sidenav-nav">
+        <a class="item" href="index.html">Home</a>
+        <a class="item active" href="tests_home.html">Tests</a>
+        <a class="item" href="#chatbot">Chatbot <span class="soon">Soon</span></a>
+      </nav>
+    </div>
+  </aside>
+
+  <main class="page" id="page">
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="container">
+        <h1 class="hero-title">Choose your subject test</h1>
+        <p class="hero-sub">Select a year, then a subject to start its paper.</p>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="year-switcher">
+        <div class="year-tabs" id="yearTabs" role="tablist" aria-label="Years"></div>
+      </div>
+
+      <div class="section-head">
+        <h2 class="section-title" id="subject-year-title">Subjects</h2>
+      </div>
+
+      <div class="subject-grid" id="subject-list" role="tabpanel" aria-labelledby="yearTabs"></div>
+    </section>
+  </main>
+
+  <script src="/js/utils.js"></script>
+  <script src="/js/tests_home.js"></script>
+</body>
+</html>
