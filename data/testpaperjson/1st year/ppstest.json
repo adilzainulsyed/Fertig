@@ -1,0 +1,302 @@
+[
+{
+    "subject": "PPS",
+    "source_year": 2025,
+    "type": "code",
+    "chapter": ["Simple C Programs"],
+    "text": "Write the algorithm to find the Sum and Mean of first N natural numbers. ",
+    "marks": 2,
+    "timeinmin": 6,
+    "images": []
+},
+{
+    "subject": "PPS",
+    "source_year": 2025,
+    "type": "code",
+    "chapter": ["Simple C Programs"],
+    "text": "Outline the main phases in the C program development process and explain why each step is important.",
+    "marks": 3,
+    "timeinmin": 9,
+    "images": []
+},
+{
+    "subject": "PPS",
+    "source_year": 2025,
+    "type": "hybrid",
+    "chapter": ["Introduction to Computing"],
+    "text": "i) Evaluate the expression by showing all the intermediate steps how the following expression is evaluated. Consider the initial values of i=8, j=5. \n 2*((i/5)+(4*(j-3))%(i+j-2)) \n K = (i > 5 ? (i< = 10 ? 100 : 200) : 500) \n ii) Write a program to check if the given number is even or odd and positive or negative using nested conditional operator. \n (3+2 = 5 marks)",
+    "marks": 5,
+    "timeinmin": 15,
+    "images": []
+},
+{
+    "subject": "PPS",
+    "source_year": 2025,
+    "type": "code",
+    "chapter": ["Looping Questions"],
+    "text": "Why does the following do-while loop lead to an infinite loop? Fix the error and make changes in the program to display only odd numbers.\nint i = 0;\ndo{\nprintf(''%d'', i);\n}while(i<25);",
+    "marks": 2,
+    "timeinmin": 6,
+    "images": []
+},
+{
+    "subject": "PPS",
+    "source_year": 2025,
+    "type": "code",
+    "chapter": ["Looping Questions"],
+    "text": "Write a program to display the given pattern using nested while loops.",
+    "marks": 3,
+    "timeinmin": 9,
+    "images": ["data/question_images/Screenshot 2025-09-28 110957.png"]
+},
+{
+    "subject": "PPS",
+    "source_year": 2025,
+    "type": "hybrid",
+    "chapter": ["Arrays"],
+    "text": "i) Write a C program to find union and intersection of two 1D arrays.\nii) Implement the C program to find the substring in the main string. Print the count of words repeated and their positions. Given below a sample input and output:\nEnter main string: There is a mat inside a mat\nEnter sub-string: mat \nSubstring is present 2 time(s) at position(s) 4 7 \n(2+3 = 5 marks",
+    "marks": 5,
+    "timeinmin": 15,
+    "images": []
+},
+{
+    "subject": "PPS",
+    "source_year": 2025,
+    "type": "text",
+    "chapter": ["Arrays"],
+    "text": "Explain different ways of initialization of 2D arrays with example syntax",
+    "marks": 2,
+    "timeinmin": 6,
+    "images": []
+},
+{
+    "subject": "PPS",
+    "source_year": 2025,
+    "type": "text",
+    "chapter": ["Arrays"],
+    "text": "An organization wants to track the weekly attendance (for present: 1 and for absent: 0) of 8 employees over 5 days. Illustrate using a C program to calculate the attendance percentage for each employee and print the employee(s) having less than 75% attendance",
+    "marks": 3,
+    "timeinmin": 9,
+    "images": ["data/question_images/Screenshot 2025-09-28 120756.png"]
+},
+{
+    "subject": "PPS",
+    "source_year": 2025,
+    "type": "code",
+    "chapter": ["Arrays"],
+    "text": "Write a C program to read a 2-dimensional integer array (square matrix) and display the array using displayMatrix() function. Find the sum of principal diagonal elements and Square Root of sum of squares of elements of a matrix using appropriate functions. Display them in main() function.",
+    "marks": 5,
+    "timeinmin": 15,
+    "images": []
+},
+{
+    "subject": "PPS",
+    "source_year": 2025,
+    "type": "text",
+    "chapter": ["Pointers","Functions"],
+    "text": "Differentiate between passing arguments by value and by reference with example C programs for each",
+    "marks": 3,
+    "timeinmin": 9,
+    "images": []
+},
+{
+    "subject": "PPS",
+    "source_year": 2025,
+    "type": "text",
+    "chapter": ["Recursion","Functions"],
+    "text": "Define the recursive function int sum(int n) that returns the sum of the first n natural numbers. In the main function, prompt the user for a positive integer input, call the sum function, and print the result",
+    "marks": 3,
+    "timeinmin": 9,
+    "images": []
+},
+{
+    "subject": "PPS",
+    "source_year": 2025,
+    "type": "text",
+    "chapter": ["Arrays"],
+    "text": "Explain the process of passing a 2D array to a function in C, and write a program to calculate the average of elements of a 2x3 matrix.",
+    "marks": 4,
+    "timeinmin": 12,
+    "images": []
+},
+{
+    "subject": "PPS",
+    "source_year": 2025,
+    "type": "code",
+    "chapter": ["Structures"],
+    "text": "Write a C program to manage product records using an array of structures. The program should allow the user to:\ni) Input Data for 3 Products: Each product should have a name, product ID, and sales figures for three different months (sales1, sales2, sales3).\nii) Compute and display the Average Sales: Calculate the average sales for each product over the three months.",
+    "marks": 3,
+    "timeinmin": 9,
+    "images": ["data/question_images/Screenshot 2025-09-28 121748.png"]
+},
+{
+    "subject": "PPS",
+    "source_year": 2025,
+    "type": "code",
+    "chapter": ["File Handling"],
+    "text": "Write a C program that appends the text \"Goodbye!\" to an existing file \"log.txt\"",
+    "marks": 3,
+    "timeinmin": 9,
+    "images": []
+},
+{
+    "subject": "PPS",
+    "source_year": 2025,
+    "type": "code",
+    "chapter": ["Structures"],
+    "text": "Develop a Library Book Management System in C using a pointer to structures. The program should allow users to input data for N books, including the title, author name, and the number of copies issued for each book. The program should then generate a report displaying the total copies issued for each book and the revenue generated, assuming each issued copy generates a fixed revenue of $2.",
+    "marks": 4,
+    "timeinmin": 12,
+    "images": []
+},
+{
+    "subject": "PPS",
+    "source_year": 2025,
+    "type": "text",
+    "chapter": ["Introduction to Computing"],
+    "text": "Draw a flowchart for swapping two numbers using \"temp\" variable.",
+    "marks": 2,
+    "timeinmin": 6,
+    "images": []
+},
+{
+    "subject": "PPS",
+    "source_year": 2025,
+    "type": "text",
+    "chapter": ["Introduction to Computing"],
+    "text": "Differentiate between machine language, assembly language, and high-level language in the context of C programming. How does the C compiler convert C code into machine code?",
+    "marks": 3,
+    "timeinmin": 9,
+    "images": []
+},
+{
+    "subject": "PPS",
+    "source_year": 2025,
+    "type": "code",
+    "chapter": ["Introduction to Computing"],
+    "text": "i) Write a C program to determine if a student is eligible for a scholarship based on their age, GPA, and the number of extracurricular activities they participate in. The criteria for eligibility are as follows: The student must be between 18 and 25 years old. The student must have a GPA of 3.5 or higher. The student must be involved in at least 2 extracurricular activities. Use relational and logical operators to determine eligibility and print: \"Eligible for scholarship\" if the student meets all criteria. \"Not eligible for scholarship\" otherwise.\nii) Write a C program using ternary operator for the above scenario (do not use if's and switch statements).\n(3+2 = 5 marks)",
+    "marks": 5,
+    "timeinmin": 15,
+    "images": []
+},
+{
+    "subject": "PPS",
+    "source_year": 2025,
+    "type": "text",
+    "chapter": ["Looping Questions"],
+    "text": "Can break be used in a nested loop? If yes, justify your answer with an example code snippet. ",
+    "marks": 2,
+    "timeinmin": 6,
+    "images": []
+},
+{
+    "subject": "PPS",
+    "source_year": 2025,
+    "type": "code",
+    "chapter": ["Looping Questions"],
+    "text": "Write a program in C to display the n terms of a harmonic series and their sum using a for loop. Harmonic Series: 1 + 1/2 + 1/3 + 1/4 + 1/5 ... 1/n terms.",
+    "marks": 3,
+    "timeinmin": 9,
+    "images": []
+},
+{
+    "subject": "PPS",
+    "source_year": 2025,
+    "type": "text",
+    "chapter": ["Arrays","Sorting"],
+    "text": "i) Illustrate the number of swaps in each pass for the following array elements using bubble Sort. Show all the intermediate steps. Array={10, 5, 60, 14, 21}\nii) Write a C program to sort the array given in part (i) in descending order using selection sort.\n(2+3 = 5 marks)",
+    "marks": 5,
+    "timeinmin": 15,
+    "images": []
+},
+{
+    "subject": "PPS",
+    "source_year": 2025,
+    "type": "code",
+    "chapter": ["Strings","Looping Questions"],
+    "text": "Write a C program to identify the character that appears the most times in a given string. The program should output both the character and its frequency",
+    "marks": 2,
+    "timeinmin": 6,
+    "images": []
+},
+{
+    "subject": "PPS",
+    "source_year": 2025,
+    "type": "code",
+    "chapter": ["Arrays","Looping Questions"],
+    "text": "Develop a C program that stores and displays the odd and even integers of a given array into two separate arrays",
+    "marks": 3,
+    "timeinmin": 9,
+    "images": []
+},
+{
+    "subject": "PPS",
+    "source_year": 2025,
+    "type": "text",
+    "chapter": ["Pointers","Strings"],
+    "text": "Compare and contrast call by value and call by reference. Develop a C program to generate and display all permutations of a given string using call by reference.",
+    "marks": 5,
+    "timeinmin": 15,
+    "images": []
+},
+{
+    "subject": "PPS",
+    "source_year": 2025,
+    "type": "code",
+    "chapter": ["Arrays","Functions"],
+    "text": "Write a program to pass an array of N elements to the function. Identify the Fibonacci numbers in the received array and return the largest Fibonacci number.",
+    "marks": 3,
+    "timeinmin": 9,
+    "images": []
+},
+{
+    "subject": "PPS",
+    "source_year": 2025,
+    "type": "code",
+    "chapter": ["Arrays","Functions"],
+    "text": "Develop a C program that implements a function to search for a specific element within a matrix. The function should return 1 if the element is found, and 0 if it is not. The program should display whether the given element is present in the matrix.",
+    "marks": 3,
+    "timeinmin": 9,
+    "images": []
+},
+{
+    "subject": "PPS",
+    "source_year": 2025,
+    "type": "code",
+    "chapter": ["Recursion","Functions"],
+    "text": "Write a C program to check if a given number is palindrome using recursion. Implement input validation to ensure the user enters a non-negative integer.",
+    "marks": 4,
+    "timeinmin": 12,
+    "images": []
+},
+{
+    "subject": "PPS",
+    "source_year": 2025,
+    "type": "code",
+    "chapter": ["Pointers","Arrays"],
+    "text": "Develop a C program that uses a pointer to an array to identify and display all pairs of elements from the array whose sum equals a specified target value. The program should prompt the user to enter the array elements and the target value.",
+    "marks": 3,
+    "timeinmin": 9,
+    "images": []
+},
+{
+    "subject": "PPS",
+    "source_year": 2025,
+    "type": "code",
+    "chapter": ["Strings","File Handling"],
+    "text": "Write a program to read strings from an input file, \"Input.txt\" and write into an output file, \"Output.txt\", deleting specific word, taken as input from console.",
+    "marks": 3,
+    "timeinmin": 9,
+    "images": []
+},
+{
+    "subject": "PPS",
+    "source_year": 2025,
+    "type": "code",
+    "chapter": ["Structures","Functions"],
+    "text": "Define a structure Date having three integer members day, month, and year. Write a function called Datecmp() which accepts two pointers to the Date structure and compares the two dates and returns 1 if the first date is earlier than second one, -1 if the first date is later and 0 if two dates are equal. Write a main function to test this function.",
+    "marks": 4,
+    "timeinmin": 12,
+    "images": []
+}
+]
