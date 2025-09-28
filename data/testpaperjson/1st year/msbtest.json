@@ -6,7 +6,7 @@
         "chapter": ["Statics", "Force Systems"],
         "text": "Locate the resultant of the force system shown in the figure w.r.t point 'A'. (Figure provided in the source image)",
         "marks": 5,
-        "timeinmin": 14,
+        "timeinmin": 15,
         "images": ["data/question_images/msb1a.png"]
     },
     {
@@ -16,7 +16,7 @@
         "chapter": ["Statics", "Beams"],
         "text": "Determine the support reactions for the simply supported beam loaded as shown in the figure. (Figure provided in the source image)",
         "marks": 5,
-        "timeinmin": 14,
+        "timeinmin": 15,
         "images": ["data/question_images/msb1b.png"]
     },
     {
@@ -36,7 +36,7 @@
         "chapter": ["AR/VR Technology"],
         "text": "Explain any 3 major applications of Augmented Reality (AR)/ Virtual Reality (VR) technology in the construction industry along with its benefits of deploying AR/VR.",
         "marks": 3,
-        "timeinmin": 8,
+        "timeinmin": 9,
         "images": []
     },
     {
@@ -46,7 +46,7 @@
         "chapter": ["Strength of Materials", "Composite Bars"],
         "text": "A steel tube is rigidly fastened between aluminum and bronze rods and the axial loads are applied at the position shown. Find P that will not exceed stress of 80 MPa in Aluminum, 100 MPa in bronze and 150 MPa in steel, given the following details. Aluminum: A=200mm², L=1m; Steel: A=400 mm², L=2m; Bronze: A=500 mm², L=3 m. Calculate the total deformation for the above condition. Take E_Al = 70 GPa, and E_S = 200 GPa. (Figure provided in the source image)",
         "marks": 5,
-        "timeinmin": 14,
+        "timeinmin": 15,
         "images": ["data/question_images/msb2c.png"]
     },
     {
@@ -56,7 +56,7 @@
         "chapter": ["Strength of Materials", "Stress Analysis"],
         "text": "A metal plate is to be punched with a hole, the plate can take a maximum shear stress of 150 MPa. The compressive stress in the punch is limited to 200 MPa. Determine: i) Maximum thickness of the plate for which a 50 mm diameter hole can be punched ii) If the plate is 5 mm thick, smallest diameter hole that can be punched.",
         "marks": 5,
-        "timeinmin": 14,
+        "timeinmin": 15,
         "images": []
     },
     {
@@ -66,7 +66,7 @@
         "chapter": ["Material Properties", "Elastic Constants"],
         "text": "When a tensile axial load was applied on a round bar of 40mm diameter and 2.5m length, the extension observed was 2.5 mm. Calculate the bulk modulus and lateral contraction of the bar if E = 170 GPa & G = 63 GPa.",
         "marks": 5,
-        "timeinmin": 14,
+        "timeinmin": 15,
         "images": []
     },
     {
@@ -76,7 +76,7 @@
         "chapter": ["Strength of Materials", "Composite Bars"],
         "text": "A composite bar of a rectangular section consists of a tapered aluminum section rigidly fastened between a bronze section and a steel section, as shown in the figure. The thickness of the section is 10mm throughout the length. Axial loads are applied at the positions indicated. Determine the stress in the steel and bronze sections. Also, determine the change in total length. Take E_b = 100 GPa, E_Al = 70 GPa and E_s = 200 GPa. (Figure provided in the source image)",
         "marks": 5,
-        "timeinmin": 13,
+        "timeinmin": 15,
         "images": ["data/question_images/msb4a.png"]
     },
     {
@@ -86,7 +86,7 @@
         "chapter": ["Material Properties", "Elastic Constants"],
         "text": "A circular rod of 25mm diameter and 500mm long is subjected to a tensile force of 60kN. Determine the modulus of rigidity, bulk modulus and change in volume if Poisson's ratio is 0.3 and Young's modulus E = 2x10^5 N/mm².",
         "marks": 5,
-        "timeinmin": 13,
+        "timeinmin": 15,
         "images": []
     },
     {
@@ -96,7 +96,7 @@
         "chapter": ["Instrumentation"],
         "text": "Describe the technical specifications of strain gauges.",
         "marks": 6,
-        "timeinmin": 16,
+        "timeinmin": 18,
         "images": []
     },
     {
@@ -106,7 +106,7 @@
         "chapter": ["Instrumentation"],
         "text": "Discuss the merits and demerits of load cells and temperature sensors.",
         "marks": 4,
-        "timeinmin": 11,
+        "timeinmin": 12,
         "images": []
     },
     {
