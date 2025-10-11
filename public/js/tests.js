@@ -50,6 +50,27 @@
   let secsLeft = 0; let timerId = null;
   let tabSwitches = 0;
   let key = "";
+  // track time spent per question
+  let timeSpent = {};  
+  let lastSwitchTime = Date.now();
+
+  function recordTimeSpent() {
+    const now = Date.now();
+    const elapsed = Math.round((now - lastSwitchTime) / 1000);
+    timeSpent[idx + 1] = (timeSpent[idx + 1] || 0) + elapsed;
+    lastSwitchTime = now;
+    console.log(`⏱️ Q${idx + 1} +${elapsed}s → total ${timeSpent[idx + 1]}s`);
+  }
+
+  function ensureAllQuestionsTracked(totalQuestions) {
+    for (let i = 1; i <= totalQuestions; i++) {
+      if (!(i in timeSpent)) {
+        timeSpent[i] = 0;
+    }
+  }
+}
+
+
 
   // autosave
   const saveKey = () => `fertig:test:${key || "adhoc"}`;
@@ -198,7 +219,13 @@
       if ((Q[i].type === "mcq" && Number.isInteger(ans)) || (Q[i].type !== "mcq" && ans?.trim())) btn.classList.add("answered");
       if (flags.has(i)) btn.classList.add("flagged");
       btn.textContent = `Q${i+1}`;
-      btn.onclick = () => { idx = i; renderQuestion(); renderNav(); };
+      btn.onclick = () => {
+  recordTimeSpent();
+  idx = i;
+  renderQuestion();
+  renderNav();
+};
+
       els.qnav.appendChild(btn);
     });
   }
@@ -267,19 +294,41 @@
 
   // actions
   $("answer")?.addEventListener("input", (e) => { answers[idx] = e.target.value; renderNav(); });
-  $("prevBtn").onclick = () => { if (idx > 0) { idx--; renderQuestion(); renderNav(); } };
-  $("nextBtn").onclick = () => { if (idx < Q.length-1) { idx++; renderQuestion(); renderNav(); } };
+  $("prevBtn").onclick = () => {
+  if (idx > 0) {
+    recordTimeSpent();
+    idx--;
+    renderQuestion();
+    renderNav();
+  }
+};
+
+$("nextBtn").onclick = () => {
+  if (idx < Q.length - 1) {
+    recordTimeSpent();
+    idx++;
+    renderQuestion();
+    renderNav();
+  }
+};
+
   $("flagBtn").onclick = () => { flags.has(idx) ? flags.delete(idx) : flags.add(idx); renderNav(); };
   $("submitBtn").onclick = () => submit();
 
   function submit() {
-    clearInterval(timerId);
+    clearInterval(timerId);// capture final question time
+    recordTimeSpent();
+    ensureAllQuestionsTracked(15);   // total number of questions = 15
+    console.log("Final timeSpent:", timeSpent);
+
+
     const usedMins = Math.round((Date.now() - startedAt) / 60000);
     const answered = Q.reduce((n,q,i)=> n + (q.type==="mcq" ? Number.isInteger(answers[i]) : !!(answers[i]&&answers[i].trim())), 0);
 
     const payload = {
       key,
       meta: { totalQuestions: Q.length, startedAt, submittedAt: Date.now(), usedMinutes: usedMins, tabSwitches },
+      timeSpent,  
       answers: Q.map((q, i) => ({
         index: i+1,
         type: q.type,
