@@ -1,134 +1,174 @@
 [
-{
-	"subject" : "ENG",
-	"source_year" : 2025,
-	"type" : "mcq",
-	"chapter" : ["Grammar"],
-	"text" : "Identify the grammatically correct sentence in the following:",
-	"options": [
-        { "text": "Mr. John settled in India after he inherited a fortune" }, { "text": "Mr. John settled in India after he had inherited a fortune" }, { "text": "Mr. John has been settling in India after he has inherited a fortune" }, { "text": "Mr. John had settled in India after he inherited a fortune" }
-      ],
-    "marks" : 1, 
-	"timeinmin" : 3,
-	"images": []
-},
-{
-	"subject" : "ENG",
-	"source_year" : 2025,
-	"type" : "mcq",
-	"chapter" : ["Grammar"],
-	"text" : "Identify the grammatically correct sentence in the following:",
-	"options": [
-        { "text": "I would move to Australia for better prospects, although the distance from my family" }, { "text": "I would move to Australia for better prospects, despite the distance from my family" }, { "text": "I would move to Australia for better prospects, since the distance from my family" }, { "text": "I would move to Australia for better prospects, inspite the distance from my family" }
-      ],
-    "marks" : 1, 
-	"timeinmin" : 3,
-	"images": []
-},
-{
-	"subject" : "ENG",
-	"source_year" : 2025,
-	"type" : "mcq",
-	"chapter" : ["Grammar"],
-	"text" : "Identify the grammatically correct sentence in the following:",
-	"options": [
-        { "text": "None of the three questions is simple, and I cannot cope up with this" }, { "text": "None of the three questions are simple, and I cannot cope up with this" }, { "text": "None of the three questions are simple, and I cannot cope with this" }, { "text": "None of the three questions is simple, and I cannot cope with this" }
-      ],
-    "marks" : 1, 
-	"timeinmin" : 3,
-	"images": []
-},
-{
-	"subject" : "ENG",
-	"source_year" : 2025,
-	"type" : "mcq",
-	"chapter" : ["Grammar"],
-	"text" : "Identify the grammatically correct sentence in the following:",
-	"options": [
-        { "text": "I wrote a letter to the Principal yesterday, with a request for an honorary position" }, { "text": "I had written a letter to the Principal yesterday, with a request for a honorary position" }, { "text": "I have written a letter to the Principal yesterday, with a request for a honorary position" }, { "text": "I had been writing a letter to the Principal yesterday, with a request for an honorary position" }
-      ],
-    "marks" : 1, 
-	"timeinmin" : 3,
-	"images": []
-},
-{
-	"subject" : "ENG",
-	"source_year" : 2025,
-	"type" : "mcq",
-	"chapter" : ["Grammar"],
-	"text" : "Identify the grammatically correct sentence in the following:",
-	"options": [
-        { "text": "Sidharth wanting to become a football player but needs to practice more vigorously" }, { "text": "Sidharth wants to become a football player but needs to practice more vigorously" }, { "text": "Sidharth is wanting to become a football player but need to practice more vigorously" }, { "text": "Sidharth has wanted to become a football player but is needing to practice more vigorously" }
-      ],
-    "marks" : 1, 
-	"timeinmin" : 3,
-	"images": []
-},
-{
-	"subject" : "ENG",
-	"source_year" : 2025,
-	"type" : "mcq",
-	"chapter" : ["Grammar"],
-	"text" : "Choose the correct answer to fill in the blanks.\n The minister as well as the magistrate _____ choose between duty and reputation.",
-	"options": [
-        { "text": "have to" }, { "text": "has to" }, { "text": "have had to" }, { "text": "are having to" }
-      ],
-    "marks" : 1, 
-	"timeinmin" : 3,
-	"images": []
-},
-{
-	"subject" : "ENG",
-	"source_year" : 2025,
-	"type" : "mcq",
-	"chapter" : ["Grammar"],
-	"text" : "Choose the correct answer to fill in the blanks.\n She _____ Mandarin _____ the past two years.",
-	"options": [
-        { "text": "learnt;since" }, { "text": "has learnt;for" }, { "text": "has been learning;since" }, { "text": "has been learning;for" }
-      ],
-    "marks" : 1, 
-	"timeinmin" : 3,
-	"images": []
-},
-{
-	"subject" : "ENG",
-	"source_year" : 2025,
-	"type" : "mcq",
-	"chapter" : ["Grammar"],
-	"text" : "Choose the correct answer to fill in the blanks.\n Neither money nor power _____ needed to get selected for the Olympics",
-	"options": [
-        { "text": "were" }, { "text": "are" }, { "text": "is" }, { "text": "are being" }
-      ],
-    "marks" : 1, 
-	"timeinmin" : 3,
-	"images": []
-},
-{
-	"subject" : "ENG",
-	"source_year" : 2025,
-	"type" : "mcq",
-	"chapter" : ["Grammar"],
-	"text" : "Choose the correct answer to fill in the blanks.\n _____ undergraduate student is given _____ unique opportunity to earn while studying in our college.",
-	"options": [
-        { "text": "a;an" }, { "text": "an;an" }, { "text": "an;a" }, { "text": "The;an" }
-      ],
-    "marks" : 1, 
-	"timeinmin" : 3,
-	"images": []
-},
-{
-	"subject" : "ENG",
-	"source_year" : 2025,
-	"type" : "mcq",
-	"chapter" : ["Grammar"],
-	"text" : "Choose the correct answer to fill in the blanks.\n The research _____ since 2015 and now the team _____ unanimously decided to disclose the results.",
-	"options": [
-        { "text": "is going on;have" }, { "text": "was going on;have" }, { "text": "has been going on;has" }, { "text": "had been going on;had" }
-      ],
-    "marks" : 1, 
-	"timeinmin" : 3,
-	"images": []
-},
+  {
+    "subject": "ENG",
+    "source_year": 2025,
+    "type": "mcq",
+    "chapter": ["Grammar"],
+    "text": "Identify the grammatically correct sentence in the following:",
+    "options": [
+      { "text": "Mr. John settled in India after he inherited a fortune" },
+      { "text": "Mr. John settled in India after he had inherited a fortune" },
+      { "text": "Mr. John has been settling in India after he has inherited a fortune" },
+      { "text": "Mr. John had settled in India after he inherited a fortune" }
+    ],
+    "marks": 1,
+    "timeinmin": 3,
+    "images": [],
+    "answer": 1
+  },
+  {
+    "subject": "ENG",
+    "source_year": 2025,
+    "type": "mcq",
+    "chapter": ["Grammar"],
+    "text": "Identify the grammatically correct sentence in the following:",
+    "options": [
+      { "text": "I would move to Australia for better prospects, although the distance from my family" },
+      { "text": "I would move to Australia for better prospects, despite the distance from my family" },
+      { "text": "I would move to Australia for better prospects, since the distance from my family" },
+      { "text": "I would move to Australia for better prospects, inspite the distance from my family" }
+    ],
+    "marks": 1,
+    "timeinmin": 3,
+    "images": [],
+    "answer": 1
+  },
+  {
+    "subject": "ENG",
+    "source_year": 2025,
+    "type": "mcq",
+    "chapter": ["Grammar"],
+    "text": "Identify the grammatically correct sentence in the following:",
+    "options": [
+      { "text": "None of the three questions is simple, and I cannot cope up with this" },
+      { "text": "None of the three questions are simple, and I cannot cope up with this" },
+      { "text": "None of the three questions are simple, and I cannot cope with this" },
+      { "text": "None of the three questions is simple, and I cannot cope with this" }
+    ],
+    "marks": 1,
+    "timeinmin": 3,
+    "images": [],
+    "answer": 3
+  },
+  {
+    "subject": "ENG",
+    "source_year": 2025,
+    "type": "mcq",
+    "chapter": ["Grammar"],
+    "text": "Identify the grammatically correct sentence in the following:",
+    "options": [
+      { "text": "I wrote a letter to the Principal yesterday, with a request for an honorary position" },
+      { "text": "I had written a letter to the Principal yesterday, with a request for a honorary position" },
+      { "text": "I have written a letter to the Principal yesterday, with a request for a honorary position" },
+      { "text": "I had been writing a letter to the Principal yesterday, with a request for an honorary position" }
+    ],
+    "marks": 1,
+    "timeinmin": 3,
+    "images": [],
+    "answer": 0
+  },
+  {
+    "subject": "ENG",
+    "source_year": 2025,
+    "type": "mcq",
+    "chapter": ["Grammar"],
+    "text": "Identify the grammatically correct sentence in the following:",
+    "options": [
+      { "text": "Sidharth wanting to become a football player but needs to practice more vigorously" },
+      { "text": "Sidharth wants to become a football player but needs to practice more vigorously" },
+      { "text": "Sidharth is wanting to become a football player but need to practice more vigorously" },
+      { "text": "Sidharth has wanted to become a football player but is needing to practice more vigorously" }
+    ],
+    "marks": 1,
+    "timeinmin": 3,
+    "images": [],
+    "answer": 1
+  },
+  {
+    "subject": "ENG",
+    "source_year": 2025,
+    "type": "mcq",
+    "chapter": ["Grammar"],
+    "text": "Choose the correct answer to fill in the blanks.\n The minister as well as the magistrate _____ choose between duty and reputation.",
+    "options": [
+      { "text": "have to" },
+      { "text": "has to" },
+      { "text": "have had to" },
+      { "text": "are having to" }
+    ],
+    "marks": 1,
+    "timeinmin": 3,
+    "images": [],
+    "answer": 1
+  },
+  {
+    "subject": "ENG",
+    "source_year": 2025,
+    "type": "mcq",
+    "chapter": ["Grammar"],
+    "text": "Choose the correct answer to fill in the blanks.\n She _____ Mandarin _____ the past two years.",
+    "options": [
+      { "text": "learnt;since" },
+      { "text": "has learnt;for" },
+      { "text": "has been learning;since" },
+      { "text": "has been learning;for" }
+    ],
+    "marks": 1,
+    "timeinmin": 3,
+    "images": [],
+    "answer": 3
+  },
+  {
+    "subject": "ENG",
+    "source_year": 2025,
+    "type": "mcq",
+    "chapter": ["Grammar"],
+    "text": "Choose the correct answer to fill in the blanks.\n Neither money nor power _____ needed to get selected for the Olympics",
+    "options": [
+      { "text": "were" },
+      { "text": "are" },
+      { "text": "is" },
+      { "text": "are being" }
+    ],
+    "marks": 1,
+    "timeinmin": 3,
+    "images": [],
+    "answer": 2
+  },
+  {
+    "subject": "ENG",
+    "source_year": 2025,
+    "type": "mcq",
+    "chapter": ["Grammar"],
+    "text": "Choose the correct answer to fill in the blanks.\n _____ undergraduate student is given _____ unique opportunity to earn while studying in our college.",
+    "options": [
+      { "text": "a;an" },
+      { "text": "an;an" },
+      { "text": "an;a" },
+      { "text": "The;an" }
+    ],
+    "marks": 1,
+    "timeinmin": 3,
+    "images": [],
+    "answer": 0
+  },
+  {
+    "subject": "ENG",
+    "source_year": 2025,
+    "type": "mcq",
+    "chapter": ["Grammar"],
+    "text": "Choose the correct answer to fill in the blanks.\n The research _____ since 2015 and now the team _____ unanimously decided to disclose the results.",
+    "options": [
+      { "text": "is going on;have" },
+      { "text": "was going on;have" },
+      { "text": "has been going on;has" },
+      { "text": "had been going on;had" }
+    ],
+    "marks": 1,
+    "timeinmin": 3,
+    "images": [],
+    "answer": 2
+  },
 {
 	"subject" : "ENG",
 	"source_year" : 2025,
@@ -137,7 +177,8 @@
 	"text" : "Chimamanda Adichie argues that our understanding of gender is limited and requires a collective, community-led effort to evolve. Do you agree with this view? Analyze her perspective within the text and discuss how it shapes your thinking on gender and societal change. Answer in about 350-400 words.",
 	"marks" : 10, 
 	"timeinmin" : 30,
-	"images": []
+	"images": [],
+	"answer": "Chimamanda Ngozi Adichie, in “We Should All Be Feminists,” presents a compelling argument that our understanding of gender is narrow, socially constructed, and in urgent need of transformation. She emphasizes that gender is not a fixed biological reality but a set of expectations and roles imposed by society. Adichie believes that this system limits both men and women, as it prescribes how individuals should think, behave, and aspire based solely on their sex. Her call for a collective, community-led effort reflects her belief that change cannot occur in isolation; it must emerge through education, conversation, and the conscious reshaping of cultural attitudes. Adichie critiques the normalization of inequality in everyday life—from how boys and girls are raised to how ambition and leadership are perceived. For instance, she points out that girls are taught to shrink themselves, to aspire to marriage rather than personal achievement, while boys are conditioned to suppress vulnerability in the name of masculinity. These social expectations, according to her, distort human potential and sustain systemic inequality. Thus, feminism, for Adichie, is not about antagonizing men but about freeing everyone from restrictive gender roles. Her perspective is deeply persuasive because it combines personal anecdotes with universal insights. She relates experiences from her own life in Nigeria, making her arguments both relatable and culturally grounded. Through this, she bridges global feminist discourse with local realities, showing that gender equality must be contextual and inclusive. The notion of community-led change is particularly powerful: it acknowledges that societal transformation must involve re-educating families, institutions, and governments, not just inspiring individual awareness. Reflecting on Adichie’s ideas has significantly influenced my understanding of gender and societal change. It underscores that equality is not merely a legal or political goal but a cultural process. True progress requires challenging ingrained stereotypes and fostering empathy and dialogue across genders. I agree with her belief that feminism should be a shared human project—one that benefits everyone by creating a fairer, freer society. Her essay serves as both a mirror and a map: it reflects the biases that persist around us and offers a direction toward inclusivity, respect, and mutual growth."
 },
 {
 	"subject" : "ENG",
@@ -147,7 +188,8 @@
 	"text" : "Amitav Ghosh in his short story 'The Living Mountain' illustrates the idea that the pursuit of material wealth leads to both environmental degradation and societal discontent. What lessons can be drawn from this in the context of contemporary environmental issues?  Answer in about 350-400 words.",
 	"marks" : 10, 
 	"timeinmin" : 30,
-	"images": []
+	"images": [],
+	"answer":"Amitav Ghosh’s short story “The Living Mountain” serves as a powerful allegory about humanity’s destructive relationship with nature. Through his lyrical storytelling, Ghosh portrays how the relentless pursuit of material wealth and progress leads not only to the degradation of the environment but also to the erosion of spiritual and social harmony. The story’s central idea—that nature is a living entity deserving of respect—challenges modern notions of development driven by greed and exploitation. In the narrative, Ghosh describes a community that once lived in peaceful coexistence with the mountain, understanding its rhythms and mysteries. However, as outsiders arrive with ambitions of conquest and extraction, this sacred relationship collapses. The mountain, once seen as alive and benevolent, becomes a mere resource to be mined and measured. This transformation symbolizes how industrial and capitalist pursuits reduce the natural world to an object of consumption. The people’s spiritual emptiness mirrors the ecological devastation they cause, illustrating the deep interdependence between human well-being and environmental health. In the context of contemporary issues, Ghosh’s story resonates profoundly with current crises such as climate change, deforestation, and loss of biodiversity. The world today continues to prioritize economic growth over ecological balance, often ignoring the long-term consequences of such exploitation. Natural disasters, rising temperatures, and the displacement of communities are stark reminders of the costs of ignoring ecological ethics. Ghosh’s work invites readers to reimagine progress—not as the accumulation of wealth, but as the preservation of balance and respect for all forms of life. The lesson to be drawn is clear: sustainable living requires humility, restraint, and a renewed sense of kinship with the environment. Ghosh calls for a moral awakening—a recognition that nature is not a passive backdrop to human activity but an active participant in our collective existence. By listening to “the living mountain,” humanity can rediscover a sense of reverence that modern civilization has lost. Personally, the story reshapes my understanding of development and responsibility. It reminds me that environmental preservation is not just a scientific or political duty but a moral one. Ghosh’s message is timeless: when we destroy nature, we destroy ourselves."
 },
 {
 	"subject" : "ENG",
@@ -180,135 +222,165 @@
 	"images": []
 },
 {
-	"subject" : "ENG",
-	"source_year" : 2025,
-	"type" : "mcq",
-	"chapter" : ["Grammar"],
-	"text" : "Identify the grammatically correct sentence in the following:",
-	"options": [
-        { "text": "My elder sister and her daughter helps me in my domestic work." }, { "text": "My elder sister and her daughter help me with my domestic work." }, { "text": "My elder sister and her daughter help me for my domestic work." }
-      ],
-    "marks" : 1, 
-	"timeinmin" : 3,
-	"images": []
-},
-{
-	"subject" : "ENG",
-	"source_year" : 2025,
-	"type" : "mcq",
-	"chapter" : ["Grammar"],
-	"text" : "Identify the grammatically correct sentence in the following:",
-	"options": [
-        { "text": "One of the student have been waiting since two hours" }, { "text": "One of the student has been waiting since two hours" }, { "text": "One of the students has been waiting for two hours" }
-      ],
-    "marks" : 1, 
-	"timeinmin" : 3,
-	"images": []
-},
-{
-	"subject" : "ENG",
-	"source_year" : 2025,
-	"type" : "mcq",
-	"chapter" : ["Grammar"],
-	"text" : "Identify the grammatically correct sentence in the following:",
-	"options": [
-        { "text": "Neither of the actors is ready to discuss about changes in roles" }, { "text": "Neither of the actors are ready to discuss changes in roles" }, { "text": "Neither of the actors is ready to discuss changes in roles" }
-      ],
-    "marks" : 1, 
-	"timeinmin" : 3,
-	"images": []
-},
-{
-	"subject" : "ENG",
-	"source_year" : 2025,
-	"type" : "mcq",
-	"chapter" : ["Grammar"],
-	"text" : "Identify the grammatically correct sentence in the following:",
-	"options": [
-        { "text": "A honest worker is always an asset to a company." }, { "text": "An honest worker is always an asset to a company." }, { "text": "An honest worker is always an asset to a company. " }
-      ],
-    "marks" : 1, 
-	"timeinmin" : 3,
-	"images": []
-},
-{
-	"subject" : "ENG",
-	"source_year" : 2025,
-	"type" : "mcq",
-	"chapter" : ["Grammar"],
-	"text" : "Identify the grammatically correct sentence in the following:",
-	"options": [
-        { "text": "Chris did not wanted to deal with the disciplinary issue" }, { "text": "Chris did not want to deal with the disciplinary issue." }, { "text": "Chris had not wanted to deal in the disciplinary issue." }
-      ],
-    "marks" : 1, 
-	"timeinmin" : 3,
-	"images": []
-},
-{
-	"subject" : "ENG",
-	"source_year" : 2025,
-	"type" : "mcq",
-	"chapter" : ["Grammar"],
-	"text" : "_____the bad weather, the outdoor party was rescheduled.",
-	"options": [
-        { "text": "Because of" }, { "text": "Inspite" }, { "text": "Despite of" }
-      ],
-    "marks" : 1, 
-	"timeinmin" : 3,
-	"images": []
-},
-{
-	"subject" : "ENG",
-	"source_year" : 2025,
-	"type" : "mcq",
-	"chapter" : ["Grammar"],
-	"text" : "The headmaster as well as the students _____delighted when the team showed _____mettle.",
-	"options": [
-        { "text": "were; their" }, { "text": "was;it's" }, { "text": "was;its" }
-      ],
-    "marks" : 1, 
-	"timeinmin" : 3,
-	"images": []
-},
-{
-	"subject" : "ENG",
-	"source_year" : 2025,
-	"type" : "mcq",
-	"chapter" : ["Grammar"],
-	"text" : "The director congratulated the winner _____ his achievement, and also acknowledged that every participant _____unique.",
-	"options": [
-        { "text": "for;was" }, { "text": "for;were" }, { "text": "on;was" }
-      ],
-    "marks" : 1, 
-	"timeinmin" : 3,
-	"images": []
-},
-{
-	"subject" : "ENG",
-	"source_year" : 2025,
-	"type" : "mcq",
-	"chapter" : ["Grammar"],
-	"text" : "Neither Jackson nor his friends _____been able to _____ with the situation",
-	"options": [
-        { "text": "Have; cope" }, { "text": "Has;cope up" }, { "text": "have, cope up" }
-      ],
-    "marks" : 1, 
-	"timeinmin" : 3,
-	"images": []
-},
-{
-	"subject" : "ENG",
-	"source_year" : 2025,
-	"type" : "mcq",
-	"chapter" : ["Grammar"],
-	"text" : "One of the _____for the disturbance in the city _____ the lack of security.",
-	"options": [
-        { "text": "reason;was" }, { "text": "reasons;were" }, { "text": "reasons;was" }
-      ],
-    "marks" : 1, 
-	"timeinmin" : 3,
-	"images": []
-},
+    "subject": "ENG",
+    "source_year": 2025,
+    "type": "mcq",
+    "chapter": ["Grammar"],
+    "text": "Identify the grammatically correct sentence in the following:",
+    "options": [
+      { "text": "My elder sister and her daughter helps me in my domestic work." },
+      { "text": "My elder sister and her daughter help me with my domestic work." },
+      { "text": "My elder sister and her daughter help me for my domestic work." }
+    ],
+    "marks": 1,
+    "timeinmin": 3,
+    "images": [],
+    "answer": 1
+  },
+  {
+    "subject": "ENG",
+    "source_year": 2025,
+    "type": "mcq",
+    "chapter": ["Grammar"],
+    "text": "Identify the grammatically correct sentence in the following:",
+    "options": [
+      { "text": "One of the student have been waiting since two hours" },
+      { "text": "One of the student has been waiting since two hours" },
+      { "text": "One of the students has been waiting for two hours" }
+    ],
+    "marks": 1,
+    "timeinmin": 3,
+    "images": [],
+    "answer": 2
+  },
+  {
+    "subject": "ENG",
+    "source_year": 2025,
+    "type": "mcq",
+    "chapter": ["Grammar"],
+    "text": "Identify the grammatically correct sentence in the following:",
+    "options": [
+      { "text": "Neither of the actors is ready to discuss about changes in roles" },
+      { "text": "Neither of the actors are ready to discuss changes in roles" },
+      { "text": "Neither of the actors is ready to discuss changes in roles" }
+    ],
+    "marks": 1,
+    "timeinmin": 3,
+    "images": [],
+    "answer": 2
+  },
+  {
+    "subject": "ENG",
+    "source_year": 2025,
+    "type": "mcq",
+    "chapter": ["Grammar"],
+    "text": "Identify the grammatically correct sentence in the following:",
+    "options": [
+      { "text": "A honest worker is always an asset to a company." },
+      { "text": "An honest worker is always an asset to a company." },
+      { "text": "An honest worker is always an asset to a company. " }
+    ],
+    "marks": 1,
+    "timeinmin": 3,
+    "images": [],
+    "answer": 1
+  },
+  {
+    "subject": "ENG",
+    "source_year": 2025,
+    "type": "mcq",
+    "chapter": ["Grammar"],
+    "text": "Identify the grammatically correct sentence in the following:",
+    "options": [
+      { "text": "Chris did not wanted to deal with the disciplinary issue" },
+      { "text": "Chris did not want to deal with the disciplinary issue." },
+      { "text": "Chris had not wanted to deal in the disciplinary issue." }
+    ],
+    "marks": 1,
+    "timeinmin": 3,
+    "images": [],
+    "answer": 1
+  },
+  {
+    "subject": "ENG",
+    "source_year": 2025,
+    "type": "mcq",
+    "chapter": ["Grammar"],
+    "text": "_____the bad weather, the outdoor party was rescheduled.",
+    "options": [
+      { "text": "Because of" },
+      { "text": "Inspite" },
+      { "text": "Despite of" }
+    ],
+    "marks": 1,
+    "timeinmin": 3,
+    "images": [],
+    "answer": 0
+  },
+  {
+    "subject": "ENG",
+    "source_year": 2025,
+    "type": "mcq",
+    "chapter": ["Grammar"],
+    "text": "The headmaster as well as the students _____delighted when the team showed _____mettle.",
+    "options": [
+      { "text": "were; their" },
+      { "text": "was;it's" },
+      { "text": "was;its" }
+    ],
+    "marks": 1,
+    "timeinmin": 3,
+    "images": [],
+    "answer": 2
+  },
+  {
+    "subject": "ENG",
+    "source_year": 2025,
+    "type": "mcq",
+    "chapter": ["Grammar"],
+    "text": "The director congratulated the winner _____ his achievement, and also acknowledged that every participant _____unique.",
+    "options": [
+      { "text": "for;was" },
+      { "text": "for;were" },
+      { "text": "on;was" }
+    ],
+    "marks": 1,
+    "timeinmin": 3,
+    "images": [],
+    "answer": 2
+  },
+  {
+    "subject": "ENG",
+    "source_year": 2025,
+    "type": "mcq",
+    "chapter": ["Grammar"],
+    "text": "Neither Jackson nor his friends _____been able to _____ with the situation",
+    "options": [
+      { "text": "Have; cope" },
+      { "text": "Has;cope up" },
+      { "text": "have, cope up" }
+    ],
+    "marks": 1,
+    "timeinmin": 3,
+    "images": [],
+    "answer": 0
+  },
+  {
+    "subject": "ENG",
+    "source_year": 2025,
+    "type": "mcq",
+    "chapter": ["Grammar"],
+    "text": "One of the _____for the disturbance in the city _____ the lack of security.",
+    "options": [
+      { "text": "reason;was" },
+      { "text": "reasons;were" },
+      { "text": "reasons;was" }
+    ],
+    "marks": 1,
+    "timeinmin": 3,
+    "images": [],
+    "answer": 2
+  },
 {
 	"subject" : "ENG",
 	"source_year" : 2025,
