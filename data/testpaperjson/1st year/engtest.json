@@ -1,134 +1,174 @@
 [
-{
-	"subject" : "ENG",
-	"source_year" : 2025,
-	"type" : "mcq",
-	"chapter" : ["Grammar"],
-	"text" : "Identify the grammatically correct sentence in the following:",
-	"options": [
-        { "text": "Mr. John settled in India after he inherited a fortune" }, { "text": "Mr. John settled in India after he had inherited a fortune" }, { "text": "Mr. John has been settling in India after he has inherited a fortune" }, { "text": "Mr. John had settled in India after he inherited a fortune" }
-      ],
-    "marks" : 1, 
-	"timeinmin" : 3,
-	"images": []
-},
-{
-	"subject" : "ENG",
-	"source_year" : 2025,
-	"type" : "mcq",
-	"chapter" : ["Grammar"],
-	"text" : "Identify the grammatically correct sentence in the following:",
-	"options": [
-        { "text": "I would move to Australia for better prospects, although the distance from my family" }, { "text": "I would move to Australia for better prospects, despite the distance from my family" }, { "text": "I would move to Australia for better prospects, since the distance from my family" }, { "text": "I would move to Australia for better prospects, inspite the distance from my family" }
-      ],
-    "marks" : 1, 
-	"timeinmin" : 3,
-	"images": []
-},
-{
-	"subject" : "ENG",
-	"source_year" : 2025,
-	"type" : "mcq",
-	"chapter" : ["Grammar"],
-	"text" : "Identify the grammatically correct sentence in the following:",
-	"options": [
-        { "text": "None of the three questions is simple, and I cannot cope up with this" }, { "text": "None of the three questions are simple, and I cannot cope up with this" }, { "text": "None of the three questions are simple, and I cannot cope with this" }, { "text": "None of the three questions is simple, and I cannot cope with this" }
-      ],
-    "marks" : 1, 
-	"timeinmin" : 3,
-	"images": []
-},
-{
-	"subject" : "ENG",
-	"source_year" : 2025,
-	"type" : "mcq",
-	"chapter" : ["Grammar"],
-	"text" : "Identify the grammatically correct sentence in the following:",
-	"options": [
-        { "text": "I wrote a letter to the Principal yesterday, with a request for an honorary position" }, { "text": "I had written a letter to the Principal yesterday, with a request for a honorary position" }, { "text": "I have written a letter to the Principal yesterday, with a request for a honorary position" }, { "text": "I had been writing a letter to the Principal yesterday, with a request for an honorary position" }
-      ],
-    "marks" : 1, 
-	"timeinmin" : 3,
-	"images": []
-},
-{
-	"subject" : "ENG",
-	"source_year" : 2025,
-	"type" : "mcq",
-	"chapter" : ["Grammar"],
-	"text" : "Identify the grammatically correct sentence in the following:",
-	"options": [
-        { "text": "Sidharth wanting to become a football player but needs to practice more vigorously" }, { "text": "Sidharth wants to become a football player but needs to practice more vigorously" }, { "text": "Sidharth is wanting to become a football player but need to practice more vigorously" }, { "text": "Sidharth has wanted to become a football player but is needing to practice more vigorously" }
-      ],
-    "marks" : 1, 
-	"timeinmin" : 3,
-	"images": []
-},
-{
-	"subject" : "ENG",
-	"source_year" : 2025,
-	"type" : "mcq",
-	"chapter" : ["Grammar"],
-	"text" : "Choose the correct answer to fill in the blanks.\n The minister as well as the magistrate _____ choose between duty and reputation.",
-	"options": [
-        { "text": "have to" }, { "text": "has to" }, { "text": "have had to" }, { "text": "are having to" }
-      ],
-    "marks" : 1, 
-	"timeinmin" : 3,
-	"images": []
-},
-{
-	"subject" : "ENG",
-	"source_year" : 2025,
-	"type" : "mcq",
-	"chapter" : ["Grammar"],
-	"text" : "Choose the correct answer to fill in the blanks.\n She _____ Mandarin _____ the past two years.",
-	"options": [
-        { "text": "learnt;since" }, { "text": "has learnt;for" }, { "text": "has been learning;since" }, { "text": "has been learning;for" }
-      ],
-    "marks" : 1, 
-	"timeinmin" : 3,
-	"images": []
-},
-{
-	"subject" : "ENG",
-	"source_year" : 2025,
-	"type" : "mcq",
-	"chapter" : ["Grammar"],
-	"text" : "Choose the correct answer to fill in the blanks.\n Neither money nor power _____ needed to get selected for the Olympics",
-	"options": [
-        { "text": "were" }, { "text": "are" }, { "text": "is" }, { "text": "are being" }
-      ],
-    "marks" : 1, 
-	"timeinmin" : 3,
-	"images": []
-},
-{
-	"subject" : "ENG",
-	"source_year" : 2025,
-	"type" : "mcq",
-	"chapter" : ["Grammar"],
-	"text" : "Choose the correct answer to fill in the blanks.\n _____ undergraduate student is given _____ unique opportunity to earn while studying in our college.",
-	"options": [
-        { "text": "a;an" }, { "text": "an;an" }, { "text": "an;a" }, { "text": "The;an" }
-      ],
-    "marks" : 1, 
-	"timeinmin" : 3,
-	"images": []
-},
-{
-	"subject" : "ENG",
-	"source_year" : 2025,
-	"type" : "mcq",
-	"chapter" : ["Grammar"],
-	"text" : "Choose the correct answer to fill in the blanks.\n The research _____ since 2015 and now the team _____ unanimously decided to disclose the results.",
-	"options": [
-        { "text": "is going on;have" }, { "text": "was going on;have" }, { "text": "has been going on;has" }, { "text": "had been going on;had" }
-      ],
-    "marks" : 1, 
-	"timeinmin" : 3,
-	"images": []
-},
+  {
+    "subject": "ENG",
+    "source_year": 2025,
+    "type": "mcq",
+    "chapter": ["Grammar"],
+    "text": "Identify the grammatically correct sentence in the following:",
+    "options": [
+      { "text": "Mr. John settled in India after he inherited a fortune" },
+      { "text": "Mr. John settled in India after he had inherited a fortune" },
+      { "text": "Mr. John has been settling in India after he has inherited a fortune" },
+      { "text": "Mr. John had settled in India after he inherited a fortune" }
+    ],
+    "marks": 1,
+    "timeinmin": 3,
+    "images": [],
+    "answer": 1
+  },
+  {
+    "subject": "ENG",
+    "source_year": 2025,
+    "type": "mcq",
+    "chapter": ["Grammar"],
+    "text": "Identify the grammatically correct sentence in the following:",
+    "options": [
+      { "text": "I would move to Australia for better prospects, although the distance from my family" },
+      { "text": "I would move to Australia for better prospects, despite the distance from my family" },
+      { "text": "I would move to Australia for better prospects, since the distance from my family" },
+      { "text": "I would move to Australia for better prospects, inspite the distance from my family" }
+    ],
+    "marks": 1,
+    "timeinmin": 3,
+    "images": [],
+    "answer": 1
+  },
+  {
+    "subject": "ENG",
+    "source_year": 2025,
+    "type": "mcq",
+    "chapter": ["Grammar"],
+    "text": "Identify the grammatically correct sentence in the following:",
+    "options": [
+      { "text": "None of the three questions is simple, and I cannot cope up with this" },
+      { "text": "None of the three questions are simple, and I cannot cope up with this" },
+      { "text": "None of the three questions are simple, and I cannot cope with this" },
+      { "text": "None of the three questions is simple, and I cannot cope with this" }
+    ],
+    "marks": 1,
+    "timeinmin": 3,
+    "images": [],
+    "answer": 3
+  },
+  {
+    "subject": "ENG",
+    "source_year": 2025,
+    "type": "mcq",
+    "chapter": ["Grammar"],
+    "text": "Identify the grammatically correct sentence in the following:",
+    "options": [
+      { "text": "I wrote a letter to the Principal yesterday, with a request for an honorary position" },
+      { "text": "I had written a letter to the Principal yesterday, with a request for a honorary position" },
+      { "text": "I have written a letter to the Principal yesterday, with a request for a honorary position" },
+      { "text": "I had been writing a letter to the Principal yesterday, with a request for an honorary position" }
+    ],
+    "marks": 1,
+    "timeinmin": 3,
+    "images": [],
+    "answer": 0
+  },
+  {
+    "subject": "ENG",
+    "source_year": 2025,
+    "type": "mcq",
+    "chapter": ["Grammar"],
+    "text": "Identify the grammatically correct sentence in the following:",
+    "options": [
+      { "text": "Sidharth wanting to become a football player but needs to practice more vigorously" },
+      { "text": "Sidharth wants to become a football player but needs to practice more vigorously" },
+      { "text": "Sidharth is wanting to become a football player but need to practice more vigorously" },
+      { "text": "Sidharth has wanted to become a football player but is needing to practice more vigorously" }
+    ],
+    "marks": 1,
+    "timeinmin": 3,
+    "images": [],
+    "answer": 1
+  },
+  {
+    "subject": "ENG",
+    "source_year": 2025,
+    "type": "mcq",
+    "chapter": ["Grammar"],
+    "text": "Choose the correct answer to fill in the blanks.\n The minister as well as the magistrate _____ choose between duty and reputation.",
+    "options": [
+      { "text": "have to" },
+      { "text": "has to" },
+      { "text": "have had to" },
+      { "text": "are having to" }
+    ],
+    "marks": 1,
+    "timeinmin": 3,
+    "images": [],
+    "answer": 1
+  },
+  {
+    "subject": "ENG",
+    "source_year": 2025,
+    "type": "mcq",
+    "chapter": ["Grammar"],
+    "text": "Choose the correct answer to fill in the blanks.\n She _____ Mandarin _____ the past two years.",
+    "options": [
+      { "text": "learnt;since" },
+      { "text": "has learnt;for" },
+      { "text": "has been learning;since" },
+      { "text": "has been learning;for" }
+    ],
+    "marks": 1,
+    "timeinmin": 3,
+    "images": [],
+    "answer": 3
+  },
+  {
+    "subject": "ENG",
+    "source_year": 2025,
+    "type": "mcq",
+    "chapter": ["Grammar"],
+    "text": "Choose the correct answer to fill in the blanks.\n Neither money nor power _____ needed to get selected for the Olympics",
+    "options": [
+      { "text": "were" },
+      { "text": "are" },
+      { "text": "is" },
+      { "text": "are being" }
+    ],
+    "marks": 1,
+    "timeinmin": 3,
+    "images": [],
+    "answer": 2
+  },
+  {
+    "subject": "ENG",
+    "source_year": 2025,
+    "type": "mcq",
+    "chapter": ["Grammar"],
+    "text": "Choose the correct answer to fill in the blanks.\n _____ undergraduate student is given _____ unique opportunity to earn while studying in our college.",
+    "options": [
+      { "text": "a;an" },
+      { "text": "an;an" },
+      { "text": "an;a" },
+      { "text": "The;an" }
+    ],
+    "marks": 1,
+    "timeinmin": 3,
+    "images": [],
+    "answer": 0
+  },
+  {
+    "subject": "ENG",
+    "source_year": 2025,
+    "type": "mcq",
+    "chapter": ["Grammar"],
+    "text": "Choose the correct answer to fill in the blanks.\n The research _____ since 2015 and now the team _____ unanimously decided to disclose the results.",
+    "options": [
+      { "text": "is going on;have" },
+      { "text": "was going on;have" },
+      { "text": "has been going on;has" },
+      { "text": "had been going on;had" }
+    ],
+    "marks": 1,
+    "timeinmin": 3,
+    "images": [],
+    "answer": 2
+  },
 {
 	"subject" : "ENG",
 	"source_year" : 2025,
@@ -137,7 +177,8 @@
 	"text" : "Chimamanda Adichie argues that our understanding of gender is limited and requires a collective, community-led effort to evolve. Do you agree with this view? Analyze her perspective within the text and discuss how it shapes your thinking on gender and societal change. Answer in about 350-400 words.",
 	"marks" : 10, 
 	"timeinmin" : 30,
-	"images": []
+	"images": [],
+	"answer": "Chimamanda Ngozi Adichie, in “We Should All Be Feminists,” presents a compelling argument that our understanding of gender is narrow, socially constructed, and in urgent need of transformation. She emphasizes that gender is not a fixed biological reality but a set of expectations and roles imposed by society. Adichie believes that this system limits both men and women, as it prescribes how individuals should think, behave, and aspire based solely on their sex. Her call for a collective, community-led effort reflects her belief that change cannot occur in isolation; it must emerge through education, conversation, and the conscious reshaping of cultural attitudes. Adichie critiques the normalization of inequality in everyday life—from how boys and girls are raised to how ambition and leadership are perceived. For instance, she points out that girls are taught to shrink themselves, to aspire to marriage rather than personal achievement, while boys are conditioned to suppress vulnerability in the name of masculinity. These social expectations, according to her, distort human potential and sustain systemic inequality. Thus, feminism, for Adichie, is not about antagonizing men but about freeing everyone from restrictive gender roles. Her perspective is deeply persuasive because it combines personal anecdotes with universal insights. She relates experiences from her own life in Nigeria, making her arguments both relatable and culturally grounded. Through this, she bridges global feminist discourse with local realities, showing that gender equality must be contextual and inclusive. The notion of community-led change is particularly powerful: it acknowledges that societal transformation must involve re-educating families, institutions, and governments, not just inspiring individual awareness. Reflecting on Adichie’s ideas has significantly influenced my understanding of gender and societal change. It underscores that equality is not merely a legal or political goal but a cultural process. True progress requires challenging ingrained stereotypes and fostering empathy and dialogue across genders. I agree with her belief that feminism should be a shared human project—one that benefits everyone by creating a fairer, freer society. Her essay serves as both a mirror and a map: it reflects the biases that persist around us and offers a direction toward inclusivity, respect, and mutual growth."
 },
 {
 	"subject" : "ENG",
@@ -147,7 +188,8 @@
 	"text" : "Amitav Ghosh in his short story 'The Living Mountain' illustrates the idea that the pursuit of material wealth leads to both environmental degradation and societal discontent. What lessons can be drawn from this in the context of contemporary environmental issues?  Answer in about 350-400 words.",
 	"marks" : 10, 
 	"timeinmin" : 30,
-	"images": []
+	"images": [],
+	"answer":"Amitav Ghosh’s short story “The Living Mountain” serves as a powerful allegory about humanity’s destructive relationship with nature. Through his lyrical storytelling, Ghosh portrays how the relentless pursuit of material wealth and progress leads not only to the degradation of the environment but also to the erosion of spiritual and social harmony. The story’s central idea—that nature is a living entity deserving of respect—challenges modern notions of development driven by greed and exploitation. In the narrative, Ghosh describes a community that once lived in peaceful coexistence with the mountain, understanding its rhythms and mysteries. However, as outsiders arrive with ambitions of conquest and extraction, this sacred relationship collapses. The mountain, once seen as alive and benevolent, becomes a mere resource to be mined and measured. This transformation symbolizes how industrial and capitalist pursuits reduce the natural world to an object of consumption. The people’s spiritual emptiness mirrors the ecological devastation they cause, illustrating the deep interdependence between human well-being and environmental health. In the context of contemporary issues, Ghosh’s story resonates profoundly with current crises such as climate change, deforestation, and loss of biodiversity. The world today continues to prioritize economic growth over ecological balance, often ignoring the long-term consequences of such exploitation. Natural disasters, rising temperatures, and the displacement of communities are stark reminders of the costs of ignoring ecological ethics. Ghosh’s work invites readers to reimagine progress—not as the accumulation of wealth, but as the preservation of balance and respect for all forms of life. The lesson to be drawn is clear: sustainable living requires humility, restraint, and a renewed sense of kinship with the environment. Ghosh calls for a moral awakening—a recognition that nature is not a passive backdrop to human activity but an active participant in our collective existence. By listening to “the living mountain,” humanity can rediscover a sense of reverence that modern civilization has lost. Personally, the story reshapes my understanding of development and responsibility. It reminds me that environmental preservation is not just a scientific or political duty but a moral one. Ghosh’s message is timeless: when we destroy nature, we destroy ourselves."
 },
 {
 	"subject" : "ENG",
@@ -157,167 +199,201 @@
 	"text" : "Read the following passage and provide a response to the question in about 300-350 words. Your response is required to show a critical understanding of the ideas presented in the passage. \n Question: The author states, ''Consider what would happen if a valid segment of information is corrupted by even a small piece of fake information or misinformation, which the AI programme fails to recognise and rectify.'' In your view, is the author's concern justified given current developments in AI, or is it an exaggerated caution? Justify your answer.",
 	"marks" : 10, 
 	"timeinmin" : 30,
-	"images": ["data/question_images/Screenshot 2025-09-20 111702.png","data/question_images/Screenshot 2025-09-20 111715.png"]
+	"images": ["data/question_images/Screenshot 2025-09-20 111702.png","data/question_images/Screenshot 2025-09-20 111715.png"],
+	"answer":"The author’s concern about the corruption of valid information by fake or misleading data in AI systems is entirely justified, especially in light of today’s technological landscape. The passage warns that the reliability of AI-generated information depends on the integrity of its data. If even a small amount of misinformation enters the system, the AI may fail to recognise and correct it, leading to a chain reaction of falsehoods disguised as truth. Given the increasing dependence of companies like Google, OpenAI, and Meta on user-generated data, this concern is far from exaggerated. AI systems, including generative models, learn from vast pools of information scraped from the internet — much of which includes bias, propaganda, and unverified claims. When algorithms process such contaminated data, they can produce outputs that appear accurate but are fundamentally flawed. The author rightly connects this issue to the dangers of misinformation and the erosion of trust in digital knowledge. Once misinformation is amplified by AI and repeated across millions of users, it becomes almost impossible to distinguish truth from fabrication. This process mirrors how “gossip and rumour-mongering” can destabilize societies, a metaphor that aptly captures the magnitude of the risk. Furthermore, the author’s criticism of monetising AI-generated information highlights another danger — the prioritization of profit over truth. When corporations control data access and charge for “enhanced” AI experiences, the line between technological innovation and manipulation becomes blurred. The result is an ecosystem where accuracy is secondary to engagement and revenue. However, while the author’s caution is well-founded, it is not entirely bleak. AI research is advancing in the direction of transparency, explainability, and bias detection. Yet, as the author reminds us, these solutions are still evolving and insufficiently tested at scale. In conclusion, the author’s concern is both justified and prescient. The corruption of digital information by misinformation is not hypothetical—it is already unfolding. Unless stronger ethical standards and accountability mechanisms are implemented, AI may indeed become an uncontrollable force shaping how the world perceives truth."
 },
 {
 	"subject" : "ENG",
 	"source_year" : 2025,
 	"type" : "text",
 	"chapter" : ["Essay"],
-	"text" : "Write an essay on ''Social Media and the rise of Cancel Culture'' in about 600 words",
+	"text" : "Write an essay on \"Social Media and the rise of Cancel Culture\" in about 600 words",
 	"marks" : 10, 
 	"timeinmin" : 30,
-	"images": []
+	"images": [],
+	"answer": "In the digital age, social media has transformed how societies communicate, debate, and hold individuals or institutions accountable. Platforms such as X (formerly Twitter), Instagram, TikTok, and YouTube have become public arenas where social norms are negotiated and moral boundaries are enforced. Among the most striking phenomena to emerge from this environment is “cancel culture” — a form of social ostracism or boycott aimed at punishing those who are perceived to have acted or spoken in a morally unacceptable way. While cancel culture is often presented as a tool for justice and accountability, it has also sparked intense debate about freedom of expression, online mob mentality, and the dangers of digital overreach. At its core, cancel culture arises from a desire for social justice and accountability. Traditionally, powerful figures — politicians, celebrities, or corporations — could act with impunity, protected by wealth or influence. Social media changed this dynamic by giving ordinary users a voice and the ability to collectively call out unethical or discriminatory behaviour. The #MeToo and Black Lives Matter movements are prime examples of how online activism exposed deep-rooted injustices that were previously ignored. By amplifying marginalized voices and compelling institutions to take action, cancel culture initially appeared as a necessary corrective to systemic inequality. However, the same mechanisms that empower users to demand justice can also produce toxicity, intolerance, and misinformation. Social media thrives on speed, outrage, and virality — qualities that are often incompatible with fairness or nuance. A single tweet or video clip can be taken out of context and lead to mass condemnation before all facts are verified. In such cases, “cancelling” becomes less about accountability and more about public shaming. Individuals lose jobs, reputations, and opportunities, sometimes for mistakes made years earlier or for opinions that are merely unpopular, not immoral. The court of social media rarely allows for redemption or forgiveness; instead, it demands perfection in a world where no one is flawless. Moreover, cancel culture often blurs the line between criticism and censorship. Healthy criticism is essential for societal progress, but the fear of being cancelled can discourage people from expressing genuine opinions or engaging in open debate. This has created what some describe as a “culture of fear,” where artists, journalists, and even academics self-censor to avoid backlash. Ironically, a movement that originated to amplify free expression and justice now sometimes contributes to intellectual conformity and polarization. The role of algorithms and online echo chambers further intensifies the problem. Social media platforms prioritize emotionally charged content that drives engagement — outrage, anger, and moral indignation attract more clicks than balanced discussions. As users cluster into ideological bubbles, cancelling someone from the “other side” becomes an act of moral signalling, a way to assert group identity rather than promote genuine accountability. Thus, cancel culture becomes less a moral movement and more a reflection of how digital capitalism monetizes outrage. Still, it would be simplistic to dismiss cancel culture entirely. Many positive transformations have come from online accountability. For instance, corporations have been pressured to address racism, sexism, and environmental irresponsibility due to public pressure campaigns. Cancel culture, when applied with discernment and fairness, can serve as a democratic tool for social reform. The real issue, therefore, is not the concept of calling out wrongdoing, but the manner in which social media amplifies it without due process or proportion. In conclusion, social media and cancel culture represent both the promise and peril of digital empowerment. They illustrate how technology has redefined moral discourse, enabling ordinary people to challenge power structures but also risking mob justice in the process. The challenge lies in cultivating a culture of responsible digital citizenship — one that values accountability alongside empathy, and justice alongside forgiveness. Only then can social media fulfil its potential as a space for constructive dialogue rather than a battlefield of condemnation."
 },
 {
 	"subject" : "ENG",
 	"source_year" : 2025,
 	"type" : "text",
 	"chapter" : ["Essay"],
-	"text" : "Write an essay on ''Cultural Diversity in a contemporary world. '' in about 600 words",
+	"text" : "Write an essay on \"Cultural Diversity in a contemporary world.\" in about 600 words",
 	"marks" : 10, 
 	"timeinmin" : 30,
-	"images": []
+	"images": [],
+	"answer": "Cultural diversity refers to the coexistence of different cultures, traditions, languages, beliefs, and lifestyles within a society or across nations. In the contemporary world—marked by globalization, technological advancement, and mass migration—cultural diversity has become both a defining characteristic and a significant challenge of human civilization. It is a source of enrichment, creativity, and innovation, yet also an area of tension and misunderstanding. Understanding and embracing cultural diversity is essential to building peaceful, inclusive, and progressive societies in an increasingly interconnected world. In the past, cultures were largely confined within geographic boundaries, evolving separately through unique histories and experiences. However, the rapid globalization of the 21st century has brought people from vastly different cultural backgrounds into close contact. Global trade, travel, the internet, and social media have turned the world into a cultural mosaic where ideas, cuisines, art, and languages mix freely. Cities like London, New York, Dubai, and Singapore are microcosms of this phenomenon—where one can experience the world’s diversity within a single day. This blending has fostered greater understanding, tolerance, and creativity, showing how diversity can strengthen rather than divide societies. One of the most visible benefits of cultural diversity is innovation through exchange. When people from different backgrounds collaborate, they bring distinct perspectives that challenge conventional thinking. In business, multicultural teams often generate more creative solutions; in art and media, fusion genres in music, fashion, and film demonstrate how cross-cultural influences can redefine creativity. Similarly, education systems that value cultural diversity help students develop empathy, adaptability, and global awareness—skills essential for success in a globalized economy. However, despite its many advantages, cultural diversity also presents complex challenges. Misunderstandings, stereotypes, and prejudices often arise when people fail to appreciate or respect differences. Immigration debates, racial discrimination, and identity politics in many countries reveal how cultural diversity can sometimes trigger social tensions. Globalization, while connecting societies, can also lead to the erosion of local cultures, as dominant global influences—especially from Western media and consumerism—overshadow indigenous traditions and languages. This tension between cultural preservation and global integration continues to shape the politics and identity of many nations. Moreover, the rise of digital technology has created both opportunities and risks for cultural diversity. On one hand, the internet allows individuals to share and celebrate their heritage across borders, giving voice to marginalized communities. On the other hand, online spaces can amplify cultural conflicts, spread misinformation, and reinforce echo chambers that divide people along cultural or ideological lines. The challenge, therefore, lies in using digital platforms responsibly—to promote intercultural dialogue rather than deepen divisions. International organizations like UNESCO have long emphasized the importance of protecting cultural diversity as a part of global heritage. The UNESCO Universal Declaration on Cultural Diversity (2001) recognizes it as “the common heritage of humanity” and asserts that safeguarding it is essential for peace and development. Governments and institutions are increasingly investing in multicultural education, heritage preservation, and inclusive policies that encourage intercultural exchange while protecting minority rights. Festivals, language programs, and global art collaborations serve as reminders that diversity is not a threat, but a treasure that unites humanity through shared creativity and mutual respect. In essence, the contemporary world’s strength lies in its plurality. Cultural diversity teaches humanity to appreciate differences without fear, to learn from one another, and to evolve together. It encourages humility by reminding us that no single culture has all the answers to life’s complexities. As societies become more interconnected, embracing diversity is not merely a moral obligation but a practical necessity for coexistence and progress. In conclusion, cultural diversity in the contemporary world represents the beauty of human variety and the promise of collective growth. It challenges us to rise above prejudice, to protect cultural heritage while embracing change, and to create a world where every identity is valued. The future of humanity depends not on uniformity but on our ability to harmonize diversity into a shared symphony of understanding, respect, and peace."
 },
 {
-	"subject" : "ENG",
-	"source_year" : 2025,
-	"type" : "mcq",
-	"chapter" : ["Grammar"],
-	"text" : "Identify the grammatically correct sentence in the following:",
-	"options": [
-        { "text": "My elder sister and her daughter helps me in my domestic work." }, { "text": "My elder sister and her daughter help me with my domestic work." }, { "text": "My elder sister and her daughter help me for my domestic work." }
-      ],
-    "marks" : 1, 
-	"timeinmin" : 3,
-	"images": []
-},
-{
-	"subject" : "ENG",
-	"source_year" : 2025,
-	"type" : "mcq",
-	"chapter" : ["Grammar"],
-	"text" : "Identify the grammatically correct sentence in the following:",
-	"options": [
-        { "text": "One of the student have been waiting since two hours" }, { "text": "One of the student has been waiting since two hours" }, { "text": "One of the students has been waiting for two hours" }
-      ],
-    "marks" : 1, 
-	"timeinmin" : 3,
-	"images": []
-},
-{
-	"subject" : "ENG",
-	"source_year" : 2025,
-	"type" : "mcq",
-	"chapter" : ["Grammar"],
-	"text" : "Identify the grammatically correct sentence in the following:",
-	"options": [
-        { "text": "Neither of the actors is ready to discuss about changes in roles" }, { "text": "Neither of the actors are ready to discuss changes in roles" }, { "text": "Neither of the actors is ready to discuss changes in roles" }
-      ],
-    "marks" : 1, 
-	"timeinmin" : 3,
-	"images": []
-},
-{
-	"subject" : "ENG",
-	"source_year" : 2025,
-	"type" : "mcq",
-	"chapter" : ["Grammar"],
-	"text" : "Identify the grammatically correct sentence in the following:",
-	"options": [
-        { "text": "A honest worker is always an asset to a company." }, { "text": "An honest worker is always an asset to a company." }, { "text": "An honest worker is always an asset to a company. " }
-      ],
-    "marks" : 1, 
-	"timeinmin" : 3,
-	"images": []
-},
-{
-	"subject" : "ENG",
-	"source_year" : 2025,
-	"type" : "mcq",
-	"chapter" : ["Grammar"],
-	"text" : "Identify the grammatically correct sentence in the following:",
-	"options": [
-        { "text": "Chris did not wanted to deal with the disciplinary issue" }, { "text": "Chris did not want to deal with the disciplinary issue." }, { "text": "Chris had not wanted to deal in the disciplinary issue." }
-      ],
-    "marks" : 1, 
-	"timeinmin" : 3,
-	"images": []
-},
-{
-	"subject" : "ENG",
-	"source_year" : 2025,
-	"type" : "mcq",
-	"chapter" : ["Grammar"],
-	"text" : "_____the bad weather, the outdoor party was rescheduled.",
-	"options": [
-        { "text": "Because of" }, { "text": "Inspite" }, { "text": "Despite of" }
-      ],
-    "marks" : 1, 
-	"timeinmin" : 3,
-	"images": []
-},
-{
-	"subject" : "ENG",
-	"source_year" : 2025,
-	"type" : "mcq",
-	"chapter" : ["Grammar"],
-	"text" : "The headmaster as well as the students _____delighted when the team showed _____mettle.",
-	"options": [
-        { "text": "were; their" }, { "text": "was;it's" }, { "text": "was;its" }
-      ],
-    "marks" : 1, 
-	"timeinmin" : 3,
-	"images": []
-},
-{
-	"subject" : "ENG",
-	"source_year" : 2025,
-	"type" : "mcq",
-	"chapter" : ["Grammar"],
-	"text" : "The director congratulated the winner _____ his achievement, and also acknowledged that every participant _____unique.",
-	"options": [
-        { "text": "for;was" }, { "text": "for;were" }, { "text": "on;was" }
-      ],
-    "marks" : 1, 
-	"timeinmin" : 3,
-	"images": []
-},
-{
-	"subject" : "ENG",
-	"source_year" : 2025,
-	"type" : "mcq",
-	"chapter" : ["Grammar"],
-	"text" : "Neither Jackson nor his friends _____been able to _____ with the situation",
-	"options": [
-        { "text": "Have; cope" }, { "text": "Has;cope up" }, { "text": "have, cope up" }
-      ],
-    "marks" : 1, 
-	"timeinmin" : 3,
-	"images": []
-},
-{
-	"subject" : "ENG",
-	"source_year" : 2025,
-	"type" : "mcq",
-	"chapter" : ["Grammar"],
-	"text" : "One of the _____for the disturbance in the city _____ the lack of security.",
-	"options": [
-        { "text": "reason;was" }, { "text": "reasons;were" }, { "text": "reasons;was" }
-      ],
-    "marks" : 1, 
-	"timeinmin" : 3,
-	"images": []
-},
+    "subject": "ENG",
+    "source_year": 2025,
+    "type": "mcq",
+    "chapter": ["Grammar"],
+    "text": "Identify the grammatically correct sentence in the following:",
+    "options": [
+      { "text": "My elder sister and her daughter helps me in my domestic work." },
+      { "text": "My elder sister and her daughter help me with my domestic work." },
+      { "text": "My elder sister and her daughter help me for my domestic work." }
+    ],
+    "marks": 1,
+    "timeinmin": 3,
+    "images": [],
+    "answer": 1
+  },
+  {
+    "subject": "ENG",
+    "source_year": 2025,
+    "type": "mcq",
+    "chapter": ["Grammar"],
+    "text": "Identify the grammatically correct sentence in the following:",
+    "options": [
+      { "text": "One of the student have been waiting since two hours" },
+      { "text": "One of the student has been waiting since two hours" },
+      { "text": "One of the students has been waiting for two hours" }
+    ],
+    "marks": 1,
+    "timeinmin": 3,
+    "images": [],
+    "answer": 2
+  },
+  {
+    "subject": "ENG",
+    "source_year": 2025,
+    "type": "mcq",
+    "chapter": ["Grammar"],
+    "text": "Identify the grammatically correct sentence in the following:",
+    "options": [
+      { "text": "Neither of the actors is ready to discuss about changes in roles" },
+      { "text": "Neither of the actors are ready to discuss changes in roles" },
+      { "text": "Neither of the actors is ready to discuss changes in roles" }
+    ],
+    "marks": 1,
+    "timeinmin": 3,
+    "images": [],
+    "answer": 2
+  },
+  {
+    "subject": "ENG",
+    "source_year": 2025,
+    "type": "mcq",
+    "chapter": ["Grammar"],
+    "text": "Identify the grammatically correct sentence in the following:",
+    "options": [
+      { "text": "A honest worker is always an asset to a company." },
+      { "text": "An honest worker is always an asset to a company." },
+      { "text": "An honest worker is always an asset to a company. " }
+    ],
+    "marks": 1,
+    "timeinmin": 3,
+    "images": [],
+    "answer": 1
+  },
+  {
+    "subject": "ENG",
+    "source_year": 2025,
+    "type": "mcq",
+    "chapter": ["Grammar"],
+    "text": "Identify the grammatically correct sentence in the following:",
+    "options": [
+      { "text": "Chris did not wanted to deal with the disciplinary issue" },
+      { "text": "Chris did not want to deal with the disciplinary issue." },
+      { "text": "Chris had not wanted to deal in the disciplinary issue." }
+    ],
+    "marks": 1,
+    "timeinmin": 3,
+    "images": [],
+    "answer": 1
+  },
+  {
+    "subject": "ENG",
+    "source_year": 2025,
+    "type": "mcq",
+    "chapter": ["Grammar"],
+    "text": "_____the bad weather, the outdoor party was rescheduled.",
+    "options": [
+      { "text": "Because of" },
+      { "text": "Inspite" },
+      { "text": "Despite of" }
+    ],
+    "marks": 1,
+    "timeinmin": 3,
+    "images": [],
+    "answer": 0
+  },
+  {
+    "subject": "ENG",
+    "source_year": 2025,
+    "type": "mcq",
+    "chapter": ["Grammar"],
+    "text": "The headmaster as well as the students _____delighted when the team showed _____mettle.",
+    "options": [
+      { "text": "were; their" },
+      { "text": "was;it's" },
+      { "text": "was;its" }
+    ],
+    "marks": 1,
+    "timeinmin": 3,
+    "images": [],
+    "answer": 2
+  },
+  {
+    "subject": "ENG",
+    "source_year": 2025,
+    "type": "mcq",
+    "chapter": ["Grammar"],
+    "text": "The director congratulated the winner _____ his achievement, and also acknowledged that every participant _____unique.",
+    "options": [
+      { "text": "for;was" },
+      { "text": "for;were" },
+      { "text": "on;was" }
+    ],
+    "marks": 1,
+    "timeinmin": 3,
+    "images": [],
+    "answer": 2
+  },
+  {
+    "subject": "ENG",
+    "source_year": 2025,
+    "type": "mcq",
+    "chapter": ["Grammar"],
+    "text": "Neither Jackson nor his friends _____been able to _____ with the situation",
+    "options": [
+      { "text": "Have; cope" },
+      { "text": "Has;cope up" },
+      { "text": "have, cope up" }
+    ],
+    "marks": 1,
+    "timeinmin": 3,
+    "images": [],
+    "answer": 0
+  },
+  {
+    "subject": "ENG",
+    "source_year": 2025,
+    "type": "mcq",
+    "chapter": ["Grammar"],
+    "text": "One of the _____for the disturbance in the city _____ the lack of security.",
+    "options": [
+      { "text": "reason;was" },
+      { "text": "reasons;were" },
+      { "text": "reasons;was" }
+    ],
+    "marks": 1,
+    "timeinmin": 3,
+    "images": [],
+    "answer": 2
+  },
 {
 	"subject" : "ENG",
 	"source_year" : 2025,
 	"type" : "text",
 	"chapter" : ["Why should all be feminists"],
-	"text" : "Chimamanda Adichie states that 'we must raise our daughters differently. We must also raise our sons differently'. What are your views on the above claim? Explain with reference to the points made in the text",
+	"text" : "Chimamanda Adichie states that \"we must raise our daughters differently. We must also raise our sons differently\". What are your views on the above claim? Explain with reference to the points made in the text",
 	"marks" : 10, 
 	"timeinmin" : 30,
-	"images": []
+	"images": [],
+	"answer": "Chimamanda Ngozi Adichie’s assertion that “we must raise our daughters differently. We must also raise our sons differently” lies at the heart of her essay We Should All Be Feminists. Through this statement, Adichie highlights how gender roles are not innate but socially constructed from childhood, and how the way we bring up children determines the kind of society we ultimately create. Her claim is both a critique of traditional gender conditioning and a call for cultural transformation rooted in equality and empathy. Adichie observes that girls are often raised to shrink themselves, to aspire to marriage more than to independence, and to view ambition as arrogance. From a young age, they are taught to suppress their voices and prioritize being “likeable” over being assertive. In contrast, boys are encouraged to be dominant, fearless, and emotionally detached. This unequal upbringing, Adichie argues, not only limits women’s potential but also harms men by creating unrealistic expectations of masculinity. The result is a society where power is imbalanced and emotional vulnerability is stigmatized. Raising daughters differently, therefore, means teaching them to see themselves as individuals first—capable, intelligent, and deserving of respect. Adichie advocates for giving girls the confidence to dream beyond societal expectations and to define success on their own terms. She believes that encouraging self-worth and ambition in young girls is crucial to dismantling the patriarchal structures that limit women’s participation in leadership, education, and employment. At the same time, raising sons differently is equally essential. Adichie emphasizes that boys must be taught empathy, emotional intelligence, and equality. Instead of reinforcing the notion that masculinity is tied to dominance or control, parents and educators should help boys understand that strength can coexist with kindness and vulnerability. By allowing boys to express emotions freely and to see women as equals, society can break the cycle of toxic masculinity that often leads to gender-based discrimination and violence. In today’s world, Adichie’s insight remains profoundly relevant. True gender equality cannot be achieved by empowering women alone—it requires a cultural shift in how we perceive and raise both genders. If we teach children, regardless of sex, to value fairness, respect, and compassion, we nurture a generation capable of building a more balanced and humane society. Thus, Adichie’s claim is not merely a call for better parenting but a vision for social transformation. Changing how we raise our daughters and sons is, ultimately, how we change the world."
 },
 {
 	"subject" : "ENG",
@@ -327,27 +403,30 @@
 	"text" : "Read the following passage and provide a response to the question in about 300-350 words. Your response is required to show a critical understanding of the ideas presented in the passage. \n Question: Do you agree with view that engineering degree programmes must include arts and humanities courses? Elaborate.",
 	"marks" : 10, 
 	"timeinmin" : 30,
-	"images": ["data/question_images/Screenshot 2025-09-20 115828.png","data/question_images/Screenshot 2025-09-20 115843.png"]
+	"images": ["data/question_images/Screenshot 2025-09-20 115828.png","data/question_images/Screenshot 2025-09-20 115843.png"],
+	"answer": "I strongly agree with the view that engineering degree programmes must include courses in the arts and humanities. The passage convincingly argues that while technical proficiency is vital, it alone is not sufficient to prepare students for the complex and rapidly evolving world of work. The integration of arts and humanities with engineering cultivates critical thinking, creativity, and ethical awareness—qualities that purely technical training often overlooks. Modern engineering problems rarely exist in isolation; they are deeply intertwined with social, cultural, and environmental contexts. Engineers design solutions that impact human lives, and to do so responsibly, they must understand the broader implications of their work. Courses in philosophy, sociology, psychology, and literature, for instance, can help students develop empathy, communication skills, and ethical reasoning—skills that are essential for leadership and innovation. The passage rightly points out that transferable human skills like teamwork, adaptability, and lifelong learning are as crucial as technical expertise in a dynamic world. Moreover, integrating humanities encourages interdisciplinary learning, enabling students to draw connections between technology and society. This holistic approach not only enhances employability but also fosters more creative and sustainable engineering solutions. As research cited in the passage suggests, such integration leads to better problem-solving abilities, improved decision-making, and greater cultural awareness—qualities that are indispensable in addressing global challenges like climate change, public health, and urbanization. Unfortunately, many engineering institutes in India still treat humanities courses as peripheral. The passage highlights that IITs and NITs allocate very little space for these subjects, resulting in graduates who may excel technically but lack the broader vision required for socially responsible innovation. In conclusion, integrating arts and humanities into engineering education is not an optional enrichment—it is a necessity. A truly competent engineer must be more than a skilled technician; they must be a thoughtful, ethical, and culturally aware human being capable of creating technology that serves society’s best interests."
 },
 {
 	"subject" : "ENG",
 	"source_year" : 2025,
 	"type" : "text",
 	"chapter" : ["Essay"],
-	"text" : "Write an essay on ''Poverty anywhere is a threat to prosperity everywhere.'' in about 600 words",
+	"text" : "Write an essay on \"Poverty anywhere is a threat to prosperity everywhere.\" in about 600 words",
 	"marks" : 10, 
 	"timeinmin" : 30,
-	"images": []
+	"images": [],
+	"answer": "The statement “Poverty anywhere is a threat to prosperity everywhere” captures a profound truth about the interdependence of human societies. Coined by Franklin D. Roosevelt and later echoed in global development discourses, the phrase underscores that poverty is not a local issue confined within national boundaries—it is a global challenge that affects economic stability, peace, and progress across the world. In a deeply interconnected era, no nation can claim lasting prosperity while others languish in deprivation. Poverty is not merely the absence of income or material wealth; it encompasses the lack of access to education, healthcare, housing, and opportunities for advancement. When large sections of the global population are deprived of these essentials, the effects ripple across borders. Economically, socially, and politically, poverty generates consequences that obstruct the prosperity of both the poor and the affluent. Economically, poverty weakens global markets and trade. In a world driven by consumption and production, countries with impoverished populations have limited purchasing power, reducing global demand and slowing economic growth. Moreover, when nations struggle with poverty, they become dependent on foreign aid rather than contributing to global trade, creating an imbalance in economic relationships. Sustainable prosperity requires a world where every nation can participate meaningfully in the global economy, and that is impossible when poverty remains widespread. Socially, poverty fuels instability, migration, and conflict. When people lack basic resources or opportunities, frustration and inequality can lead to social unrest, political extremism, and even wars. These crises rarely stay confined within borders—they lead to refugee flows, regional instability, and global insecurity. The rise of extremism and mass migration in recent decades can, in many cases, be traced back to deep-seated poverty and inequality. Thus, the security of prosperous nations depends on the well-being of those less fortunate. From a humanitarian and moral standpoint, ignoring poverty contradicts the shared values of justice, equality, and human rights. A prosperous society that turns a blind eye to suffering elsewhere risks moral decay and growing inequality within its own borders. In an interconnected digital age, where information travels instantly, global empathy and collective responsibility have become more urgent than ever. Eradicating poverty, therefore, is not merely an act of charity—it is an act of justice and enlightened self-interest. Furthermore, poverty impedes global progress on critical issues like climate change and sustainability. Poorer nations, lacking resources, are often forced to prioritize immediate survival over environmental protection, leading to deforestation, pollution, and unsustainable practices. This, in turn, affects the entire planet through global warming, natural disasters, and biodiversity loss. Thus, helping poorer countries rise out of poverty is essential for achieving a sustainable future for all. International initiatives such as the United Nations’ Sustainable Development Goals (SDGs) recognize this interconnectedness. The first goal—“No Poverty”—serves as the foundation for the remaining goals, from quality education to clean energy. Without addressing poverty, progress in other areas becomes fragile and uneven. Developed nations, therefore, have a moral and strategic obligation to assist developing ones through fair trade, debt relief, education, and technology sharing. True prosperity lies not in isolated wealth but in collective advancement. In conclusion, poverty anywhere indeed threatens prosperity everywhere. Our world functions as an intricate system where the deprivation of one group ultimately hinders the progress of all. Economic stability, global peace, environmental balance, and social justice are intertwined, and their success depends on the eradication of poverty. Only by ensuring equitable access to resources, opportunities, and dignity for all can humanity achieve sustainable and inclusive prosperity. In lifting others, we lift ourselves; in eradicating poverty, we secure the future of global peace and progress."
 },
 {
 	"subject" : "ENG",
 	"source_year" : 2025,
 	"type" : "text",
 	"chapter" : ["Essay"],
-	"text" : "Write an essay on ''Does cinema shape our popular culture or merely reflect it.'' in about 600 words",
+	"text" : "Write an essay on \"Does cinema shape our popular culture or merely reflect it.\" in about 600 words",
 	"marks" : 10, 
 	"timeinmin" : 30,
-	"images": []
+	"images": [],
+	"answer": "Cinema, since its inception in the late 19th century, has been one of the most powerful and pervasive forms of mass communication. It entertains, educates, and influences millions across the world. The question of whether cinema shapes popular culture or merely reflects it has long been debated. The truth, however, lies in recognizing that cinema does both—it mirrors society’s values, aspirations, and anxieties while simultaneously shaping public opinion, trends, and cultural norms. Cinema serves as a mirror to society, capturing the essence of its time. The stories filmmakers tell, the characters they create, and the themes they explore are often rooted in prevailing social realities. For instance, films like Mother India and Do Bigha Zamin in post-independence India reflected the struggles of rural poverty and the collective spirit of nation-building. Similarly, Hollywood’s The Great Dictator by Charlie Chaplin mirrored the anxieties of World War II, using satire to critique fascism. Such films do not invent social realities; they represent them, making cinema a reflection of popular culture as it exists. However, cinema does far more than just reflect—it also shapes perceptions, values, and identities. Films have the power to introduce new ideas, redefine social norms, and influence behavior on a massive scale. For example, movies like Rocky and Rang De Basanti inspired generations to pursue resilience, self-belief, and activism. Fashion trends, language styles, and even moral attitudes often emerge from the silver screen. A single character or dialogue can influence how people talk, dress, and think, demonstrating cinema’s immense cultural impact. Moreover, cinema helps construct the collective imagination of a nation or generation. It can romanticize love, heroism, and freedom or critique corruption, inequality, and oppression. Indian cinema, for instance, has long contributed to shaping ideas about family, gender roles, and patriotism. Western cinema, on the other hand, has significantly shaped global youth culture through its portrayal of individualism, rebellion, and consumerism. Through visual storytelling, cinema becomes a tool that molds cultural consciousness—sometimes subtly, sometimes overtly. Another critical aspect is cinema’s role in social change. Many films have challenged social taboos and broadened the public’s understanding of sensitive issues such as caste, race, gender, and sexuality. Movies like To Kill a Mockingbird, Philadelphia, and Article 15 not only reflected injustices but also shaped discourse and empathy around them. By amplifying marginalized voices, cinema can influence public policy, spark activism, and alter the moral fabric of societies. At the same time, it is important to acknowledge that cinema is also a product of its cultural and economic environment. Filmmakers often create content that aligns with audience preferences and market demands. Popular genres, star systems, and storytelling conventions arise from what audiences want to see, showing that cinema also responds to societal trends rather than dictating them. For instance, the rise of superhero films mirrors a collective yearning for escapism and heroism in a chaotic modern world. In this sense, cinema continuously adapts to cultural shifts while simultaneously reinforcing them. In today’s digital age, the relationship between cinema and culture has become even more dynamic. Streaming platforms and global connectivity have blurred boundaries between national and international cinema, allowing cross-cultural influences to flourish. A Korean film like Parasite or an Indian film like RRR can shape global conversations about inequality or nationalism, proving that cinema’s cultural influence transcends borders. In conclusion, cinema both shapes and reflects popular culture—it is a two-way dialogue between creators and audiences. Films draw inspiration from society’s realities but also feed back into it, redefining what is considered fashionable, moral, or aspirational. As long as cinema continues to captivate and engage people across the world, it will remain a powerful force in shaping human thought and culture while reflecting the ever-changing spirit of its time."
 }
 
 
