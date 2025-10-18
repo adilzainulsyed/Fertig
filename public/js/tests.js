@@ -356,6 +356,101 @@ $("nextBtn").onclick = () => {
       a.click();
       URL.revokeObjectURL(a.href);
     };
+    // ---------- plotting section ----------
+(async function generateCharts() {
+  // 1️⃣ Bar chart - per question
+  const questionLabels = Q.map((_, i) => `Q${i+1}`);
+  const idealTimes = Q.map(q => (q.time || 0) * 60); // convert minutes → seconds
+  const actualTimes = Q.map((_, i) => timeSpent[i+1] || 0);
+
+  const ctx1 = document.getElementById("questionBar");
+  new Chart(ctx1, {
+    type: "bar",
+    data: {
+      labels: questionLabels,
+      datasets: [
+        {
+          label: "Ideal Time (sec)",
+          data: idealTimes,
+          backgroundColor: "rgba(54, 162, 235, 0.5)"
+        },
+        {
+          label: "Actual Time (sec)",
+          data: actualTimes,
+          backgroundColor: "rgba(255, 99, 132, 0.5)"
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        title: {
+          display: true,
+          text: "Time Spent per Question"
+        },
+        legend: { position: "top" }
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          title: { display: true, text: "Seconds" }
+        }
+      }
+    }
+  });
+
+  // 2️⃣ Radar chart - per chapter
+  const chapterData = {};
+  Q.forEach((q, i) => {
+    const chapters = Array.isArray(q.chapter) ? q.chapter : [q.chapter];
+    chapters.forEach(ch => {
+      if (!ch) return;
+      if (!chapterData[ch]) chapterData[ch] = { ideal: 0, actual: 0 };
+      chapterData[ch].ideal += (q.time || 0) * 60;
+      chapterData[ch].actual += timeSpent[i+1] || 0;
+    });
+  });
+
+  const chapterLabels = Object.keys(chapterData);
+  const idealChTimes = chapterLabels.map(ch => chapterData[ch].ideal);
+  const actualChTimes = chapterLabels.map(ch => chapterData[ch].actual);
+
+  const ctx2 = document.getElementById("chapterRadar");
+  new Chart(ctx2, {
+    type: "radar",
+    data: {
+      labels: chapterLabels,
+      datasets: [
+        {
+          label: "Ideal Total (sec)",
+          data: idealChTimes,
+          backgroundColor: "rgba(54, 162, 235, 0.3)",
+          borderColor: "rgba(54, 162, 235, 0.8)",
+          pointBackgroundColor: "rgba(54, 162, 235, 1)"
+        },
+        {
+          label: "Actual Total (sec)",
+          data: actualChTimes,
+          backgroundColor: "rgba(255, 99, 132, 0.3)",
+          borderColor: "rgba(255, 99, 132, 0.8)",
+          pointBackgroundColor: "rgba(255, 99, 132, 1)"
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        title: { display: true, text: "Actual vs Ideal Time per Chapter" }
+      },
+      scales: {
+        r: {
+          beginAtZero: true,
+          pointLabels: { font: { size: 12 } }
+        }
+      }
+    }
+  });
+})();
 
     if (document.fullscreenElement && document.exitFullscreen) document.exitFullscreen().catch(()=>{});
     show("summary");
