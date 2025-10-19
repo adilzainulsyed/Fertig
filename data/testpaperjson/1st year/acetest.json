@@ -1,302 +1,332 @@
 [
-{
-	"subject" : "ACE",
-	"source_year" : 2025,
-	"type" : "text",
-	"chapter" : ["Battery"],
-	"text" : "Explain the construction and working of methanol fuel cells with appropriate reactions with a diagram. Mention any two advantages of it.",
-	"marks" : 4, 
-	"timeinmin" : 14,
-	"images": []
-},
-{
-	"subject" : "ACE",
-	"source_year" : 2025,
-	"type" : "text",
-	"chapter" : ["Battery"],
-	"text" : "What are the special properties of lithium that make it advantageous to use as electrode material? Write the electrode reactions that occur in the Li-CoO2 cell. What is the significance of electrolyte additives in sodium-ion battery",
-	"marks" : 4, 
-	"timeinmin" : 14,
-	"images": []
-},
-{
-	"subject" : "ACE",
-	"source_year" : 2025,
-	"type" : "text",
-	"chapter" : ["Battery"],
-	"text" : "Write two advantages and two disadvantages of nickel metal hydride batteries. ",
-	"marks" : 2, 
-	"timeinmin" : 7,
-	"images": []
-},
-{
-	"subject" : "ACE",
-	"source_year" : 2025,
-	"type" : "text",
-	"chapter" : ["Material Chemistry"],
-	"text" : "i) Distinguish between PVD and CVD process (any two).\nii) Give reason: polyvinyl chloride (PVC) has higher tensile strength than Polyethylene.\niii) Calculate the number average and weight average molecular weight of a polymer sample in which 30% of molecules have a molecular mass of 4000, 40% have a molecular mass of 6000 and rest 30% have a molecular mass of 9000.",
-	"marks" : 4, 
-	"timeinmin" : 14,
-	"images": []
-},
-{
-	"subject" : "ACE",
-	"source_year" : 2025,
-	"type" : "text",
-	"chapter" : ["Material Chemistry"],
-	"text" : "i) Explain the mechanism of conductivity in extrinsic conducting polymers.\nii) Give a detailed synthetic route with structure for the preparation of polyamides.\niii) Describe any two differences between types of filtration membranes.",
-	"marks" : 4, 
-	"timeinmin" : 14,
-	"images": []
-},
-{
-	"subject" : "ACE",
-	"source_year" : 2025,
-	"type" : "text",
-	"chapter" : ["Electronic Material"],
-	"text" : "Explain the role of components present in MicroLED's.",
-	"marks" : 2, 
-	"timeinmin" : 7,
-	"images": []
-},
-{
-	"subject" : "ACE",
-	"source_year" : 2025,
-	"type" : "text",
-	"chapter" : ["Material Chemistry"],
-	"text" : "Differentiate between the following\ni) Diamagnetic vs Ferromagnetic material\nii) Intrinsic vs extrinsic semiconductors\niii) Electrical Conductors vs insulators\niv) Photo-conductivity vs luminescence",
-	"marks" : 4, 
-	"timeinmin" : 14,
-	"images": []
-},
-{
-	"subject" : "ACE",
-	"source_year" : 2025,
-	"type" : "text",
-	"chapter" : ["Electronic Material"],
-	"text" : "Write a note on the following\ni) Gas sensors\nii) Electrochemical sensor",
-	"marks" : 4, 
-	"timeinmin" : 14,
-	"images": []
-},
-{
-	"subject" : "ACE",
-	"source_year" : 2025,
-	"type" : "text",
-	"chapter" : ["Electronic Material"],
-	"text" : "Give an account of factors affecting the resistivity of metals",
-	"marks" : 2, 
-	"timeinmin" : 7,
-	"images": []
-},
-{
-	"subject" : "ACE",
-	"source_year" : 2025,
-	"type" : "text",
-	"chapter" : ["E-waste"],
-	"text" : "i) Describe the environmental impact of improper e-waste disposal.\nii) What is the difference between linear economy and circular economy",
-	"marks" : 4, 
-	"timeinmin" : 14,
-	"images": []
-},
-{
-	"subject" : "ACE",
-	"source_year" : 2025,
-	"type" : "text",
-	"chapter" : ["E-waste"],
-	"text" : "i) Explain the role of modular design and refurbishment of electronic devices in the context of the circular economy approach.\nii) Name two health impacts of dioxins and furans released from e-waste.",
-	"marks" : 4, 
-	"timeinmin" : 14,
-	"images": []
-},
-{
-	"subject" : "ACE",
-	"source_year" : 2025,
-	"type" : "text",
-	"chapter" : ["Battery"],
-	"text" : "Differentiate between the following:\ni) Primary and secondary batteries\nii) Fuel and galvanic cells",
-	"marks" : 2, 
-	"timeinmin" : 7,
-	"images": []
-},
-{
-	"subject" : "ACE",
-	"source_year" : 2025,
-	"type" : "text",
-	"chapter" : ["Material Chemistry"],
-	"text" : "Compare and contrast the plasticity and crystallinity of linear, branched, and cross-linked polymers.Calculate the intrinsic viscosity (dL/g) of a given polymer solution if its molecular weight is 100,000g/mol, K=0.004, and a= 0.5, at room temperature.",
-	"marks" : 4, 
-	"timeinmin" : 14,
-	"images": []
-},
-{
-	"subject" : "ACE",
-	"source_year" : 2025,
-	"type" : "text",
-	"chapter" : ["Material Chemistry"],
-	"text" : "i) What are epoxies, and how do their chemical structures contribute to their desirable properties?\nii) Write any four advantages of polylactic acid as a biodegradable polymer",
-	"marks" : 4, 
-	"timeinmin" : 14,
-	"images": []
-},
-{
-	"subject" : "ACE",
-	"source_year" : 2025,
-	"type" : "text",
-	"chapter" : ["Material Chemistry"],
-	"text" : "How is the pKa value of a weak acid determined graphically in the potentiometric titration of a weak acid with a strong base? Explain based on Henderson's equation.",
-	"marks" : 2, 
-	"timeinmin" : 7,
-	"images": []
-},
-{
-	"subject" : "ACE",
-	"source_year" : 2025,
-	"type" : "text",
-	"chapter" : ["Battery"],
-	"text" : "i) What are the similarities and differences between lithium and sodium for battery applications?\nii) Describe the chemical reactions that occur in a lead-acid battery during charging and overcharging.",
-	"marks" : 4, 
-	"timeinmin" : 14,
-	"images": []
-},
-{
-	"subject" : "ACE",
-	"source_year" : 2025,
-	"type" : "text",
-	"chapter" : ["Battery"],
-	"text" : "Explain the construction and working of the nickel metal hydride battery with the necessary diagram and chemical reactions. Give the advantages of nickel metal hydride battery.",
-	"marks" : 4, 
-	"timeinmin" : 14,
-	"images": []
-},
-{
-	"subject" : "ACE",
-	"source_year" : 2025,
-	"type" : "text",
-	"chapter" : ["Material Chemistry"],
-	"text" : "Write the advantages of solid polymeric electrolytes. ",
-	"marks" : 2, 
-	"timeinmin" : 7,
-	"images": []
-},
-{
-	"subject" : "ACE",
-	"source_year" : 2025,
-	"type" : "text",
-	"chapter" : ["Material Chemistry"],
-	"text" : "i) Discuss the mechanism of p-doping in conducting polymers by providing a specific example.\nii) Explain the relationship between polymer structure and its strength, and mention two factors that influence the glass transition temperature",
-	"marks" : 4, 
-	"timeinmin" : 14,
-	"images": []
-},
-{
-	"subject" : "ACE",
-	"source_year" : 2025,
-	"type" : "text",
-	"chapter" : ["Material Chemistry"],
-	"text" : "i) Name the process used to form polyamides and provide a general scheme for this formation.\nii) Describe the preparation method and key applications ofNylon 6,6 in detail.",
-	"marks" : 4, 
-	"timeinmin" : 14,
-	"images": []
-},
-{
-	"subject" : "ACE",
-	"source_year" : 2025,
-	"type" : "text",
-	"chapter" : ["Material Chemistry"],
-	"text" : "Define Intrinsic Viscosity and state Mark-Houwink's equation. Explain each term in the equation and sketch a suitable graph illustrating the relationship between intrinsic viscosity and molecular weight.",
-	"marks" : 2, 
-	"timeinmin" : 7,
-	"images": []
-},
-{
-	"subject" : "ACE",
-	"source_year" : 2025,
-	"type" : "text",
-	"chapter" : ["Electronic Material"],
-	"text" : "Give a reason for the following:\ni) Individual metal components have higher conductivity than the alloy.\nii) Resistivity of the metal decreases initially with increasing pressure.\niii) Metals appear opaque to electromagnetic radiation within the visible region of the spectrum\niv) Laser is a special application of luminescence",
-	"marks" : 4, 
-	"timeinmin" : 14,
-	"images": []
-},
-{
-	"subject" : "ACE",
-	"source_year" : 2025,
-	"type" : "text",
-	"chapter" : ["Electronic Material"],
-	"text" : "Write a note on the following:\ni) Biosensors\nii) Electrochemical sensor",
-	"marks" : 4, 
-	"timeinmin" : 14,
-	"images": []
-},
-{
-	"subject" : "ACE",
-	"source_year" : 2025,
-	"type" : "text",
-	"chapter" : ["Electronic Material"],
-	"text" : "Describe the optical phenomena exhibited by non-metals",
-	"marks" : 2, 
-	"timeinmin" : 7,
-	"images": []
-},
-{
-	"subject" : "ACE",
-	"source_year" : 2025,
-	"type" : "text",
-	"chapter" : ["E-waste"],
-	"text" : "i) Differentiate between recycling economy and circular economy.\nii) Explain how repair and refurbishment can reduce electronic waste.\niii) List any two potential health effects of PFAS exposure.",
-	"marks" : 4, 
-	"timeinmin" : 14,
-	"images": []
-},
-{
-	"subject" : "ACE",
-	"source_year" : 2025,
-	"type" : "text",
-	"chapter" : ["E-waste"],
-	"text" : "i) Elaborate on any two steps to be followed while rethinking product design for disassembly and repairability.\nii) Describe water pollution through improper e-waste disposal.",
-	"marks" : 4, 
-	"timeinmin" : 14,
-	"images": []
-},
-{
-	"subject" : "ACE",
-	"source_year" : 2025,
-	"type" : "text",
-	"chapter" : ["Battery"],
-	"text" : "What are fuel cells? How do they differ from conventional galvanic cells?",
-	"marks" : 2, 
-	"timeinmin" : 7,
-	"images": []
-},
-{
-	"subject" : "ACE",
-	"source_year" : 2025,
-	"type" : "text",
-	"chapter" : ["Material Chemistry"],
-	"text" : "i) Classify biodegradable polymers, mention any two advantages and applications.\nii) Discuss nanomaterials based on origin with examples.",
-	"marks" : 4, 
-	"timeinmin" : 14,
-	"images": []
-},
-{
-	"subject" : "ACE",
-	"source_year" : 2025,
-	"type" : "text",
-	"chapter" : ["Material Chemistry"],
-	"text" : "i) Explain in detail the preparation of nanomaterials by sol-gel method.\nii) Explain the role of organic layers in the basic structure of OLED's.",
-	"marks" : 4, 
-	"timeinmin" : 14,
-	"images": []
-},
-{
-	"subject" : "ACE",
-	"source_year" : 2025,
-	"type" : "text",
-	"chapter" : ["Material Chemistry"],
-	"text" : "Explain the principle of flame photometry.",
-	"marks" : 2, 
-	"timeinmin" : 7,
-	"images": []
-}
-]
+  {
+    "subject": "ACE",
+    "source_year": 2025,
+    "type": "text",
+    "chapter": ["Battery"],
+    "text": "Explain the construction and working of methanol fuel cells with appropriate reactions with a diagram. Mention any two advantages of it.",
+    "marks": 4,
+    "timeinmin": 14,
+    "images": ["data/answer_images/ACE-Q1.jpeg"],
+    "answer": "A Direct Methanol Fuel Cell converts the chemical energy of methanol into electrical energy.\n\nConstruction: It consists of a central Proton Exchange Membrane (PEM) placed between an anode and a cathode. The anode is coated with a platinum-ruthenium catalyst, and the cathode is coated with a platinum catalyst.\n\nWorking: Liquid methanol and water are supplied to the anode. The catalyst facilitates the oxidation of methanol, producing carbon dioxide, protons (H+), and electrons. The protons migrate through the PEM to the cathode, while the electrons travel through an external circuit, creating current. At the cathode, oxygen from the air reacts with the protons and electrons to form water.\n\nReactions:\nAnode: CH3OH + H2O -> CO2 + 6H+ + 6e-\nCathode: 3/2 O2 + 6H+ + 6e- -> 3H2O\nOverall: CH3OH + 3/2 O2 -> CO2 + 2H2O\n\nAdvantages:\n1. Methanol has a high energy density and is easier to store and transport than hydrogen.\n2. The fuel cell operates at low temperatures and has a simpler design, as it does not require a fuel reformer."
+  },
+  {
+    "subject": "ACE",
+    "source_year": 2025,
+    "type": "text",
+    "chapter": ["Battery"],
+    "text": "What are the special properties of lithium that make it advantageous to use as electrode material? Write the electrode reactions that occur in the Li-CoO2 cell. What is the significance of electrolyte additives in sodium-ion battery",
+    "marks": 4,
+    "timeinmin": 14,
+    "images": ["data/answer_images/ACE-Q2.jpeg"],
+    "answer": "Special Properties of Lithium:\n1. Lightest Metal: It is the least dense metallic element, which results in batteries with a high specific energy (energy per unit mass).\n2. Highest Electrode Potential: It has the most negative standard electrode potential (-3.04 V), which allows for the creation of high-voltage cells.\n\nElectrode Reactions in Li-CoO2 Cell (during discharge):\nAnode (Oxidation): LixC6 -> xLi+ + xe- + 6C\nCathode (Reduction): Li1-xCoO2 + xLi+ + xe- -> LiCoO2\n\nSignificance of Electrolyte Additives in Sodium-Ion Battery:\nElectrolyte additives are crucial for forming a stable Solid Electrolyte Interphase (SEI) on the anode surface. A stable SEI layer prevents the continuous decomposition of the electrolyte, which would consume sodium ions and reduce the battery's lifespan and efficiency. Additives also improve ionic conductivity, enhance safety, and suppress dendrite formation."
+  },
+  {
+    "subject": "ACE",
+    "source_year": 2025,
+    "type": "text",
+    "chapter": ["Battery"],
+    "text": "Write two advantages and two disadvantages of nickel metal hydride batteries. ",
+    "marks": 2,
+    "timeinmin": 7,
+    "images": [],
+    "answer": "Advantages:\n1. Higher Energy Density: NiMH batteries offer about 30-40% higher energy density than older Nickel-Cadmium (Ni-Cd) batteries.\n2. Environmentally Friendlier: They are free from toxic heavy metals like cadmium, making them easier and safer to recycle.\n\nDisadvantages:\n1. High Self-Discharge Rate: They can lose a significant portion of their charge when not in use, making them unsuitable for low-drain devices.\n2. Memory Effect: Although less pronounced than in Ni-Cd batteries, their effective capacity can be reduced if they are repeatedly partially discharged before being fully recharged."
+  },
+  {
+    "subject": "ACE",
+    "source_year": 2025,
+    "type": "text",
+    "chapter": ["Material Chemistry"],
+    "text": "i) Distinguish between PVD and CVD process (any two).\nii) Give reason: polyvinyl chloride (PVC) has higher tensile strength than Polyethylene.\niii) Calculate the number average and weight average molecular weight of a polymer sample in which 30% of molecules have a molecular mass of 4000, 40% have a molecular mass of 6000 and rest 30% have a molecular mass of 9000.",
+    "marks": 4,
+    "timeinmin": 14,
+    "images": ["data/answer_images/ACE-Q4.jpeg"],
+    "answer": "i) PVD vs. CVD:\nPhysical Vapor Deposition (PVD) is a process where a material is physically vaporized in a vacuum and deposited onto a substrate. Chemical Vapor Deposition (CVD) involves a chemical reaction of gaseous precursors at the substrate surface to form a solid film. PVD generally operates at lower temperatures than CVD.\n\nii) PVC vs. Polyethylene Strength:\nPVC has a higher tensile strength than Polyethylene due to the presence of polar Carbon-Chlorine bonds. These bonds create strong intermolecular dipole-dipole attractions between polymer chains, holding them more tightly together. Polyethylene is nonpolar and only has weaker van der Waals forces between its chains.\n\niii) Calculation:\nNumber Average (Mn) = (0.3 * 4000) + (0.4 * 6000) + (0.3 * 9000) = 1200 + 2400 + 2700 = 6300 g/mol.\nWeight Average (Mw) = ((0.3 * 4000^2) + (0.4 * 6000^2) + (0.3 * 9000^2)) / 6300 = (4.8e9 + 14.4e9 + 24.3e9) / 6300 = 43.5e9 / 6300 = 6904.76 g/mol."
+  },
+  {
+    "subject": "ACE",
+    "source_year": 2025,
+    "type": "text",
+    "chapter": ["Material Chemistry"],
+    "text": "i) Explain the mechanism of conductivity in extrinsic conducting polymers.\nii) Give a detailed synthetic route with structure for the preparation of polyamides.\niii) Describe any two differences between types of filtration membranes.",
+    "marks": 4,
+    "timeinmin": 14,
+    "images": ["data/answer_images/ACE-Q5.jpeg"],
+    "answer": "i) Mechanism of Conductivity in Extrinsic Conducting Polymers:\nConductivity is induced by introducing impurities (dopants) into the polymer. This process, called doping, creates charge carriers. Oxidative doping (p-doping) removes electrons, creating positive charge carriers (polarons). Reductive doping (n-doping) adds electrons, creating negative charge carriers. These charge carriers can move along the polymer chain under an electric field, allowing the polymer to conduct electricity.\n\nii) Synthetic Route for Polyamides:\nPolyamides are synthesized via condensation polymerization. This reaction typically involves a dicarboxylic acid monomer and a diamine monomer. When these monomers react, the carboxylic acid group of one monomer links with the amine group of the other, forming an amide bond and eliminating a molecule of water as a byproduct. This process repeats to form a long polymer chain.\n\niii) Differences Between Filtration Membranes:\nMicrofiltration (MF) membranes have larger pore sizes (0.1-10 micrometers) and are used to remove suspended particles like bacteria. Ultrafiltration (UF) membranes have smaller pores (0.001-0.1 micrometers) and can remove macromolecules, viruses, and finer colloids in addition to what MF removes."
+  },
+  {
+    "subject": "ACE",
+    "source_year": 2025,
+    "type": "text",
+    "chapter": ["Electronic Material"],
+    "text": "Explain the role of components present in MicroLED's.",
+    "marks": 2,
+    "timeinmin": 7,
+    "images": [],
+    "answer": "The key components in a MicroLED and their roles are:\n1. Gallium Nitride (GaN) Semiconductor: This is the light-emitting material, forming a p-n junction. When a voltage is applied, electrons from the n-type layer and holes from the p-type layer recombine, releasing energy as photons of light.\n2. Substrate: This is the base layer (often sapphire or silicon) that provides structural support for the fragile GaN layers during manufacturing.\n3. Electrodes (Anode and Cathode): These conductive contacts apply the electrical voltage across the p-n junction, powering the LED and causing it to emit light."
+  },
+  {
+    "subject": "ACE",
+    "source_year": 2025,
+    "type": "text",
+    "chapter": ["Material Chemistry"],
+    "text": "Differentiate between the following\ni) Diamagnetic vs Ferromagnetic material\nii) Intrinsic vs extrinsic semiconductors\niii) Electrical Conductors vs insulators\niv) Photo-conductivity vs luminescence",
+    "marks": 4,
+    "timeinmin": 14,
+    "images": [],
+    "answer": "i) Diamagnetic vs. Ferromagnetic: Diamagnetic materials are weakly repelled by magnetic fields because they have no unpaired electrons. Ferromagnetic materials are strongly attracted to magnetic fields and can be permanently magnetized due to the alignment of their magnetic domains.\nii) Intrinsic vs. Extrinsic Semiconductors: Intrinsic semiconductors are pure materials whose conductivity is based on thermally excited electrons. Extrinsic semiconductors are intentionally doped with impurities to increase the number of charge carriers (electrons or holes), significantly enhancing conductivity.\n\niii) Conductors vs. Insulators: Conductors have low electrical resistivity and allow charge to flow easily due to overlapping valence and conduction bands. Insulators have high resistivity and prevent charge flow due to a large energy band gap between these bands.\n\niv) Photoconductivity vs. Luminescence: Photoconductivity is the increase in a material's electrical conductivity when it absorbs light energy (photons). Luminescence is the emission of light by a substance after it has absorbed energy; it is not related to heat."
+  },
+  {
+    "subject": "ACE",
+    "source_year": 2025,
+    "type": "text",
+    "chapter": ["Electronic Material"],
+    "text": "Write a note on the following\ni) Gas sensors\nii) Electrochemical sensor",
+    "marks": 4,
+    "timeinmin": 14,
+    "images": [],
+    "answer": "i) Gas Sensors:\nGas sensors are devices that detect the presence and concentration of specific gases in an environment. They typically operate by measuring a change in a physical or chemical property of a sensing material when it interacts with the target gas. For example, metal-oxide semiconductor (MOS) sensors work by measuring the change in electrical resistance of a metal oxide film upon exposure to a gas. They are widely used in safety, environmental monitoring, and industrial process control.\n\nii) Electrochemical Sensors:\nElectrochemical sensors are analytical devices that measure the concentration of a target analyte by producing an electrical signal from an electrochemical reaction. They usually consist of a working electrode, a reference electrode, and a counter electrode. When the analyte reacts at the working electrode, it generates a current or potential difference that is proportional to its concentration, allowing for precise and sensitive measurements, commonly used in medical diagnostics and pollution monitoring."
+  },
+  {
+    "subject": "ACE",
+    "source_year": 2025,
+    "type": "text",
+    "chapter": ["Electronic Material"],
+    "text": "Give an account of factors affecting the resistivity of metals",
+    "marks": 2,
+    "timeinmin": 7,
+    "images": [],
+    "answer": "The main factors affecting the resistivity of metals are:\n1. Temperature: As temperature increases, the thermal vibrations of the metal's crystal lattice atoms increase. This causes more frequent collisions with the free-flowing electrons, scattering them and increasing electrical resistivity.\n2. Impurities and Defects: The presence of impurity atoms or structural defects like dislocations and grain boundaries disrupts the regular, periodic structure of the crystal lattice. These imperfections act as scattering centers for electrons, which impedes their flow and increases resistivity.\n3. Mechanical Stress: Applying mechanical stress can deform the crystal lattice and introduce defects, which in turn increases the scattering of electrons and raises resistivity."
+  },
+  {
+    "subject": "ACE",
+    "source_year": 2025,
+    "type": "text",
+    "chapter": ["E-waste"],
+    "text": "i) Describe the environmental impact of improper e-waste disposal.\nii) What is the difference between linear economy and circular economy",
+    "marks": 4,
+    "timeinmin": 14,
+    "images": [],
+    "answer": "i) Environmental Impact of Improper E-waste Disposal:\nImproper e-waste disposal, such as in landfills or through informal burning, releases hazardous substances like lead, mercury, cadmium, and brominated flame retardants. These toxins can contaminate soil, leach into groundwater, and pollute the air. This contamination harms ecosystems, enters the food chain, and poses severe health risks to both wildlife and human populations.\n\nii) Difference Between Linear and Circular Economy:\nA linear economy follows a 'take-make-dispose' model, where raw materials are extracted, manufactured into products, and then discarded as waste after use. It is a resource-depleting system. A circular economy, in contrast, is a regenerative model designed to 'reduce, reuse, and recycle.' It aims to keep resources in use for as long as possible by designing products for durability, repair, and disassembly, thereby minimizing waste and environmental impact."
+  },
+  {
+    "subject": "ACE",
+    "source_year": 2025,
+    "type": "text",
+    "chapter": ["E-waste"],
+    "text": "i) Explain the role of modular design and refurbishment of electronic devices in the context of the circular economy approach.\nii) Name two health impacts of dioxins and furans released from e-waste.",
+    "marks": 4,
+    "timeinmin": 14,
+    "images": [],
+    "answer": "i) Role in the Circular Economy:\nModular design involves creating products with independent, interchangeable parts. This facilitates easy repair and upgrades, as individual components can be replaced instead of the entire device, extending the product's lifespan. Refurbishment is the process of restoring used products to a like-new condition. Both strategies are central to the circular economy because they extend the life cycle of products, reduce the demand for new manufacturing, and keep valuable materials in circulation.\n\nii) Health Impacts of Dioxins and Furans:\n1. Carcinogenic Effects: They are highly toxic persistent organic pollutants and are classified as known human carcinogens, increasing the risk of developing various types of cancer.\n2. Reproductive and Developmental Problems: Exposure can interfere with hormones, leading to reproductive issues, developmental problems in children, and damage to the immune system."
+  },
+  {
+    "subject": "ACE",
+    "source_year": 2025,
+    "type": "text",
+    "chapter": ["Battery"],
+    "text": "Differentiate between the following:\ni) Primary and secondary batteries\nii) Fuel and galvanic cells",
+    "marks": 2,
+    "timeinmin": 7,
+    "images": [],
+    "answer": "i) Primary and Secondary Batteries:\nPrimary batteries are non-rechargeable ('single-use') because their electrochemical reactions are irreversible. Once the reactants are consumed, the battery is discarded. Secondary batteries are rechargeable because their electrode reactions can be reversed by applying an external electrical current, allowing them to be used multiple times.\nii) Fuel and Galvanic Cells:\nBoth devices generate electricity from chemical reactions. However, in a conventional galvanic cell (like a battery), the chemical reactants are sealed inside the cell. In a fuel cell, the reactants (like hydrogen and oxygen) are continuously supplied from an external source, allowing it to operate as long as fuel is provided."
+  },
+  {
+    "subject": "ACE",
+    "source_year": 2025,
+    "type": "text",
+    "chapter": ["Material Chemistry"],
+    "text": "Compare and contrast the plasticity and crystallinity of linear, branched, and cross-linked polymers.Calculate the intrinsic viscosity (dL/g) of a given polymer solution if its molecular weight is 100,000g/mol, K=0.004, and a= 0.5, at room temperature.",
+    "marks": 4,
+    "timeinmin": 14,
+    "images": ["data/answer_images/ACE-Q13.jpeg"],
+    "answer": "Polymer Structure Comparison:\nLinear polymers have long, straight chains that can pack closely together, leading to high crystallinity, high density, and good plasticity as the chains can slide past one another. Branched polymers have side chains that prevent close packing, resulting in lower crystallinity and density, and they are generally more flexible. Cross-linked polymers have chains that are connected by covalent bonds, forming a rigid 3D network. This structure prevents chain movement, resulting in very low plasticity (thermosetting behavior) and an amorphous (non-crystalline) structure.\n\nIntrinsic Viscosity Calculation:\nUsing the Mark-Houwink equation: [n] = K * M^a\nGiven: K = 0.004, M = 100,000 g/mol, a = 0.5\n[n] = 0.004 * (100,000)^0.5\n[n] = 0.004 * 316.227\n[n] = 1.265 dL/g"
+  },
+  {
+    "subject": "ACE",
+    "source_year": 2025,
+    "type": "text",
+    "chapter": ["Material Chemistry"],
+    "text": "i) What are epoxies, and how do their chemical structures contribute to their desirable properties?\nii) Write any four advantages of polylactic acid as a biodegradable polymer",
+    "marks": 4,
+    "timeinmin": 14,
+    "images": ["data/answer_images/ACE-Q14.1.jpeg", "data/answer_images/ACE-Q14.2.jpeg"],
+    "answer": "i) Epoxies:\nEpoxies are thermosetting polymers known for their excellent adhesive properties, mechanical strength, and chemical resistance. Their chemical structure contains the characteristic epoxide ring (a three-membered ring with an oxygen atom). When cured with a hardener, these rings open and form extensive covalent cross-links, creating a rigid, strong, and durable 3D polymer network that is responsible for their desirable properties.\n\nii) Advantages of Polylactic Acid (PLA):\n1. Biodegradable and Compostable: It can break down into natural substances like water and carbon dioxide under industrial composting conditions.\n2. Derived from Renewable Resources: It is produced from renewable plant sources like corn starch or sugarcane, reducing reliance on fossil fuels.\n3. Biocompatible: It is non-toxic and safe for use in medical applications such as sutures, stents, and drug delivery systems.\n4. Good Processability: It can be easily processed using standard thermoplastic manufacturing equipment like 3D printers and injection molders."
+  },
+  {
+    "subject": "ACE",
+    "source_year": 2025,
+    "type": "text",
+    "chapter": ["Material Chemistry"],
+    "text": "How is the pKa value of a weak acid determined graphically in the potentiometric titration of a weak acid with a strong base? Explain based on Henderson's equation.",
+    "marks": 2,
+    "timeinmin": 7,
+    "images": [],
+    "answer": "In the potentiometric titration of a weak acid (HA) with a strong base, the pKa value is determined at the half-equivalence point from a graph of pH versus the volume of titrant added. The half-equivalence point is where exactly half of the weak acid has been neutralized by the strong base.\n\nAccording to the Henderson-Hasselbalch equation: pH = pKa + log([A-]/[HA])\n\nAt the half-equivalence point, the concentration of the conjugate base ([A-]) formed is equal to the concentration of the remaining weak acid ([HA]). Therefore, the ratio [A-]/[HA] equals 1. Since log(1) is 0, the equation simplifies to pH = pKa. Graphically, one finds the pH on the curve that corresponds to exactly half the volume of titrant used to reach the equivalence point, and this pH value is the pKa."
+  },
+  {
+    "subject": "ACE",
+    "source_year": 2025,
+    "type": "text",
+    "chapter": ["Battery"],
+    "text": "i) What are the similarities and differences between lithium and sodium for battery applications?\nii) Describe the chemical reactions that occur in a lead-acid battery during charging and overcharging.",
+    "marks": 4,
+    "timeinmin": 14,
+    "images": [],
+    "answer": "i) Similarities and Differences between Lithium and Sodium:\nSimilarities: Both are alkali metals and are highly reactive, making them suitable for high-energy-density batteries. Both function as the charge carrier by shuttling between the anode and cathode during charging and discharging.\nDifferences: Sodium is more abundant and cheaper than lithium. However, sodium ions are larger and heavier than lithium ions, which generally results in lower energy density and slower kinetics in sodium-ion batteries compared to lithium-ion batteries.\n\nii) Reactions in a Lead-Acid Battery:\nDuring Charging:\nThe discharge process is reversed. Lead sulfate at both electrodes is converted back to lead, lead dioxide, and sulfuric acid.\nAnode: PbSO4(s) + 2e- -> Pb(s) + SO4(2-)(aq)\nCathode: PbSO4(s) + 2H2O(l) -> PbO2(s) + SO4(2-)(aq) + 4H+(aq) + 2e-\n\nDuring Overcharging:\nIf charging continues after the battery is fully charged, electrolysis of water occurs.\nAnode: 2H2O(l) -> O2(g) + 4H+(aq) + 4e-\nCathode: 2H2O(l) + 2e- -> H2(g) + 2OH-(aq)"
+  },
+  {
+    "subject": "ACE",
+    "source_year": 2025,
+    "type": "text",
+    "chapter": ["Battery"],
+    "text": "Explain the construction and working of the nickel metal hydride battery with the necessary diagram and chemical reactions. Give the advantages of nickel metal hydride battery.",
+    "marks": 4,
+    "timeinmin": 14,
+    "images": ["data/answer_images/ACE-Q17.jpeg"],
+    "answer": "Construction:\nA Nickel-Metal Hydride (NiMH) battery consists of a positive electrode made of nickel oxyhydroxide (NiOOH), a negative electrode made of a hydrogen-absorbing metal hydride (MH) alloy, a separator, and an alkaline electrolyte such as potassium hydroxide (KOH).\n\nWorking (during discharge):\nAt the negative electrode (anode), the metal hydride is oxidized, releasing hydrogen atoms that react with hydroxide ions from the electrolyte to form water and release electrons. These electrons travel through the external circuit to the positive electrode (cathode). At the cathode, nickel oxyhydroxide is reduced by reacting with water and the incoming electrons to form nickel hydroxide and hydroxide ions.\n\nReactions (Discharge):\nAnode: MH + OH- -> M + H2O + e-\nCathode: NiOOH + H2O + e- -> Ni(OH)2 + OH-\nOverall: MH + NiOOH -> M + Ni(OH)2\n\nAdvantages:\nIt has a higher energy density than Ni-Cd batteries, is environmentally safer as it contains no toxic cadmium, and is less prone to the memory effect."
+  },
+  {
+    "subject": "ACE",
+    "source_year": 2025,
+    "type": "text",
+    "chapter": ["Material Chemistry"],
+    "text": "Write the advantages of solid polymeric electrolytes.",
+    "marks": 2,
+    "timeinmin": 7,
+    "images": [],
+    "answer": "The advantages of solid polymeric electrolytes (SPEs) include:\n1. Enhanced Safety: They are non-flammable and eliminate the risk of leakage associated with liquid electrolytes, reducing the chance of short circuits and thermal runaway.\n2. Flexibility and Design Freedom: Being solid and flexible, they allow for the fabrication of thin, lightweight, and bendable batteries in various shapes and sizes.\n3. Good Electrochemical Stability: They typically have a wide electrochemical stability window, making them compatible with high-voltage electrode materials.\n4. Easy Processing: They can be manufactured using cost-effective and scalable methods like solvent casting."
+  },
+  {
+    "subject": "ACE",
+    "source_year": 2025,
+    "type": "text",
+    "chapter": ["Material Chemistry"],
+    "text": "i) Discuss the mechanism of p-doping in conducting polymers by providing a specific example.\nii) Explain the relationship between polymer structure and its strength, and mention two factors that influence the glass transition temperature",
+    "marks": 4,
+    "timeinmin": 14,
+    "images": ["data/answer_images/ACE-Q19.jpeg"],
+    "answer": "i) Mechanism of p-doping:\np-doping, or oxidative doping, increases the conductivity of a polymer by creating positive charge carriers. An oxidizing agent (dopant), such as iodine (I2), is used to remove an electron from the polymer's pi-conjugated backbone. For example, when polyacetylene is exposed to iodine vapor, an electron is transferred from the polyacetylene chain to the iodine molecule. This creates a positive charge (a radical cation, or polaron) on the polymer chain, which is mobile and can conduct electricity.\n\nii) Polymer Structure and Strength:\nThe strength of a polymer is directly related to the intermolecular forces between its chains and their arrangement. Longer, linear chains with strong intermolecular forces (like hydrogen bonds or dipole-dipole interactions) lead to higher tensile strength. Crystallinity also increases strength, as ordered crystalline regions are stronger than amorphous regions. Factors influencing the glass transition temperature (Tg) include:\n1. Chain Flexibility: Polymers with more flexible backbones have a lower Tg.\n2. Intermolecular Forces: Stronger forces between chains increase the Tg as more energy is required for chain movement."
+  },
+  {
+    "subject": "ACE",
+    "source_year": 2025,
+    "type": "text",
+    "chapter": ["Material Chemistry"],
+    "text": "i) Name the process used to form polyamides and provide a general scheme for this formation.\nii) Describe the preparation method and key applications ofNylon 6,6 in detail.",
+    "marks": 4,
+    "timeinmin": 14,
+    "images": ["data/answer_images/ACE-Q20.jpeg"],
+    "answer": "i) Process for Polyamide Formation:\nThe process used to form polyamides is called condensation polymerization (or step-growth polymerization). The general scheme involves the reaction between a monomer containing two carboxylic acid groups (a dicarboxylic acid) and a monomer containing two amine groups (a diamine). The reaction forms a repeating amide bond with the elimination of a small molecule, usually water.\n\nii) Preparation and Applications of Nylon 6,6:\nPreparation: Nylon 6,6 is synthesized by the condensation polymerization of two monomers: hexamethylenediamine (which has 6 carbon atoms) and adipic acid (which also has 6 carbon atoms). The monomers are mixed in a solution, and the mixture is heated under pressure to initiate the reaction, forming long polymer chains of Nylon 6,6 and eliminating water.\nKey Applications: Due to its high strength, durability, and resistance to abrasion, Nylon 6,6 is widely used in textiles for clothing and carpets, in automotive parts like gears and bearings, and for making industrial materials like ropes and tire cords."
+  },
+  {
+    "subject": "ACE",
+    "source_year": 2025,
+    "type": "text",
+    "chapter": ["Material Chemistry"],
+    "text": "Define Intrinsic Viscosity and state Mark-Houwink's equation. Explain each term in the equation and sketch a suitable graph illustrating the relationship between intrinsic viscosity and molecular weight.",
+    "marks": 2,
+    "timeinmin": 7,
+    "images": ["data/answer_images/ACE-Q21.jpeg"],
+    "answer": "Intrinsic Viscosity ([n]) is a measure of a polymer's contribution to the viscosity of a solution, extrapolated to infinite dilution. It reflects the size and shape of individual polymer molecules in a specific solvent.\n\nThe Mark-Houwink equation is: [n] = K * M^a\n\nWhere:\n- [n] is the intrinsic viscosity.\n- M is the viscosity average molecular weight of the polymer.\n- K and a are the Mark-Houwink constants, which depend on the specific polymer, solvent, and temperature. 'a' relates to the shape of the polymer in solution (e.g., a=0.5 for a random coil, a=2 for a rigid rod).\n\nA graph of log([n]) versus log(M) yields a straight line with a slope of 'a' and a y-intercept of log(K)."
+  },
+  {
+    "subject": "ACE",
+    "source_year": 2025,
+    "type": "text",
+    "chapter": ["Electronic Material"],
+    "text": "Give a reason for the following:\ni) Individual metal components have higher conductivity than the alloy.\nii) Resistivity of the metal decreases initially with increasing pressure.\niii) Metals appear opaque to electromagnetic radiation within the visible region of the spectrum\niv) Laser is a special application of luminescence",
+    "marks": 4,
+    "timeinmin": 14,
+    "images": [],
+    "answer": "i) An alloy has lower conductivity because the different-sized atoms of the component metals disrupt the regular crystal lattice structure. This increases the scattering of free electrons, impeding their flow and thus increasing resistivity (lowering conductivity) compared to a pure metal.\n\nii) Applying pressure initially decreases a metal's resistivity because it reduces the amplitude of lattice vibrations. This leads to less scattering of electrons and improved conductivity. However, beyond a certain point, further pressure can distort the lattice and increase resistivity.\n\niii) Metals are opaque because their free electrons can absorb photons of light across a wide range of energies, including the entire visible spectrum. When light strikes the metal surface, its energy is absorbed by exciting these electrons to higher energy levels, preventing the light from passing through.\n\niv) A laser is a special application of luminescence because it is based on the principle of stimulated emission, which is a form of photoluminescence. A material is excited to a higher energy state, and when a photon of a specific energy strikes it, it stimulates the emission of an identical photon, leading to a cascade of coherent light."
+  },
+  {
+    "subject": "ACE",
+    "source_year": 2025,
+    "type": "text",
+    "chapter": ["Electronic Material"],
+    "text": "Write a note on the following:\ni) Biosensors\nii) Electrochemical sensor",
+    "marks": 4,
+    "timeinmin": 14,
+    "images": [],
+    "answer": "i) Biosensors:\nA biosensor is an analytical device that combines a biological component (like an enzyme, antibody, or nucleic acid) with a physicochemical transducer. The biological component selectively interacts with a specific target analyte. This interaction produces a measurable signal (e.g., electrical, optical, or thermal) that the transducer converts into a readable output. Biosensors are highly specific and sensitive, widely used in medical diagnostics, environmental monitoring, and food safety.\n\nii) Electrochemical Sensor:\nAn electrochemical sensor is a device that measures the concentration of a target analyte by converting the information from a chemical reaction into an electrical signal. It typically consists of a working electrode, a reference electrode, and a counter electrode. The target analyte undergoes a redox reaction at the working electrode, generating a change in current or potential that is proportional to its concentration, allowing for precise quantitative analysis."
+  },
+  {
+    "subject": "ACE",
+    "source_year": 2025,
+    "type": "text",
+    "chapter": ["Electronic Material"],
+    "text": "Describe the optical phenomena exhibited by non-metals",
+    "marks": 2,
+    "timeinmin": 7,
+    "images": [],
+    "answer": "Non-metals exhibit a variety of optical phenomena based on how they interact with light. These include:\n1. Reflection: The bouncing of light off a surface.\n2. Absorption: Electrons absorb photons of specific energies, causing the material to appear colored or opaque.\n3. Transmission: Materials with a large band gap, like glass, are transparent because visible light photons do not have enough energy to be absorbed, allowing the light to pass through.\n4. Refraction: The bending of light as it passes from one medium to another due to a change in speed.\n5. Luminescence: The emission of light after absorbing energy, which includes fluorescence and phosphorescence."
+  },
+  {
+    "subject": "ACE",
+    "source_year": 2025,
+    "type": "text",
+    "chapter": ["E-waste"],
+    "text": "i) Differentiate between recycling economy and circular economy.\nii) Explain how repair and refurbishment can reduce electronic waste.\niii) List any two potential health effects of PFAS exposure.",
+    "marks": 4,
+    "timeinmin": 14,
+    "images": [],
+    "answer": "i) Recycling Economy vs. Circular Economy:\nA recycling economy focuses primarily on the end-of-life management of products, converting waste materials into new products. A circular economy is a broader concept that aims to eliminate waste from the beginning by designing products for durability, reuse, repair, and refurbishment, with recycling as a last resort.\n\nii) How Repair and Refurbishment Reduce E-waste:\nRepairing a faulty device instead of replacing it directly extends its useful life, preventing it from becoming waste prematurely. Refurbishment restores used electronics to a functional state, allowing them to be resold or reused, which keeps them in the value chain and out of landfills, thus reducing the overall volume of e-waste.\n\niii) Health Effects of PFAS Exposure:\n1. Increased risk of certain cancers, such as kidney and testicular cancer.\n2. Interference with the body's natural hormones and immune system."
+  },
+  {
+    "subject": "ACE",
+    "source_year": 2025,
+    "type": "text",
+    "chapter": ["E-waste"],
+    "text": "i) Elaborate on any two steps to be followed while rethinking product design for disassembly and repairability.\nii) Describe water pollution through improper e-waste disposal.",
+    "marks": 4,
+    "timeinmin": 14,
+    "images": [],
+    "answer": "i) Steps for Rethinking Product Design:\n1. Use of Standardized and Non-proprietary Fasteners: Designing products with common screws instead of strong adhesives or proprietary fasteners makes it much easier for consumers and repair technicians to open devices and replace individual components.\n2. Modular Design: Creating products with independent, interchangeable modules (like a replaceable battery or camera unit) allows for targeted repairs and upgrades, so the entire device does not need to be discarded if one part fails.\n\nii) Water Pollution from E-waste:\nWhen electronic waste is improperly disposed of in landfills, heavy metals like lead, mercury, and cadmium can leach from the components due to rainfall. These toxic substances seep into the soil and contaminate groundwater sources. This polluted leachate can then enter rivers, lakes, and drinking water supplies, posing a significant threat to aquatic ecosystems and human health."
+  },
+  {
+    "subject": "ACE",
+    "source_year": 2025,
+    "type": "text",
+    "chapter": ["Battery"],
+    "text": "What are fuel cells? How do they differ from conventional galvanic cells?",
+    "marks": 2,
+    "timeinmin": 7,
+    "images": [],
+    "answer": "Fuel cells are electrochemical devices that convert the chemical energy of a fuel (like hydrogen) and an oxidizing agent (like oxygen) directly into electricity. \n\nThe main difference from conventional galvanic cells (batteries) is that the reactants in a fuel cell are continuously supplied from an external source, allowing it to operate indefinitely as long as fuel is provided. In a galvanic cell, the chemical reactants are self-contained and are consumed during operation, limiting its lifespan."
+  },
+  {
+    "subject": "ACE",
+    "source_year": 2025,
+    "type": "text",
+    "chapter": ["Material Chemistry"],
+    "text": "i) Classify biodegradable polymers, mention any two advantages and applications.\nii) Discuss nanomaterials based on origin with examples.",
+    "marks": 4,
+    "timeinmin": 14,
+    "images": [],
+    "answer": "i) Biodegradable Polymers:\nClassification: They can be classified into natural polymers (e.g., starch, cellulose) and synthetic polymers (e.g., Polylactic acid - PLA, Polycaprolactone - PCL).\nAdvantages: 1. They reduce plastic waste accumulation in landfills. 2. They are often derived from renewable resources.\nApplications: Used in disposable packaging, agricultural films, and biomedical applications like dissolvable sutures.\n\nii) Nanomaterials Based on Origin:\nNanomaterials can be classified as natural or synthetic.\n- Natural Nanomaterials: These are found in nature. Examples include volcanic ash, milk (casein micelles), and the structures on a lotus leaf that make it superhydrophobic.\n- Synthetic Nanomaterials: These are intentionally produced through controlled chemical or physical processes. Examples include carbon nanotubes, quantum dots, and metal oxide nanoparticles like titanium dioxide (TiO2) used in sunscreens."
+  },
+  {
+    "subject": "ACE",
+    "source_year": 2025,
+    "type": "text",
+    "chapter": ["Material Chemistry"],
+    "text": "i) Explain in detail the preparation of nanomaterials by sol-gel method.\nii) Explain the role of organic layers in the basic structure of OLED's.",
+    "marks": 4,
+    "timeinmin": 14,
+    "images": ["data/answer_images/ACE-Q29.jpeg"],
+    "answer": "i) Sol-Gel Method:\nThe sol-gel method is a wet-chemical technique for synthesizing nanomaterials. It involves the evolution of a network through the formation of a colloidal suspension (sol) and its subsequent gelation into a solid network (gel). The key steps are:\n1. Hydrolysis: A chemical precursor (like a metal alkoxide) is mixed with water, causing it to hydrolyze.\n2. Condensation: The hydrolyzed molecules begin to link together, forming a network and creating a colloidal suspension known as a sol.\n3. Gelation and Aging: The sol continues to condense, forming a continuous solid network filled with solvent, known as a gel. This gel is then aged.\n4. Drying and Calcination: The solvent is removed from the gel, and the material is often heated at high temperatures (calcination) to densify it and form the final crystalline nanomaterial.\n\nii) Role of Organic Layers in OLEDs:\nIn an Organic Light Emitting Diode (OLED), the organic layers are sandwiched between two electrodes. They are responsible for the light emission process. The basic layers include:\n- Conductive Layer: Transports 'holes' (positive charges) from the anode.\n- Emissive Layer: This is where light is generated. Electrons from the cathode and holes from the conductive layer meet in this layer and recombine, releasing energy in the form of photons."
+  },
+  {
+    "subject": "ACE",
+    "source_year": 2025,
+    "type": "text",
+    "chapter": ["Material Chemistry"],
+    "text": "Explain the principle of flame photometry.",
+    "marks": 2,
+    "timeinmin": 7,
+    "images": [],
+    "answer": "The principle of flame photometry is based on the measurement of light emitted by atoms of a metallic element when they are excited in a flame. When a solution containing metal salts is introduced into a flame, the heat of the flame first evaporates the solvent and then vaporizes the salt to form gaseous atoms. These atoms are excited to higher electronic energy levels. As they immediately return to their ground state, they emit light of a characteristic wavelength. The intensity of this emitted light is directly proportional to the concentration of the element in the sample, allowing for quantitative analysis."
+  }
+] 
