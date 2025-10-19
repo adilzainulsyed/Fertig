@@ -266,7 +266,26 @@
   }
 
   // actions
-  $("answer")?.addEventListener("input", (e) => { answers[idx] = e.target.value; renderNav(); });
+  $("answer")?.addEventListener("input", async (e) => {
+    answers[idx] = e.target.value;
+    renderNav();
+
+    // --- NEW CODE TO SEND ANSWER TO similarity.py ---
+    const payload = {
+      id: idx + 1,
+      answer: e.target.value
+    };
+    try {
+      await fetch("http://127.0.0.1:5000/similarity", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      });
+    } catch (err) {
+      console.error("Failed to send similarity data:", err);
+    }
+  });
+
   $("prevBtn").onclick = () => { if (idx > 0) { idx--; renderQuestion(); renderNav(); } };
   $("nextBtn").onclick = () => { if (idx < Q.length-1) { idx++; renderQuestion(); renderNav(); } };
   $("flagBtn").onclick = () => { flags.has(idx) ? flags.delete(idx) : flags.add(idx); renderNav(); };
