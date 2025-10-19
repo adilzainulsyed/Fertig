@@ -18,7 +18,7 @@
     const hh = String((s/3600|0)).padStart(2,'0');
     const mm = String(((s%3600)/60|0)).padStart(2,'0');
     const ss = String(s%60).padStart(2,'0');
-    return `${hh}:${mm}:${ss}`;
+    return ${hh}:${mm}:${ss};
   };
   const escapeHTML = (t="") => t.replace(/[&<>]/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[m]));
   const paragraphize = (t="") => escapeHTML(t).replace(/\n{2,}/g, "</p><p>").replace(/\n/g, "<br>");
@@ -50,9 +50,30 @@
   let secsLeft = 0; let timerId = null;
   let tabSwitches = 0;
   let key = "";
+  // track time spent per question
+  let timeSpent = {};  
+  let lastSwitchTime = Date.now();
+
+  function recordTimeSpent() {
+    const now = Date.now();
+    const elapsed = Math.round((now - lastSwitchTime) / 1000);
+    timeSpent[idx + 1] = (timeSpent[idx + 1] || 0) + elapsed;
+    lastSwitchTime = now;
+    console.log(⏱ Q${idx + 1} +${elapsed}s → total ${timeSpent[idx + 1]}s);
+  }
+
+  function ensureAllQuestionsTracked(totalQuestions) {
+    for (let i = 1; i <= totalQuestions; i++) {
+      if (!(i in timeSpent)) {
+        timeSpent[i] = 0;
+    }
+  }
+}
+
+
 
   // autosave
-  const saveKey = () => `fertig:test:${key || "adhoc"}`;
+  const saveKey = () => fertig:test:${key || "adhoc"};
   setInterval(() => {
     try {
       localStorage.setItem(saveKey(), JSON.stringify({
@@ -64,7 +85,7 @@
   // proctor-lite
   document.addEventListener("visibilitychange", () => {
     if (document.hidden) tabSwitches++;
-    if (els.proctorNote) els.proctorNote.textContent = `Tab switches recorded: ${tabSwitches}`;
+    if (els.proctorNote) els.proctorNote.textContent = Tab switches recorded: ${tabSwitches};
   });
   ["copy","cut","paste","contextmenu"].forEach(evt => document.addEventListener(evt, e => e.preventDefault()));
 
@@ -82,13 +103,13 @@
 
     const subj = subjSlugRaw.toLowerCase();
     const EXCEPTIONS = { fee: "feeTest.json", dcso: "dscotest.json" };
-    const file = EXCEPTIONS[subj] || `${subj}test.json`;
-    return `/tests/${yearFolder}/${file}`;
+    const file = EXCEPTIONS[subj] || ${subj}test.json;
+    return /tests/${yearFolder}/${file};
   }
 
   async function fetchJSON(url) {
     const r = await fetch(url);
-    if (!r.ok) throw new Error(`Failed: ${url}`);
+    if (!r.ok) throw new Error(Failed: ${url});
     return r.json();
   }
 
@@ -133,7 +154,7 @@
       }
 
       const imgs = Array.isArray(it.images)
-        ? it.images.map(src => src.startsWith("data/") ? `/question_images/${src.split("/").pop()}` : src)
+        ? it.images.map(src => src.startsWith("data/") ? /question_images/${src.split("/").pop()} : src)
         : [];
 
       return {
@@ -197,20 +218,26 @@
       const ans = answers[i];
       if ((Q[i].type === "mcq" && Number.isInteger(ans)) || (Q[i].type !== "mcq" && ans?.trim())) btn.classList.add("answered");
       if (flags.has(i)) btn.classList.add("flagged");
-      btn.textContent = `Q${i+1}`;
-      btn.onclick = () => { idx = i; renderQuestion(); renderNav(); };
+      btn.textContent = Q${i+1};
+      btn.onclick = () => {
+  recordTimeSpent();
+  idx = i;
+  renderQuestion();
+  renderNav();
+};
+
       els.qnav.appendChild(btn);
     });
   }
 
   function renderQuestion() {
     const q = Q[idx];
-    els.qBadge.textContent = `Q${idx+1}`;
-    els.qMarks.textContent = q.marks ? `${q.marks} marks` : "—";
+    els.qBadge.textContent = Q${idx+1};
+    els.qMarks.textContent = q.marks ? ${q.marks} marks : "—";
     els.qChapter.textContent = q.chapter ? q.chapter : (q.meta.difficulty || "—");
 
     const hasCode = /#include|\b(int|void)\s+main\s*\(|\{|\}/.test(q.text);
-    const htmlStem = hasCode ? `<pre><code>${escapeHTML(q.text)}</code></pre>` : `<p>${paragraphize(q.text)}</p>`;
+    const htmlStem = hasCode ? <pre><code>${escapeHTML(q.text)}</code></pre> : <p>${paragraphize(q.text)}</p>;
     els.qText.innerHTML = htmlStem;
 
     els.attachments.innerHTML = "";
@@ -222,7 +249,7 @@
 
     if (q.type === "mcq") {
       els.answer.classList.add("hidden");
-      let html = `<div class="mcq" id="mcqBox">`;
+      let html = <div class="mcq" id="mcqBox">;
       (q.options || []).forEach((opt, k) => {
         const checked = Number.isInteger(answers[idx]) && answers[idx] === k ? "checked" : "";
         html += `
@@ -231,7 +258,7 @@
             <span>${paragraphize(String(opt||""))}</span>
           </label>`;
       });
-      html += `</div>`;
+      html += </div>;
       const container = document.createElement("div");
       container.innerHTML = html;
       const old = $("mcqBox"); if (old) old.remove();
@@ -266,39 +293,42 @@
   }
 
   // actions
-  $("answer")?.addEventListener("input", async (e) => {
-    answers[idx] = e.target.value;
+  $("answer")?.addEventListener("input", (e) => { answers[idx] = e.target.value; renderNav(); });
+  $("prevBtn").onclick = () => {
+  if (idx > 0) {
+    recordTimeSpent();
+    idx--;
+    renderQuestion();
     renderNav();
+  }
+};
 
-    // --- NEW CODE TO SEND ANSWER TO similarity.py ---
-    const payload = {
-      id: idx + 1,
-      answer: e.target.value
-    };
-    try {
-      await fetch("http://127.0.0.1:5000/similarity", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload)
-      });
-    } catch (err) {
-      console.error("Failed to send similarity data:", err);
-    }
-  });
+$("nextBtn").onclick = () => {
+  if (idx < Q.length - 1) {
+    recordTimeSpent();
+    idx++;
+    renderQuestion();
+    renderNav();
+  }
+};
 
-  $("prevBtn").onclick = () => { if (idx > 0) { idx--; renderQuestion(); renderNav(); } };
-  $("nextBtn").onclick = () => { if (idx < Q.length-1) { idx++; renderQuestion(); renderNav(); } };
   $("flagBtn").onclick = () => { flags.has(idx) ? flags.delete(idx) : flags.add(idx); renderNav(); };
   $("submitBtn").onclick = () => submit();
 
   function submit() {
-    clearInterval(timerId);
+    clearInterval(timerId);// capture final question time
+    recordTimeSpent();
+    ensureAllQuestionsTracked(15);   // total number of questions = 15
+    console.log("Final timeSpent:", timeSpent);
+
+
     const usedMins = Math.round((Date.now() - startedAt) / 60000);
     const answered = Q.reduce((n,q,i)=> n + (q.type==="mcq" ? Number.isInteger(answers[i]) : !!(answers[i]&&answers[i].trim())), 0);
 
     const payload = {
       key,
       meta: { totalQuestions: Q.length, startedAt, submittedAt: Date.now(), usedMinutes: usedMins, tabSwitches },
+      timeSpent,  
       answers: Q.map((q, i) => ({
         index: i+1,
         type: q.type,
@@ -312,7 +342,7 @@
     };
     try { localStorage.setItem(saveKey()+":final", JSON.stringify(payload)); } catch {}
 
-    $("sumMeta").textContent = `${Q.length} questions attempted over ${usedMins} min.`;
+    $("sumMeta").textContent = ${Q.length} questions attempted over ${usedMins} min.;
     $("sumAnswered").textContent = answered;
     $("sumFlagged").textContent = flags.size;
     $("sumTime").textContent = usedMins;
@@ -326,6 +356,101 @@
       a.click();
       URL.revokeObjectURL(a.href);
     };
+    // ---------- plotting section ----------
+(async function generateCharts() {
+  // 1️⃣ Bar chart - per question
+  const questionLabels = Q.map((_, i) => Q${i+1});
+  const idealTimes = Q.map(q => (q.time || 0) * 60); // convert minutes → seconds
+  const actualTimes = Q.map((_, i) => timeSpent[i+1] || 0);
+
+  const ctx1 = document.getElementById("questionBar");
+  new Chart(ctx1, {
+    type: "bar",
+    data: {
+      labels: questionLabels,
+      datasets: [
+        {
+          label: "Ideal Time (sec)",
+          data: idealTimes,
+          backgroundColor: "rgba(54, 162, 235, 0.5)"
+        },
+        {
+          label: "Actual Time (sec)",
+          data: actualTimes,
+          backgroundColor: "rgba(255, 99, 132, 0.5)"
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        title: {
+          display: true,
+          text: "Time Spent per Question"
+        },
+        legend: { position: "top" }
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          title: { display: true, text: "Seconds" }
+        }
+      }
+    }
+  });
+
+  // 2️⃣ Radar chart - per chapter
+  const chapterData = {};
+  Q.forEach((q, i) => {
+    const chapters = Array.isArray(q.chapter) ? q.chapter : [q.chapter];
+    chapters.forEach(ch => {
+      if (!ch) return;
+      if (!chapterData[ch]) chapterData[ch] = { ideal: 0, actual: 0 };
+      chapterData[ch].ideal += (q.time || 0) * 60;
+      chapterData[ch].actual += timeSpent[i+1] || 0;
+    });
+  });
+
+  const chapterLabels = Object.keys(chapterData);
+  const idealChTimes = chapterLabels.map(ch => chapterData[ch].ideal);
+  const actualChTimes = chapterLabels.map(ch => chapterData[ch].actual);
+
+  const ctx2 = document.getElementById("chapterRadar");
+  new Chart(ctx2, {
+    type: "radar",
+    data: {
+      labels: chapterLabels,
+      datasets: [
+        {
+          label: "Ideal Total (sec)",
+          data: idealChTimes,
+          backgroundColor: "rgba(54, 162, 235, 0.3)",
+          borderColor: "rgba(54, 162, 235, 0.8)",
+          pointBackgroundColor: "rgba(54, 162, 235, 1)"
+        },
+        {
+          label: "Actual Total (sec)",
+          data: actualChTimes,
+          backgroundColor: "rgba(255, 99, 132, 0.3)",
+          borderColor: "rgba(255, 99, 132, 0.8)",
+          pointBackgroundColor: "rgba(255, 99, 132, 1)"
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        title: { display: true, text: "Actual vs Ideal Time per Chapter" }
+      },
+      scales: {
+        r: {
+          beginAtZero: true,
+          pointLabels: { font: { size: 12 } }
+        }
+      }
+    }
+  });
+})();
 
     if (document.fullscreenElement && document.exitFullscreen) document.exitFullscreen().catch(()=>{});
     show("summary");
@@ -353,15 +478,15 @@
 
         startedAt = Date.now();
         const subject = Q[0]?.meta.subject || "Test";
-        els.paperTitle.textContent = `${subject} TEST`;
-        els.paperMeta.textContent  = `${Q.length} questions • ${totalMins} min`;
+        els.paperTitle.textContent = ${subject} TEST;
+        els.paperMeta.textContent  = ${Q.length} questions • ${totalMins} min;
         setCrumbs(yearLabelFromKey(key), subject);
 
         renderNav(); renderQuestion();
         show("exam"); startTimer(totalMins * 60);
         document.documentElement.requestFullscreen?.().catch(()=>{});
       } catch (err) {
-        $("err-paper").textContent = `Could not load ${url}`;
+        $("err-paper").textContent = Could not load ${url};
         console.error(err);
       }
     });
@@ -376,7 +501,7 @@
   async function loadPaperByUrl(url, fixedMinutes = 180) {
     const decoded = decodeURIComponent(url);
     const res = await fetch(encodeURI(decoded));
-    if (!res.ok) throw new Error(`Failed to fetch: ${decoded}`);
+    if (!res.ok) throw new Error(Failed to fetch: ${decoded});
     const raw = await res.json();
 
     let data = normalizeRecords(raw);
@@ -386,8 +511,8 @@
     startedAt = Date.now();
 
     const subject = Q[0]?.meta.subject || "Test";
-    els.paperTitle.textContent = `${subject} TEST`;
-    els.paperMeta.textContent  = `${Q.length} questions • ${fixedMinutes} min`;
+    els.paperTitle.textContent = ${subject} TEST;
+    els.paperMeta.textContent  = ${Q.length} questions • ${fixedMinutes} min;
     setCrumbs(yearLabelFromKey(params.get("key") || ""), subject);
 
     renderNav(); renderQuestion(); show("exam"); startTimer(fixedMinutes * 60);
