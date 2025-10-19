@@ -1,0 +1,308 @@
+{
+  "key": "",
+  "meta": {
+    "totalQuestions": 29,
+    "startedAt": 1760848575459,
+    "submittedAt": 1760848628296,
+    "usedMinutes": 1,
+    "tabSwitches": 1
+  },
+  "answers": [
+    {
+      "index": 1,
+      "type": "mcq",
+      "question": "Identify the grammatically correct sentence in the following:",
+      "marks": 1,
+      "chapter": "Grammar",
+      "images": [],
+      "answer": 0,
+      "flagged": false
+    },
+    {
+      "index": 2,
+      "type": "mcq",
+      "question": "Identify the grammatically correct sentence in the following:",
+      "marks": 1,
+      "chapter": "Grammar",
+      "images": [],
+      "answer": 1,
+      "flagged": false
+    },
+    {
+      "index": 3,
+      "type": "mcq",
+      "question": "Identify the grammatically correct sentence in the following:",
+      "marks": 1,
+      "chapter": "Grammar",
+      "images": [],
+      "answer": 1,
+      "flagged": false
+    },
+    {
+      "index": 4,
+      "type": "mcq",
+      "question": "Identify the grammatically correct sentence in the following:",
+      "marks": 1,
+      "chapter": "Grammar",
+      "images": [],
+      "answer": 2,
+      "flagged": false
+    },
+    {
+      "index": 5,
+      "type": "mcq",
+      "question": "Identify the grammatically correct sentence in the following:",
+      "marks": 1,
+      "chapter": "Grammar",
+      "images": [],
+      "answer": 1,
+      "flagged": false
+    },
+    {
+      "index": 6,
+      "type": "mcq",
+      "question": "Choose the correct answer to fill in the blanks.\n The minister as well as the magistrate _____ choose between duty and reputation.",
+      "marks": 1,
+      "chapter": "Grammar",
+      "images": [],
+      "answer": 0,
+      "flagged": false
+    },
+    {
+      "index": 7,
+      "type": "mcq",
+      "question": "Choose the correct answer to fill in the blanks.\n She _____ Mandarin _____ the past two years.",
+      "marks": 1,
+      "chapter": "Grammar",
+      "images": [],
+      "answer": 1,
+      "flagged": false
+    },
+    {
+      "index": 8,
+      "type": "mcq",
+      "question": "Choose the correct answer to fill in the blanks.\n Neither money nor power _____ needed to get selected for the Olympics",
+      "marks": 1,
+      "chapter": "Grammar",
+      "images": [],
+      "answer": 1,
+      "flagged": false
+    },
+    {
+      "index": 9,
+      "type": "mcq",
+      "question": "Choose the correct answer to fill in the blanks.\n _____ undergraduate student is given _____ unique opportunity to earn while studying in our college.",
+      "marks": 1,
+      "chapter": "Grammar",
+      "images": [],
+      "answer": 2,
+      "flagged": false
+    },
+    {
+      "index": 10,
+      "type": "mcq",
+      "question": "Choose the correct answer to fill in the blanks.\n The research _____ since 2015 and now the team _____ unanimously decided to disclose the results.",
+      "marks": 1,
+      "chapter": "Grammar",
+      "images": [],
+      "answer": 2,
+      "flagged": false
+    },
+    {
+      "index": 11,
+      "type": "text",
+      "question": "Chimamanda Adichie argues that our understanding of gender is limited and requires a collective, community-led effort to evolve. Do you agree with this view? Analyze her perspective within the text and discuss how it shapes your thinking on gender and societal change. Answer in about 350-400 words.",
+      "marks": 10,
+      "chapter": "Why should all be feminists",
+      "images": [],
+      "answer": "my name is adil give me free marks please pleasse 500 rs i'll give",
+      "flagged": false
+    },
+    {
+      "index": 12,
+      "type": "text",
+      "question": "Amitav Ghosh in his short story 'The Living Mountain' illustrates the idea that the pursuit of material wealth leads to both environmental degradation and societal discontent. What lessons can be drawn from this in the context of contemporary environmental issues?  Answer in about 350-400 words.",
+      "marks": 10,
+      "chapter": "The Living Mountain",
+      "images": [],
+      "answer": "",
+      "flagged": false
+    },
+    {
+      "index": 13,
+      "type": "text",
+      "question": "Read the following passage and provide a response to the question in about 300-350 words. Your response is required to show a critical understanding of the ideas presented in the passage. \n Question: The author states, ''Consider what would happen if a valid segment of information is corrupted by even a small piece of fake information or misinformation, which the AI programme fails to recognise and rectify.'' In your view, is the author's concern justified given current developments in AI, or is it an exaggerated caution? Justify your answer.",
+      "marks": 10,
+      "chapter": "Unseen Passage",
+      "images": [
+        "/question_images/Screenshot 2025-09-20 111702.png",
+        "/question_images/Screenshot 2025-09-20 111715.png"
+      ],
+      "answer": "",
+      "flagged": false
+    },
+    {
+      "index": 14,
+      "type": "text",
+      "question": "Write an essay on \"Social Media and the rise of Cancel Culture\" in about 600 words",
+      "marks": 10,
+      "chapter": "Essay",
+      "images": [],
+      "answer": "",
+      "flagged": false
+    },
+    {
+      "index": 15,
+      "type": "text",
+      "question": "Write an essay on \"Cultural Diversity in a contemporary world.\" in about 600 words",
+      "marks": 10,
+      "chapter": "Essay",
+      "images": [],
+      "answer": "",
+      "flagged": false
+    },
+    {
+      "index": 16,
+      "type": "mcq",
+      "question": "Identify the grammatically correct sentence in the following:",
+      "marks": 1,
+      "chapter": "Grammar",
+      "images": [],
+      "answer": null,
+      "flagged": false
+    },
+    {
+      "index": 17,
+      "type": "mcq",
+      "question": "Identify the grammatically correct sentence in the following:",
+      "marks": 1,
+      "chapter": "Grammar",
+      "images": [],
+      "answer": null,
+      "flagged": false
+    },
+    {
+      "index": 18,
+      "type": "mcq",
+      "question": "Identify the grammatically correct sentence in the following:",
+      "marks": 1,
+      "chapter": "Grammar",
+      "images": [],
+      "answer": null,
+      "flagged": false
+    },
+    {
+      "index": 19,
+      "type": "mcq",
+      "question": "Identify the grammatically correct sentence in the following:",
+      "marks": 1,
+      "chapter": "Grammar",
+      "images": [],
+      "answer": null,
+      "flagged": false
+    },
+    {
+      "index": 20,
+      "type": "mcq",
+      "question": "Identify the grammatically correct sentence in the following:",
+      "marks": 1,
+      "chapter": "Grammar",
+      "images": [],
+      "answer": null,
+      "flagged": false
+    },
+    {
+      "index": 21,
+      "type": "mcq",
+      "question": "_____the bad weather, the outdoor party was rescheduled.",
+      "marks": 1,
+      "chapter": "Grammar",
+      "images": [],
+      "answer": null,
+      "flagged": false
+    },
+    {
+      "index": 22,
+      "type": "mcq",
+      "question": "The headmaster as well as the students _____delighted when the team showed _____mettle.",
+      "marks": 1,
+      "chapter": "Grammar",
+      "images": [],
+      "answer": null,
+      "flagged": false
+    },
+    {
+      "index": 23,
+      "type": "mcq",
+      "question": "The director congratulated the winner _____ his achievement, and also acknowledged that every participant _____unique.",
+      "marks": 1,
+      "chapter": "Grammar",
+      "images": [],
+      "answer": null,
+      "flagged": false
+    },
+    {
+      "index": 24,
+      "type": "mcq",
+      "question": "Neither Jackson nor his friends _____been able to _____ with the situation",
+      "marks": 1,
+      "chapter": "Grammar",
+      "images": [],
+      "answer": null,
+      "flagged": false
+    },
+    {
+      "index": 25,
+      "type": "mcq",
+      "question": "One of the _____for the disturbance in the city _____ the lack of security.",
+      "marks": 1,
+      "chapter": "Grammar",
+      "images": [],
+      "answer": null,
+      "flagged": false
+    },
+    {
+      "index": 26,
+      "type": "text",
+      "question": "Chimamanda Adichie states that \"we must raise our daughters differently. We must also raise our sons differently\". What are your views on the above claim? Explain with reference to the points made in the text",
+      "marks": 10,
+      "chapter": "Why should all be feminists",
+      "images": [],
+      "answer": "",
+      "flagged": false
+    },
+    {
+      "index": 27,
+      "type": "text",
+      "question": "Read the following passage and provide a response to the question in about 300-350 words. Your response is required to show a critical understanding of the ideas presented in the passage. \n Question: Do you agree with view that engineering degree programmes must include arts and humanities courses? Elaborate.",
+      "marks": 10,
+      "chapter": "Unseen Passage",
+      "images": [
+        "/question_images/Screenshot 2025-09-20 115828.png",
+        "/question_images/Screenshot 2025-09-20 115843.png"
+      ],
+      "answer": "",
+      "flagged": false
+    },
+    {
+      "index": 28,
+      "type": "text",
+      "question": "Write an essay on \"Poverty anywhere is a threat to prosperity everywhere.\" in about 600 words",
+      "marks": 10,
+      "chapter": "Essay",
+      "images": [],
+      "answer": "",
+      "flagged": false
+    },
+    {
+      "index": 29,
+      "type": "text",
+      "question": "Write an essay on \"Does cinema shape our popular culture or merely reflect it.\" in about 600 words",
+      "marks": 10,
+      "chapter": "Essay",
+      "images": [],
+      "answer": "",
+      "flagged": false
+    }
+  ]
+}
