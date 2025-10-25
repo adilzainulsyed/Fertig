@@ -256,55 +256,22 @@ function scrollToBottom() {
     messagesContainer.scrollTop = messagesContainer.scrollHeight;
 }
 
-function generateBotResponse(userMessage) {
-    const lowerMessage = userMessage.toLowerCase().trim();
-    
-    const responses = {
-        'hello': "Hello! I'm your AI assistant. How can I help you today?",
-        'hi': "Hi there! What can I assist you with?",
-        'hey': "Hey! How can I help you?",
-        'how are you': "I'm doing great, thank you for asking! I'm here to help you with any questions or tasks you have. What would you like to discuss?",
-        'what can you do': "I can help you with a wide range of tasks including:\n\n• Answering questions and explaining concepts\n• Writing and editing content\n• Brainstorming ideas\n• Coding and debugging\n• Analysis and problem-solving\n• Creative projects\n• And much more!\n\nWhat would you like help with?",
-        'help': "I'm here to help! You can ask me about:\n\n• General knowledge and explanations\n• Writing assistance\n• Creative brainstorming\n• Code development\n• Problem-solving\n• Research and analysis\n\nJust type your question or request, and I'll do my best to assist you!",
-        'thanks': "You're welcome! Is there anything else I can help you with?",
-        'thank you': "You're very welcome! Feel free to ask if you need anything else.",
-        'bye': "Goodbye! It was great chatting with you. Feel free to come back anytime!",
-        'goodbye': "Goodbye! Have a wonderful day! Come back anytime you need assistance.",
-    };
-    
-    for (const [key, response] of Object.entries(responses)) {
-        if (lowerMessage.includes(key)) {
-            return response;
-        }
-    }
-    
-    if (lowerMessage.includes('quantum computing')) {
-        return "Quantum computing is a fascinating field! It uses quantum mechanics principles like superposition and entanglement to process information in ways classical computers cannot.\n\nKey concepts:\n• Qubits can be in multiple states simultaneously\n• Quantum entanglement links qubits together\n• Quantum algorithms can solve certain problems exponentially faster\n\nWould you like me to explain any specific aspect in more detail?";
-    }
-    
-    if (lowerMessage.includes('code') || lowerMessage.includes('programming') || lowerMessage.includes('debug')) {
-        return "I'd be happy to help with coding! I can assist with:\n\n• Writing code in various languages\n• Debugging and fixing errors\n• Explaining programming concepts\n• Optimizing algorithms\n• Code reviews\n\nWhat programming task would you like help with?";
-    }
-    
-    if (lowerMessage.includes('write') || lowerMessage.includes('email') || lowerMessage.includes('content')) {
-        return "I can definitely help you with writing! Whether it's:\n\n• Professional emails\n• Articles and blog posts\n• Creative content\n• Technical documentation\n• Reports and summaries\n\nJust let me know what you need, and I'll help you craft it. What are you looking to write?";
-    }
-    
-    if (lowerMessage.includes('idea') || lowerMessage.includes('brainstorm') || lowerMessage.includes('creative')) {
-        return "I love brainstorming! I can help generate ideas for:\n\n• Projects and businesses\n• Creative writing and storytelling\n• Problem-solving approaches\n• Marketing campaigns\n• Product features\n\nWhat area would you like to explore? The more context you provide, the better ideas I can suggest!";
-    }
-    
-    const defaultResponses = [
-        "That's an interesting question! Could you provide a bit more context so I can give you the most helpful answer?",
-        "I'd be happy to help with that. Could you elaborate a bit more on what you're looking for?",
-        "Great question! To give you the best response, could you share some more details about what you need?",
-        "I'm here to assist! Can you tell me more about what you'd like to explore or accomplish?",
-        "That's a fascinating topic. What specific aspect would you like to know more about?",
-        "I can help with that! What particular information or guidance are you looking for?",
-    ];
-    
-    return defaultResponses[Math.floor(Math.random() * defaultResponses.length)];
+async function generateBotResponse(userMessage) {
+  try {
+    const res = await fetch('http://localhost:5000/api/chatbot', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ message: userMessage })
+    });
+    const data = await res.json();
+    return data.reply || "Sorry, no response.";
+  } catch (err) {
+    console.error(err);
+    return "Error: could not reach chatbot server.";
+  }
 }
+
+
 
 function updateChatTitle(firstMessage) {
     const activeHistoryItem = document.querySelector('.history-item.active span');
