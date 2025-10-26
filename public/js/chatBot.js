@@ -151,7 +151,8 @@ async function handleSendMessage() {
     
     await delay(1500 + Math.random() * 1000);
     
-    const botResponse = generateBotResponse(userMessage);
+    // ✅ Await the async function here
+    const botResponse = await generateBotResponse(userMessage);
     
     hideTypingIndicator();
     
@@ -170,6 +171,7 @@ async function handleSendMessage() {
     updateSendButton();
     messageInput.focus();
 }
+
 
 function addMessage(text, sender) {
     const messageDiv = document.createElement('div');
@@ -258,7 +260,7 @@ function scrollToBottom() {
 
 async function generateBotResponse(userMessage) {
   try {
-    const res = await fetch('http://localhost:5000/api/chatbot', {
+    const res = await fetch('source/routes/chatbot.js', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ message: userMessage })
@@ -320,7 +322,8 @@ async function regenerateResponse(button) {
         
         await delay(1500 + Math.random() * 1000);
         
-        const newResponse = generateBotResponse(userText);
+        // ✅ Await the async function here
+        const newResponse = await generateBotResponse(userText);
         
         hideTypingIndicator();
         
@@ -330,6 +333,7 @@ async function regenerateResponse(button) {
         updateSendButton();
     }
 }
+
 
 function delay(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
