@@ -18,6 +18,8 @@ const corsoptions = {
 }
 app.use(cors(corsoptions));
 
+//
+app.use(express.static('public'));
 
 //built in middleware for handling encoded data
 app.use(express.urlencoded({extended:false}));
@@ -35,6 +37,7 @@ app.use('/subjects', express.static(path.join(__dirname,'../../data/subjects')))
 console.log("Serving subjects from:", path.join(basePath,'/data/subjects'));
 //built in middle ware for handling static files
 app.use(express.static(path.join(basePath,'/public')));
+app.use(express.static(path.join(__dirname, '../../views')));
 
 // serve test paper JSON files
 app.use('/tests', express.static(path.join(basePath, 'data', 'testpaperjson')));
