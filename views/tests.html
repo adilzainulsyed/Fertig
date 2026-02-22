@@ -99,24 +99,103 @@
     </div>
   </section>
 
-  <!-- Summary -->
-  <section id="summary" class="hidden card">
-    <canvas id="questionBar" width="600" height="300"></canvas>
-    <canvas id="chapterRadar" width="600" height="300"></canvas>
+  <!-- Summary / Results Page -->
+  <section id="summary" class="hidden">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <h2>Test submitted</h2>
-    <p id="sumMeta" class="muted"></p>
-    <div class="grid-2">
-      <div class="stat"><div class="stat-num" id="sumAnswered">0</div><div class="stat-label">Answered</div></div>
-      <div class="stat"><div class="stat-num" id="sumFlagged">0</div><div class="stat-label">Flagged</div></div>
-      <div class="stat"><div class="stat-num" id="sumTime">0</div><div class="stat-label">Minutes used</div></div>
-      <div class="stat"><div class="stat-num" id="sumViol">0</div><div class="stat-label">Tab switches</div></div>
+    <div class="results-header">
+      <div class="results-icon">✓</div>
+      <h2>Test Completed!</h2>
+      <p id="sumMeta" class="muted"></p>
     </div>
-    <div class="actions">
-      <button class="btn" id="downloadBtn">Download answers (.json)</button>
-      <a class="btn-outlined" href="index.html">Back to Dashboard</a>
+
+    <!-- Time Overview Card -->
+    <div class="results-card time-overview">
+      <h3>⏱️ Time Overview</h3>
+      <div class="time-main">
+        <span class="time-big" id="sumTimeFormatted">00:00:00</span>
+        <span class="time-label">Total Time Spent</span>
+      </div>
+      <div class="time-stats">
+        <div class="time-stat">
+          <span class="time-val" id="sumAvgPerQ">0</span>
+          <span class="time-desc">Avg per Question</span>
+        </div>
+        <div class="time-stat">
+          <span class="time-val" id="sumFastest">0</span>
+          <span class="time-desc">Fastest Question</span>
+        </div>
+        <div class="time-stat">
+          <span class="time-val" id="sumSlowest">0</span>
+          <span class="time-desc">Slowest Question</span>
+        </div>
+      </div>
     </div>
+
+    <!-- Stats Grid -->
+    <div class="results-stats">
+      <div class="stat-card">
+        <div class="stat-num" id="sumFlagged">0</div>
+        <div class="stat-label">Flagged</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num" id="sumViol">0</div>
+        <div class="stat-label">Tab Switches</div>
+      </div>
+    </div>
+
+    <!-- Charts Section -->
+    <div class="results-charts">
+      <!-- Spider/Radar Chart - Time per Topic -->
+      <div class="chart-card">
+        <h3>📊 Time per Topic</h3>
+        <p class="chart-desc">How time was distributed across different chapters</p>
+        <div class="chart-container">
+          <canvas id="chapterRadar"></canvas>
+        </div>
+      </div>
+
+      <!-- Bar Chart - Time per Question -->
+      <div class="chart-card">
+        <h3>📈 Time per Question</h3>
+        <p class="chart-desc">Time spent on each individual question (seconds)</p>
+        <div class="chart-container bar-container">
+          <canvas id="questionBar"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- Question Time Breakdown Table -->
+    <div class="results-card">
+      <h3>📋 Question Time Breakdown</h3>
+      <div class="breakdown-table-wrapper">
+        <table class="breakdown-table" id="timeBreakdownTable">
+          <thead>
+            <tr>
+              <th>Q#</th>
+              <th>Chapter</th>
+              <th>Marks</th>
+              <th>Time Spent</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="timeBreakdownBody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="results-actions">
+      <button class="btn primary" id="downloadPdfBtn" disabled>
+        📄 Download Answer Key (PDF)
+        <span class="coming-soon-badge">Coming Soon</span>
+      </button>
+      <a class="btn-outlined" href="tests_home.html">🔄 Take Another Test</a>
+      <a class="btn-outlined" href="index.html">🏠 Back to Dashboard</a>
+    </div>
+
+    <!-- Hidden time value for JS -->
+    <input type="hidden" id="sumTime" value="0" />
   </section>
 </main>
 
