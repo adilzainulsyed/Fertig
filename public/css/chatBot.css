@@ -1,3 +1,6 @@
+/* =====================================================
+   Fertig Chatbot — Lavender-Rose Glassmorphism
+   ===================================================== */
 * {
     margin: 0;
     padding: 0;
@@ -5,22 +8,27 @@
 }
 
 :root {
-    --bg-primary: #0d0d0d;
-    --bg-secondary: #1a1a1a;
-    --bg-tertiary: #242424;
-    --sidebar-bg: #171717;
-    --border-color: #2d2d2d;
-    --text-primary: #e8e8e8;
-    --text-secondary: #a0a0a0;
-    --text-muted: #6b6b6b;
-    --accent-color: #10a37f;
-    --accent-hover: #0d8566;
-    --hover-bg: #2a2a2a;
-    --shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+    --bg-primary: #1a0f1a;
+    --bg-secondary: rgba(33, 22, 33, .65);
+    --bg-tertiary: rgba(42, 27, 42, .55);
+    --sidebar-bg: rgba(18, 10, 18, .72);
+    --border-color: rgba(63, 42, 63, .5);
+    --text-primary: #f0d8ef;
+    --text-secondary: #b89ab8;
+    --text-muted: #7d5a78;
+    --accent-color: #be95be;
+    --accent-hover: #fb8282;
+    --hover-bg: rgba(42, 27, 42, .45);
+    --shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+    --brand-grad: linear-gradient(to right, #be95be 0%, #fb8282 100%);
+    --glass-bg: rgba(33, 22, 33, .45);
+    --glass-border: rgba(190, 149, 190, .12);
+    --glass-blur: blur(18px);
+    --glass-shine: linear-gradient(135deg, rgba(255,255,255,.06) 0%, transparent 50%);
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    font-family: 'JetBrains Mono', monospace;
     display: flex;
     height: 100vh;
     overflow: hidden;
@@ -28,34 +36,119 @@ body {
     color: var(--text-primary);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    position: relative;
 }
 
+/* Ambient gradient blobs for glass refraction effect */
+body::before {
+    content: ""; position: fixed; width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(190,149,190,.1) 0%, transparent 70%);
+    border-radius: 50%;
+    top: -10%; right: -5%;
+    animation: neo-drift 22s ease-in-out infinite;
+    pointer-events: none; z-index: 0;
+}
+body::after {
+    content: ""; position: fixed; width: 300px; height: 300px;
+    background: radial-gradient(circle, rgba(251,130,130,.08) 0%, transparent 70%);
+    border-radius: 50%;
+    bottom: -5%; left: -5%;
+    animation: neo-drift 16s ease-in-out infinite 5s;
+    pointer-events: none; z-index: 0;
+}
+@keyframes neo-drift {
+    0%,100% { transform: translate(0,0) rotate(0deg) }
+    25%     { transform: translate(18px,-14px) rotate(4deg) }
+    50%     { transform: translate(-10px,20px) rotate(-3deg) }
+    75%     { transform: translate(14px,8px) rotate(2deg) }
+}
+
+/* ===== SIDEBAR — Glassmorphism ===== */
 .sidebar {
     width: 280px;
     background: var(--sidebar-bg);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
     display: flex;
     flex-direction: column;
-    border-right: 1px solid var(--border-color);
+    border-right: 1px solid var(--glass-border);
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     z-index: 100;
     flex-shrink: 0;
 }
+.sidebar::before {
+    content: ""; position: absolute; inset: 0;
+    background: var(--glass-shine);
+    pointer-events: none; border-radius: inherit;
+}
+.sidebar::after {
+    content: ""; position: absolute; bottom: 60px; right: -20px;
+    width: 50px; height: 50px;
+    border: 2px solid rgba(190,149,190,.06); border-radius: 50%;
+    pointer-events: none;
+}
 
 .sidebar-header {
     padding: 16px;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--glass-border);
+}
+
+/* Fertig home button */
+.fertig-home-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1.5px solid var(--glass-border);
+    border-radius: 10px;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 15px;
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: .4px;
+    transition: all 0.25s ease;
+    position: relative;
+    overflow: hidden;
+}
+.fertig-home-btn::before {
+    content: ""; position: absolute; inset: 0;
+    background: var(--glass-shine);
+    pointer-events: none;
+}
+.fertig-home-btn .fertig-logo {
+    width: 32px; height: 32px; border-radius: 8px;
+    display: grid; place-items: center;
+    background: var(--brand-grad);
+    color: #fff; font-weight: 900; font-size: 15px;
+    flex-shrink: 0;
+    box-shadow: 0 2px 10px rgba(190,149,190,.3);
+}
+.fertig-home-btn:hover {
+    background: rgba(190,149,190,.12);
+    border-color: var(--accent-color);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(190,149,190,.15);
 }
 
 .new-chat-btn {
     width: 100%;
     padding: 14px 18px;
-    background: transparent;
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     color: var(--text-primary);
-    border: 1.5px solid var(--border-color);
-    border-radius: 10px;
+    border: 1.5px solid var(--glass-border);
+    border-radius: 8px;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
+    font-family: 'JetBrains Mono', monospace;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -66,7 +159,7 @@ body {
 
 .new-chat-btn:hover {
     background: var(--hover-bg);
-    border-color: var(--text-muted);
+    border-color: var(--accent-color);
 }
 
 .new-chat-btn:active {
@@ -130,6 +223,7 @@ body {
 .history-item.active {
     background: var(--bg-tertiary);
     color: var(--text-primary);
+    border: 1px solid var(--glass-border);
 }
 
 .history-item svg {
@@ -144,7 +238,7 @@ body {
 
 .sidebar-footer {
     padding: 12px;
-    border-top: 1px solid var(--border-color);
+    border-top: 1px solid var(--glass-border);
 }
 
 .user-profile {
@@ -164,7 +258,7 @@ body {
 .user-avatar {
     width: 40px;
     height: 40px;
-    background: var(--accent-color);
+    background: var(--brand-grad);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -173,6 +267,7 @@ body {
     font-weight: 600;
     font-size: 16px;
     flex-shrink: 0;
+    box-shadow: 0 2px 8px rgba(190,149,190,.25);
 }
 
 .user-info {
@@ -197,22 +292,33 @@ body {
     text-overflow: ellipsis;
 }
 
+/* ===== MAIN CONTENT ===== */
 .main-content {
     flex: 1;
     display: flex;
     flex-direction: column;
     background: var(--bg-primary);
     min-width: 0;
+    position: relative;
 }
 
+/* ===== CHAT HEADER — Glassmorphism ===== */
 .chat-header {
     display: flex;
     align-items: center;
     gap: 16px;
     padding: 16px 24px;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--glass-border);
     background: var(--bg-secondary);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
     flex-shrink: 0;
+    position: relative;
+}
+.chat-header::before {
+    content: ""; position: absolute; inset: 0;
+    background: var(--glass-shine);
+    pointer-events: none;
 }
 
 .sidebar-toggle {
@@ -243,18 +349,23 @@ body {
 
 .header-title h1 {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
     color: var(--text-primary);
+    font-family: 'JetBrains Mono', monospace;
 }
 
 .model-badge {
     padding: 5px 12px;
-    background: var(--bg-tertiary);
-    border: 1px solid var(--border-color);
-    border-radius: 16px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid var(--glass-border);
+    border-radius: 6px;
     font-size: 12px;
-    font-weight: 500;
-    color: var(--text-secondary);
+    font-weight: 600;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--accent-color);
+    letter-spacing: .3px;
 }
 
 .header-actions {
@@ -285,6 +396,7 @@ body {
     transform: scale(0.95);
 }
 
+/* ===== MESSAGES ===== */
 .messages-container {
     flex: 1;
     overflow-y: auto;
@@ -308,6 +420,7 @@ body {
     background: var(--text-muted);
 }
 
+/* ===== WELCOME — Glassmorphism ===== */
 .welcome-message {
     max-width: 800px;
     margin: 0 auto;
@@ -316,20 +429,27 @@ body {
 }
 
 .welcome-icon {
-    color: var(--text-muted);
+    color: var(--accent-color);
     margin-bottom: 24px;
-    opacity: 0.7;
+    opacity: 0.6;
     display: flex;
     justify-content: center;
+    filter: drop-shadow(0 0 12px rgba(190,149,190,.25));
 }
 
 .welcome-message h2 {
-    font-size: 32px;
-    font-weight: 600;
+    font-size: 28px;
+    font-weight: 700;
     margin-bottom: 48px;
     color: var(--text-primary);
+    font-family: 'JetBrains Mono', monospace;
+    background: var(--brand-grad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
+/* ===== SUGGESTION CARDS — Glassmorphism ===== */
 .suggestion-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -342,19 +462,38 @@ body {
     align-items: flex-start;
     gap: 14px;
     padding: 18px;
-    background: var(--bg-secondary);
-    border: 1.5px solid var(--border-color);
+    background: var(--glass-bg);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1.5px solid var(--glass-border);
     border-radius: 12px;
     text-align: left;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: all 0.25s ease;
+    position: relative;
+    overflow: hidden;
+}
+/* Glass shine overlay */
+.suggestion-card::before {
+    content: ""; position: absolute; inset: 0;
+    background: var(--glass-shine);
+    pointer-events: none; border-radius: inherit;
+}
+/* Accent edge */
+.suggestion-card::after {
+    content: ""; position: absolute; left: 0; top: 0; bottom: 0;
+    width: 3px; background: var(--brand-grad); opacity: 0;
+    transition: opacity 0.25s ease;
+    border-radius: 3px 0 0 3px;
 }
 
 .suggestion-card:hover {
-    background: var(--bg-tertiary);
-    border-color: var(--text-muted);
-    transform: translateY(-2px);
+    background: rgba(190,149,190,.1);
+    border-color: rgba(190,149,190,.25);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0,0,0,.2), 0 0 0 1px rgba(190,149,190,.08);
 }
+.suggestion-card:hover::after { opacity: 1; }
 
 .suggestion-card:active {
     transform: translateY(0);
@@ -364,13 +503,15 @@ body {
     color: var(--accent-color);
     flex-shrink: 0;
     margin-top: 2px;
+    filter: drop-shadow(0 0 4px rgba(190,149,190,.3));
 }
 
 .suggestion-content h4 {
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 700;
     margin-bottom: 4px;
     color: var(--text-primary);
+    font-family: 'JetBrains Mono', monospace;
 }
 
 .suggestion-content p {
@@ -379,6 +520,7 @@ body {
     line-height: 1.4;
 }
 
+/* ===== MESSAGES ===== */
 .messages {
     max-width: 800px;
     margin: 0 auto;
@@ -415,13 +557,19 @@ body {
 }
 
 .message.user .message-avatar {
-    background: var(--accent-color);
+    background: var(--brand-grad);
     color: white;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    box-shadow: 0 2px 8px rgba(190,149,190,.25);
 }
 
 .message.bot .message-avatar {
-    background: var(--bg-tertiary);
-    border: 1.5px solid var(--border-color);
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1.5px solid var(--glass-border);
+    font-family: 'JetBrains Mono', monospace;
 }
 
 .message-content {
@@ -435,6 +583,7 @@ body {
     color: var(--text-primary);
     white-space: pre-wrap;
     word-wrap: break-word;
+    font-family: 'JetBrains Mono', monospace;
 }
 
 .message-actions {
@@ -446,8 +595,10 @@ body {
 
 .message-action-btn {
     padding: 6px 12px;
-    background: transparent;
-    border: 1px solid var(--border-color);
+    background: var(--glass-bg);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid var(--glass-border);
     border-radius: 6px;
     font-size: 13px;
     color: var(--text-secondary);
@@ -461,7 +612,7 @@ body {
 .message-action-btn:hover {
     background: var(--hover-bg);
     color: var(--text-primary);
-    border-color: var(--text-muted);
+    border-color: var(--accent-color);
 }
 
 .message-action-btn:active {
@@ -477,7 +628,7 @@ body {
 .typing-dot {
     width: 8px;
     height: 8px;
-    background: var(--text-secondary);
+    background: var(--accent-color);
     border-radius: 50%;
     animation: typing 1.4s infinite;
 }
@@ -501,11 +652,20 @@ body {
     }
 }
 
+/* ===== INPUT AREA — Glassmorphism ===== */
 .input-area {
     padding: 20px 24px;
     background: var(--bg-secondary);
-    border-top: 1px solid var(--border-color);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border-top: 1px solid var(--glass-border);
     flex-shrink: 0;
+    position: relative;
+}
+.input-area::before {
+    content: ""; position: absolute; inset: 0;
+    background: var(--glass-shine);
+    pointer-events: none;
 }
 
 .input-container {
@@ -515,15 +675,23 @@ body {
     align-items: flex-end;
     gap: 12px;
     padding: 12px 16px;
-    background: var(--bg-primary);
-    border: 1.5px solid var(--border-color);
-    border-radius: 24px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1.5px solid var(--glass-border);
+    border-radius: 14px;
     transition: all 0.2s ease;
+    position: relative;
+}
+.input-container::before {
+    content: ""; position: absolute; inset: 0;
+    background: var(--glass-shine);
+    pointer-events: none; border-radius: inherit;
 }
 
 .input-container:focus-within {
     border-color: var(--accent-color);
-    box-shadow: 0 0 0 3px rgba(16, 163, 127, 0.1);
+    box-shadow: 0 0 0 3px rgba(190, 149, 190, 0.12), 0 8px 24px rgba(0,0,0,.15);
 }
 
 .attach-btn {
@@ -561,6 +729,8 @@ body {
     line-height: 1.5;
     color: var(--text-primary);
     min-height: 24px;
+    position: relative;
+    z-index: 1;
 }
 
 #messageInput::placeholder {
@@ -570,9 +740,9 @@ body {
 .send-btn {
     width: 36px;
     height: 36px;
-    background: var(--accent-color);
+    background: var(--brand-grad);
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     color: white;
     cursor: pointer;
     display: flex;
@@ -580,10 +750,15 @@ body {
     justify-content: center;
     transition: all 0.2s ease;
     flex-shrink: 0;
+    box-shadow: 0 2px 8px rgba(190, 149, 190, 0.3);
+    position: relative;
+    z-index: 1;
 }
 
 .send-btn:hover:not(:disabled) {
-    background: var(--accent-hover);
+    filter: brightness(1.1);
+    box-shadow: 0 4px 16px rgba(190, 149, 190, 0.4);
+    transform: translateY(-1px);
 }
 
 .send-btn:active:not(:disabled) {
@@ -601,6 +776,8 @@ body {
     text-align: center;
     font-size: 12px;
     color: var(--text-muted);
+    position: relative;
+    z-index: 1;
 }
 
 .sidebar-overlay {
@@ -612,9 +789,11 @@ body {
     bottom: 0;
     background: rgba(0, 0, 0, 0.6);
     z-index: 99;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
 }
 
+/* ===== Responsive ===== */
 @media (max-width: 768px) {
     .sidebar {
         position: fixed;

@@ -4,34 +4,33 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Tests | Fertig</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/theme.css"/>
   <link rel="stylesheet" href="/css/index.css"/><!-- reuse dashboard styles -->
 </head>
 <body>
+  <nav class="main-nav" id="mainNav">
+    <a class="nav-link" href="index.html">Home</a>
+    <a class="nav-link active" href="tests_home.html">Tests</a>
+    <a class="nav-link" href="chatBot.html">Chatbot</a>
+  </nav>
+
   <header class="appbar">
     <div class="appbar-row">
+      <div class="appbar-left">
+        <a class="brand-mini" href="index.html" aria-label="Fertig">
+          <span class="brand-logo">F</span><span class="brand-name">Fertig</span>
+        </a>
+      </div>
       <div class="appbar-center"><div class="appbar-title">Pick a Test</div></div>
-      <div class="appbar-right"><a class="link-btn" href="index.html">← Back to Dashboard</a></div>
+      <div class="appbar-right">
+        <button class="theme-toggle" id="themeToggle">☀️</button>
+        <a class="link-btn" href="index.html">← Dashboard</a>
+      </div>
     </div>
   </header>
-
-  <aside class="sidenav" id="sidenav">
-    <div class="side-head">
-      <a class="brand-mini" href="index.html" aria-label="Fertig">
-        <span class="brand-logo">F</span><span class="brand-name">Fertig</span>
-      </a>
-      <button class="side-toggle" id="sidebarToggle" aria-label="Close menu">✕</button>
-    </div>
-
-    <div class="side-section">
-      <div class="side-label">Main</div>
-      <nav class="sidenav-nav">
-        <a class="item" href="index.html">Home</a>
-        <a class="item active" href="tests_home.html">Tests</a>
-        <a class="item" href="#chatbot">Chatbot <span class="soon">Soon</span></a>
-      </nav>
-    </div>
-  </aside>
 
   <main class="page" id="page">
     <section class="hero">
