@@ -319,12 +319,12 @@ $("nextBtn").onclick = () => {
   function submit() {
     clearInterval(timerId);// capture final question time
     recordTimeSpent();
-    ensureAllQuestionsTracked(15);   // total number of questions = 15
+    ensureAllQuestionsTracked(Q.length);   // total number of questions = Q.length
     console.log("Final timeSpent:", timeSpent);
 
 
     const usedMins = Math.round((Date.now() - startedAt) / 60000);
-    const answered = Q.reduce((n,q,i)=> n + (q.type==="mcq" ? Number.isInteger(answers[i]) : !!(answers[i]&&answers[i].trim())), 0);
+    const usedSecs = Math.round((Date.now() - startedAt) / 1000);
 
     const payload = {
       key,
@@ -343,23 +343,195 @@ $("nextBtn").onclick = () => {
     };
     try { localStorage.setItem(saveKey()+":final", JSON.stringify(payload)); } catch {}
 
-    $("sumMeta").textContent = `${Q.length} questions attempted over ${usedMins} min.`;
-    $("sumAnswered").textContent = answered;
-    $("sumFlagged").textContent = flags.size;
-    $("sumTime").textContent = usedMins;
-    $("sumViol").textContent = tabSwitches;
-
-    $("downloadBtn").onclick = () => {
-      const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
-      const a = document.createElement("a");
-      a.href = URL.createObjectURL(blob);
-      a.download = (key.replace(/[:/]/g,"_") || "fertig_test") + "_answers.json";
-      a.click();
-      URL.revokeObjectURL(a.href);
+    // Format time display
+    const fmtTimeDisplay = (s) => {
+      s = Math.max(0, s|0);
+      const hh = String((s/3600|0)).padStart(2,'0');
+      const mm = String(((s%3600)/60|0)).padStart(2,'0');
+      const ss = String(s%60).padStart(2,'0');
+      return `${hh}:${mm}:${ss}`;
     };
+    const fmtMins = (s) => {
+      if (s < 60) return `${s}s`;
+      return `${Math.floor(s/60)}m ${s%60}s`;
+    };
+
+    // Time statistics
+    const timeValues = Object.values(timeSpent);
+    const totalTimeSecs = timeValues.reduce((a,b) => a+b, 0);
+    const avgTime = timeValues.length ? Math.round(totalTimeSecs / timeValues.length) : 0;
+    const fastestTime = timeValues.length ? Math.min(...timeValues) : 0;
+    const slowestTime = timeValues.length ? Math.max(...timeValues) : 0;
+
+    // Update summary elements
+    $("sumMeta").textContent = `${Q.length} questions • ${usedMins} minutes`;
+    $("sumFlagged").textContent = flags.size;
+    $("sumTime").value = usedMins;
+    $("sumViol").textContent = tabSwitches;
+    
+    // Time overview
+    if ($("sumTimeFormatted")) $("sumTimeFormatted").textContent = fmtTimeDisplay(usedSecs);
+    if ($("sumAvgPerQ")) $("sumAvgPerQ").textContent = fmtMins(avgTime);
+    if ($("sumFastest")) $("sumFastest").textContent = fmtMins(fastestTime);
+    if ($("sumSlowest")) $("sumSlowest").textContent = fmtMins(slowestTime);
+
+    // Populate breakdown table
+    const tbody = $("timeBreakdownBody");
+    if (tbody) {
+      tbody.innerHTML = "";
+      Q.forEach((q, i) => {
+        const qTime = timeSpent[i+1] || 0;
+        const isAnswered = q.type === "mcq" ? Number.isInteger(answers[i]) : !!(answers[i] && answers[i].trim());
+        const isFlagged = flags.has(i);
+        
+        let statusClass = isAnswered ? "answered" : "unanswered";
+        let statusText = isAnswered ? "Answered" : "Unanswered";
+        if (isFlagged) { statusClass = "flagged"; statusText = "Flagged"; }
+        
+        const row = document.createElement("tr");
+        row.innerHTML = `
+          <td><strong>Q${i+1}</strong></td>
+          <td>${escapeHTML(q.chapter) || "—"}</td>
+          <td>${q.marks || "—"}</td>
+          <td>${fmtMins(qTime)}</td>
+          <td><span class="status-badge ${statusClass}">${statusText}</span></td>
+        `;
+        tbody.appendChild(row);
+      });
+    }
+
+    // Render Charts
+    renderCharts(Q, timeSpent);
 
     if (document.fullscreenElement && document.exitFullscreen) document.exitFullscreen().catch(()=>{});
     show("summary");
+  }
+
+  // Chart rendering function
+  function renderCharts(questions, timeData) {
+    // Aggregate time by chapter
+    const chapterTime = {};
+    questions.forEach((q, i) => {
+      const chapter = q.chapter || "Other";
+      const chapters = chapter.split(",").map(c => c.trim());
+      const qTime = timeData[i+1] || 0;
+      chapters.forEach(ch => {
+        chapterTime[ch] = (chapterTime[ch] || 0) + qTime;
+      });
+    });
+
+    const chapterLabels = Object.keys(chapterTime);
+    const chapterValues = Object.values(chapterTime);
+
+    // Radar Chart - Time per Chapter/Topic
+    const radarCtx = $("chapterRadar")?.getContext("2d");
+    if (radarCtx && typeof Chart !== "undefined") {
+      new Chart(radarCtx, {
+        type: "radar",
+        data: {
+          labels: chapterLabels,
+          datasets: [{
+            label: "Time Spent (seconds)",
+            data: chapterValues,
+            backgroundColor: "rgba(11, 114, 133, 0.2)",
+            borderColor: "#0b7285",
+            borderWidth: 2,
+            pointBackgroundColor: "#0b7285",
+            pointBorderColor: "#fff",
+            pointHoverBackgroundColor: "#fff",
+            pointHoverBorderColor: "#0b7285"
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false }
+          },
+          scales: {
+            r: {
+              beginAtZero: true,
+              ticks: {
+                stepSize: Math.ceil(Math.max(...chapterValues) / 5) || 10,
+                font: { size: 10 }
+              },
+              pointLabels: {
+                font: { size: 11, weight: "600" },
+                color: "#0b3a4a"
+              },
+              grid: {
+                color: "#e9f0f5"
+              }
+            }
+          }
+        }
+      });
+    }
+
+    // Bar Chart - Time per Question
+    const barLabels = questions.map((_, i) => `Q${i+1}`);
+    const barValues = questions.map((_, i) => timeData[i+1] || 0);
+    
+    const barCtx = $("questionBar")?.getContext("2d");
+    if (barCtx && typeof Chart !== "undefined") {
+      new Chart(barCtx, {
+        type: "bar",
+        data: {
+          labels: barLabels,
+          datasets: [{
+            label: "Time (seconds)",
+            data: barValues,
+            backgroundColor: barValues.map((v, i) => {
+              // Color based on whether question was answered
+              const q = questions[i];
+              const isAnswered = q.type === "mcq" ? Number.isInteger(answers[i]) : !!(answers[i] && answers[i].trim());
+              return isAnswered ? "rgba(11, 114, 133, 0.7)" : "rgba(241, 143, 1, 0.7)";
+            }),
+            borderColor: barValues.map((v, i) => {
+              const q = questions[i];
+              const isAnswered = q.type === "mcq" ? Number.isInteger(answers[i]) : !!(answers[i] && answers[i].trim());
+              return isAnswered ? "#0b7285" : "#F18F01";
+            }),
+            borderWidth: 1,
+            borderRadius: 4
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              callbacks: {
+                label: (ctx) => {
+                  const secs = ctx.raw;
+                  if (secs < 60) return `${secs} seconds`;
+                  return `${Math.floor(secs/60)}m ${secs%60}s`;
+                },
+                afterLabel: (ctx) => {
+                  const q = questions[ctx.dataIndex];
+                  return `Chapter: ${q.chapter || "—"}`;
+                }
+              }
+            }
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              title: {
+                display: true,
+                text: "Seconds",
+                font: { weight: "600" }
+              },
+              grid: { color: "#f3f6f9" }
+            },
+            x: {
+              grid: { display: false }
+            }
+          }
+        }
+      });
+    }
   }
 
   // ---------- setup mode
