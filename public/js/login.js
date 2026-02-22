@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.removeItem("signupSuccess");
   }
 
-  $("loginForm").addEventListener("submit", (e) => {
+  $("loginForm").addEventListener("submit", async (e) => {
     e.preventDefault();
     const email = $("email").value.trim();
     const password = $("password").value;
@@ -18,11 +18,24 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!email) { showErr("err-email","Enter your email."); return; }
     if (!password) { showErr("err-password","Enter your password."); return; }
 
-    const user = window.utils.getCurrentUser();
-    if (!user || user.email !== email || user.password !== password) {
-      showErr("err-password","Invalid email or password."); return;
+    try {
+      const response = await fetch("http://localhost:5000/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, password })
+      });
+
+      const data = await response.json();
+      if (!response.ok) {
+        showErr("err-password", data.error || "Login failed");
+        return;
+      }
+
+      localStorage.setItem("authToken", data.token);
+      localStorage.setItem("isLoggedIn", "true");
+      location.href = "index.html";
+    } catch (error) {
+      showErr("err-password", "An error occurred. Please try again.");
     }
-    localStorage.setItem("isLoggedIn","true");
-    location.href = "index.html";
   });
 });

@@ -8,33 +8,14 @@ document.addEventListener("DOMContentLoaded", () => {
   // ---- helpers / state ----
   const $ = id => document.getElementById(id);
   const name = user.name || "Student";
-  const joinYear = user.joinYear;
+  const actualStudyYear = user.yearInCollege || 1;
 
-  const now = new Date();
-  const currentYear = now.getFullYear();
-  const currentMonth = now.getMonth() + 1;
-
-  const validYears = [2022, 2023, 2024, 2025];
-  const labelOf = y => ["1st","2nd","3rd","4th"][y - 1];
-
-  if (!validYears.includes(joinYear)) {
-    document.querySelector(".section").innerHTML =
-      '<div class="year-access-warning">🚫 Invalid registration number or student not in current academic cycle.</div>';
-    return;
-  }
-
-  const actualStudyYear = (currentMonth < 6)
-    ? (currentYear - joinYear)
-    : (currentYear - joinYear + 1);
-
+  // Validate that user is in a valid academic year (1-4)
   if (actualStudyYear < 1 || actualStudyYear > 4) {
     document.querySelector(".section").innerHTML =
       '<div class="year-access-warning">🚫 User is outside of standard 4-year cycle.</div>';
     return;
   }
-
-  user.studyYear = actualStudyYear;
-  localStorage.setItem("user", JSON.stringify(user));
 
   const subjectsByYear = {
     1: ["APE","BMES","FE","ENG","CM - I","CM - II","ACE","FEE","EMSB","EVS","PPS"],
@@ -42,14 +23,13 @@ document.addEventListener("DOMContentLoaded", () => {
     3: ["OS", "DBMS", "CN", "TOC", "AI"],
     4: ["ML", "Blockchain", "Cloud", "DL", "Project"]
   };
-
-  // ---- DOM refs ----
-  $("welcome-name").textContent = `Hey, ${name}`;
+  const backBtn   = $("back-home-btn");
+  const tabsWrap  = $("yearTabs");
   const metaChip  = $("meta-chip");
   const title     = $("subject-year-title");
   const grid      = $("subject-list");
-  const backBtn   = $("back-home-btn");
-  const tabsWrap  = $("yearTabs");
+
+  const labelOf = y => ["1st","2nd","3rd","4th"][y - 1];
 
   // ---- render helpers ----
   const setMeta = (yr, exploring=false) => {
