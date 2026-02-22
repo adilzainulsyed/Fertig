@@ -1,20 +1,24 @@
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const app = express();
 const path = require('path');
-const PORT = process.env.PORT ||5000;
+const db = require('../models/database');
+const PORT = process.env.PORT || 5000;
 
-//cross origin resource sharing
-const whitelist = ['https://127.0.0.1:5500','https://localhost:5000'];
+//cross origin resource sharing - allow localhost for development
 const corsoptions = {
-    origin: (origin,callback) => {
-        if (whitelist.indexOf(origin)!==-1 || !origin){
-            callback(null,true); 
-        }else{
-            callback(new Error('Not allowed by CORS'))
+    origin: (origin, callback) => {
+        // Allow requests with no origin (like mobile apps or curl requests)
+        if (!origin || origin.includes('localhost') || origin.includes('127.0.0.1')) {
+            callback(null, true);
+        } else if (process.env.NODE_ENV === 'production') {
+            callback(new Error('Not allowed by CORS'));
+        } else {
+            callback(null, true); // Allow all in development
         }
     },
-    optionsSuccessStatus:200
+    optionsSuccessStatus: 200
 }
 app.use(cors(corsoptions));
 
@@ -44,6 +48,10 @@ app.use('/tests', express.static(path.join(basePath, 'data', 'testpaperjson')));
 
 
 app.use('/question_images', express.static(path.join(basePath, 'data/question_images')));
+
+// Authentication routes
+app.use('/', require('../routes/auth'));
+
 app.use('/', require('../routes/root'));
 
 app.use('/subdir',require('../routes/subdir'));
