@@ -99,36 +99,69 @@ const subjectHref = (subject, yr) => {
 };
 
   const renderCards = (yr) => {
+    // Fade-out old cards, then build new ones
+    grid.classList.remove("anim-enter");
+    void grid.offsetWidth; // force reflow
     grid.innerHTML = "";
-    (subjectsByYear[yr] || []).forEach(sub => {
+    (subjectsByYear[yr] || []).forEach((sub, i) => {
       const card = document.createElement("div");
-      card.className = "card";
+      card.className = "card anim-card";
+      card.style.animationDelay = `${i * 60}ms`;
       card.innerHTML = `<span class="name">${sub}</span><span class="pill">PYQs</span>`;
       const href = subjectHref(sub, yr);
       card.addEventListener("click", () => { if (href !== '#') window.location.href = href; });
       grid.appendChild(card);
     });
+    grid.classList.add("anim-enter");
+  };
+
+  // Create the sliding pill indicator once
+  let pill = tabsWrap.querySelector(".year-tabs-pill");
+  if (!pill) {
+    pill = document.createElement("span");
+    pill.className = "year-tabs-pill";
+    tabsWrap.appendChild(pill);
+  }
+
+  const movePill = () => {
+    const active = tabsWrap.querySelector('[aria-selected="true"]');
+    if (!active) return;
+    const wrapRect = tabsWrap.getBoundingClientRect();
+    const tabRect  = active.getBoundingClientRect();
+    pill.style.width = `${tabRect.width}px`;
+    pill.style.transform = `translateX(${tabRect.left - wrapRect.left - 4}px)`;
   };
 
   const renderYearTabs = (activeYear, exploring=false) => {
-    tabsWrap.innerHTML = "";
-    for (let i = 1; i <= 4; i++) {
-      const btn = document.createElement("button");
-      btn.className = "year-tab";
-      btn.type = "button";
-      btn.setAttribute("role","tab");
-      btn.setAttribute("aria-selected", String(i === activeYear));
-      btn.setAttribute("aria-controls","subject-list");
-      btn.textContent = `${labelOf(i)} Year`;
-      btn.addEventListener("click", () => renderYear(i, i !== actualStudyYear));
-      tabsWrap.appendChild(btn);
+    // Only rebuild buttons if they don't exist yet
+    const existingBtns = tabsWrap.querySelectorAll(".year-tab");
+    if (existingBtns.length === 0) {
+      for (let i = 1; i <= 4; i++) {
+        const btn = document.createElement("button");
+        btn.className = "year-tab";
+        btn.type = "button";
+        btn.setAttribute("role","tab");
+        btn.setAttribute("aria-controls","subject-list");
+        btn.textContent = `${labelOf(i)} Year`;
+        btn.dataset.year = i;
+        btn.addEventListener("click", () => renderYear(i, i !== actualStudyYear));
+        tabsWrap.insertBefore(btn, pill);
+      }
     }
+
+    // Update aria-selected on all tabs
+    tabsWrap.querySelectorAll(".year-tab").forEach(b => {
+      b.setAttribute("aria-selected", String(Number(b.dataset.year) === activeYear));
+    });
+
+    // Slide the pill to the active tab
+    requestAnimationFrame(movePill);
 
     // keyboard support on the tablist
     tabsWrap.onkeydown = (e) => {
       if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
       e.preventDefault();
-      const kids = Array.from(tabsWrap.children);
+      const kids = Array.from(tabsWrap.querySelectorAll(".year-tab"));
       const idx = kids.findIndex(k => k.getAttribute("aria-selected")==="true");
       let next = idx + (e.key==="ArrowRight" ? 1 : -1);
       if (next < 0) next = kids.length - 1;
@@ -156,14 +189,19 @@ const subjectHref = (subject, yr) => {
   // back action
   backBtn.addEventListener("click", () => renderYear(actualStudyYear, false));
 
-  // Sidebar toggle (mobile)
-  const sidenav = $("sidenav");
-  const page = $("page");
-  const toggle = $("sidebarToggle");
-
-  toggle.addEventListener("click", () => {
-    const hidden = sidenav.classList.toggle("hidden");
-    page.classList.toggle("full", hidden);
+  // ---- Dark mode toggle ----
+  const themeToggle = document.getElementById("themeToggle");
+  const applyTheme = (theme) => {
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("fertig-theme", theme);
+    themeToggle.textContent = theme === "dark" ? "🌙" : "☀️";
+  };
+  // Init from storage, fallback to OS preference
+  const savedTheme = localStorage.getItem("fertig-theme")
+    || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  applyTheme(savedTheme);
+  themeToggle.addEventListener("click", () => {
+    applyTheme(document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark");
   });
 
   // Avatar menu + logout

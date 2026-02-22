@@ -1,79 +1,107 @@
-/* ===== Subject page — readable & matches dashboard ===== */
+/* =====================================================
+   Fertig Subject Page — Lavender-Rose
+   ===================================================== */
 *{box-sizing:border-box}
 body{
   margin:0;background:var(--bg);color:var(--text);
-  font:16px/1.65 system-ui,Segoe UI,Roboto,Arial,sans-serif;
+  font:14px/1.65 'JetBrains Mono',monospace;
+  overflow-x:hidden;transition:background .3s ease,color .3s ease;
 }
 
-/* Top bar — same gradient as dashboard */
+/* Top bar */
 .subbar{
   position:sticky;top:0;z-index:20;
-  background: var(--brand-grad);
-  color:#fff;border:0;box-shadow:var(--shadow-sm);
+  background:var(--brand-grad);
+  color:#fff;border:0;
+  box-shadow:0 4px 18px rgba(190,149,190,.18);
 }
-.subbar-inner{height:60px;display:flex;align-items:center;gap:16px;justify-content:space-between}
-.brand-mini{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;font-weight:900}
+.subbar-inner{height:56px;display:flex;align-items:center;gap:16px;justify-content:space-between}
+.brand-mini{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;font-weight:800}
 .logo{
-  width:34px;height:34px;border-radius:10px;display:grid;place-items:center;
-  background:#fff;color:#0b2230;font-weight:900
+  width:32px;height:32px;border-radius:8px;display:grid;place-items:center;
+  background:rgba(255,255,255,.2);color:#fff;font-weight:900;
+  backdrop-filter:blur(4px);
 }
-.crumbs{display:flex;align-items:center;gap:8px;color:rgba(255,255,255,.9);font-weight:600}
-.crumbs a{color:#fff;text-decoration:none;font-weight:800}
+.crumbs{display:flex;align-items:center;gap:8px;color:rgba(255,255,255,.85);font-weight:600;font-size:13px}
+.crumbs a{color:#fff;text-decoration:none;font-weight:700}
 .btn-outlined{
-  padding:8px 12px;border:1px solid rgba(255,255,255,.25);border-radius:10px;
-  background:transparent;color:#fff;font-weight:800;cursor:pointer
+  padding:8px 12px;border:1px solid rgba(255,255,255,.2);border-radius:8px;
+  background:transparent;color:#fff;font-weight:700;cursor:pointer;
+  transition:all .15s ease;
 }
-.btn-outlined:hover{background:rgba(255,255,255,.08)}
+.btn-outlined:hover{background:rgba(255,255,255,.1)}
 
 /* Content frame */
 .subject-wrap{
-  max-width: 920px;
-  margin: 16px auto 40px;
-  padding: 0 16px;
+  max-width:920px;
+  margin:20px auto 48px;
+  padding:0 16px;
+  animation:neo-fadeUp .5s ease both;
 }
-h1{margin:8px 0 4px;font-weight:900;letter-spacing:.2px}
-#subtitle{margin:0 0 14px}
+h1{
+  margin:10px 0 6px;font-weight:700;letter-spacing:.1px;color:var(--primary);
+}
+#subtitle{margin:0 0 14px;color:var(--text-muted)}
 
 /* Filters */
 .filters{
-  display:grid; grid-template-columns: 1fr 1fr auto;
-  gap:10px; align-items:center; margin:14px 0 18px;
+  display:grid;grid-template-columns:1fr 1fr auto;
+  gap:10px;align-items:center;margin:14px 0 20px;
 }
-@media (max-width: 720px){ .filters{grid-template-columns:1fr; grid-auto-rows:auto} }
+@media(max-width:720px){.filters{grid-template-columns:1fr;grid-auto-rows:auto}}
 .filters select{
-  padding:10px 12px;border:1px solid var(--border);border-radius:12px;background:#fff;min-width:0;font-size:14px;
+  padding:10px 12px;border:1.5px solid var(--border);border-radius:8px;
+  background:var(--surface);min-width:0;font-size:13px;
+  font-family:'JetBrains Mono',monospace;color:var(--text);
+  transition:border-color .2s ease;
 }
+.filters select:focus{border-color:var(--primary);outline:none}
 .btn{
-  padding:10px 14px;border:none;border-radius:12px;
-  background:linear-gradient(90deg,var(--primary),var(--info));
-  color:#fff;font-weight:900;white-space:nowrap;cursor:pointer
+  padding:10px 14px;border:none;border-radius:8px;
+  background:var(--brand-grad);color:#fff;
+  font-weight:700;white-space:nowrap;cursor:pointer;
+  box-shadow:0 4px 12px rgba(190,149,190,.18);
+  transition:all .2s ease;
 }
+.btn:hover{filter:brightness(1.05);transform:translateY(-1px)}
 
-/* Cards */
+/* QA Cards */
 .qa-list{display:grid;gap:14px}
 .qa{
-  background:#fff;border:1px solid var(--border);border-radius:14px;
-  padding:16px 18px;box-shadow:var(--shadow-sm)
+  background:var(--surface);border:1px solid var(--border);border-radius:10px;
+  padding:18px 20px;box-shadow:var(--shadow-sm);
+  position:relative;overflow:hidden;
+  animation:neo-fadeUp .4s ease both;
+  transition:background .3s ease,border-color .3s ease;
 }
+/* Accent edge */
+.qa::before{
+  content:"";position:absolute;left:0;top:0;bottom:0;width:4px;
+  background:var(--primary);
+}
+.qa:nth-child(3n+2)::before{background:var(--accent)}
+.qa:nth-child(3n+3)::before{background:var(--info)}
+
 .meta{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 8px}
 .badge{
-  padding:4px 10px;border-radius:999px;font-size:12px;font-weight:800;line-height:1;
-  background:#eef2f7;color:#334155
+  padding:4px 10px;border-radius:4px;font-size:10px;font-weight:700;line-height:1;
+  letter-spacing:.4px;text-transform:uppercase;
+  background:rgba(190,149,190,.08);color:var(--primary)
 }
-.badge.info{background:rgba(65,187,217,.15);color:#0b6fa4}
-.badge.success{background:rgba(153,194,77,.18);color:#4a7d1f}
-.badge.warn{background:rgba(241,143,1,.15);color:#a05b00}
+.badge.info{background:rgba(232,160,200,.12);color:var(--info)}
+.badge.success{background:rgba(92,184,92,.1);color:var(--success)}
+.badge.warn{background:rgba(190,149,190,.1);color:var(--accent)}
 
 .qtext{white-space:normal}
 .qtext pre{
-  background:#f6f8fa;border:1px solid var(--border);border-radius:10px;
-  padding:12px;overflow:auto;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
-  font-size:14px; line-height:1.6; margin:8px 0 0;
+  background:#2a1b2a;color:#f0d8ef;border:none;border-radius:8px;
+  padding:14px;overflow:auto;
+  font-family:'JetBrains Mono',monospace;
+  font-size:13px;line-height:1.6;margin:10px 0 0;
 }
 .qtext code{font-family:inherit}
 .qpara{margin:0 0 8px}
 .hidden{display:none}
 
 .attachments{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
-.attachments img{max-width:100%;border:1px solid var(--border);border-radius:10px}
+.attachments img{max-width:100%;border:1px solid var(--border);border-radius:8px}

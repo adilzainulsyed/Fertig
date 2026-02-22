@@ -2,6 +2,19 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!utils.isLoggedIn()) location.href = "login.html";
   const $ = (id) => document.getElementById(id);
 
+  /* ── Dark mode toggle ── */
+  const toggle = $("themeToggle");
+  function applyTheme(t){
+    document.documentElement.setAttribute("data-theme", t);
+    localStorage.setItem("fertig-theme", t);
+    if(toggle) toggle.textContent = t === "dark" ? "🌙" : "☀️";
+  }
+  const saved = localStorage.getItem("fertig-theme") ||
+    (window.matchMedia("(prefers-color-scheme:dark)").matches ? "dark" : "light");
+  applyTheme(saved);
+  if(toggle) toggle.addEventListener("click", () =>
+    applyTheme(document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark"));
+
   const subjectsByYear = {
     1: ["APE","BMES","FE","ENG","CM - I","CM - II","ACE","FEE","EMSB","EVS","PPS"],
     2: ["DS","DMS","DS & CO","DC & CN","DA"],
@@ -45,31 +58,80 @@ document.addEventListener("DOMContentLoaded", () => {
   const grid  = $("subject-list");
   const tabs  = $("yearTabs");
 
+  // Create the sliding pill indicator once
+  let pill = tabs.querySelector(".year-tabs-pill");
+  if (!pill) {
+    pill = document.createElement("span");
+    pill.className = "year-tabs-pill";
+    tabs.appendChild(pill);
+  }
+
+  const movePill = () => {
+    const active = tabs.querySelector('[aria-selected="true"]');
+    if (!active) return;
+    const wrapRect = tabs.getBoundingClientRect();
+    const tabRect  = active.getBoundingClientRect();
+    pill.style.width = `${tabRect.width}px`;
+    pill.style.transform = `translateX(${tabRect.left - wrapRect.left - 4}px)`;
+  };
+
   function renderYearTabs(active){
-    tabs.innerHTML = "";
-    for (let i=1;i<=4;i++){
-      const b = document.createElement("button");
-      b.className = "year-tab";
-      b.type = "button";
-      b.setAttribute("aria-selected", String(i===active));
-      b.textContent = ["1st","2nd","3rd","4th"][i-1] + " Year";
-      b.onclick = () => renderYear(i);
-      tabs.appendChild(b);
+    // Only build buttons once
+    const existingBtns = tabs.querySelectorAll(".year-tab");
+    if (existingBtns.length === 0) {
+      for (let i = 1; i <= 4; i++){
+        const b = document.createElement("button");
+        b.className = "year-tab";
+        b.type = "button";
+        b.setAttribute("role","tab");
+        b.setAttribute("aria-controls","subject-list");
+        b.textContent = ["1st","2nd","3rd","4th"][i-1] + " Year";
+        b.dataset.year = i;
+        b.onclick = () => renderYear(i);
+        tabs.insertBefore(b, pill);
+      }
     }
+
+    // Update aria-selected on all tabs
+    tabs.querySelectorAll(".year-tab").forEach(b => {
+      b.setAttribute("aria-selected", String(Number(b.dataset.year) === active));
+    });
+
+    // Slide the pill to the active tab
+    requestAnimationFrame(movePill);
+
+    // Keyboard arrow support
+    tabs.onkeydown = (e) => {
+      if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
+      e.preventDefault();
+      const kids = Array.from(tabs.querySelectorAll(".year-tab"));
+      const idx = kids.findIndex(k => k.getAttribute("aria-selected")==="true");
+      let next = idx + (e.key==="ArrowRight" ? 1 : -1);
+      if (next < 0) next = kids.length - 1;
+      if (next >= kids.length) next = 0;
+      kids[next].click();
+      kids[next].focus();
+    };
   }
 
   function renderYear(yr){
     title.textContent = `Subjects in ${["1st","2nd","3rd","4th"][yr-1]} Year`;
     renderYearTabs(yr);
+
+    // Fade-slide + staggered card entrance (matches index page)
+    grid.classList.remove("anim-enter");
+    void grid.offsetWidth; // force reflow
     grid.innerHTML = "";
-    (subjectsByYear[yr]||[]).forEach(sub => {
+    (subjectsByYear[yr]||[]).forEach((sub, i) => {
       const card = document.createElement("div");
-      card.className = "card";
+      card.className = "card anim-card";
+      card.style.animationDelay = `${i * 60}ms`;
       card.innerHTML = `<span class="name">${sub}</span><span class="pill">Test</span>`;
       const href = subjectHref(sub, yr);
       card.onclick = () => { if (href !== "#") location.href = href; };
       grid.appendChild(card);
     });
+    grid.classList.add("anim-enter");
   }
 
   const u = utils.getCurrentUser();

@@ -1,58 +1,95 @@
-/* Auth layout — centered, consistent, readable */
+/* =====================================================
+   Fertig Auth — Lavender-Rose
+   ===================================================== */
 *{box-sizing:border-box}
-html,body{height:100%}
+html,body{height:100%;overflow-x:hidden}
 body{
-  margin:0;background:var(--bg);color:#0b0c2a;
-  font:16px/1.5 system-ui,Segoe UI,Roboto,Arial,sans-serif;
+  margin:0;background:var(--bg);color:var(--text);
+  font:14px/1.6 'JetBrains Mono',monospace;
   display:grid;grid-template-rows:auto 1fr;
+  position:relative;transition:background .3s ease,color .3s ease;
+}
+/* Floating geometric decoration */
+body::before{
+  content:"";position:fixed;width:200px;height:200px;
+  border:3px solid rgba(190,149,190,.04);border-radius:50%;
+  top:10%;right:-50px;
+  animation:neo-drift 20s ease-in-out infinite;
+  pointer-events:none;
+}
+body::after{
+  content:"";position:fixed;width:80px;height:80px;
+  border:3px solid rgba(232,160,200,.05);transform:rotate(45deg);
+  bottom:15%;left:8%;
+  animation:neo-drift 15s ease-in-out infinite 4s;
+  pointer-events:none;
 }
 
-/* Top brand chip (subtle, not another CTA row) */
+/* Top brand chip */
 .brand-chip{
-  display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:#0b2230;
-  font-weight:900;margin: clamp(12px, 4vw, 28px) auto 0;
+  display:inline-flex;align-items:center;gap:12px;text-decoration:none;color:var(--primary);
+  font-weight:800;margin:clamp(16px,4vw,32px) auto 0;
+  animation:neo-fadeUp .5s ease both;
 }
 .brand-chip .logo{
-  width:36px;height:36px;border-radius:12px;display:grid;place-items:center;
-  background:linear-gradient(135deg,var(--accent),var(--info));color:#0b2230;font-weight:900
+  width:38px;height:38px;border-radius:8px;display:grid;place-items:center;
+  background:var(--accent-grad);color:#fff;font-weight:900;font-size:18px;
+  box-shadow:0 4px 12px rgba(190,149,190,.3);
 }
 
 /* Centered card */
 .auth-hero{
-  display:grid;place-items:center;padding:24px 16px 48px;
+  display:grid;place-items:center;padding:28px 16px 52px;
 }
 .card{
   width:min(460px,92vw);
-  background:#fff;border:1px solid var(--border);border-radius:14px;
-  box-shadow:var(--shadow-md);padding:28px 24px;
+  background:var(--surface);border:1px solid var(--border);border-radius:10px;
+  box-shadow:var(--shadow-md);padding:32px 28px;
+  animation:neo-fadeUp .5s ease .15s both;
+  position:relative;overflow:hidden;
+  transition:background .3s ease,border-color .3s ease;
 }
-.card h1{margin:0 0 6px;font-size:22px;font-weight:900}
-.card .sub{margin:0 0 18px;color:#6b7280;font-weight:600}
+/* Decorative corner mark */
+.card::before{
+  content:"";position:absolute;right:-20px;top:-20px;
+  width:60px;height:60px;border:2px solid rgba(190,149,190,.06);border-radius:50%;
+  pointer-events:none;
+}
+.card h1{
+  margin:0 0 6px;font-size:22px;font-weight:700;color:var(--primary);
+}
+.card .sub{margin:0 0 20px;color:var(--text-muted);font-weight:500}
 
-/* Fields with consistent spacing */
-.field{margin-bottom:14px}
-.field label{display:block;font-weight:700;margin:0 0 6px}
+/* Fields */
+.field{margin-bottom:16px}
+.field label{display:block;font-weight:700;margin:0 0 6px;font-size:13px;color:var(--text)}
 .field input{
-  width:100%;padding:12px;border:1px solid var(--border);border-radius:12px;
-  font-size:15px;background:#fff;color:#141414;transition:border-color .15s, box-shadow .15s;
+  width:100%;padding:12px 14px;border:1.5px solid var(--border);border-radius:8px;
+  font-size:14px;background:var(--surface);color:var(--text);
+  font-family:'JetBrains Mono',monospace;
+  transition:border-color .2s,box-shadow .2s;
 }
 .field input:focus{
   outline:none;border-color:var(--primary);
-  box-shadow:0 0 0 3px rgba(0,110,144,.18);
+  box-shadow:0 0 0 3px rgba(190,149,190,.12);
 }
-.err{display:block;color:#b00020;font-weight:700;margin-top:6px;min-height:18px}
+.err{display:block;color:var(--danger);font-weight:700;margin-top:6px;min-height:18px;font-size:12px}
 
-/* Primary CTA + secondary link */
+/* Primary CTA */
 .cta{
-  width:100%;padding:12px 14px;border:none;border-radius:12px;cursor:pointer;
-  background:linear-gradient(90deg,var(--primary),var(--info));color:#fff;
-  font-weight:900;letter-spacing:.2px;transition:filter .15s, transform .02s;margin-top:8px;
+  width:100%;padding:13px 16px;border:none;border-radius:8px;cursor:pointer;
+  background:var(--brand-grad);color:#fff;
+  font-weight:800;font-size:14px;letter-spacing:.3px;
+  font-family:'JetBrains Mono',monospace;
+  box-shadow:0 4px 14px rgba(190,149,190,.22);
+  transition:all .2s ease;margin-top:10px;
 }
-.cta:hover{filter:brightness(1.04)}
-.cta:active{transform:translateY(1px)}
+.cta:hover{filter:brightness(1.05);transform:translateY(-1px);box-shadow:0 6px 18px rgba(190,149,190,.28)}
+.cta:active{transform:translateY(0)}
 
-.flash{color:#2e7d32;font-weight:800;margin:6px 0 12px;min-height:20px}
-.switch{margin:14px 0 0;color:#6b7280;font-weight:600;text-align:center}
-.switch a{color:var(--primary);font-weight:800;text-decoration:none}
-
-/* Small screens keep everything centered already */
+.flash{color:var(--success);font-weight:800;margin:6px 0 12px;min-height:20px}
+.switch{
+  margin:18px 0 0;color:var(--text-muted);font-weight:500;text-align:center;
+}
+.switch a{color:var(--primary);font-weight:700;text-decoration:none}
+.switch a:hover{text-decoration:underline}
