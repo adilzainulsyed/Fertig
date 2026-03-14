@@ -8,11 +8,29 @@ const welcomeMessage = document.getElementById('welcomeMessage');
 const messageInput = document.getElementById('messageInput');
 const sendBtn = document.getElementById('sendBtn');
 const chatHistory = document.getElementById('chatHistory');
+const closeChatBtn = document.getElementById('closeChatBtn');
+const homeBtn = document.querySelector('.fertig-home-btn');
+const themeToggle = document.getElementById('themeToggle');
+
+const PAGE_TRANSITION_MS = 320;
+
+function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('fertig-theme', theme);
+    window.utils?.setThemeToggleIcon?.(themeToggle, theme);
+}
 
 let conversationHistory = [];
 let isProcessing = false;
 
 function init() {
+    const savedTheme = localStorage.getItem('fertig-theme')
+        || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    applyTheme(savedTheme);
+
+    requestAnimationFrame(() => {
+        document.body.classList.add('page-ready');
+    });
     setupEventListeners();
     adjustTextareaHeight();
     updateSendButton();
@@ -25,6 +43,24 @@ function setupEventListeners() {
 
     if (sidebarOverlay) {
         sidebarOverlay.addEventListener('click', closeSidebar);
+    }
+
+    if (closeChatBtn) {
+        closeChatBtn.addEventListener('click', closeChatView);
+    }
+
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            const current = document.documentElement.getAttribute('data-theme');
+            applyTheme(current === 'dark' ? 'light' : 'dark');
+        });
+    }
+
+    if (homeBtn) {
+        homeBtn.addEventListener('click', (event) => {
+            event.preventDefault();
+            navigateWithTransition(homeBtn.getAttribute('href') || '/home.html');
+        });
     }
 
     newChatBtn.addEventListener('click', startNewChat);
@@ -44,6 +80,26 @@ function setupEventListeners() {
     });
 
     window.addEventListener('resize', handleResize);
+}
+
+function closeChatView() {
+    if (window.history.length > 1) {
+        leaveWithTransition(() => window.history.back());
+        return;
+    }
+    navigateWithTransition('/home.html');
+}
+
+function leaveWithTransition(onDone) {
+    document.body.classList.remove('page-ready');
+    document.body.classList.add('page-leaving');
+    window.setTimeout(onDone, PAGE_TRANSITION_MS);
+}
+
+function navigateWithTransition(url) {
+    leaveWithTransition(() => {
+        window.location.href = url;
+    });
 }
 
 function toggleSidebar() {

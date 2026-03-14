@@ -4,7 +4,11 @@
 *{box-sizing:border-box}
 html,body{height:100%;overflow-x:hidden}
 body{
-  margin:0;background:var(--bg);color:var(--text);
+  margin:0;
+  background:
+    radial-gradient(120% 55% at 50% 115%, var(--page-glow-a) 0%, var(--page-glow-b) 42%, transparent 74%),
+    var(--bg);
+  color:var(--text);
   font:14px/1.6 'JetBrains Mono',monospace;
   display:grid;grid-template-rows:auto 1fr;
   position:relative;transition:background .3s ease,color .3s ease;

@@ -12,7 +12,7 @@
 <body>
     <aside class="sidebar" id="sidebar">
         <div class="sidebar-header">
-            <a class="fertig-home-btn" href="/index.html" aria-label="Back to Fertig">
+            <a class="fertig-home-btn" href="/home.html" aria-label="Back to Fertig">
                 <span class="fertig-logo">F</span>
                 Fertig
             </a>
@@ -54,15 +54,24 @@
                     <path d="M3 12h18M3 6h18M3 18h18"/>
                 </svg>
             </button>
+            <div class="header-left-actions">
+                <button class="icon-btn" id="settingsBtn" title="Settings" aria-label="Settings">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"/>
+                        <path d="M12 1v6m0 6v6m9-9h-6m-6 0H3"/>
+                    </svg>
+                </button>
+            </div>
             <div class="header-title">
                 <h1>AI Assistant</h1>
                 <span class="model-badge">GPT-4</span>
             </div>
             <div class="header-actions">
-                <button class="icon-btn" title="Settings">
+                <button class="icon-btn" id="themeToggle" title="Toggle theme" aria-label="Toggle theme"></button>
+                <button class="icon-btn close-btn" id="closeChatBtn" title="Back" aria-label="Back">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="3"/>
-                        <path d="M12 1v6m0 6v6m9-9h-6m-6 0H3"/>
+                        <path d="M18 6L6 18"/>
+                        <path d="M6 6l12 12"/>
                     </svg>
                 </button>
             </div>
@@ -148,6 +157,7 @@
     </main>
 
     <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <script src="/js/utils.js"></script>
     <script src="/js/chatBot.js"></script>
 </body>
 </html>

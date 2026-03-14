@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       localStorage.setItem("authToken", data.token);
       localStorage.setItem("isLoggedIn", "true");
-      location.href = "index.html";
+      location.href = "home.html";
     } catch (error) {
       showErr("err-password", "An error occurred. Please try again.");
     }

@@ -16,17 +16,24 @@
   --danger:#d9534f;
 
   /* Surfaces */
-  --bg:#f8f4f8;               /* Lavender white */
-  --surface:#ffffff;
-  --surface-2:#f5eef5;        /* Lightest lavender tint */
-  --text:#2e1a2e;             /* Deep plum */
-  --text-muted:#856985;
-  --border:#ddc8dd;
+  --bg:#f3e9f2;               /* Warm lavender base */
+  --surface:#f9f1f8;          /* Tinted panel background */
+  --surface-2:#f1e3f1;        /* Deeper lavender layer */
+  --text:#211021;             /* Higher-contrast deep plum */
+  --text-muted:#5e425f;
+  --border:#cfaed0;
+  --focus-ring:rgba(160,112,160,.32);
+  --hover-tint:rgba(190,149,190,.16);
+  --code-bg:#efe2ee;
+  --code-text:#2b1730;
+  --code-border:#c7aac9;
+  --page-glow-a:rgba(190,149,190,.3);
+  --page-glow-b:rgba(232,160,200,.2);
 
   /* Effects */
   --radius:10px;
-  --shadow-sm:0 2px 12px rgba(190,149,190,.1);
-  --shadow-md:0 8px 28px rgba(190,149,190,.14);
+  --shadow-sm:0 3px 14px rgba(160,112,160,.16);
+  --shadow-md:0 10px 30px rgba(160,112,160,.2);
   --maxw:1200px;
 
   /* Gradients — the hero gradient */
@@ -54,6 +61,13 @@
   --info:#e8a0c8;
   --success:#7cc97c;
   --danger:#e06b67;
+  --focus-ring:rgba(207,142,207,.36);
+  --hover-tint:rgba(190,149,190,.24);
+  --code-bg:#2a1b2a;
+  --code-text:#f0d8ef;
+  --code-border:#4b314b;
+  --page-glow-a:rgba(190,149,190,.1);
+  --page-glow-b:rgba(251,130,130,.05);
   --brand-grad:linear-gradient(to right, #8a608a 0%, #c05050 100%);
   --accent-grad:linear-gradient(135deg, #8a608a, #c05050);
 }

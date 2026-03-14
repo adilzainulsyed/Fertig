@@ -38,6 +38,22 @@
     if (y) y.textContent = year || "—";
     if (s) s.textContent = subject || "—";
   };
+
+  // page theme toggle
+  const themeToggle = $("themeToggle");
+  const applyTheme = (theme) => {
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("fertig-theme", theme);
+    window.utils?.setThemeToggleIcon?.(themeToggle, theme);
+  };
+  const savedTheme = localStorage.getItem("fertig-theme")
+    || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  applyTheme(savedTheme);
+  themeToggle?.addEventListener("click", () => {
+    const current = document.documentElement.getAttribute("data-theme");
+    applyTheme(current === "dark" ? "light" : "dark");
+  });
+
   $("logoutTop")?.addEventListener("click", () => {
     window.utils?.logout ? window.utils.logout() : (location.href = "login.html");
   });

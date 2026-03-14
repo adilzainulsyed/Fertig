@@ -5,7 +5,11 @@
 *{box-sizing:border-box}
 html,body{height:100%;overflow-x:hidden}
 body{
-  margin:0;background:var(--bg);color:var(--text);
+  margin:0;
+  background:
+    radial-gradient(120% 55% at 50% 115%, var(--page-glow-a) 0%, var(--page-glow-b) 42%, transparent 74%),
+    var(--bg);
+  color:var(--text);
   font:14px/1.6 'JetBrains Mono',monospace;
   transition:background .3s ease,color .3s ease;
 }
@@ -39,6 +43,27 @@ body{
 }
 .appbar-right{display:flex;align-items:center;gap:10px}
 
+/* Keep the Question Bank greeting visually centered regardless of right-side controls. */
+.question-bank-page .appbar-row{position:relative}
+.question-bank-page .appbar-center{
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+  text-align:center;
+  pointer-events:none;
+}
+.question-bank-page .appbar-title{white-space:nowrap}
+
+@media (max-width:760px){
+  .question-bank-page .appbar-center{
+    position:static;
+    transform:none;
+    flex:1;
+    pointer-events:auto;
+  }
+  .question-bank-page .appbar-title{white-space:normal}
+}
+
 .meta-chip{
   display:inline-flex;align-items:center;padding:5px 12px;border-radius:6px;
   background:rgba(255,255,255,.15);color:#fff;font-size:11px;
@@ -56,7 +81,7 @@ body{
 }
 .avatar>span:hover{transform:scale(1.1);box-shadow:0 4px 16px rgba(0,0,0,.15)}
 .avatar .menu{
-  position:absolute;right:0;top:46px;background:var(--surface);border:1px solid var(--border);border-radius:10px;
+  position:absolute;right:0;top:46px;background:var(--surface-2);border:1px solid var(--border);border-radius:10px;
   box-shadow:var(--shadow-md);display:none;min-width:170px;overflow:hidden;
   animation:neo-fadeUp .2s ease;
 }
@@ -86,8 +111,9 @@ body{
   border:1px solid transparent;
   transition:all .2s ease;position:relative;
 }
-.nav-link:hover{color:var(--primary);background:rgba(190,149,190,.06);border-color:rgba(190,149,190,.1)}
+.nav-link:hover{color:var(--primary);background:var(--hover-tint);border-color:rgba(190,149,190,.24)}
 .nav-link.active{color:var(--primary);background:rgba(190,149,190,.1);border-color:rgba(190,149,190,.15)}
+.nav-link:focus-visible{outline:2px solid var(--focus-ring);outline-offset:2px}
 .nav-link.active::after{
   content:"";position:absolute;bottom:-9px;left:50%;transform:translateX(-50%);
   width:24px;height:3px;border-radius:2px;background:var(--brand-grad);
@@ -237,7 +263,7 @@ body{
 }
 
 .card{
-  background:var(--surface);border:1px solid var(--border);border-radius:10px;
+  background:var(--surface-2);border:1px solid var(--border);border-radius:10px;
   box-shadow:var(--shadow-sm);
   padding:18px 20px;min-height:88px;
   display:flex;align-items:center;justify-content:space-between;
@@ -262,8 +288,8 @@ body{
 .card:hover::after{right:-8px;top:-8px;width:60px;height:60px;border-color:rgba(190,149,190,.12)}
 .card:hover{
   transform:translateY(-4px);
-  box-shadow:0 12px 32px rgba(190,149,190,.14);
-  border-color:rgba(190,149,190,.18);
+  box-shadow:0 14px 36px rgba(160,112,160,.24);
+  border-color:rgba(190,149,190,.3);
 }
 .card:hover::before{width:7px}
 .card:active{transform:translateY(-2px)}
@@ -279,6 +305,7 @@ body{
   transition:all .2s ease;
 }
 .card:hover .pill{background:rgba(190,149,190,.14);transform:scale(1.03)}
+.card:focus-visible{outline:2px solid var(--focus-ring);outline-offset:2px}
 .card:nth-child(4n+1) .pill{background:rgba(190,149,190,.1);color:var(--accent);border-color:rgba(190,149,190,.15)}
 .card:nth-child(4n+2) .pill{background:rgba(92,184,92,.1);color:var(--success);border-color:rgba(92,184,92,.15)}
 .card:nth-child(4n+4) .pill{background:rgba(232,160,200,.1);color:var(--info);border-color:rgba(232,160,200,.15)}

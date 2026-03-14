@@ -2,7 +2,12 @@ const sqlite3 = require('sqlite3').verbose();
 const path = require('path');
 require('dotenv').config();
 
-const dbPath = path.join(__dirname, '../../', process.env.DATABASE_URL);
+const configuredDbPath = process.env.DATABASE_URL;
+const dbPath = configuredDbPath
+  ? (path.isAbsolute(configuredDbPath)
+      ? configuredDbPath
+      : path.join(__dirname, '../../', configuredDbPath))
+  : path.join(__dirname, '../../', 'data', 'fertig.db');
 
 const db = new sqlite3.Database(dbPath, (err) => {
   if (err) {

@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function applyTheme(t){
     document.documentElement.setAttribute("data-theme", t);
     localStorage.setItem("fertig-theme", t);
-    if(toggle) toggle.textContent = t === "dark" ? "🌙" : "☀️";
+    window.utils?.setThemeToggleIcon?.(toggle, t);
   }
   const saved = localStorage.getItem("fertig-theme") ||
     (window.matchMedia("(prefers-color-scheme:dark)").matches ? "dark" : "light");
@@ -57,6 +57,35 @@ document.addEventListener("DOMContentLoaded", () => {
   const title = $("subject-year-title");
   const grid  = $("subject-list");
   const tabs  = $("yearTabs");
+  const avatar = $("avatarMenu");
+  const avatarInit = $("avatarInit");
+  const logoutBtn = $("logout");
+  const currentUser = utils.getCurrentUser();
+
+  if (avatarInit) {
+    avatarInit.textContent = (currentUser?.name?.[0] || "U").toUpperCase();
+  }
+
+  if (avatar) {
+    avatar.addEventListener("click", () => {
+      const open = avatar.classList.toggle("open");
+      avatar.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!avatar.contains(e.target)) {
+        avatar.classList.remove("open");
+        avatar.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
+
+  if (logoutBtn) {
+    logoutBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      utils.logout();
+    });
+  }
 
   // Create the sliding pill indicator once
   let pill = tabs.querySelector(".year-tabs-pill");

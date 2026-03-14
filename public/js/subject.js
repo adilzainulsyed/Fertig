@@ -3,6 +3,52 @@ document.addEventListener("DOMContentLoaded", async () => {
   window.utils?.protectRoute();
   const $ = id => document.getElementById(id);
 
+  // Shared theme toggle behavior for subject detail pages.
+  const ensureThemeToggle = () => {
+    const existing = $("themeToggle");
+    if (existing) return existing;
+
+    const subbarInner = document.querySelector(".subbar .subbar-inner");
+    if (!subbarInner) return null;
+
+    const logoutBtn = $("logoutBtn");
+    let actions = subbarInner.querySelector(".subbar-actions");
+
+    if (!actions) {
+      actions = document.createElement("div");
+      actions.className = "subbar-actions";
+
+      if (logoutBtn && logoutBtn.parentElement === subbarInner) {
+        subbarInner.insertBefore(actions, logoutBtn);
+        actions.appendChild(logoutBtn);
+      } else {
+        subbarInner.appendChild(actions);
+      }
+    }
+
+    const btn = document.createElement("button");
+    btn.className = "theme-toggle";
+    btn.id = "themeToggle";
+    btn.setAttribute("aria-label", "Toggle dark mode");
+    btn.setAttribute("title", "Toggle dark mode");
+    actions.insertBefore(btn, actions.firstChild);
+    return btn;
+  };
+
+  const themeToggle = ensureThemeToggle();
+  const applyTheme = (theme) => {
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("fertig-theme", theme);
+    window.utils?.setThemeToggleIcon?.(themeToggle, theme);
+  };
+  const savedTheme = localStorage.getItem("fertig-theme")
+    || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  applyTheme(savedTheme);
+  themeToggle?.addEventListener("click", () => {
+    const current = document.documentElement.getAttribute("data-theme");
+    applyTheme(current === "dark" ? "light" : "dark");
+  });
+
   // ---------- parse key like ?key=2ndyear:ds ----------
   const params = new URLSearchParams(location.search);
   const key = params.get("key");
@@ -216,7 +262,9 @@ try {
       }
 
       const btn = document.createElement("button");
-      btn.className = "btn-outlined";
+      btn.className = "solution-toggle-btn";
+      btn.type = "button";
+      btn.setAttribute("aria-expanded", "false");
       btn.textContent = "Show Solution";
       card.appendChild(btn);
 
@@ -228,6 +276,8 @@ try {
       btn.addEventListener("click", () => {
         const hidden = sol.classList.toggle("hidden");
         btn.textContent = hidden ? "Show Solution" : "Hide Solution";
+        btn.classList.toggle("is-open", !hidden);
+        btn.setAttribute("aria-expanded", String(!hidden));
       });
 
       list.appendChild(card);

@@ -198,7 +198,7 @@ const subjectHref = (subject, yr) => {
   const applyTheme = (theme) => {
     document.documentElement.setAttribute("data-theme", theme);
     localStorage.setItem("fertig-theme", theme);
-    themeToggle.textContent = theme === "dark" ? "🌙" : "☀️";
+    window.utils?.setThemeToggleIcon?.(themeToggle, theme);
   };
   // Init from storage, fallback to OS preference
   const savedTheme = localStorage.getItem("fertig-theme")

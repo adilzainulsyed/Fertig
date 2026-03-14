@@ -11,26 +11,39 @@
   <link rel="stylesheet" href="/css/index.css"/><!-- reuse dashboard styles -->
 </head>
 <body>
-  <nav class="main-nav" id="mainNav">
-    <a class="nav-link" href="index.html">Home</a>
-    <a class="nav-link active" href="tests_home.html">Tests</a>
-    <a class="nav-link" href="chatBot.html">Chatbot</a>
-  </nav>
-
   <header class="appbar">
     <div class="appbar-row">
       <div class="appbar-left">
-        <a class="brand-mini" href="index.html" aria-label="Fertig">
+        <a class="brand-mini" href="home.html" aria-label="Fertig">
           <span class="brand-logo">F</span><span class="brand-name">Fertig</span>
         </a>
       </div>
       <div class="appbar-center"><div class="appbar-title">Pick a Test</div></div>
       <div class="appbar-right">
-        <button class="theme-toggle" id="themeToggle">☀️</button>
-        <a class="link-btn" href="index.html">← Dashboard</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode"></button>
+        <div class="avatar" id="avatarMenu" aria-haspopup="true" aria-expanded="false">
+          <span id="avatarInit">U</span>
+          <div class="menu" id="userMenu" role="menu">
+            <a href="#profile" role="menuitem">Profile</a>
+            <a href="#help" role="menuitem">Help</a>
+            <button id="logout" role="menuitem">Logout</button>
+          </div>
+        </div>
       </div>
     </div>
   </header>
+
+  <nav class="main-nav" id="mainNav">
+    <div class="main-nav-inner">
+      <a class="nav-link" href="home.html">Home</a>
+      <a class="nav-link" href="index.html">Question Bank</a>
+      <a class="nav-link active" href="tests_home.html">Tests</a>
+      <a class="nav-link" href="study-material.html">Study Material</a>
+      <a class="nav-link" href="chatBot.html">Chatbot</a>
+      <span class="nav-spacer"></span>
+      <span class="nav-tip">Sharpen your speed with timed papers.</span>
+    </div>
+  </nav>
 
   <main class="page" id="page">
     <section class="hero">
