@@ -41,6 +41,28 @@ body::after{
   box-shadow:0 4px 12px rgba(190,149,190,.3);
 }
 
+.login-page .auth-hero{
+  min-height:100vh;
+  align-content:start;
+  justify-items:center;
+  row-gap:22px;
+  padding:18px 20px 64px;
+}
+
+.login-page .brand-chip{
+  margin:0;
+  gap:14px;
+  font-size:clamp(28px,4.2vw,38px);
+  letter-spacing:.3px;
+}
+
+.login-page .brand-chip .logo{
+  width:52px;
+  height:52px;
+  border-radius:12px;
+  font-size:24px;
+}
+
 /* Centered card */
 .auth-hero{
   display:grid;place-items:center;padding:36px 20px 64px;

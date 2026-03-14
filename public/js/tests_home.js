@@ -57,10 +57,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const title = $("subject-year-title");
   const grid  = $("subject-list");
   const tabs  = $("yearTabs");
+  const welcomeName = $("welcome-name");
   const avatar = $("avatarMenu");
   const avatarInit = $("avatarInit");
   const logoutBtn = $("logout");
   const currentUser = utils.getCurrentUser();
+
+  if (welcomeName) {
+    const n = currentUser?.name || "Student";
+    welcomeName.textContent = `Hey, ${n} - Ready to test yourself?`;
+  }
 
   if (avatarInit) {
     avatarInit.textContent = (currentUser?.name?.[0] || "U").toUpperCase();

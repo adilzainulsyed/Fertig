@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Fertig | Study Material</title>
+  <title>Fertig | Profile</title>
   <script>
     (function () {
       try {
@@ -20,8 +20,9 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/css/theme.css" />
   <link rel="stylesheet" href="/css/index.css" />
+  <link rel="stylesheet" href="/css/info.css" />
 </head>
-<body class="topnav-page study-page">
+<body class="topnav-page profile-page">
   <header class="appbar">
     <div class="appbar-row">
       <div class="appbar-left">
@@ -32,7 +33,7 @@
       </div>
 
       <div class="appbar-center">
-        <div id="welcome-name" class="appbar-title">Study Material</div>
+        <div id="welcome-name" class="appbar-title">Your Profile</div>
       </div>
 
       <div class="appbar-right">
@@ -54,41 +55,39 @@
       <a class="nav-link" href="home.html">Home</a>
       <a class="nav-link" href="index.html">Question Bank</a>
       <a class="nav-link" href="tests_home.html">Tests</a>
-      <a class="nav-link active" href="study-material.html">Study Material</a>
+      <a class="nav-link" href="study-material.html">Study Material</a>
       <a class="nav-link" href="chatBot.html">Chatbot</a>
       <span class="nav-spacer"></span>
-      <span class="nav-tip">Curated resources for focused revision.</span>
+      <span class="nav-tip">Keep your profile up to date.</span>
     </div>
   </nav>
 
   <main class="page" id="page">
-    <section class="hero">
+    <section class="hero info-hero">
       <div class="hero-bg"></div>
-      <div class="hero-shape hero-shape--book hero-shape--book-a" aria-hidden="true"></div>
-      <div class="hero-shape hero-shape--book hero-shape--book-b" aria-hidden="true"></div>
-      <div class="hero-shape hero-shape--book hero-shape--book-c" aria-hidden="true"></div>
       <div class="container">
-        <h1 class="hero-title">Study Material</h1>
-        <p class="hero-sub">Notes, reference links, and revision packs will appear here.</p>
+        <h1 class="hero-title">Profile</h1>
+        <p class="hero-sub">Your account details and quick actions.</p>
       </div>
     </section>
 
-    <section class="container section">
-      <div class="section-head">
-        <h2 class="section-title">Coming Soon</h2>
-      </div>
-      <div class="subject-grid">
-        <article class="card">
-          <span class="name">Subject notes by year</span>
-          <span class="pill">Planned</span>
+    <section class="container section info-section">
+      <div class="info-grid">
+        <article class="info-card">
+          <h2>Account</h2>
+          <p id="profile-name">Name: -</p>
+          <p id="profile-email">Email: -</p>
+          <p id="profile-reg">Registration Number: -</p>
+          <p id="profile-year">Year: -</p>
         </article>
-        <article class="card">
-          <span class="name">Quick revision sheets</span>
-          <span class="pill">Planned</span>
-        </article>
-        <article class="card">
-          <span class="name">Previous year solutions</span>
-          <span class="pill">Planned</span>
+
+        <article class="info-card">
+          <h2>Quick Actions</h2>
+          <div class="info-actions">
+            <a class="link-btn" href="index.html">Open Question Bank</a>
+            <a class="link-btn" href="tests_home.html">Go to Tests</a>
+            <a class="link-btn" href="study-material.html">Open Study Material</a>
+          </div>
         </article>
       </div>
     </section>
@@ -96,5 +95,6 @@
 
   <script src="/js/utils.js"></script>
   <script src="/js/home.js"></script>
+  <script src="/js/profile.js"></script>
 </body>
 </html>

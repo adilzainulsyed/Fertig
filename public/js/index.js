@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Set the welcome name in the header
   const welcomeEl = $("welcome-name");
-  if (welcomeEl) welcomeEl.textContent = `Hey, ${name}`;
+  if (welcomeEl) welcomeEl.textContent = `Hey, ${name} - Ready for PYQs?`;
 
   // Validate that user is in a valid academic year (1-4)
   if (actualStudyYear < 1 || actualStudyYear > 4) {

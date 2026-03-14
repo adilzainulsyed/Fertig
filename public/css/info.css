@@ -1,0 +1,56 @@
+/* Shared styles for Profile and Help pages */
+.info-hero .container{position:relative;z-index:1}
+
+.info-section{padding-top:30px}
+
+.info-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:22px;
+}
+
+.info-grid.single-col{
+  grid-template-columns:1fr;
+  max-width:900px;
+}
+
+.info-card{
+  background:var(--surface-2);
+  border:1px solid var(--border);
+  border-radius:10px;
+  box-shadow:var(--shadow-sm);
+  padding:22px;
+}
+
+.info-card h2{
+  margin:0 0 12px;
+  color:var(--primary);
+  font-size:18px;
+}
+
+.info-card p{
+  margin:0 0 10px;
+  color:var(--text);
+}
+
+.info-actions{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.faq-list{
+  margin:0;
+  padding-left:18px;
+  display:grid;
+  gap:12px;
+}
+
+.faq-list li{
+  color:var(--text);
+  line-height:1.6;
+}
+
+@media (max-width:900px){
+  .info-grid{grid-template-columns:1fr}
+}

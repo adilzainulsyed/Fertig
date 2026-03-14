@@ -25,7 +25,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (user) {
     if (welcomeName) {
-      welcomeName.textContent = `Hey, ${user.name || "Student"}`;
+      const name = user.name || "Student";
+      if (document.body.classList.contains("study-page")) {
+        welcomeName.textContent = `Hey, ${name} - Time to revise.`;
+      } else {
+        welcomeName.textContent = `Hey, ${name}`;
+      }
     }
     if (avatarInit) {
       avatarInit.textContent = (user.name?.[0] || "U").toUpperCase();
