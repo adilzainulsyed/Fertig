@@ -3,7 +3,7 @@
    ===================================================== */
 /* base */
 .hidden{display:none!important}
-.container{max-width:1160px;margin:0 auto;padding:0 16px}
+.container{max-width:1160px;margin:0 auto;padding:0 22px}
 .card{background:var(--surface-2);border-radius:10px;box-shadow:var(--shadow-sm);border:1px solid var(--border);padding:20px;transition:background .3s ease,border-color .3s ease}
 .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
 .field small.err{color:var(--danger)}
@@ -27,14 +27,14 @@ body {
 }
 
 .test-wrap{
-  padding:24px 16px 36px;
+  padding:32px 20px 48px;
   display:grid;
-  gap:22px;
+  gap:28px;
 }
 
 #setup h1{margin:0 0 8px}
-#setup .muted{margin:0 0 16px}
-#setup form{display:grid;gap:14px}
+#setup .muted{margin:0 0 20px}
+#setup form{display:grid;gap:18px}
 
 /* Slim appbar */
 .appbar.appbar--slim{
@@ -43,7 +43,7 @@ body {
   color:#fff;box-shadow:0 4px 18px rgba(190,149,190,.18);
 }
 .appbar--slim .appbar-row{
-  height:60px;max-width:1200px;margin:0 auto;gap:16px;padding:0 20px;
+  height:72px;max-width:1200px;margin:0 auto;gap:16px;padding:0 20px;
   display:flex;align-items:center;justify-content:space-between
 }
 .appbar--slim .appbar-right{display:flex;align-items:center;gap:10px}
@@ -62,15 +62,15 @@ body {
 
 /* Exam header */
 .exam-head{
-  position:sticky;top:68px;z-index:5;
+  position:sticky;top:80px;z-index:5;
   display:flex;align-items:center;justify-content:space-between;gap:14px;
-  padding:12px 14px;
+  padding:16px 18px;
   background:var(--surface-2);
   border:1px solid var(--border);
   box-shadow:var(--shadow-sm);
   border-radius:10px;
   transition:background .3s ease,border-color .3s ease,box-shadow .3s ease;
-  margin-bottom:14px;
+  margin-bottom:18px;
 }
 .exam-head .title h2{margin:0;font-size:1.2rem;font-weight:700;letter-spacing:.2px}
 .exam-head .meta{color:var(--text-muted)}
@@ -97,7 +97,7 @@ body {
 }
 
 /* Exam body layout */
-.exam-body{display:grid;gap:18px;grid-template-columns:280px minmax(0,1fr);align-items:start;margin-top:12px}
+.exam-body{display:grid;gap:24px;grid-template-columns:280px minmax(0,1fr);align-items:start;margin-top:16px}
 @media(max-width:960px){.exam-body{grid-template-columns:1fr}}
 
 /* Question palette */
@@ -145,7 +145,7 @@ body {
   transition:border-color .2s,background .3s ease;
 }
 .ans textarea:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px rgba(190,149,190,.1)}
-.controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:10px}
+.controls{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:14px}
 .controls .btn,#prevBtn,#nextBtn,#flagBtn{
   border-radius:8px;padding:8px 12px;font-weight:700;
   background:var(--surface);border:1px solid var(--border);color:var(--primary);
@@ -173,11 +173,11 @@ body {
 
 /* ============ Results Page Styles ============ */
 #summary {
-  padding: 8px 0 4px;
+  padding: 14px 0 10px;
   max-width: 1100px;
   margin: 0 auto;
   display: grid;
-  gap: 20px;
+  gap: 26px;
 }
 
 .results-header {

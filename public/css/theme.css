@@ -97,7 +97,7 @@
 
 /* ===== Base ===== */
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;scrollbar-gutter:stable}
 body{
   font-family:'JetBrains Mono',monospace;
   -webkit-font-smoothing:antialiased;
@@ -106,7 +106,7 @@ body{
 .muted{color:var(--text-muted)}
 .center{text-align:center}
 .badge{padding:3px 10px;border-radius:6px;font-size:11px;font-weight:700;letter-spacing:.4px;text-transform:uppercase}
-.container{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.container{max-width:var(--maxw);margin:0 auto;padding:0 30px}
 .link-btn{
   font-weight:700;text-decoration:none;color:var(--primary);
   padding:8px 14px;border-radius:8px;

@@ -19,7 +19,7 @@ body{
   color:#fff;border:0;
   box-shadow:0 4px 18px rgba(190,149,190,.18);
 }
-.subbar-inner{height:56px;display:flex;align-items:center;gap:16px;justify-content:space-between}
+.subbar-inner{height:68px;display:flex;align-items:center;gap:16px;justify-content:space-between}
 .subbar-actions{display:flex;align-items:center;gap:10px;flex-shrink:0}
 .brand-mini{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;font-weight:800}
 .logo{
@@ -45,19 +45,19 @@ body{
 /* Content frame */
 .subject-wrap{
   max-width:920px;
-  margin:20px auto 48px;
-  padding:0 16px;
+  margin:30px auto 64px;
+  padding:0 22px;
   animation:neo-fadeUp .5s ease both;
 }
 h1{
-  margin:10px 0 6px;font-weight:700;letter-spacing:.1px;color:var(--primary);
+  margin:14px 0 10px;font-weight:700;letter-spacing:.1px;color:var(--primary);
 }
-#subtitle{margin:0 0 14px;color:var(--text-muted)}
+#subtitle{margin:0 0 18px;color:var(--text-muted)}
 
 /* Filters */
 .filters{
   display:grid;grid-template-columns:1fr 1fr auto;
-  gap:10px;align-items:center;margin:14px 0 20px;
+  gap:14px;align-items:center;margin:20px 0 28px;
 }
 @media(max-width:720px){.filters{grid-template-columns:1fr;grid-auto-rows:auto}}
 .filters select{
@@ -77,10 +77,10 @@ h1{
 .btn:hover{filter:brightness(1.05);transform:translateY(-1px)}
 
 /* QA Cards */
-.qa-list{display:grid;gap:14px}
+.qa-list{display:grid;gap:20px}
 .qa{
   background:var(--surface);border:1px solid var(--border);border-radius:10px;
-  padding:18px 20px;box-shadow:var(--shadow-sm);
+  padding:22px 24px;box-shadow:var(--shadow-sm);
   position:relative;overflow:hidden;
   animation:neo-fadeUp .4s ease both;
   transition:background .3s ease,border-color .3s ease;

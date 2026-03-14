@@ -26,6 +26,9 @@ app.use(express.json());
 
 const basePath = path.join(__dirname, '..');
 console.log('basePath', basePath);
+app.get('/', (req, res) => {
+    res.sendFile(path.join(basePath, 'views', 'home.html'));
+});
 app.use('/subjects', express.static(path.join(basePath,'data','subjects')));
 console.log("Serving subjects from:", path.join(basePath,'data','subjects'));
 app.use(express.static(path.join(basePath,'public')));

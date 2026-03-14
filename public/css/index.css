@@ -4,6 +4,7 @@
 
 *{box-sizing:border-box}
 html,body{height:100%;overflow-x:hidden}
+body.topnav-page{overflow-y:scroll}
 body{
   margin:0;
   background:
@@ -22,8 +23,9 @@ body{
   box-shadow:0 4px 20px rgba(190,149,190,.18);
 }
 .appbar-row{
-  height:60px;display:flex;align-items:center;justify-content:space-between;
-  max-width:var(--maxw);margin:0 auto;padding:0 24px;
+  height:72px;display:flex;align-items:center;justify-content:space-between;
+  max-width:var(--maxw);margin:0 auto;padding:0 30px;
+  position:relative;
 }
 .appbar-left{display:flex;align-items:center;gap:14px}
 .brand-mini{
@@ -36,32 +38,29 @@ body{
 }
 .brand-mini .brand-name{font-size:17px}
 
-.appbar-center{flex:1;text-align:center}
-.appbar-title{
-  font-weight:700;letter-spacing:.6px;font-size:15px;
-  animation:neo-fadeUp .5s ease both;
-}
-.appbar-right{display:flex;align-items:center;gap:10px}
-
-/* Keep the Question Bank greeting visually centered regardless of right-side controls. */
-.question-bank-page .appbar-row{position:relative}
-.question-bank-page .appbar-center{
+.appbar-center{
   position:absolute;
   left:50%;
   transform:translateX(-50%);
   text-align:center;
   pointer-events:none;
 }
-.question-bank-page .appbar-title{white-space:nowrap}
+.appbar-title{
+  font-weight:700;letter-spacing:.6px;font-size:15px;
+  animation:neo-fadeUp .5s ease both;
+}
+.appbar-right{display:flex;align-items:center;gap:10px}
+
+.appbar-title{white-space:nowrap}
 
 @media (max-width:760px){
-  .question-bank-page .appbar-center{
+  .appbar-center{
     position:static;
     transform:none;
     flex:1;
     pointer-events:auto;
   }
-  .question-bank-page .appbar-title{white-space:normal}
+  .appbar-title{white-space:normal}
 }
 
 .meta-chip{
@@ -101,8 +100,8 @@ body{
   transition:background .3s ease,border-color .3s ease;
 }
 .main-nav-inner{
-  max-width:var(--maxw);margin:0 auto;padding:0 24px;
-  display:flex;align-items:center;gap:6px;height:48px;
+  max-width:var(--maxw);margin:0 auto;padding:0 30px;
+  display:flex;align-items:center;gap:6px;height:58px;
 }
 .nav-link{
   display:inline-flex;align-items:center;gap:6px;
@@ -128,7 +127,7 @@ body{
 
 .hero{
   position:relative;overflow:hidden;color:#fff;
-  padding:48px 0 40px;
+  padding:56px 0 46px;
 }
 .hero-bg{
   position:absolute;inset:0;z-index:-1;
@@ -166,6 +165,157 @@ body{
   animation:neo-drift 14s ease-in-out infinite 1s;
 }
 
+/* Tests hero: floating outlined paper sheets */
+.tests-page .hero{isolation:isolate}
+.tests-page .hero-shape--paper{
+  width:92px;
+  height:120px;
+  border:2px solid rgba(255,255,255,.22);
+  border-radius:10px;
+  z-index:0;
+}
+.tests-page .hero-shape--paper::before,
+.tests-page .hero-shape--paper::after{
+  content:"";
+  position:absolute;
+  left:14px;
+  right:14px;
+  border-top:2px solid rgba(255,255,255,.16);
+}
+.tests-page .hero-shape--paper::before{top:36px}
+.tests-page .hero-shape--paper::after{top:56px}
+.tests-page .hero-shape--paper-a{
+  top:14%;
+  right:9%;
+  transform:rotate(8deg);
+  animation:neo-drift 15s ease-in-out infinite;
+}
+.tests-page .hero-shape--paper-b{
+  bottom:8%;
+  right:23%;
+  transform:rotate(-11deg);
+  animation:neo-drift 19s ease-in-out infinite 2s;
+}
+.tests-page .hero-shape--paper-c{
+  top:20%;
+  left:7%;
+  transform:rotate(-6deg);
+  opacity:.7;
+  animation:neo-drift 17s ease-in-out infinite 1s;
+}
+
+/* Study hero: floating outlined books */
+.study-page .hero{isolation:isolate}
+.study-page .hero-shape--book{
+  width:110px;
+  height:84px;
+  border:2px solid rgba(255,255,255,.22);
+  border-radius:8px;
+  z-index:0;
+}
+.study-page .hero-shape--book::before{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:10px;
+  bottom:10px;
+  border-left:2px solid rgba(255,255,255,.16);
+}
+.study-page .hero-shape--book::after{
+  content:"";
+  position:absolute;
+  left:14px;
+  right:14px;
+  top:22px;
+  border-top:2px solid rgba(255,255,255,.14);
+}
+.study-page .hero-shape--book-a{
+  top:15%;
+  right:8%;
+  transform:rotate(6deg);
+  animation:neo-drift 16s ease-in-out infinite;
+}
+.study-page .hero-shape--book-b{
+  bottom:10%;
+  right:24%;
+  transform:rotate(-7deg);
+  animation:neo-drift 20s ease-in-out infinite 2s;
+}
+.study-page .hero-shape--book-c{
+  top:22%;
+  left:8%;
+  transform:rotate(-4deg);
+  opacity:.72;
+  animation:neo-drift 18s ease-in-out infinite 1s;
+}
+
+/* Body section decorations below hero */
+.tests-page .section,
+.study-page .section{
+  position:relative;
+  isolation:isolate;
+}
+
+.tests-page .section > *,
+.study-page .section > *{
+  position:relative;
+  z-index:1;
+}
+
+.tests-page .section::before,
+.tests-page .section::after,
+.study-page .section::before,
+.study-page .section::after{
+  content:"";
+  position:absolute;
+  pointer-events:none;
+  z-index:0;
+}
+
+/* Tests body: sheet outlines */
+.tests-page .section::before,
+.tests-page .section::after{
+  width:82px;
+  height:108px;
+  border:2px solid rgba(160,112,160,.16);
+  border-radius:10px;
+  background:
+    linear-gradient(rgba(160,112,160,.12), rgba(160,112,160,.12)) 14px 34px / calc(100% - 28px) 2px no-repeat,
+    linear-gradient(rgba(160,112,160,.10), rgba(160,112,160,.10)) 14px 54px / calc(100% - 28px) 2px no-repeat;
+}
+.tests-page .section::before{
+  top:12px;
+  right:10px;
+  transform:rotate(8deg);
+}
+.tests-page .section::after{
+  bottom:18px;
+  left:10px;
+  transform:rotate(-8deg);
+}
+
+/* Study body: book outlines */
+.study-page .section::before,
+.study-page .section::after{
+  width:98px;
+  height:74px;
+  border:2px solid rgba(160,112,160,.16);
+  border-radius:8px;
+  background:
+    linear-gradient(rgba(160,112,160,.12), rgba(160,112,160,.12)) 50% 10px / 2px calc(100% - 20px) no-repeat,
+    linear-gradient(rgba(160,112,160,.10), rgba(160,112,160,.10)) 14px 20px / calc(100% - 28px) 2px no-repeat;
+}
+.study-page .section::before{
+  top:20px;
+  right:12px;
+  transform:rotate(7deg);
+}
+.study-page .section::after{
+  bottom:22px;
+  left:12px;
+  transform:rotate(-6deg);
+}
+
 .hero .container{position:relative;z-index:1}
 .hero-title{
   margin:0 0 10px;font-size:clamp(24px,3.6vw,38px);font-weight:700;
@@ -189,7 +339,7 @@ body{
 /* ===== Year Switcher ===== */
 .year-switcher{
   display:flex;align-items:center;justify-content:space-between;
-  margin-top:22px;margin-bottom:14px;gap:12px;
+  margin-top:20px;margin-bottom:20px;gap:16px;
   animation:neo-fadeUp .5s ease .3s both;
 }
 .year-tabs{
@@ -243,7 +393,7 @@ body{
 .link-btn:active{transform:translateY(1px)}
 
 /* ===== Section / Grid / Cards ===== */
-.section{padding:14px 0 40px}
+.section{padding:24px 0 52px}
 .section-head{
   display:flex;align-items:center;gap:14px;flex-wrap:wrap;
   animation:neo-fadeUp .5s ease .4s both;
@@ -258,7 +408,7 @@ body{
 }
 
 .subject-grid{
-  display:grid;gap:16px;
+  display:grid;gap:22px;
   grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
 }
 
@@ -313,8 +463,12 @@ body{
 /* ===== Responsive ===== */
 @media(max-width:900px){
   .subject-grid{grid-template-columns:1fr}
-  .hero{padding:36px 0 30px}
+  .hero{padding:42px 0 36px}
   .hero-shape{display:none}
+  .tests-page .section::before,
+  .tests-page .section::after,
+  .study-page .section::before,
+  .study-page .section::after{display:none}
   .meta-chip{display:none}
   .nav-tip{display:none}
 }

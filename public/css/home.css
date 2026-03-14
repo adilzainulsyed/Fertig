@@ -12,11 +12,12 @@ body{
   overflow-x:hidden;
 }
 
-.home-main{padding-bottom:48px}
+.home-main{padding:0 0 60px}
 
 .home-hero{
   position:relative;
-  padding:56px 0 42px;
+  margin-top:-1px;
+  padding:64px 0 50px;
   background:
     radial-gradient(circle at 85% 5%, rgba(190,149,190,.18), transparent 28%),
     radial-gradient(circle at 10% 80%, rgba(251,130,130,.18), transparent 32%);
@@ -50,8 +51,8 @@ body{
 .hero-actions{
   display:flex;
   align-items:center;
-  gap:12px;
-  margin-top:24px;
+  gap:14px;
+  margin-top:30px;
   flex-wrap:wrap;
 }
 
@@ -92,10 +93,10 @@ body{
 }
 
 .intro-strip{
-  margin-top:24px;
+  margin-top:32px;
   display:grid;
   grid-template-columns:2fr 1fr 1fr;
-  gap:14px;
+  gap:18px;
 }
 
 .intro-card,
@@ -104,7 +105,7 @@ body{
   border:1px solid var(--border);
   border-radius:10px;
   box-shadow:var(--shadow-sm);
-  padding:18px;
+  padding:22px;
 }
 
 .intro-card h2,
@@ -122,5 +123,5 @@ body{
 
 @media (max-width:900px){
   .intro-strip{grid-template-columns:1fr}
-  .home-hero{padding:40px 0 30px}
+  .home-hero{padding:46px 0 36px}
 }
