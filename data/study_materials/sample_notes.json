@@ -1,0 +1,191 @@
+[
+  {
+    "id": "ds-arrays-1",
+    "subject": "Data Structures",
+    "year": "2nd year",
+    "chapter": "Arrays",
+    "title": "Introduction to Arrays",
+    "content": "An array is a linear data structure that stores elements of the same type in contiguous memory locations. Arrays allow random access using an index in O(1) time. Insertion and deletion in the middle take O(n) time because elements must be shifted. Arrays are cache-friendly because of memory locality. Single-dimensional arrays store elements in a row. Two-dimensional arrays (matrices) store elements in rows and columns. The size of an array must be declared at compile time in most languages.",
+    "source": "DS Module 1 – Linear Data Structures"
+  },
+  {
+    "id": "ds-linkedlist-1",
+    "subject": "Data Structures",
+    "year": "2nd year",
+    "chapter": "Linked Lists",
+    "title": "Singly Linked List",
+    "content": "A linked list is a linear data structure where each element (node) contains data and a pointer to the next node. Unlike arrays, linked lists do not require contiguous memory. Insertion and deletion at the head are O(1). Traversal is O(n). A singly linked list has nodes pointing only to the next node. A doubly linked list has pointers to both next and previous nodes. A circular linked list has the last node pointing back to the head. Linked lists are used to implement stacks, queues, and graphs.",
+    "source": "DS Module 1 – Linear Data Structures"
+  },
+  {
+    "id": "ds-stack-1",
+    "subject": "Data Structures",
+    "year": "2nd year",
+    "chapter": "Stacks and Queues",
+    "title": "Stack Data Structure",
+    "content": "A stack is a Last In First Out (LIFO) data structure. The main operations are push (insert), pop (remove), and peek (view top). Stacks are used in function call management (call stack), expression evaluation, undo mechanisms, and backtracking algorithms. A stack can be implemented using an array or a linked list. The time complexity for push and pop is O(1). Stack overflow occurs when a push is attempted on a full stack.",
+    "source": "DS Module 2 – Stacks and Queues"
+  },
+  {
+    "id": "ds-queue-1",
+    "subject": "Data Structures",
+    "year": "2nd year",
+    "chapter": "Stacks and Queues",
+    "title": "Queue Data Structure",
+    "content": "A queue is a First In First Out (FIFO) data structure. Operations: enqueue (insert at rear), dequeue (remove from front). Variants include circular queue, double-ended queue (deque), and priority queue. Queues are used in scheduling algorithms, BFS traversal, and print spooling. In a circular queue, the rear pointer wraps around when it reaches the end of the array, making space utilization efficient.",
+    "source": "DS Module 2 – Stacks and Queues"
+  },
+  {
+    "id": "ds-tree-1",
+    "subject": "Data Structures",
+    "year": "2nd year",
+    "chapter": "Trees",
+    "title": "Binary Trees and BST",
+    "content": "A binary tree is a hierarchical data structure where each node has at most two children (left and right). A Binary Search Tree (BST) maintains the property that left child < parent < right child. BST operations: search O(h), insert O(h), delete O(h), where h is the height. For a balanced BST, h = O(log n). For a skewed BST, h = O(n). Tree traversals: inorder (LNR), preorder (NLR), postorder (LRN). An AVL tree is a self-balancing BST that maintains |height(left) - height(right)| ≤ 1.",
+    "source": "DS Module 3 – Trees"
+  },
+  {
+    "id": "ds-graph-1",
+    "subject": "Data Structures",
+    "year": "2nd year",
+    "chapter": "Graphs",
+    "title": "Graph Representations and Traversal",
+    "content": "A graph G = (V, E) consists of vertices V and edges E. Directed graphs (digraphs) have ordered edges; undirected graphs have unordered edges. Representation: adjacency matrix (O(V²) space) or adjacency list (O(V+E) space). BFS uses a queue; time complexity O(V+E). DFS uses a stack/recursion; time complexity O(V+E). Applications: shortest path (Dijkstra, Bellman-Ford), minimum spanning tree (Kruskal, Prim), topological sort for DAGs.",
+    "source": "DS Module 4 – Graphs"
+  },
+  {
+    "id": "ds-sorting-1",
+    "subject": "Data Structures",
+    "year": "2nd year",
+    "chapter": "Sorting",
+    "title": "Sorting Algorithms",
+    "content": "Bubble sort: O(n²) time, O(1) space, stable. Selection sort: O(n²) time, O(1) space, not stable. Insertion sort: O(n²) worst, O(n) best, stable, good for nearly sorted data. Merge sort: O(n log n) time, O(n) space, stable, divide and conquer. Quick sort: O(n log n) average, O(n²) worst, in-place. Heap sort: O(n log n) time, O(1) space, not stable. Counting sort: O(n+k) time, suitable for integer keys in range [0,k].",
+    "source": "DS Module 5 – Sorting and Searching"
+  },
+  {
+    "id": "dms-sets-1",
+    "subject": "Discrete Mathematics",
+    "year": "2nd year",
+    "chapter": "Set Theory",
+    "title": "Sets and Set Operations",
+    "content": "A set is an unordered collection of distinct elements. Operations: union (A ∪ B), intersection (A ∩ B), difference (A - B), complement (A'). Power set P(A) contains all subsets of A; |P(A)| = 2^|A|. Cartesian product A × B = {(a,b) | a ∈ A, b ∈ B}. De Morgan's laws: (A ∪ B)' = A' ∩ B' and (A ∩ B)' = A' ∪ B'. Venn diagrams are used to visualize set relationships. Disjoint sets have no common elements.",
+    "source": "DMS Module 1 – Set Theory"
+  },
+  {
+    "id": "dms-logic-1",
+    "subject": "Discrete Mathematics",
+    "year": "2nd year",
+    "chapter": "Propositional Logic",
+    "title": "Logic and Propositional Calculus",
+    "content": "Propositional logic deals with statements that are either true or false. Connectives: AND (∧), OR (∨), NOT (¬), implication (→), biconditional (↔). A tautology is always true; a contradiction is always false. Truth tables enumerate all possible combinations. De Morgan's laws: ¬(p ∧ q) ≡ ¬p ∨ ¬q. Modus ponens: (p → q, p) ⊢ q. Modus tollens: (p → q, ¬q) ⊢ ¬p. A predicate is a proposition parameterized by variables (first-order logic). Quantifiers: universal (∀) and existential (∃).",
+    "source": "DMS Module 2 – Logic"
+  },
+  {
+    "id": "dms-relations-1",
+    "subject": "Discrete Mathematics",
+    "year": "2nd year",
+    "chapter": "Relations",
+    "title": "Relations and Functions",
+    "content": "A relation R on set A is a subset of A × A. Properties: reflexive (aRa), symmetric (aRb → bRa), antisymmetric (aRb ∧ bRa → a=b), transitive (aRb ∧ bRc → aRc). An equivalence relation is reflexive, symmetric, and transitive. A partial order is reflexive, antisymmetric, and transitive. A function f: A → B is a relation where each element of A maps to exactly one element of B. Injective (one-to-one), surjective (onto), bijective (both).",
+    "source": "DMS Module 3 – Relations and Functions"
+  },
+  {
+    "id": "dms-graph-1",
+    "subject": "Discrete Mathematics",
+    "year": "2nd year",
+    "chapter": "Graph Theory",
+    "title": "Graph Theory Basics",
+    "content": "A graph is a pair G = (V, E). Degree of a vertex: number of edges incident to it. Handshaking lemma: sum of all vertex degrees = 2|E|. A path visits each vertex at most once. A cycle is a closed path. An Euler path visits every edge exactly once. A Hamiltonian path visits every vertex exactly once. A tree is a connected acyclic graph with n-1 edges for n vertices. A planar graph can be drawn without edge crossings; Euler's formula: V - E + F = 2 for connected planar graphs.",
+    "source": "DMS Module 4 – Graph Theory"
+  },
+  {
+    "id": "dcso-number-1",
+    "subject": "Data Structures & CO",
+    "year": "2nd year",
+    "chapter": "Number Systems",
+    "title": "Number Systems and Conversions",
+    "content": "Binary (base 2), Octal (base 8), Decimal (base 10), Hexadecimal (base 16). To convert decimal to binary: repeatedly divide by 2 and record remainders. BCD (Binary Coded Decimal) encodes each decimal digit in 4 bits. Signed representation: sign-magnitude, 1's complement, 2's complement. 2's complement = 1's complement + 1. Addition in 2's complement handles both positive and negative numbers naturally. IEEE 754 floating point: 1 sign bit, 8 exponent bits, 23 mantissa bits (single precision).",
+    "source": "CO Module 1 – Number Systems"
+  },
+  {
+    "id": "dcso-logic-gates-1",
+    "subject": "Data Structures & CO",
+    "year": "2nd year",
+    "chapter": "Logic Gates",
+    "title": "Boolean Algebra and Logic Gates",
+    "content": "Basic gates: AND, OR, NOT. Universal gates: NAND, NOR (any circuit can be built from either alone). XOR gate: output is 1 when inputs differ. Boolean algebra laws: identity, null, idempotent, complement, commutative, associative, distributive, absorption, De Morgan's. Sum of Products (SOP) and Product of Sums (POS) forms. Karnaugh Map (K-map) used to minimize Boolean expressions by grouping 1s in groups of 1, 2, 4, 8.",
+    "source": "CO Module 2 – Digital Logic"
+  },
+  {
+    "id": "ape-electrostatics-1",
+    "subject": "Applied Physics & Electronics",
+    "year": "1st year",
+    "chapter": "Electrostatics",
+    "title": "Coulomb's Law and Electric Field",
+    "content": "Coulomb's Law: F = k·q1·q2/r² where k = 9×10⁹ N·m²/C². Electric field E = F/q (force per unit charge). Electric field due to point charge: E = kQ/r². Gauss's Law: total electric flux through a closed surface = Q_enc/ε₀. Electric potential V = kQ/r (energy per unit charge). Relationship: E = -dV/dr. Capacitance C = Q/V. Parallel plate capacitor: C = ε₀A/d. Energy stored: U = ½CV².",
+    "source": "APE Module 1 – Electrostatics"
+  },
+  {
+    "id": "ape-semiconductors-1",
+    "subject": "Applied Physics & Electronics",
+    "year": "1st year",
+    "chapter": "Semiconductors",
+    "title": "P-N Junction and Diodes",
+    "content": "Semiconductors have conductivity between conductors and insulators (e.g., Silicon, Germanium). N-type: doped with pentavalent atoms (donors), majority carriers are electrons. P-type: doped with trivalent atoms (acceptors), majority carriers are holes. P-N junction: depletion region forms at junction. Forward bias: reduces depletion width, current flows. Reverse bias: increases depletion width, only small leakage current. Zener diode: operates in reverse breakdown for voltage regulation. Diode equation: I = I₀(e^(V/ηVT) - 1).",
+    "source": "APE Module 3 – Semiconductor Devices"
+  },
+  {
+    "id": "cm1-calculus-1",
+    "subject": "Chemistry & Mathematics I",
+    "year": "1st year",
+    "chapter": "Differential Calculus",
+    "title": "Limits and Derivatives",
+    "content": "Limit of f(x) as x→a: value f(x) approaches. L'Hôpital's rule: for 0/0 or ∞/∞ forms, lim f/g = lim f'/g'. Derivative: f'(x) = lim(h→0) [f(x+h)-f(x)]/h. Rules: sum, product, quotient, chain rule. Common derivatives: d/dx(xⁿ)=nxⁿ⁻¹, d/dx(sin x)=cos x, d/dx(eˣ)=eˣ, d/dx(ln x)=1/x. Taylor series: f(x) = f(a) + f'(a)(x-a) + f''(a)(x-a)²/2! + ... Maclaurin series: centered at a=0.",
+    "source": "CM1 Module 2 – Differential Calculus"
+  },
+  {
+    "id": "cm1-matrices-1",
+    "subject": "Chemistry & Mathematics I",
+    "year": "1st year",
+    "chapter": "Matrices",
+    "title": "Matrix Operations and Determinants",
+    "content": "A matrix is a rectangular array of numbers. Addition: element-wise for same-size matrices. Multiplication: (AB)ij = Σ(Aik·Bkj), requires cols(A)=rows(B). Transpose: (Aᵀ)ij = Aji. Determinant of 2×2: |A| = ad-bc. Cofactor expansion for larger matrices. Inverse: A⁻¹ = adjA/|A|. Rank of a matrix: maximum number of linearly independent rows/columns. Eigenvalues: Av = λv, found from characteristic polynomial det(A-λI)=0. Cayley-Hamilton: every matrix satisfies its own characteristic equation.",
+    "source": "CM1 Module 3 – Matrices and Linear Algebra"
+  },
+  {
+    "id": "fe-thermodynamics-1",
+    "subject": "Fundamentals of Engineering",
+    "year": "1st year",
+    "chapter": "Thermodynamics",
+    "title": "Laws of Thermodynamics",
+    "content": "Zeroth Law: if A is in thermal equilibrium with B and B with C, then A is in equilibrium with C (defines temperature). First Law: ΔU = Q - W (energy conservation; heat added equals change in internal energy plus work done). Second Law: entropy of isolated system never decreases (heat flows from hot to cold spontaneously). Third Law: entropy approaches zero as temperature approaches absolute zero. Carnot efficiency: η = 1 - T_cold/T_hot (maximum possible efficiency for a heat engine).",
+    "source": "FE Module 2 – Thermodynamics"
+  },
+  {
+    "id": "fe-mechanics-1",
+    "subject": "Fundamentals of Engineering",
+    "year": "1st year",
+    "chapter": "Engineering Mechanics",
+    "title": "Statics and Dynamics",
+    "content": "Statics: study of bodies at rest or moving with constant velocity. Equilibrium: ΣF = 0, ΣM = 0. Free body diagram isolates a body and shows all forces acting on it. Newton's laws: 1st (inertia), 2nd (F=ma), 3rd (action-reaction). Friction force: f ≤ μN (static), f = μₖN (kinetic). Moment of a force about a point: M = F × d (perpendicular distance). Centre of gravity: point where total weight acts. Moment of inertia: resistance to rotational acceleration, I = Σmr².",
+    "source": "FE Module 1 – Engineering Mechanics"
+  },
+  {
+    "id": "pps-programming-1",
+    "subject": "Problem Solving & Programming",
+    "year": "1st year",
+    "chapter": "Programming Basics",
+    "title": "C Programming Fundamentals",
+    "content": "C is a compiled, procedural programming language. Data types: int, float, double, char, void. Control flow: if-else, switch, for, while, do-while, break, continue. Functions: definition, declaration (prototype), calling conventions, recursion. Arrays: indexed from 0, passed by pointer to functions. Pointers: store memory addresses, declared with *, dereferenced with *ptr, address-of with &. String: array of chars ending with '\\0'. Dynamic memory: malloc(), calloc(), realloc(), free().",
+    "source": "PPS Module 1 – C Programming"
+  },
+  {
+    "id": "pps-algorithms-1",
+    "subject": "Problem Solving & Programming",
+    "year": "1st year",
+    "chapter": "Algorithms",
+    "title": "Algorithm Analysis and Complexity",
+    "content": "An algorithm is a step-by-step procedure to solve a problem. Time complexity measures steps as function of input size n. Big-O notation O(f(n)) gives upper bound (worst case). Common complexities: O(1) constant, O(log n) logarithmic, O(n) linear, O(n log n), O(n²) quadratic, O(2ⁿ) exponential. Space complexity measures memory usage. Best, average, worst-case analysis. Divide and conquer: split problem, solve recursively, combine (merge sort, binary search). Dynamic programming: solve overlapping subproblems and store results (memoization/tabulation).",
+    "source": "PPS Module 2 – Algorithm Design"
+  }
+]

@@ -1,5 +1,7 @@
 node_modules
 .env
 data/fertig.db
+data/fertig_test.db
+data/ragchat-screenshot.png
 *.log
  
