@@ -10,6 +10,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const name = user.name || "Student";
   const actualStudyYear = user.yearInCollege || 1;
 
+  // Set the welcome name in the header
+  const welcomeEl = $("welcome-name");
+  if (welcomeEl) welcomeEl.textContent = `Hey, ${name}`;
+
   // Validate that user is in a valid academic year (1-4)
   if (actualStudyYear < 1 || actualStudyYear > 4) {
     document.querySelector(".section").innerHTML =
