@@ -260,7 +260,7 @@ function scrollToBottom() {
 
 async function generateBotResponse(userMessage) {
   try {
-    const res = await fetch('source/routes/chatbot.js', {
+    const res = await fetch('/api/chatbot', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ message: userMessage })

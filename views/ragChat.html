@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Assistant – Fertig RAG Chat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/chatBot.css">
+    <link rel="stylesheet" href="/css/ragChat.css">
+</head>
+<body>
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <a class="fertig-home-btn" href="/index" aria-label="Back to Fertig">
+                <span class="fertig-logo">F</span>
+                Fertig
+            </a>
+            <button class="new-chat-btn" id="newChatBtn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 5v14M5 12h14"/>
+                </svg>
+                New Chat
+            </button>
+        </div>
+
+        <!-- Subject / Year filter panel -->
+        <div class="filter-panel">
+            <h3 class="filter-title">Filter Study Materials</h3>
+            <div class="filter-group">
+                <label for="yearFilter">Year</label>
+                <select id="yearFilter" class="filter-select">
+                    <option value="all">All Years</option>
+                    <option value="1st year">1st Year</option>
+                    <option value="2nd year">2nd Year</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="subjectFilter">Subject</label>
+                <select id="subjectFilter" class="filter-select">
+                    <option value="all">All Subjects</option>
+                </select>
+            </div>
+            <div class="kb-stats" id="kbStats">
+                <span id="kbChunkCount">Loading…</span>
+            </div>
+        </div>
+
+        <div class="chat-history" id="chatHistory">
+            <div class="history-section">
+                <h3>Today</h3>
+                <div class="history-item active">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                    </svg>
+                    <span>New Conversation</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar-footer">
+            <div class="user-profile" id="userProfile">
+                <div class="user-avatar" id="userAvatar">U</div>
+                <div class="user-info">
+                    <div class="user-name" id="userName">User</div>
+                    <div class="user-email" id="userEmail">user@example.com</div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <header class="chat-header">
+            <button class="sidebar-toggle" id="sidebarToggle">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 12h18M3 6h18M3 18h18"/>
+                </svg>
+            </button>
+            <div class="header-title">
+                <h1>Study Assistant</h1>
+                <span class="model-badge rag-badge">RAG</span>
+                <span class="model-badge" id="ragStatusBadge" title="Indicates whether retrieved context was used">⚡ Ready</span>
+            </div>
+            <div class="header-actions">
+                <a href="/chatBot" class="icon-btn" title="General AI Chat (no study materials)">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                    </svg>
+                </a>
+            </div>
+        </header>
+
+        <div class="messages-container" id="messagesContainer">
+            <div class="welcome-message" id="welcomeMessage">
+                <div class="welcome-icon">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                        <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                </div>
+                <h2>Ask about your study material</h2>
+                <p class="welcome-sub">Answers are grounded in your uploaded notes. Use the sidebar to filter by subject.</p>
+                <div class="suggestion-grid">
+                    <button class="suggestion-card" data-prompt="Explain Binary Search Trees with examples">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 16v-4m0-4h.01"/>
+                        </svg>
+                        <div class="suggestion-content">
+                            <h4>Data Structures</h4>
+                            <p>Explain Binary Search Trees</p>
+                        </div>
+                    </button>
+                    <button class="suggestion-card" data-prompt="What are the laws of thermodynamics?">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22V12m0 0V2M12 12H2m10 0h10"/>
+                        </svg>
+                        <div class="suggestion-content">
+                            <h4>Fundamentals of Engineering</h4>
+                            <p>Laws of Thermodynamics</p>
+                        </div>
+                    </button>
+                    <button class="suggestion-card" data-prompt="How does a P-N junction diode work?">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                        </svg>
+                        <div class="suggestion-content">
+                            <h4>Applied Physics & Electronics</h4>
+                            <p>P-N Junction and Diodes</p>
+                        </div>
+                    </button>
+                    <button class="suggestion-card" data-prompt="Explain sorting algorithms and their time complexities">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"/>
+                            <polyline points="8 6 2 12 8 18"/>
+                        </svg>
+                        <div class="suggestion-content">
+                            <h4>Problem Solving & Programming</h4>
+                            <p>Algorithm complexities</p>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            <div class="messages" id="messages"></div>
+        </div>
+
+        <div class="input-area">
+            <div class="input-container">
+                <textarea
+                    id="messageInput"
+                    placeholder="Ask about your study material…"
+                    rows="1"
+                ></textarea>
+                <button class="send-btn" id="sendBtn" disabled>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="input-footer">
+                <span>Answers are grounded in your study materials. Always verify with your textbooks.</span>
+            </div>
+        </div>
+    </main>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <script src="/js/utils.js"></script>
+    <script src="/js/ragChat.js"></script>
+</body>
+</html>

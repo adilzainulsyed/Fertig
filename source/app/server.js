@@ -56,6 +56,9 @@ app.use('/', require('../routes/root'));
 
 app.use('/subdir',require('../routes/subdir'));
 
+app.use('/api/chatbot', require('../routes/chatbot'));
+
+app.use('/api/rag', require('../routes/rag'));
 
 app.use(function(err,req,res,next){
     console.error(err.stack)
@@ -64,5 +67,3 @@ app.use(function(err,req,res,next){
 
 
 app.listen(PORT,()=>console.log(`Server is running on port ${PORT}`));
-
-app.use('/api/chatbot', require('../routes/chatbot'));
