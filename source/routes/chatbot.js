@@ -10,7 +10,6 @@ router.post('/', async (req, res) => {
   }
 
   try {
-    // 🧠 Local Phi-3 model via Ollama
     const response = await fetch("http://localhost:11434/api/generate", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
