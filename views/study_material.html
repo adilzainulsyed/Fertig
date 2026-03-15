@@ -74,10 +74,16 @@
     </section>
 
     <section class="container section">
-      <div class="section-head">
-        <h2 class="section-title">Coming Soon</h2>
+      <div class="year-switcher">
+        <div class="year-tabs" id="yearTabs" role="tablist" aria-label="Years"></div>
+        <button id="back-home-btn" class="link-btn hidden">← Back to current year</button>
       </div>
-      <div class="subject-grid">
+
+      <div class="section-head">
+        <h2 class="section-title" id="subject-year-title">Coming Soon</h2>
+      </div>
+
+      <div class="subject-grid" id="subject-list" role="tabpanel" aria-labelledby="yearTabs">
         <article class="card">
           <span class="name">Subject notes by year</span>
           <span class="pill">Planned</span>
@@ -95,6 +101,6 @@
   </main>
 
   <script src="/js/utils.js"></script>
-  <script src="/js/home.js"></script>
+  <script src="/js/study_material.js"></script>
 </body>
 </html>

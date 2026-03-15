@@ -68,6 +68,25 @@ const yearFolder =
   yearFolderRaw.includes("2nd") ? "2ndyear" :
   yearFolderRaw.includes("3rd") ? "3rdyear" :
   yearFolderRaw.includes("4th") ? "4thyear" : yearFolderRaw;
+
+  const yearNum = Number((yearFolder.match(/\d+/) || ["1"])[0]);
+  const yearHref = `../../index.html?year=${yearNum}`;
+
+  // Shared back action for subject pages opened from Question Bank.
+  const subbarInner = document.querySelector(".subbar .subbar-inner");
+  const brandMini = subbarInner?.querySelector(".brand-mini");
+  const crumbs = subbarInner?.querySelector(".crumbs");
+  if (subbarInner && brandMini && !$("backToSubjectsBtn")) {
+    const backBtn = document.createElement("button");
+    backBtn.id = "backToSubjectsBtn";
+    backBtn.type = "button";
+    backBtn.className = "btn-outlined subbar-back-btn";
+    backBtn.textContent = "← Back";
+    backBtn.addEventListener("click", () => {
+      window.location.href = yearHref;
+    });
+    subbarInner.insertBefore(backBtn, brandMini);
+  }
  
 
   // display names (acronyms)
@@ -80,8 +99,6 @@ const yearFolder =
   const subjectTitle = NAMES[slug] || toTitle(slug);
 
   // ---------- header / crumbs ----------
-  const yearNum = yearFolder[0];                       // "1".."4"
-  const yearHref = `../../index.html?year=${yearNum}`; // open that year explicitly
   const yearLink = $("crumb-year");
   if (yearLink) { yearLink.setAttribute("href", yearHref); yearLink.textContent = yearFolder; }
   $("crumb-subject").textContent = subjectTitle;

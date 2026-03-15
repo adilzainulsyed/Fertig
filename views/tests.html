@@ -27,6 +27,7 @@
 <header class="appbar appbar--slim">
   <div class="appbar-row">
     <div class="appbar-left">
+      <button id="backBtnTop" class="btn ghost back-btn" type="button">← Back</button>
       <a class="brand" href="index.html" aria-label="Fertig">
         <span class="logo">F</span><span>Fertig</span>
       </a>
@@ -212,6 +213,17 @@
     <!-- Hidden time value for JS -->
     <input type="hidden" id="sumTime" value="0" />
   </section>
+
+    <div id="leaveModal" class="leave-modal hidden" role="dialog" aria-modal="true" aria-labelledby="leaveModalTitle" aria-describedby="leaveModalDesc">
+      <div class="leave-modal-card">
+        <h3 id="leaveModalTitle">Are you sure you want to leave?</h3>
+        <p id="leaveModalDesc" class="muted">Your current test progress may be lost.</p>
+        <div class="leave-modal-actions">
+          <button id="confirmLeaveBtn" class="btn primary" type="button">Leave Test</button>
+          <button id="cancelLeaveBtn" class="btn-outlined" type="button">Stay</button>
+        </div>
+      </div>
+    </div>
 </main>
 
 <script src="/js/utils.js"></script>

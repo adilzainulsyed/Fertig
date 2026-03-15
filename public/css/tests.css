@@ -46,19 +46,59 @@ body {
   height:72px;max-width:1200px;margin:0 auto;gap:16px;padding:0 20px;
   display:flex;align-items:center;justify-content:space-between
 }
+.appbar--slim .appbar-left{display:flex;align-items:center;gap:10px;min-width:0}
+.appbar--slim .appbar-row{position:relative}
 .appbar--slim .appbar-right{display:flex;align-items:center;gap:10px}
 .appbar--slim .brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:800}
+.appbar--slim .appbar-left .brand{
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+}
 .appbar--slim .brand .logo{
   width:32px;height:32px;border-radius:8px;display:grid;place-items:center;
   background:rgba(255,255,255,.2);border:none;color:#fff;font-weight:900;
   backdrop-filter:blur(4px);
 }
-.appbar--slim .crumbs{margin-left:12px;font-weight:700;opacity:.9;font-size:13px}
+.appbar--slim .crumbs{display:none}
+.appbar--slim .back-btn{padding:8px 10px}
 .appbar--slim .btn.ghost{
   background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.2);
   border-radius:8px;padding:8px 12px;font-weight:700;
 }
 .appbar--slim .btn.ghost:hover{background:rgba(255,255,255,.2)}
+
+.leave-modal{
+  position:fixed;
+  inset:0;
+  z-index:1200;
+  background:rgba(18,14,22,.56);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+}
+.leave-modal-card{
+  width:min(460px, 100%);
+  background:var(--surface-2);
+  border:1px solid var(--border);
+  border-radius:12px;
+  box-shadow:var(--shadow-sm);
+  padding:20px;
+}
+.leave-modal-card h3{
+  margin:0 0 8px;
+  color:var(--primary);
+}
+.leave-modal-card p{
+  margin:0 0 16px;
+}
+.leave-modal-actions{
+  display:flex;
+  justify-content:flex-end;
+  gap:10px;
+  flex-wrap:wrap;
+}
 
 /* Exam header */
 .exam-head{

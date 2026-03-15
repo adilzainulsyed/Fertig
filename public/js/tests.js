@@ -12,6 +12,10 @@
     qText: $("qText"), attachments: $("attachments"),
     answer: $("answer"), proctorNote: $("proctorNote")
   };
+  const backBtnTop = $("backBtnTop");
+  const leaveModal = $("leaveModal");
+  const confirmLeaveBtn = $("confirmLeaveBtn");
+  const cancelLeaveBtn = $("cancelLeaveBtn");
 
   // ---------- helpers
   const fmtTime = (s) => {
@@ -58,6 +62,57 @@
     window.utils?.logout ? window.utils.logout() : (location.href = "login.html");
   });
 
+  const goBackToTestsHome = () => {
+    allowPageExit = true;
+    if (document.fullscreenElement && document.exitFullscreen) {
+      document.exitFullscreen().catch(() => {});
+    }
+    location.href = "tests_home.html";
+  };
+
+  const isExamActive = () => {
+    return !!screens.exam && !screens.exam.classList.contains("hidden")
+      && !!screens.summary && screens.summary.classList.contains("hidden");
+  };
+
+  // Native browser warning for refresh/close/navigation during active test.
+  window.addEventListener("beforeunload", (event) => {
+    if (allowPageExit || !isExamActive()) return;
+    event.preventDefault();
+    event.returnValue = "";
+  });
+
+  const openLeaveModal = () => {
+    if (!leaveModal) return;
+    leaveModal.classList.remove("hidden");
+    cancelLeaveBtn?.focus();
+  };
+
+  const closeLeaveModal = () => {
+    if (!leaveModal) return;
+    leaveModal.classList.add("hidden");
+    backBtnTop?.focus();
+  };
+
+  backBtnTop?.addEventListener("click", () => {
+    if (isExamActive()) {
+      openLeaveModal();
+      return;
+    }
+    goBackToTestsHome();
+  });
+
+  confirmLeaveBtn?.addEventListener("click", goBackToTestsHome);
+  cancelLeaveBtn?.addEventListener("click", closeLeaveModal);
+  leaveModal?.addEventListener("click", (event) => {
+    if (event.target === leaveModal) closeLeaveModal();
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && leaveModal && !leaveModal.classList.contains("hidden")) {
+      closeLeaveModal();
+    }
+  });
+
   // ---------- state
   let Q = [];
   let idx = 0;
@@ -67,6 +122,7 @@
   let secsLeft = 0; let timerId = null;
   let tabSwitches = 0;
   let key = "";
+  let allowPageExit = false;
   // track time spent per question
   let timeSpent = {};  
   let lastSwitchTime = Date.now();

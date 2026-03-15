@@ -3,6 +3,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const $ = id => document.getElementById(id);
   const showErr = (id, msg="") => { const el=$(id); if(el) el.textContent = msg; };
+  const themeToggle = $("themeToggle");
+
+  const applyTheme = (theme) => {
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("fertig-theme", theme);
+    window.utils?.setThemeToggleIcon?.(themeToggle, theme);
+    if (themeToggle) {
+      const nextTheme = theme === "dark" ? "light" : "dark";
+      themeToggle.setAttribute("aria-label", `Switch to ${nextTheme} mode`);
+      themeToggle.setAttribute("title", `Switch to ${nextTheme} mode`);
+    }
+  };
+
+  const savedTheme = localStorage.getItem("fertig-theme")
+    || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  applyTheme(savedTheme);
+
+  if (themeToggle) {
+    themeToggle.addEventListener("click", () => {
+      const current = document.documentElement.getAttribute("data-theme") || "light";
+      applyTheme(current === "dark" ? "light" : "dark");
+    });
+  }
 
   if (localStorage.getItem("signupSuccess") === "true") {
     const m = $("welcome-message"); if (m) m.textContent = "Account created successfully. Please log in.";
