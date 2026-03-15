@@ -46,6 +46,10 @@ router.get(/\/study-material(.html)?$/, (_,res)=>{
     res.sendFile(path.join(__dirname,'..','..','views','study_material.html'));
 });
 
+router.get(['/about', '/about.html'], (_,res)=>{
+    res.sendFile(path.join(__dirname,'..','..','views','about.html'));
+});
+
 
 router.get(/\/tests_home(.html)?$/, (_,res)=>res.sendFile(path.join(__dirname,'..','..','views','tests_home.html')));
 router.get(/\/tests(.html)?$/,      (_,res)=>res.sendFile(path.join(__dirname,'..','..','views','tests.html'))); // runner

@@ -18,7 +18,80 @@ window.utils = {
       return { id: payload.id, name: payload.name, email: payload.email, registration_number: payload.registration_number, yearInCollege: payload.yearInCollege };
     } catch { return null; } 
   },
+  initMainNavIndicator(){
+    const navInner = document.querySelector(".main-nav .main-nav-inner");
+    if (!navInner) return;
+
+    const activeLink = navInner.querySelector(".nav-link.active");
+    if (!activeLink) return;
+
+    let indicator = navInner.querySelector(".main-nav-indicator");
+    if (!indicator) {
+      indicator = document.createElement("span");
+      indicator.className = "main-nav-indicator";
+      navInner.appendChild(indicator);
+    }
+
+    const storageKey = "fertig:main-nav-indicator";
+    const getMetrics = (link) => {
+      const width = Math.min(24, Math.max(16, Math.round(link.offsetWidth * 0.28)));
+      const left = link.offsetLeft + Math.round((link.offsetWidth - width) / 2);
+      return { left, width };
+    };
+
+    const applyMetrics = (metrics, animated) => {
+      indicator.style.transition = animated
+        ? "transform .32s cubic-bezier(.4,0,.2,1), width .32s cubic-bezier(.4,0,.2,1), opacity .2s ease"
+        : "none";
+      indicator.style.width = `${metrics.width}px`;
+      indicator.style.transform = `translateX(${metrics.left}px)`;
+      indicator.classList.add("is-visible");
+    };
+
+    const saveMetrics = () => {
+      const metrics = getMetrics(activeLink);
+      sessionStorage.setItem(storageKey, JSON.stringify(metrics));
+    };
+
+    const previousMetricsRaw = sessionStorage.getItem(storageKey);
+    const currentMetrics = getMetrics(activeLink);
+
+    if (previousMetricsRaw) {
+      try {
+        const previousMetrics = JSON.parse(previousMetricsRaw);
+        applyMetrics(previousMetrics, false);
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            applyMetrics(currentMetrics, true);
+            saveMetrics();
+          });
+        });
+      } catch {
+        applyMetrics(currentMetrics, false);
+        saveMetrics();
+      }
+    } else {
+      applyMetrics(currentMetrics, false);
+      saveMetrics();
+    }
+
+    window.addEventListener("resize", () => {
+      const resizedMetrics = getMetrics(activeLink);
+      applyMetrics(resizedMetrics, false);
+      saveMetrics();
+    });
+
+    navInner.querySelectorAll(".nav-link").forEach((link) => {
+      link.addEventListener("click", () => {
+        sessionStorage.setItem(storageKey, JSON.stringify(getMetrics(activeLink)));
+      });
+    });
+  },
   protectRoute(){ if(!this.isLoggedIn()){ window.location.href = "login.html"; } },
   redirectIfLoggedIn(){ if(this.isLoggedIn()){ window.location.href = "home.html"; } },
   logout(){ localStorage.removeItem("authToken"); localStorage.removeItem("isLoggedIn"); window.location.href = "login.html"; }
 };
+
+document.addEventListener("DOMContentLoaded", () => {
+  window.utils?.initMainNavIndicator?.();
+});
