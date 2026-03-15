@@ -5,6 +5,7 @@ const app = express();
 const path = require('path');
 const db = require('./models/database');
 const PORT = process.env.PORT || 5000;
+const isProduction = process.env.NODE_ENV === 'production';
 
 const corsoptions = {
     origin: (origin, callback) => {
@@ -20,27 +21,27 @@ const corsoptions = {
 }
 app.use(cors(corsoptions));
 
-app.use(express.static('public'));
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());
 
 const basePath = path.join(__dirname, '..');
-console.log('basePath', basePath);
+const staticOptions = isProduction
+    ? { maxAge: '7d', etag: true, immutable: false }
+    : { etag: true };
+
 app.get('/', (req, res) => {
     res.sendFile(path.join(basePath, 'views', 'home.html'));
 });
-app.use('/subjects', express.static(path.join(basePath,'data','subjects')));
-console.log("Serving subjects from:", path.join(basePath,'data','subjects'));
-app.use(express.static(path.join(basePath,'public')));
-app.use(express.static(path.join(basePath,'views')));
+app.use('/subjects', express.static(path.join(basePath,'data','subjects'), staticOptions));
+app.use(express.static(path.join(basePath,'public'), staticOptions));
+app.use(express.static(path.join(basePath,'views'), staticOptions));
 
-app.use('/tests', express.static(path.join(basePath, 'data', 'testpaperjson')));
-app.use('/question_images', express.static(path.join(basePath, 'data','question_images')));
+app.use('/tests', express.static(path.join(basePath, 'data', 'testpaperjson'), staticOptions));
+app.use('/question_images', express.static(path.join(basePath, 'data','question_images'), staticOptions));
 
 app.use('/', require('./routes/auth'));
 app.use('/', require('./routes/root'));
 app.use('/subdir', require('./routes/subdir'));
-app.use('/api/chatbot', require('./routes/chatbot'));
 
 app.use(function(err,req,res,next){
     console.error(err.stack)
